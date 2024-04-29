@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 const Header = () => {
   const [activeTab, setActiveTab] = useState("Avengers");
   const router = useRouter();

@@ -8,6 +8,7 @@ import HomeAccordian from "@/components/HomeAccordian";
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import Head from "next/head";
 
 export default function Home() {
   const { ref, inView } = useInView({ threshold: 0.1 });
@@ -648,628 +649,684 @@ export default function Home() {
   async function submitContactForm() {}
 
   return (
-    <main>
-      <div className="banner">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-7">
-              <motion.h1
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-                className="digital-heading"
-              >
-                Digital Transformation Services
-              </motion.h1>
-              <h2 className="design-heading">
-                Designing<span>Websites</span>
-                <br />
-                Developing <span>Apps</span>
-                <br />
-                Engineering<span> Software</span>
-                <br />
-                Executing<span> Marketing Strategies</span>
-              </h2>
-            </div>
-            <div className="col-md-5">
-              <motion.img
-                initial={{ opacity: 0, x: 200 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-                src="/New-post-final-min.gif"
-                alt=""
-                width={431}
-                height={431}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="achieved">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <h3>Our Achieved Milestones on Display</h3>
-            </div>
-            <div className="col-md-8">
-              <ul>
-                <li ref={ref}>
-                  {inView && (
-                    <CountUp
-                      className="homeCountup"
-                      start={0}
-                      end={95}
-                      duration={2.4}
-                      ref={countUpRef}
-                      redraw={true}
-                      suffix=" +"
-                    />
-                  )}
+    <>
+      <Head>
+        {/* Primary Meta Tags */}
+        <title>Nextupgrad</title>
+        <meta
+          name="description"
+          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+        />
 
-                  <span>Product Developed</span>
-                </li>
-                <li ref={ref}>
-                  {inView && (
-                    <CountUp
-                      className="homeCountup"
-                      start={0}
-                      end={20}
-                      duration={2.75}
-                      ref={countUpRef}
-                      redraw={true}
-                      suffix=" +"
-                    />
-                  )}
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="nextupgrad.us" />
+        <meta property="og:title" content="Nextupgrad web solutions" />
+        <meta
+          property="og:description"
+          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+        />
+        <meta property="og:image" content="nextupgrad.us/logo-2orange-1.png" />
 
-                  <span>Industries</span>
-                </li>
-                <li ref={ref}>
-                  {inView && (
-                    <CountUp
-                      className="homeCountup"
-                      start={0}
-                      end={250}
-                      duration={3}
-                      ref={countUpRef}
-                      redraw={true}
-                      suffix=" +"
-                    />
-                  )}
+        {/* Twitter */}
+        <meta
+          property="twitter:card"
+          content="nextupgrad.us/logo-2orange-1.png"
+        />
+        <meta property="twitter:url" content="nextupgrad.us" />
+        <meta property="twitter:title" content="Nextupgrad web solutions" />
+        <meta
+          property="twitter:description"
+          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+        />
+        <meta
+          property="twitter:image"
+          content="nextupgrad.us/logo-2orange-1.png"
+        />
 
-                  <span>Website Designed</span>
-                </li>
-                <li ref={ref}>
-                  {inView && (
-                    <CountUp
-                      className="homeCountup"
-                      start={0}
-                      end={14}
-                      duration={2.4}
-                      ref={countUpRef}
-                      redraw={true}
-                      suffix=" +"
-                    />
-                  )}
+        {/* Viewport Meta Tag */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                  <span>Country Served</span>
-                </li>
-                <li ref={ref}>
-                  {inView && (
-                    <CountUp
-                      className="homeCountup"
-                      start={0}
-                      end={60}
-                      duration={2.4}
-                      ref={countUpRef}
-                      redraw={true}
-                      suffix=" +"
-                    />
-                  )}
+        {/* Favicon */}
+        <link rel="icon" href="/logo-2orange-1.png" />
 
-                  <span>SEO Campaigns Completed</span>
-                </li>
-                <li ref={ref}>
-                  {inView && (
-                    <CountUp
-                      className="homeCountup"
-                      start={0}
-                      end={40}
-                      duration={3}
-                      ref={countUpRef}
-                      redraw={true}
-                      suffix=" +"
-                    />
-                  )}
-
-                  <span>PPC Campaign Designed</span>
-                </li>
-              </ul>
+        <meta name="robots" content="all" />
+        <meta name="googlebot" content="noindex,nofollow" />
+        <meta name="google" content="nositelinkssearchbox" />
+        <meta name="google" content="notranslate" />
+      </Head>
+      <main>
+        <div className="banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-7">
+                <motion.h1
+                  initial={{ opacity: 0, y: -50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+                  className="digital-heading"
+                >
+                  Digital Transformation Services
+                </motion.h1>
+                <h2 className="design-heading">
+                  Designing<span>Websites</span>
+                  <br />
+                  Developing <span>Apps</span>
+                  <br />
+                  Engineering<span> Software</span>
+                  <br />
+                  Executing<span> Marketing Strategies</span>
+                </h2>
+              </div>
+              <div className="col-md-5">
+                <motion.img
+                  initial={{ opacity: 0, x: 200 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+                  src="/New-post-final-min.gif"
+                  alt=""
+                  width={431}
+                  height={431}
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="Personalize">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h2>
-                {" "}
-                Personalize your success journey today with our expert panel,
-                unlocking precision in digital solutions crafted just for you!
-              </h2>
-              <Link
-                className="Personalize-button"
-                href="https://calendly.com/ron-wilsonbdm/service"
-                target="_blank"
-                rel="nofollow"
-              >
-                Schedule a Meeting
-              </Link>
+        <div className="achieved">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4">
+                <h3>Our Achieved Milestones on Display</h3>
+              </div>
+              <div className="col-md-8">
+                <ul>
+                  <li ref={ref}>
+                    {inView && (
+                      <CountUp
+                        className="homeCountup"
+                        start={0}
+                        end={95}
+                        duration={2.4}
+                        ref={countUpRef}
+                        redraw={true}
+                        suffix=" +"
+                      />
+                    )}
+
+                    <span>Product Developed</span>
+                  </li>
+                  <li ref={ref}>
+                    {inView && (
+                      <CountUp
+                        className="homeCountup"
+                        start={0}
+                        end={20}
+                        duration={2.75}
+                        ref={countUpRef}
+                        redraw={true}
+                        suffix=" +"
+                      />
+                    )}
+
+                    <span>Industries</span>
+                  </li>
+                  <li ref={ref}>
+                    {inView && (
+                      <CountUp
+                        className="homeCountup"
+                        start={0}
+                        end={250}
+                        duration={3}
+                        ref={countUpRef}
+                        redraw={true}
+                        suffix=" +"
+                      />
+                    )}
+
+                    <span>Website Designed</span>
+                  </li>
+                  <li ref={ref}>
+                    {inView && (
+                      <CountUp
+                        className="homeCountup"
+                        start={0}
+                        end={14}
+                        duration={2.4}
+                        ref={countUpRef}
+                        redraw={true}
+                        suffix=" +"
+                      />
+                    )}
+
+                    <span>Country Served</span>
+                  </li>
+                  <li ref={ref}>
+                    {inView && (
+                      <CountUp
+                        className="homeCountup"
+                        start={0}
+                        end={60}
+                        duration={2.4}
+                        ref={countUpRef}
+                        redraw={true}
+                        suffix=" +"
+                      />
+                    )}
+
+                    <span>SEO Campaigns Completed</span>
+                  </li>
+                  <li ref={ref}>
+                    {inView && (
+                      <CountUp
+                        className="homeCountup"
+                        start={0}
+                        end={40}
+                        duration={3}
+                        ref={countUpRef}
+                        redraw={true}
+                        suffix=" +"
+                      />
+                    )}
+
+                    <span>PPC Campaign Designed</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="bg-white pt-4 pb-4">
-        <div className="container pt-5">
-          <h2 id="largeHeading">
-            Explore the options of <br />
-            Digital Solutions
-          </h2>
-          <section className="w-100">
-            <div className="dropDown-sec1">
-              <div className="gridsDropdown">
-                <Dropdown onSelect={handleSelect}>
-                  <Dropdown.Toggle
-                    className="bg-white text-dark  "
-                    id="dropdown-basic"
-                  >
-                    {selectedService}
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu className="bg-white">
-                    <Dropdown.Item eventKey="Digital Marketing">
-                      Digital Marketing
-                    </Dropdown.Item>
-                    <Dropdown.Item eventKey="Website Service" href="#/action-2">
-                      Website Service
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      eventKey="Software Service"
-                      href="#/action-3"
-                    >
-                      Software Service
-                    </Dropdown.Item>
-                    <Dropdown.Item eventKey="Mobile App" href="#/action-3">
-                      Mobile App
-                    </Dropdown.Item>
-                    <Dropdown.Item eventKey="Custom Service" href="#/action-3">
-                      Custom Service
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-                {selectedService != "Select Service" ? (
-                  <Dropdown onSelect={handleSelect2}>
+        <div className="Personalize">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2>
+                  {" "}
+                  Personalize your success journey today with our expert panel,
+                  unlocking precision in digital solutions crafted just for you!
+                </h2>
+                <Link
+                  className="Personalize-button"
+                  href="https://calendly.com/ron-wilsonbdm/service"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  Schedule a Meeting
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white pt-4 pb-4">
+          <div className="container pt-5">
+            <h2 id="largeHeading">
+              Explore the options of <br />
+              Digital Solutions
+            </h2>
+            <section className="w-100">
+              <div className="dropDown-sec1">
+                <div className="gridsDropdown">
+                  <Dropdown onSelect={handleSelect}>
                     <Dropdown.Toggle
-                      className="bg-white text-dark"
+                      className="bg-white text-dark  "
                       id="dropdown-basic"
                     >
-                      {selectedVertical ? selectedVertical : "Select Verticals"}
+                      {selectedService}
                     </Dropdown.Toggle>
 
-                    <Dropdown.Menu>
-                      {verticals.length
-                        ? verticals.map((item, index) => (
-                            <Dropdown.Item key={index} eventKey={item}>
-                              {item.replace("_", " ")}
-                            </Dropdown.Item>
-                          ))
-                        : null}
+                    <Dropdown.Menu className="bg-white">
+                      <Dropdown.Item eventKey="Digital Marketing">
+                        Digital Marketing
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        eventKey="Website Service"
+                        href="#/action-2"
+                      >
+                        Website Service
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        eventKey="Software Service"
+                        href="#/action-3"
+                      >
+                        Software Service
+                      </Dropdown.Item>
+                      <Dropdown.Item eventKey="Mobile App" href="#/action-3">
+                        Mobile App
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        eventKey="Custom Service"
+                        href="#/action-3"
+                      >
+                        Custom Service
+                      </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
-                ) : null}
-              </div>
-              <div className="digiSolutions">
-                <div className="grids">
-                  {selectedVertical != null
-                    ? renderFinalGrid.items.map((item, index) => (
-                        <span className="digiItems">{item}</span>
-                      ))
-                    : subgrid[0].default.map((item, index) => (
-                        <span className="digiItems">{item}</span>
-                      ))}
+                  {selectedService != "Select Service" ? (
+                    <Dropdown onSelect={handleSelect2}>
+                      <Dropdown.Toggle
+                        className="bg-white text-dark"
+                        id="dropdown-basic"
+                      >
+                        {selectedVertical
+                          ? selectedVertical
+                          : "Select Verticals"}
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        {verticals.length
+                          ? verticals.map((item, index) => (
+                              <Dropdown.Item key={index} eventKey={item}>
+                                {item.replace("_", " ")}
+                              </Dropdown.Item>
+                            ))
+                          : null}
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  ) : null}
                 </div>
-                <Form onSubmit={submitContactForm}>
-                  <Form.Group controlId="formName ">
-                    <Form.Label>Your name</Form.Label>
-                    <Form.Control
-                      type="text"
-                      className="mb-4"
-                      placeholder="Enter your name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                    />
-                  </Form.Group>
+                <div className="digiSolutions">
+                  <div className="grids">
+                    {selectedVertical != null
+                      ? renderFinalGrid.items.map((item, index) => (
+                          <span className="digiItems">{item}</span>
+                        ))
+                      : subgrid[0].default.map((item, index) => (
+                          <span className="digiItems">{item}</span>
+                        ))}
+                  </div>
+                  <Form onSubmit={submitContactForm}>
+                    <Form.Group controlId="formName ">
+                      <Form.Label>Your name</Form.Label>
+                      <Form.Control
+                        type="text"
+                        className="mb-4"
+                        placeholder="Enter your name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
+                    </Form.Group>
 
-                  <Form.Group controlId="formEmail">
-                    <Form.Label>Your email</Form.Label>
-                    <Form.Control
-                      type="email"
-                      className="mb-4"
-                      placeholder="Enter your email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                    />
-                  </Form.Group>
+                    <Form.Group controlId="formEmail">
+                      <Form.Label>Your email</Form.Label>
+                      <Form.Control
+                        type="email"
+                        className="mb-4"
+                        placeholder="Enter your email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+                    </Form.Group>
 
-                  <Form.Group controlId="formSubject">
-                    <Form.Label>Subject</Form.Label>
-                    <Form.Control
-                      type="text"
-                      className="mb-4"
-                      placeholder="Enter subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                    />
-                  </Form.Group>
+                    <Form.Group controlId="formSubject">
+                      <Form.Label>Subject</Form.Label>
+                      <Form.Control
+                        type="text"
+                        className="mb-4"
+                        placeholder="Enter subject"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                      />
+                    </Form.Group>
 
-                  <Form.Group controlId="formMessage">
-                    <Form.Label>Your message (optional)</Form.Label>
-                    <Form.Control
-                      as="textarea"
-                      className="mb-4"
-                      rows={3}
-                      placeholder="Enter your message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                    />
-                  </Form.Group>
+                    <Form.Group controlId="formMessage">
+                      <Form.Label>Your message (optional)</Form.Label>
+                      <Form.Control
+                        as="textarea"
+                        className="mb-4"
+                        rows={3}
+                        placeholder="Enter your message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                      />
+                    </Form.Group>
 
-                  <button className="contactFormBtn" type="submit">
-                    Submit
-                  </button>
-                </Form>
+                    <button className="contactFormBtn" type="submit">
+                      Submit
+                    </button>
+                  </Form>
+                </div>
               </div>
-            </div>
-            <div className="form-sec2"></div>
-          </section>
-        </div>
-      </div>
-
-      <div className="discover">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h2>Discover Options For Hiring Dedicated Developers.</h2>{" "}
-            </div>
-            <div className="col-md-6">
-              <h3>
-                {" "}
-                <img src="/download1.png" alt="" />
-                Experience-Driven Resources
-              </h3>
-              <p>
-                Empower your projects with a developer-centric approach.
-                Seamlessly acquire expertise, efficiency, and precision for
-                success in every endeavor.
-              </p>
-            </div>
-            <div className="col-md-6">
-              <h3>
-                {" "}
-                <img src="/download.png" alt="" />
-                Budget-Centric Resource
-              </h3>
-              <p>
-                Maximize your project’s value with budget-friendly developer
-                solutions. Achieve excellence without compromising your
-                financial goals. Hire skilled developers for cost-effective
-                success
-              </p>
-            </div>
-            <div className="col-md-6">
-              <h3>
-                {" "}
-                <img src="/download2.png" alt="" />
-                Expertise-Centric Resources!
-              </h3>
-              <p>
-                Revolutionize your projects by choosing our expertise-driven
-                approach to hiring developers. Dedicated professionals committed
-                to delivering precision and success in every project.
-              </p>
-            </div>
-            <div className="col-md-6">
-              <h3>
-                {" "}
-                <img src="/download3.png" alt="" />
-                Fusion of Experience, Budget, and Expertise
-              </h3>
-              <p>
-                Experience a Fusion of Expertise, Budget-Friendly Solutions, and
-                Proven Experience. Elevate Your Projects by Hiring Our Skilled
-                Developers.
-              </p>
-            </div>
+              <div className="form-sec2"></div>
+            </section>
           </div>
         </div>
-      </div>
 
-      <d className="ps-timeline-sec">
-        <div className="container">
-          <h2>Hiring Process for a Dedicated Developer</h2>
-          <ol className="ps-timeline">
-            <li className="p1">
-              <div className="img-handler-top">
-                <p>Discussion & Requirement Gathering</p>
+        <div className="discover">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2>Discover Options For Hiring Dedicated Developers.</h2>{" "}
               </div>
-              <div className="ps-bot">
-                <p>Discovery</p>
-              </div>
-              <span className="ps-sp-top">1</span>
-            </li>
-            <li className="p2">
-              <div className="ps-top">
-                <p>Profile Spotlight</p>
-              </div>
-              <div className="img-handler-bot">
-                <p>
-                  Spotlighting Top Resumes and Projects with In-Depth Interviews
-                </p>
-              </div>
-              <span className="ps-sp-bot">2</span>
-            </li>
-            <li className="p3">
-              <div className="img-handler-top">
-                <p>Shortlisting Candidates</p>
-              </div>
-              <div className="ps-bot">
-                <p>Candidate Selection</p>
-              </div>
-              <span className="ps-sp-top">3</span>
-            </li>
-            <li className="p4">
-              <div className="ps-top">
-                <p>Planning</p>
-              </div>
-              <div className="img-handler-bot">
-                <p>Proposal Discussion, Timeline, and Work Segregation</p>
-              </div>
-              <span className="ps-sp-bot">4</span>
-            </li>
-            <li className="p5">
-              <div className="img-handler-top">
-                <p>
-                  Deal Closure, NDA Signing, and Efficient Resource Deployment
-                </p>
-              </div>
-              <div className="ps-bot">
-                <p>Execution</p>
-              </div>
-              <span className="ps-sp-top1">5</span>
-            </li>
-          </ol>
-        </div>
-      </d>
-
-      <div className="deserve">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h2>Why We Deserve to Be Your Digital Partner.</h2>{" "}
-            </div>
-            <div className="col-md-4">
-              <h3>
-                {" "}
-                <img src="/downloadnew.png" alt="" />
-                Unique pricing models
-              </h3>
-              <p>
-                Tailored Pricing for Every Need: Choose from Our Flexible Models
-                – Whether it’s Hourly for Short Tasks, Project-Based for Defined
-                Goals, or Subscription for Ongoing Support. Your Project, Your
-                Price!
-              </p>
-            </div>
-            <div className="col-md-4">
-              <h3>
-                {" "}
-                <img src="/downloadnew1.png" alt="" />
-                Project Isolation Setup
-              </h3>
-              <p>
-                A dedicated environment tailored for your project’s specific
-                needs. Experience enhanced security, focused development, and
-                streamlined collaboration for optimal results.
-              </p>
-            </div>
-            <div className="col-md-4">
-              <h3>
-                {" "}
-                <img src="/downloadnew2.png" alt="" />
-                Complimentary Maintenance Services
-              </h3>
-              <p>
-                Enjoy Complimentary Maintenance Services With Your Project. Our
-                Commitment Doesn’t End at Delivery; We’re Here to Keep Your
-                Solutions Running Smoothly.
-              </p>
-            </div>
-            <div className="col-md-4">
-              <h3>
-                {" "}
-                <img src="/downloadnew3.png" alt="" />
-                Guaranteed Timely Delivery
-              </h3>
-              <p>
-                Seal Your Project with Confidence: Our Guarantee – Timely
-                Delivery. Trust us to meet your deadlines with precision and
-                ensure your project arrives at its destination right on time.
-              </p>
-            </div>
-            <div className="col-md-4">
-              <h3>
-                {" "}
-                <img src="/downloadnew4.png" alt="" />
-                Gratis Shadow Resource
-              </h3>
-              <p>
-                Elevate Your Team’s Potential with a Complimentary Shadow
-                Resource. Enhance Workforce Agility and Efficiency with an Extra
-                Layer of Support, All Included in Your Service Package.
-              </p>
-            </div>
-            <div className="col-md-4">
-              <h3>
-                {" "}
-                <img src="/downloadnew5.png" alt="" />
-                Free Ideation Session
-              </h3>
-              <p>
-                Ignite Innovation with a Complimentary Ideation Session.
-                Kickstart Your Project with Creative Sparks and Strategic
-                Insights – Unleash the Potential of Your Ideas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="industries">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h2>Industries We Serve .</h2>{" "}
-            </div>
-
-            <div className="col-md-3">
-              <div className="indus-content">
+              <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/eccomm-1.webp" alt="" />
-                  Ecommerce
+                  <img src="/download1.png" alt="" />
+                  Experience-Driven Resources
                 </h3>
                 <p>
-                  Elevate your Ecommerce game with cutting-edge digital
-                  solutions tailored for industry dominance.
+                  Empower your projects with a developer-centric approach.
+                  Seamlessly acquire expertise, efficiency, and precision for
+                  success in every endeavor.
                 </p>
               </div>
-            </div>
-            <div className="col-md-3">
-              <div className="indus-content">
-                {" "}
+              <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/health-1.webp" alt="" />
-                  Healthcare
+                  <img src="/download.png" alt="" />
+                  Budget-Centric Resource
                 </h3>
                 <p>
-                  Revolutionizing Healthcare Through Cutting-edge Digital
-                  Solutions for a Healthier Tomorrow.
+                  Maximize your project’s value with budget-friendly developer
+                  solutions. Achieve excellence without compromising your
+                  financial goals. Hire skilled developers for cost-effective
+                  success
                 </p>
               </div>
-            </div>
-            <div className="col-md-3">
-              <div className="indus-content">
-                {" "}
+              <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/e-learn.webp" alt="" />
-                  Education/ E-learning
+                  <img src="/download2.png" alt="" />
+                  Expertise-Centric Resources!
                 </h3>
                 <p>
-                  Empowering Education Through Digital Solutions – Transforming
-                  Learning Experiences for the Future.
-                </p>
-              </div>{" "}
-            </div>
-            <div className="col-md-3">
-              <div className="indus-content">
-                {" "}
-                <h3>
-                  {" "}
-                  <img src="/sports.webp" alt="" />
-                  Sports
-                </h3>
-                <p>
-                  Empowering Sports Excellence through Cutting-Edge Digital
-                  Solutions.
-                </p>
-              </div>{" "}
-            </div>
-            <div className="col-md-3">
-              <div className="indus-content">
-                <h3>
-                  {" "}
-                  <img src="/media.webp" alt="" />
-                  Media and Entertainment
-                </h3>
-                <p>
-                  Elevate Media and Entertainment with Innovative Digital
-                  Transformations
+                  Revolutionize your projects by choosing our expertise-driven
+                  approach to hiring developers. Dedicated professionals
+                  committed to delivering precision and success in every
+                  project.
                 </p>
               </div>
-            </div>
-            <div className="col-md-3">
-              <div className="indus-content">
+              <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/realstate.webp" alt="" />
-                  Real estate
+                  <img src="/download3.png" alt="" />
+                  Fusion of Experience, Budget, and Expertise
                 </h3>
                 <p>
-                  {" "}
-                  Elevating Real Estate Experiences with Innovative Solutions
-                  and Exceptional Service.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="indus-content">
-                <h3>
-                  {" "}
-                  <img src="/ld.webp" alt="" />
-                  Logistics and Distribution
-                </h3>
-                <p>
-                  Seamless Digital Solutions for Efficient Distribution in Every
-                  Industry.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="indus-content">
-                {" "}
-                <h3>
-                  {" "}
-                  <img src="/retail.webp" alt="" />
-                  Retail
-                </h3>
-                <p>
-                  Elevating Retail Dynamics with Innovative Digital Solutions
-                  for a Seamless Customer Journey.
+                  Experience a Fusion of Expertise, Budget-Friendly Solutions,
+                  and Proven Experience. Elevate Your Projects by Hiring Our
+                  Skilled Developers.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="testimonials">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h2>Testimonials</h2>
+        <d className="ps-timeline-sec">
+          <div className="container">
+            <h2>Hiring Process for a Dedicated Developer</h2>
+            <ol className="ps-timeline">
+              <li className="p1">
+                <div className="img-handler-top">
+                  <p>Discussion & Requirement Gathering</p>
+                </div>
+                <div className="ps-bot">
+                  <p>Discovery</p>
+                </div>
+                <span className="ps-sp-top">1</span>
+              </li>
+              <li className="p2">
+                <div className="ps-top">
+                  <p>Profile Spotlight</p>
+                </div>
+                <div className="img-handler-bot">
+                  <p>
+                    Spotlighting Top Resumes and Projects with In-Depth
+                    Interviews
+                  </p>
+                </div>
+                <span className="ps-sp-bot">2</span>
+              </li>
+              <li className="p3">
+                <div className="img-handler-top">
+                  <p>Shortlisting Candidates</p>
+                </div>
+                <div className="ps-bot">
+                  <p>Candidate Selection</p>
+                </div>
+                <span className="ps-sp-top">3</span>
+              </li>
+              <li className="p4">
+                <div className="ps-top">
+                  <p>Planning</p>
+                </div>
+                <div className="img-handler-bot">
+                  <p>Proposal Discussion, Timeline, and Work Segregation</p>
+                </div>
+                <span className="ps-sp-bot">4</span>
+              </li>
+              <li className="p5">
+                <div className="img-handler-top">
+                  <p>
+                    Deal Closure, NDA Signing, and Efficient Resource Deployment
+                  </p>
+                </div>
+                <div className="ps-bot">
+                  <p>Execution</p>
+                </div>
+                <span className="ps-sp-top1">5</span>
+              </li>
+            </ol>
+          </div>
+        </d>
+
+        <div className="deserve">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2>Why We Deserve to Be Your Digital Partner.</h2>{" "}
+              </div>
+              <div className="col-md-4">
+                <h3>
+                  {" "}
+                  <img src="/downloadnew.png" alt="" />
+                  Unique pricing models
+                </h3>
+                <p>
+                  Tailored Pricing for Every Need: Choose from Our Flexible
+                  Models – Whether it’s Hourly for Short Tasks, Project-Based
+                  for Defined Goals, or Subscription for Ongoing Support. Your
+                  Project, Your Price!
+                </p>
+              </div>
+              <div className="col-md-4">
+                <h3>
+                  {" "}
+                  <img src="/downloadnew1.png" alt="" />
+                  Project Isolation Setup
+                </h3>
+                <p>
+                  A dedicated environment tailored for your project’s specific
+                  needs. Experience enhanced security, focused development, and
+                  streamlined collaboration for optimal results.
+                </p>
+              </div>
+              <div className="col-md-4">
+                <h3>
+                  {" "}
+                  <img src="/downloadnew2.png" alt="" />
+                  Complimentary Maintenance Services
+                </h3>
+                <p>
+                  Enjoy Complimentary Maintenance Services With Your Project.
+                  Our Commitment Doesn’t End at Delivery; We’re Here to Keep
+                  Your Solutions Running Smoothly.
+                </p>
+              </div>
+              <div className="col-md-4">
+                <h3>
+                  {" "}
+                  <img src="/downloadnew3.png" alt="" />
+                  Guaranteed Timely Delivery
+                </h3>
+                <p>
+                  Seal Your Project with Confidence: Our Guarantee – Timely
+                  Delivery. Trust us to meet your deadlines with precision and
+                  ensure your project arrives at its destination right on time.
+                </p>
+              </div>
+              <div className="col-md-4">
+                <h3>
+                  {" "}
+                  <img src="/downloadnew4.png" alt="" />
+                  Gratis Shadow Resource
+                </h3>
+                <p>
+                  Elevate Your Team’s Potential with a Complimentary Shadow
+                  Resource. Enhance Workforce Agility and Efficiency with an
+                  Extra Layer of Support, All Included in Your Service Package.
+                </p>
+              </div>
+              <div className="col-md-4">
+                <h3>
+                  {" "}
+                  <img src="/downloadnew5.png" alt="" />
+                  Free Ideation Session
+                </h3>
+                <p>
+                  Ignite Innovation with a Complimentary Ideation Session.
+                  Kickstart Your Project with Creative Sparks and Strategic
+                  Insights – Unleash the Potential of Your Ideas.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <Cards />
 
-      {/* <section className="articles-list">
+        <div className="industries">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2>Industries We Serve .</h2>{" "}
+              </div>
+
+              <div className="col-md-3">
+                <div className="indus-content">
+                  <h3>
+                    {" "}
+                    <img src="/eccomm-1.webp" alt="" />
+                    Ecommerce
+                  </h3>
+                  <p>
+                    Elevate your Ecommerce game with cutting-edge digital
+                    solutions tailored for industry dominance.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="indus-content">
+                  {" "}
+                  <h3>
+                    {" "}
+                    <img src="/health-1.webp" alt="" />
+                    Healthcare
+                  </h3>
+                  <p>
+                    Revolutionizing Healthcare Through Cutting-edge Digital
+                    Solutions for a Healthier Tomorrow.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="indus-content">
+                  {" "}
+                  <h3>
+                    {" "}
+                    <img src="/e-learn.webp" alt="" />
+                    Education/ E-learning
+                  </h3>
+                  <p>
+                    Empowering Education Through Digital Solutions –
+                    Transforming Learning Experiences for the Future.
+                  </p>
+                </div>{" "}
+              </div>
+              <div className="col-md-3">
+                <div className="indus-content">
+                  {" "}
+                  <h3>
+                    {" "}
+                    <img src="/sports.webp" alt="" />
+                    Sports
+                  </h3>
+                  <p>
+                    Empowering Sports Excellence through Cutting-Edge Digital
+                    Solutions.
+                  </p>
+                </div>{" "}
+              </div>
+              <div className="col-md-3">
+                <div className="indus-content">
+                  <h3>
+                    {" "}
+                    <img src="/media.webp" alt="" />
+                    Media and Entertainment
+                  </h3>
+                  <p>
+                    Elevate Media and Entertainment with Innovative Digital
+                    Transformations
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="indus-content">
+                  <h3>
+                    {" "}
+                    <img src="/realstate.webp" alt="" />
+                    Real estate
+                  </h3>
+                  <p>
+                    {" "}
+                    Elevating Real Estate Experiences with Innovative Solutions
+                    and Exceptional Service.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="indus-content">
+                  <h3>
+                    {" "}
+                    <img src="/ld.webp" alt="" />
+                    Logistics and Distribution
+                  </h3>
+                  <p>
+                    Seamless Digital Solutions for Efficient Distribution in
+                    Every Industry.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="indus-content">
+                  {" "}
+                  <h3>
+                    {" "}
+                    <img src="/retail.webp" alt="" />
+                    Retail
+                  </h3>
+                  <p>
+                    Elevating Retail Dynamics with Innovative Digital Solutions
+                    for a Seamless Customer Journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="testimonials">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2>Testimonials</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Cards />
+
+        {/* <section className="articles-list">
         <ul className="articles-list__articles stacked">
           <li className="articles-list__article">
             <article
@@ -1542,134 +1599,135 @@ export default function Home() {
         </ul>
       </section> */}
 
-      <div className="video_testimonials">
-        <div className="container">
-          <h3>Video Testimonials</h3>
-          <div
-            className="owl-carousel owl-theme testimonials-container owl-loaded owl-drag"
-            id="testimonials-container"
-          >
-            <div className="item-card1">
-              <div className="card-body">
-                <div className="item1">
-                  <i className="fa fa-star checked icon" />
-                  <i className="fa fa-star checked" />
-                  <i className="fa fa-star checked" />
-                  <i className="fa fa-star checked" />
-                  <i className="fa fa-star checked" />
-                  <i className="fa fa-star checked" />
-                  <h2>
-                    Recommend NextUpgrad for website development and business
-                    marketing
-                  </h2>
-                  <p>
-                    I’m working with nextupgrad since april and these guys are
-                    amazing team. They have been there from day 1 for me. They
-                    also worked on weekends just to make sure my website and
-                    products were up to the standard.
-                  </p>
-                  <p>Patrick </p>
-                  <h3>Client For</h3>
-                  <span className="ic1">
-                    Website Development and Digital Marketing
+        <div className="video_testimonials">
+          <div className="container">
+            <h3>Video Testimonials</h3>
+            <div
+              className="owl-carousel owl-theme testimonials-container owl-loaded owl-drag"
+              id="testimonials-container"
+            >
+              <div className="item-card1">
+                <div className="card-body">
+                  <div className="item1">
+                    <i className="fa fa-star checked icon" />
+                    <i className="fa fa-star checked" />
+                    <i className="fa fa-star checked" />
+                    <i className="fa fa-star checked" />
+                    <i className="fa fa-star checked" />
+                    <i className="fa fa-star checked" />
+                    <h2>
+                      Recommend NextUpgrad for website development and business
+                      marketing
+                    </h2>
+                    <p>
+                      I’m working with nextupgrad since april and these guys are
+                      amazing team. They have been there from day 1 for me. They
+                      also worked on weekends just to make sure my website and
+                      products were up to the standard.
+                    </p>
+                    <p>Patrick </p>
+                    <h3>Client For</h3>
+                    <span className="ic1">
+                      Website Development and Digital Marketing
+                    </span>
+                  </div>
+                  <div className="item2">
+                    <iframe
+                      width={560}
+                      height={315}
+                      src="https://www.youtube.com/embed/eIQ9JhJF3R8?si=fT6cHoKSIJRt1fJD"
+                      title="YouTube video player"
+                      frameBorder={0}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="testimonials mt-5 pt-5">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2>Frequently Asked Questions</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section className="container pb-5  ">
+          <HomeAccordian />
+        </section>
+
+        <div className="holistic">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h3>
+                  Seeking a holistic or customized digital solution for your
+                  business?
+                </h3>
+                <p>
+                  Empowering business with a comprehensive and customized
+                  digital solution, seamlessly connecting you with your audience
+                  for optimal efficiency.
+                </p>
+                <div className="elementor-social-icons-wrapper elementor-grid">
+                  <span className="elementor-grid-item">
+                    <Link
+                      className="elementor-social-icon wahtsapp"
+                      href="https://api.whatsapp.com/send/?phone=%2B14087865558&text&type=phone_number&app_absent=0"
+                      target="_blank"
+                    >
+                      <span className="elementor-screen-only">Whatsapp</span>
+                      <svg
+                        className="e-font-icon-svg e-fab-whatsapp"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                      </svg>
+                    </Link>
+                  </span>
+                  <span className="elementor-grid-item">
+                    <Link
+                      className="elementor-social-icon envelope"
+                      href="mailto:sales@nextupgrad.us"
+                      target="_blank"
+                    >
+                      <span className="elementor-screen-only">Envelope</span>
+                      <svg
+                        className="e-font-icon-svg e-fas-envelope"
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+                      </svg>
+                    </Link>
+                  </span>
+                  <span className="elementor-grid-item">
+                    <Link
+                      className="elementor-social-icon skype"
+                      href="https://join.skype.com/wsiGi9CXzLhD"
+                      target="_blank"
+                    >
+                      <span className="elementor-screen-only">Skype</span>
+                      <svg
+                        className="e-font-icon-svg e-fab-skype"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z" />
+                      </svg>
+                    </Link>
                   </span>
                 </div>
-                <div className="item2">
-                  <iframe
-                    width={560}
-                    height={315}
-                    src="https://www.youtube.com/embed/eIQ9JhJF3R8?si=fT6cHoKSIJRt1fJD"
-                    title="YouTube video player"
-                    frameBorder={0}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen=""
-                  />
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="testimonials mt-5 pt-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h2>Frequently Asked Questions</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section className="container pb-5  ">
-        <HomeAccordian />
-      </section>
-
-      <div className="holistic">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h3>
-                Seeking a holistic or customized digital solution for your
-                business?
-              </h3>
-              <p>
-                Empowering business with a comprehensive and customized digital
-                solution, seamlessly connecting you with your audience for
-                optimal efficiency.
-              </p>
-              <div className="elementor-social-icons-wrapper elementor-grid">
-                <span className="elementor-grid-item">
-                  <Link
-                    className="elementor-social-icon wahtsapp"
-                    href="https://api.whatsapp.com/send/?phone=%2B14087865558&text&type=phone_number&app_absent=0"
-                    target="_blank"
-                  >
-                    <span className="elementor-screen-only">Whatsapp</span>
-                    <svg
-                      className="e-font-icon-svg e-fab-whatsapp"
-                      viewBox="0 0 448 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-                    </svg>
-                  </Link>
-                </span>
-                <span className="elementor-grid-item">
-                  <Link
-                    className="elementor-social-icon envelope"
-                    href="mailto:sales@nextupgrad.us"
-                    target="_blank"
-                  >
-                    <span className="elementor-screen-only">Envelope</span>
-                    <svg
-                      className="e-font-icon-svg e-fas-envelope"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
-                    </svg>
-                  </Link>
-                </span>
-                <span className="elementor-grid-item">
-                  <Link
-                    className="elementor-social-icon skype"
-                    href="https://join.skype.com/wsiGi9CXzLhD"
-                    target="_blank"
-                  >
-                    <span className="elementor-screen-only">Skype</span>
-                    <svg
-                      className="e-font-icon-svg e-fab-skype"
-                      viewBox="0 0 448 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z" />
-                    </svg>
-                  </Link>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
