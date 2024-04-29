@@ -6,15 +6,15 @@ main {
 /*...........*/
 
 .flexContainer {
-  justify-items: center;
+  justify-content: center;
   display: flex;
   position: relative;
   gap: 1rem;
 }
-section {
+/* section {
   margin: 50px auto;
   width: 900px;
-}
+} */
 .cardContainer {
   height: 418px;
   width: 300px;
@@ -3001,7 +3001,7 @@ a.kickstart-button:hover {
 
 /*_______________portfolio-----------------*/
 #con {
-  min-height: 100%;
+  margin-top: -7.2rem;
   height: 100vh;
   /* padding-top: 230px;
   padding-bottom: 230px; */

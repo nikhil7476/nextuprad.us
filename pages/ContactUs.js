@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 const conatactus = () => {
   return (
     <>
@@ -101,13 +102,36 @@ const conatactus = () => {
             <div className="row">
               <h2>Visit Us At</h2>
               <div className="col-md-4">
-                <img src="usa1.webp" alt="image" />
+                <motion.div
+                  whileHover={{ scale: 1.1, zIndex: 1 }}
+                  className="image-container"
+                >
+                  <motion.img
+                    src="/usa1.webp"
+                    alt="image"
+                    initial={{ opacity: 0, scale: 0.5, x: "50%", y: "-50%" }}
+                    animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                  />
+                </motion.div>
                 <h3>USA</h3>
                 <h4>New York</h4>
                 <p>244 Fifth Avenue, Suite D261 New York, N.Y. 10001</p>
               </div>
               <div className="col-md-4">
-                <img src="abudabhi3.webp" alt="image" />
+                <motion.div
+                  whileHover={{ scale: 1.1, zIndex: 1 }}
+                  className="image-container"
+                >
+                  <motion.img
+                    src="/abudabhi3.webp"
+                    alt="image"
+                    initial={{ opacity: 0, scale: 0.5, x: "50%", y: "-50%" }}
+                    animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                  />
+                </motion.div>
+
                 <h3>UAE</h3>
                 <h4>Abu Dhabi</h4>
                 <p>
@@ -115,7 +139,19 @@ const conatactus = () => {
                 </p>
               </div>
               <div className="col-md-4">
-                <img src="lko2.webp" alt="image" />
+                <motion.div
+                  whileHover={{ scale: 1.1, zIndex: 1 }}
+                  className="image-container"
+                >
+                  <motion.img
+                    src="/lko2.webp"
+                    alt="image"
+                    initial={{ opacity: 0, scale: 0.5, x: "50%", y: "-50%" }}
+                    animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                  />
+                </motion.div>
+
                 <h3>INDIA</h3>
                 <h4>Lucknow, UP</h4>
                 <p>5/99 Vikas Khand Gomti Nagar, Lucknow,India</p>
