@@ -1,13 +1,20 @@
 import Link from "next/link";
+import { useInView } from "react-intersection-observer";
+import { useEffect, useState, useRef } from "react";
+import CountUp from "react-countup";
+import AdminSlider from "@/components/AdminSlider";
 const About = () => {
+  const { ref, inView } = useInView({ threshold: 0.1 });
+  const countUpRef = useRef(null);
   return (
     <>
-      <div className="aboutusmain">
-        <div className="aboutusbanner">
+      <main className="aboutusmain">
+        <AdminSlider />
+        {/* <div className="aboutusbanner">
           <h3>
             Welcome to NextUpgrad, Where Businesses Forge their Digital Destiny!
           </h3>
-        </div>
+        </div> */}
         <div className="sec-1">
           <hr className="solid" />
           <h1>About NextUpgrad USA</h1>
@@ -42,9 +49,20 @@ const About = () => {
           <hr className="solid" />
           <h2>Our Community</h2>
           <div className="sec-2-1">
-            <div className="sec-2-1-1">
-              <h1>60 +</h1>
-              <p>
+            <div className="sec-2-1-1" ref={ref}>
+              {inView && (
+                <CountUp
+                  className="homeCountup "
+                  start={0}
+                  end={60}
+                  duration={2.4}
+                  ref={countUpRef}
+                  redraw={true}
+                  suffix=" +"
+                />
+              )}
+
+              <p className="mt-3">
                 Expert Developers in
                 <br />
                 15
@@ -53,8 +71,18 @@ const About = () => {
               </p>
             </div>
             <div className="sec-2-1-2">
-              <h1>40 +</h1>
-              <p>
+              {inView && (
+                <CountUp
+                  className="homeCountup "
+                  start={0}
+                  end={60}
+                  duration={2.4}
+                  ref={countUpRef}
+                  redraw={true}
+                  suffix=" +"
+                />
+              )}
+              <p className="mt-3">
                 Digital Marketers in
                 <br />
                 10
@@ -63,8 +91,18 @@ const About = () => {
               </p>
             </div>
             <div className="sec-2-1-3">
-              <h1>450 +</h1>
-              <p>
+              {inView && (
+                <CountUp
+                  className="homeCountup "
+                  start={0}
+                  end={60}
+                  duration={2.4}
+                  ref={countUpRef}
+                  redraw={true}
+                  suffix=" +"
+                />
+              )}
+              <p className="mt-3">
                 Customer Served in
                 <br />
                 5+
@@ -75,16 +113,46 @@ const About = () => {
           </div>
           <div className="sec-2-2">
             <div className="sec-2-2-1">
-              <h1>10 +</h1>
-              <p>Quality Assurance Resources</p>
+              {inView && (
+                <CountUp
+                  className="homeCountup "
+                  start={0}
+                  end={10}
+                  duration={2.4}
+                  ref={countUpRef}
+                  redraw={true}
+                  suffix=" +"
+                />
+              )}
+              <p className="mt-3">Quality Assurance Resources</p>
             </div>
             <div className="sec-2-2-2">
-              <h1>400 +</h1>
-              <p>Client Satisfied</p>
+              {inView && (
+                <CountUp
+                  className="homeCountup "
+                  start={0}
+                  end={400}
+                  duration={2.4}
+                  ref={countUpRef}
+                  redraw={true}
+                  suffix=" +"
+                />
+              )}
+              <p className="mt-3">Client Satisfied</p>
             </div>
             <div className="sec-2-2-3">
-              <h1>75 +</h1>
-              <p>Technology Certified Resources</p>
+              {inView && (
+                <CountUp
+                  className="homeCountup "
+                  start={0}
+                  end={75}
+                  duration={2.4}
+                  ref={countUpRef}
+                  redraw={true}
+                  suffix=" +"
+                />
+              )}
+              <p className="mt-3">Technology Certified Resources</p>
             </div>
           </div>
         </div>
@@ -224,7 +292,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };
