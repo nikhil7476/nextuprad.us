@@ -927,10 +927,14 @@ export default function Home() {
                   <div className="grids">
                     {selectedVertical != null
                       ? renderFinalGrid.items.map((item, index) => (
-                          <span className="digiItems">{item}</span>
+                          <span key={index} className="digiItems">
+                            {item}
+                          </span>
                         ))
                       : subgrid[0].default.map((item, index) => (
-                          <span className="digiItems">{item}</span>
+                          <span key={index} className="digiItems">
+                            {item}
+                          </span>
                         ))}
                   </div>
                   <Form onSubmit={submitContactForm}>

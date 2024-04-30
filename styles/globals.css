@@ -992,7 +992,7 @@ span.elementor-screen-only {
 .ps-timeline-sec ol:before {
   content: " ";
   position: absolute;
-  width: 82%;
+  width: 80%;
   border: 2px solid #e1dcdc;
   left: 128px;
 }
@@ -1011,7 +1011,7 @@ span.elementor-screen-only {
   position: absolute;
   width: 200%;
   border: 2px solid #e76f51;
-  left: -420px;
+  left: -355px;
   top: 0px;
 }
 
@@ -1020,7 +1020,7 @@ span.elementor-screen-only {
   position: absolute;
   width: 300%;
   border: 2px solid #e76f51;
-  left: -690px;
+  left: -574px;
   top: 0px;
 }
 
@@ -1029,7 +1029,7 @@ span.elementor-screen-only {
   position: absolute;
   width: 400%;
   border: 2px solid #e76f51;
-  left: -930px;
+  left: -803px;
   top: 0px;
 }
 
