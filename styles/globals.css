@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 main {
   margin-top: -7.3rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.banner-main {
+  font-size: 50px;
+  font-weight: 700;
 }
 /*...........*/
 
@@ -265,14 +277,16 @@ main {
   padding: 50px 0px 0px 0px;
 }
 h1.digital-heading {
-  margin: 0px 375px 0px 0px;
-  padding: 10px 0px 10px 35px;
+  margin: 0px 0px 0px 0px;
+
+  padding: 10px 35px 10px 35px;
   background-color: #192733;
   border-radius: 15px 15px 15px 15px;
   color: #ffffff;
   font-family: "Montserrat", Sans-serif;
   font-size: 16px;
   font-weight: 700;
+  display: inline-block;
 }
 h2.design-heading {
   color: #000000;
@@ -281,6 +295,7 @@ h2.design-heading {
   font-weight: 500;
   line-height: 53px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 h2.design-heading span {
   font-weight: bold;
@@ -346,9 +361,14 @@ h2.design-heading span {
   display: block;
 }
 .Personalize {
-  padding: 60px 0px 70px 0px;
+  padding: 92px 0px 92px 0px;
   text-align: center;
   background: #fbf8f2;
+}
+
+.exploreSection {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .Personalize h2 {
@@ -905,7 +925,7 @@ button.owl-next {
 }
 .holistic {
   background-color: #fbf8f2;
-  padding: 50px 0px 50px 0px;
+  padding: 92px 0px 92px 0px;
 }
 .holistic h3 {
   color: #000000;
@@ -978,6 +998,7 @@ span.elementor-screen-only {
 }
 /*----------timeline----------*/
 .ps-timeline-sec {
+  margin-top: 5rem;
   position: relative;
   background: #fff;
 }
@@ -3045,7 +3066,7 @@ a.kickstart-button:hover {
   padding-top: 20px;
   letter-spacing: 2px;
   position: relative;
-  z-index: 99999;
+  z-index: 10;
 }
 
 .con1 p {
@@ -3056,7 +3077,7 @@ a.kickstart-button:hover {
   font-family: sans-serif;
   color: #fff;
   position: relative;
-  z-index: 99999;
+  z-index: 10;
 }
 
 #work {
@@ -3111,11 +3132,12 @@ a.kickstart-button:hover {
 }
 .blog-cat {
   background-color: #192733;
-  padding: 15px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
 }
 .blog-cat ul {
   display: flex;
   list-style-type: none;
+  margin: 0;
 }
 .blog-cat li {
   margin-left: 15px;
@@ -3125,6 +3147,7 @@ a.kickstart-button:hover {
   color: #e76f51;
 }
 .blog-cat li a {
+  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   color: white;
@@ -3135,7 +3158,7 @@ a.kickstart-button:hover {
   background-color: white;
   border-radius: 10px;
   border-bottom: 5px solid #e76f51;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .blog-img {
   overflow: hidden;
@@ -3149,6 +3172,7 @@ a.kickstart-button:hover {
   transition: all 1s ease;
 }
 .blog h2 a {
+  text-decoration: none;
   color: black;
   font-size: 25px;
   font-weight: 600;
@@ -3223,10 +3247,13 @@ a.kickstart-button:hover {
 }
 
 .blog h2 {
+  margin-bottom: 3rem;
+
   color: black;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 1.4em;
+  margin-top: 2rem;
 }
 
 .post5 {
@@ -3776,6 +3803,43 @@ footer h2 {
 
 /*contactus page css*/
 .blogMain {
-  margin-top: -4rem;
+  padding-top: 4rem;
+  background-color: #f9f9f9;
+  margin-top: -7.2rem;
 }
+/**/
+
+/*
+scrollbar css
+*/
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #397524 #DFE9EB;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 7px;
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  /* background: linear-gradient(
+    135deg,
+    rgba(231, 111, 81, 1) 0%,
+    rgba(242, 192, 85, 1) 100%
+  ); */
+  background-color: #e76f51;
+}
+
 /**/

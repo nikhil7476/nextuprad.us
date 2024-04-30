@@ -10,7 +10,7 @@ function AdminSlider() {
       id: 1,
     },
     {
-      text: "At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth",
+      text: "At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth.",
       id: 2,
     },
     {
@@ -18,7 +18,7 @@ function AdminSlider() {
       id: 3,
     },
     {
-      text: "At NextUpgrad, we don't just provide technology solutions; we craft digital success stories. Our mission is to turn your ideas into realities, elevate businesses into iconic brands, and turn challenges into opportunities. Rooted in the belief that innovation and excellence pave the way for the future, we're here to architect your journey to unparalleled success.",
+      text: "At NextUpgrad, we don't just provide technology solutions we craft digital success stories. Our mission is to turn your ideas into realities, elevate businesses into iconic brands, and turn challenges into opportunities. Rooted in the belief that innovation and excellence pave the way for the future, we're here to architect your journey to unparalleled success.",
       id: 4,
     },
   ];

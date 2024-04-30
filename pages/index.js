@@ -856,7 +856,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-white pt-4 pb-4">
+        <div className="bg-white  exploreSection">
           <div className="container pt-5">
             <h2 id="largeHeading">
               Explore the options of <br />
@@ -1058,7 +1058,7 @@ export default function Home() {
           </div>
         </div>
 
-        <d className="ps-timeline-sec">
+        <div className="ps-timeline-sec">
           <div className="container">
             <h2>Hiring Process for a Dedicated Developer</h2>
             <ol className="ps-timeline">
@@ -1114,7 +1114,7 @@ export default function Home() {
               </li>
             </ol>
           </div>
-        </d>
+        </div>
 
         <div className="deserve">
           <div className="container">

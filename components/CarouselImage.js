@@ -22,7 +22,16 @@ function CarouselImage({ src, alt, text }) {
         style={{ visibility: "hidden", height: 0, width: 0 }}
       />
       <div className="aboutSliderCaption">
-        <h3>{text}</h3>
+        <h3
+          className={`${
+            text ==
+            "Welcome to NextUpgrad, Where Businesses Forge their Digital Destiny!"
+              ? "banner-main"
+              : null
+          }`}
+        >
+          {text}
+        </h3>
       </div>
     </div>
   );

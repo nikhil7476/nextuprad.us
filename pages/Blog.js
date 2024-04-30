@@ -67,7 +67,7 @@ const blog = () => {
             </ul>
           </div>
           <div className="container">
-            <div className="sec-hd">
+            <div className="sec-hd g-5">
               <h1>BLOG</h1>
             </div>
             <div className="row">
