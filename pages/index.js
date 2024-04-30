@@ -709,13 +709,20 @@ export default function Home() {
                   Digital Transformation Services
                 </motion.h1>
                 <h2 className="design-heading">
-                  Designing<span>Websites</span>
-                  <br />
-                  Developing <span>Apps</span>
-                  <br />
-                  Engineering<span> Software</span>
-                  <br />
-                  Executing<span> Marketing Strategies</span>
+                  <p>
+                    Designing <span>Websites</span>
+                  </p>
+                  <p>
+                    Developing <span>Apps</span>
+                  </p>
+
+                  <p>
+                    Engineering<span> Software</span>
+                  </p>
+
+                  <p>
+                    Executing<span> Marketing Strategies</span>
+                  </p>
                 </h2>
               </div>
               <div className="col-md-5">

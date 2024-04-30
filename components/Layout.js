@@ -14,6 +14,7 @@ export function Layout({ children }) {
       <Header />
       {children}
       <Script src="/test.js" strategy="beforeInteractive" />
+      <Footer />
     </>
   );
 }
