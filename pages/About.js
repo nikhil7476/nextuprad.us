@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import CountUp from "react-countup";
 import AdminSlider from "@/components/AdminSlider";
 import Head from "next/head";
+
 const About = () => {
   const { ref, inView } = useInView({ threshold: 0.1 });
   const countUpRef = useRef(null);

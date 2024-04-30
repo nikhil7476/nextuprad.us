@@ -2,7 +2,7 @@ import Link from "next/link";
 const singlepost = () => {
   return (
     <>
-      <div className="main">
+      <main className="main">
         <div className="sec">
           <div className="container">
             <div className="row">
@@ -316,7 +316,7 @@ const singlepost = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };

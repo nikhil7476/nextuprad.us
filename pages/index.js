@@ -5,12 +5,15 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { Form, Button } from "react-bootstrap";
 import Cards from "@/components/Cards";
 import HomeAccordian from "@/components/HomeAccordian";
-import { motion } from "framer-motion";
+
 import { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import Head from "next/head";
+import { motion, useAnimation } from "framer-motion";
 
 export default function Home() {
+  // const controls = useAnimation();
+  // const { ref: sectionRef, inView: isSectionInView } = useInView();
   const { ref, inView } = useInView({ threshold: 0.1 });
   const countUpRef = useRef(null);
   const [selectedService, setSelectedService] = useState("Select Service");
@@ -648,6 +651,40 @@ export default function Home() {
 
   async function submitContactForm() {}
 
+  // useEffect(() => {
+  //   let lastScrollY = window.pageYOffset;
+  //   let ticking = false;
+
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.pageYOffset;
+  //     if (currentScrollY > lastScrollY) {
+  //       // Scrolling down
+  //       if (isSectionInView) {
+  //         controls.start("visible");
+  //       }
+  //     } else {
+  //       // Scrolling up, hide animation
+  //     }
+  //     lastScrollY = currentScrollY;
+  //   };
+
+  //   const scrollHandler = () => {
+  //     if (!ticking) {
+  //       window.requestAnimationFrame(() => {
+  //         handleScroll();
+  //         ticking = false;
+  //       });
+  //       ticking = true;
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", scrollHandler);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", scrollHandler);
+  //   };
+  // }, [controls, isSectionInView]);
+
   return (
     <>
       <Head>
@@ -1004,7 +1041,17 @@ export default function Home() {
             </section>
           </div>
         </div>
-
+        {/* 
+        <motion.section
+          ref={sectionRef}
+          initial="hidden"
+          animate={controls}
+          variants={{
+            visible: { scale: 1, opacity: 1 },
+            hidden: { scale: 0.8, opacity: 0 },
+          }}
+          transition={{ duration: 0.5 }}
+        > */}
         <div className="discover">
           <div className="container">
             <div className="row">
@@ -1064,6 +1111,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* </motion.section> */}
 
         <div className="ps-timeline-sec">
           <div className="container">

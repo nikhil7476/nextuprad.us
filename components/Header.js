@@ -2,6 +2,11 @@ import { useState, useEffect } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
+import "@szhsin/react-menu/dist/index.css";
+import "@szhsin/react-menu/dist/transitions/slide.css";
+import Router from "next/router";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
   const [activeTab, setActiveTab] = useState("Avengers");
@@ -32,7 +37,6 @@ const Header = () => {
       router.push("/Blog");
     }
 
-    e.preventDefault();
     setActiveTab(tabName);
   };
 
@@ -59,13 +63,34 @@ const Header = () => {
         >
           <i className="fas fa-hand-rock"></i>About Us
         </Link>
-        <a
-          href="#"
-          className={activeTab === "Services" ? "active" : ""}
-          onClick={(e) => handleTabClick(e, "Services")}
-        >
+        <span className={activeTab === "Services" ? "active" : ""}>
+          <Menu
+            className="headerSubmenu"
+            menuButton={<MenuButton>Services</MenuButton>}
+            transition
+          >
+            <MenuItem onClick={(e) => Router.push("/Hiring")}>
+              Hire Dedicated Developer
+            </MenuItem>
+            <MenuItem onClick={(e) => Router.push("/Hiring")}>
+              Website Development
+            </MenuItem>
+            <MenuItem onClick={(e) => Router.push("/Hiring")}>
+              Software Development
+            </MenuItem>
+            <MenuItem onClick={(e) => Router.push("/Mobile")}>
+              Mobile App Development
+            </MenuItem>
+            <MenuItem onClick={(e) => Router.push("/Marketing")}>
+              Digital Marketing
+            </MenuItem>
+          </Menu>
+          <MdKeyboardArrowDown />
+        </span>
+
+        {/* <a href="#" onClick={(e) => handleTabClick(e, "Services")}>
           <i className="fas fa-bolt"></i>Services
-        </a>
+        </a> */}
         <Link
           href="/ContactUs"
           className={activeTab === "Contact Us" ? "active" : ""}

@@ -36,12 +36,10 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div className="col-md-12 copyright">
-              <div className="row">
-                <div className="col-md-4 companycopy">
-                  Copyright © 2024 nextupgrad
-                </div>
-                <div className="col-md-4 social-footer">
+            <div className=" copyright">
+              <div className="footer-lastsec">
+                <div className=" companycopy">Copyright © 2024 nextupgrad</div>
+                <div className=" social-footer">
                   <Link
                     href="https://www.facebook.com/nextupgrad.usa/"
                     target="_blank"
@@ -115,7 +113,7 @@ const Footer = () => {
                     </svg>
                   </Link>
                 </div>
-                <div className="col-md-4 privacy">
+                <div className=" privacy">
                   <Link href="#">Privacy Policy</Link>
                 </div>
               </div>

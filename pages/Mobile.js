@@ -2,7 +2,7 @@ import Link from "next/link";
 const mobileapp = () => {
   return (
     <>
-      <div className="main">
+      <main className="main">
         <div className="main-sec">
           <div className="container">
             <div className="row">
@@ -407,7 +407,7 @@ const mobileapp = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };

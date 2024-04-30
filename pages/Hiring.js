@@ -2,7 +2,7 @@ import Link from "next/link";
 const hirededicateddeveloper = () => {
   return (
     <>
-      <section id="sec">
+      <main id="sec">
         <div className="sec1">
           <h1>
             Hire Dedicated <br />
@@ -31,7 +31,7 @@ const hirededicateddeveloper = () => {
         <div className="sec2">
           <img src="hire-banner.webp" alt="img" />
         </div>
-      </section>
+      </main>
       <section id="sect">
         <div className="sec1">
           <span className="line" />

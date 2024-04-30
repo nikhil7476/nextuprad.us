@@ -2,7 +2,7 @@ import Link from "next/link";
 const digitalmarketingservices = () => {
   return (
     <>
-      <div className="digital">
+      <main className="digital">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -25,7 +25,7 @@ const digitalmarketingservices = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
       <div className="holisticnew">
         <div className="container">
