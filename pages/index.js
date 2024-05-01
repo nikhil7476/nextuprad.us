@@ -5,15 +5,21 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { Form, Button } from "react-bootstrap";
 import Cards from "@/components/Cards";
 import HomeAccordian from "@/components/HomeAccordian";
-
+import { TypeAnimation } from "react-type-animation";
 import { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import Head from "next/head";
 import { motion, useAnimation } from "framer-motion";
 
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { FaLaravel } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import Paarticles from "@/components/Paarticles";
 export default function Home() {
-  // const controls = useAnimation();
-  // const { ref: sectionRef, inView: isSectionInView } = useInView();
+  const controls = useAnimation();
   const { ref, inView } = useInView({ threshold: 0.1 });
   const countUpRef = useRef(null);
   const [selectedService, setSelectedService] = useState("Select Service");
@@ -651,40 +657,6 @@ export default function Home() {
 
   async function submitContactForm() {}
 
-  // useEffect(() => {
-  //   let lastScrollY = window.pageYOffset;
-  //   let ticking = false;
-
-  //   const handleScroll = () => {
-  //     const currentScrollY = window.pageYOffset;
-  //     if (currentScrollY > lastScrollY) {
-  //       // Scrolling down
-  //       if (isSectionInView) {
-  //         controls.start("visible");
-  //       }
-  //     } else {
-  //       // Scrolling up, hide animation
-  //     }
-  //     lastScrollY = currentScrollY;
-  //   };
-
-  //   const scrollHandler = () => {
-  //     if (!ticking) {
-  //       window.requestAnimationFrame(() => {
-  //         handleScroll();
-  //         ticking = false;
-  //       });
-  //       ticking = true;
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", scrollHandler);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollHandler);
-  //   };
-  // }, [controls, isSectionInView]);
-
   return (
     <>
       <Head>
@@ -733,7 +705,43 @@ export default function Home() {
         <meta name="google" content="notranslate" />
       </Head>
       <main>
-        <div className="banner">
+        <div className="banner2">
+          <div className="container bannerContainer">
+            {/* <FaReact className="bannerIcon bannerIconReact " />
+            <FaNodeJs className="bannerIcon bannerIconNode" />
+            <FaPython className=" bannerIconpy" /> */}
+
+            <div className="newBannerMain">
+              <TypeAnimation
+                sequence={[
+                  "Designing Websites",
+                  2000,
+                  "Developing Apps",
+                  2000,
+                  "Engineering Software",
+                  2000,
+                ]}
+                wrapper="span"
+                cursor={true}
+                repeat={Infinity}
+                preRenderFirstString
+              />
+
+              <p>
+                Embark on a Journey of Excellence with NextUpgrad’s Innovative
+                Digital Solutions – Redefining <br /> Business Experiences Like
+                Never Before!
+              </p>
+              <Link className="Personalize-button2" href="#largeHeading">
+                Let's Discuss
+              </Link>
+            </div>
+            {/* <FaJava className=" bannerIconJava" />
+            <FaPhp className=" bannerIconphp" />
+            <FaLaravel className=" bannerIconlaravel" /> */}
+          </div>
+        </div>
+        {/* <div className="banner">
           <div className="container">
             <div className="row">
               <div className="col-md-7">
@@ -775,7 +783,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="achieved">
           <div className="container">
             <div className="row">

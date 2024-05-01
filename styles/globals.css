@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 main {
   margin-top: -7.3rem;
 }
@@ -315,6 +317,30 @@ body {
   margin-bottom: 0px;
   padding: 160px 60px 150px 60px;
 }
+.banner2 {
+  background-image: url("/banner3.jpg");
+  background-size: cover;
+  position: relative;
+  background-color: #fff;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: -22px;
+  margin-bottom: 0px;
+  padding: 128px 60px 150px 60px;
+}
+.banner2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.587) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  z-index: 1;
+}
 .banner .col-md-7 {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   padding: 50px 0px 0px 0px;
@@ -331,6 +357,7 @@ h1.digital-heading {
   font-weight: 700;
   display: inline-block;
 }
+
 h2.design-heading {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
@@ -449,6 +476,45 @@ h2.design-heading span {
 .Personalize-button:hover {
   color: #000000;
   background-color: #ffffff00;
+}
+.Personalize-button2 {
+  position: relative;
+  z-index: 12;
+  cursor: pointer;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #e76f51;
+  border-radius: 50px;
+  padding: 15px 30px 15px 30px;
+  color: #212529;
+  text-decoration: none;
+  margin-top: 50px;
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.Personalize-button2:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #e76f51;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #e76f51;
+  border-radius: 50px;
+  padding: 15px 30px 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 50px;
+  display: inline-block;
 }
 .discover {
   margin-top: 0px;
@@ -3889,4 +3955,99 @@ scrollbar css
   background-color: #e76f51;
 }
 
+/**/
+
+/*New Banner */
+.bannerIconNode {
+  font-size: 5rem;
+  position: absolute;
+  right: 0;
+  top: 5rem;
+
+  z-index: 12;
+  color: #fff;
+}
+.bannerIconJava {
+  font-size: 2.7rem;
+  position: absolute;
+  left: -2rem;
+  top: 12rem;
+
+  z-index: 12;
+  color: #fff;
+}
+.bannerIconpy {
+  font-size: 2.1rem;
+  position: absolute;
+  right: 10rem;
+
+  z-index: 12;
+  color: #fff;
+}
+.bannerIconReact {
+  position: relative;
+  font-size: 5rem;
+  z-index: 12;
+  color: #fff;
+}
+.bannerIconphp {
+  font-size: 3.7rem;
+  position: absolute;
+  top: 22rem;
+  left: 2rem;
+
+  z-index: 12;
+  color: #fff;
+}
+.bannerIconlaravel {
+  font-size: 3rem;
+  position: absolute;
+  right: -14px;
+  top: 18rem;
+
+  z-index: 12;
+  color: #fff;
+}
+.bannerContainer {
+  position: relative;
+}
+
+.newBannerMain {
+  margin-top: 8em;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.newBannerMain span {
+  font-size: 3.7em;
+  font-family: "Major Mono Display", monospace;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  position: relative;
+  z-index: 12;
+}
+.newBannerMain p {
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 12;
+}
+
+.bannerIcon {
+  animation: floatAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 /**/

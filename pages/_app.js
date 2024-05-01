@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Layout } from "@/components/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
+
 export default function App({ Component, pageProps, router }) {
   const variants = {
     hidden: { opacity: 0 },

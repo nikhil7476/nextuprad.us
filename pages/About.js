@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect, useState, useRef } from "react";
 import CountUp from "react-countup";
 import AdminSlider from "@/components/AdminSlider";
+import { motion } from "framer-motion";
 import Head from "next/head";
 
 const About = () => {
@@ -298,30 +299,31 @@ const About = () => {
               </div>
 
               <ul>
-                <li>
+                <motion.li whileHover={{ scale: 1.1 }}>
                   <img
                     src="/hubspot.png"
-                    className="hubsport"
+                    className="hubspot"
                     alt="hubspot-logo"
                   />
                   <h2>Certified Marketing Expert</h2>
-                </li>
-                <li>
+                </motion.li>
+
+                <motion.li whileHover={{ scale: 1.1 }}>
                   <img src="/adobe.png" className="adobe" alt="adobe-logo" />
                   <h2>Adobe Certified Professional</h2>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}>
                   <img
                     src="/Hubspot-Agency.png"
                     className="agency"
                     alt="hubspot-agency-logo"
                   />
                   <h2>Leading HubSpot Partner</h2>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}>
                   <img src="/pmp.png" className="pmplogo" alt="pmp-logo" />
                   <h2>Project Management Professional</h2>
-                </li>
+                </motion.li>
               </ul>
             </div>
           </div>
