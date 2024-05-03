@@ -111,11 +111,7 @@ const About = () => {
               )}
 
               <p className="mt-3">
-                Expert Developers in
-                <br />
-                15
-                <br />
-                Innovative.
+                Expert Developers in<br/>15 Innovative.
               </p>
             </div>
             <div className="sec-2-1-2">
@@ -131,11 +127,7 @@ const About = () => {
                 />
               )}
               <p className="mt-3">
-                Digital Marketers in
-                <br />
-                10
-                <br />
-                Different Verticals.
+                Digital Marketers in <br />10 Different Verticals.
               </p>
             </div>
             <div className="sec-2-1-3">
