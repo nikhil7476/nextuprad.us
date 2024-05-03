@@ -1540,6 +1540,7 @@ span.elementor-screen-only {
   font-family: "Montserrat", Sans-serif;
   font-size: 45px;
   font-weight: 600;
+  margin-top:20px;
 }
 .sec-3-1-2 p {
   font-size: 18px;
@@ -1775,7 +1776,7 @@ img.pmplogo {
   display: flex;
 } */
 
-#sect {
+#sec {
   display: flex;
   height: 100%;
   padding-top: 130px;
