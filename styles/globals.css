@@ -5111,7 +5111,20 @@ pre {
 .test2 {
   margin-top: 50px;
 }
+.testimonialContainer {
+  padding: 18px;
+}
 
+.testimonialContainer img {
+  width: 80px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 15px;
+}
+
+.testimonialContainer div {
+  margin-top: 15px;
+}
 @media screen and (min-width: 768px) {
   .carr-item {
     display: block;

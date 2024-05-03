@@ -1391,6 +1391,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <Cards />
 
         {/* <section className="articles-list">
@@ -1666,7 +1667,7 @@ export default function Home() {
         </ul>
       </section> */}
 
-        <div className="video_testimonials">
+        <div className="video_testimonials ">
           <div className="container">
             <h3>Video Testimonials</h3>
             <div

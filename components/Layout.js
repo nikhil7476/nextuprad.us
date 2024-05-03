@@ -22,7 +22,6 @@ export function Layout({ children }) {
         ></link>
       </Head>
       {children}
-      <Script src="/test.js" strategy="beforeInteractive" />
 
       <Footer />
     </>

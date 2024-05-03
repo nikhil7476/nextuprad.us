@@ -1,73 +1,96 @@
+import Tilt from "react-parallax-tilt";
+
 const Cards = () => {
   return (
-    <section>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <div className="flexContainer">
-        <div className="cardContainer">
+    <>
+      <div className="d-flex justify-content-center gap-5 my-5 ">
+        <Tilt
+          style={{
+            height: "320px",
+            backgroundColor: "#eed0c2",
+            borderRadius: "18px",
+            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+          }}
+        >
           <div
-            className="perspective-card"
-            data-decorator="PerspectiveCard"
-            data-ambient=""
+            style={{
+              height: "350px",
+              width: "350px",
+              backgroundColor: "#eed0c2",
+              borderRadius: "18px",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+            }}
           >
-            <div className="perspective-card__transformer">
-              <div className="perspective-card__artwork perspective-card__artwork--front">
-                <img src="/t1.png" />
+            <div className="testimonialContainer">
+              <img src="/team1.webp" alt="" />
+              <div>
+                <h5>BY GAZ BATTERSBY</h5>
+                <h6>GENERAL MANAGER</h6>
+                <p className="mt-4">
+                  We picked Nextupgrad to create our financial calculator app
+                  all the way from the beginning.Right from our first talk, we
+                  were super impressed with how professional, knowledgeable and
+                  commited they were to givig us really great results. Now our
+                  app is up and running, and the feedback from users is awesome!
+                </p>
               </div>
-              <div className="perspective-card__artwork perspective-card__artwork--rear">
-                {/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-fullview.png" /> */}
-              </div>
-              <div className="perspective-card__shine" />
             </div>
           </div>
-        </div>
-        <div className="cardContainer">
+        </Tilt>
+        <Tilt>
           <div
-            className="perspective-card"
-            data-decorator="PerspectiveCard"
-            data-ambient=""
+            style={{
+              height: "350px",
+              width: "350px",
+              backgroundColor: "#9b9b9b",
+              borderRadius: "18px",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+            }}
           >
-            <div className="perspective-card__transformer">
-              <div className="perspective-card__artwork perspective-card__artwork--front">
-                <img src="/t2.png" />
-
-                {/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/9b1b5b5-1.png" /> */}
+            <div className="testimonialContainer">
+              <img src="/team5.webp" alt="" />
+              <div>
+                <h5>BY GAZ BATTERSBY</h5>
+                <h6>GENERAL MANAGER</h6>
+                <p className="mt-4">
+                  We picked Nextupgrad to create our financial calculator app
+                  all the way from the beginning.Right from our first talk, we
+                  were super impressed with how professional, knowledgeable and
+                  commited they were to givig us really great results. Now our
+                  app is up and running, and the feedback from users is awesome!
+                </p>
               </div>
-              <div className="perspective-card__artwork perspective-card__artwork--rear">
-                {/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-fullview.png" /> */}
-              </div>
-              <div className="perspective-card__shine" />
             </div>
           </div>
-        </div>
-        <div className="cardContainer">
+        </Tilt>
+        <Tilt>
           <div
-            className="perspective-card"
-            data-decorator="PerspectiveCard"
-            data-ambient=""
+            style={{
+              height: "350px",
+              width: "350px",
+              backgroundColor: "#dcdcdc",
+              borderRadius: "18px",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+            }}
           >
-            <div className="perspective-card__transformer">
-              <div className="perspective-card__artwork perspective-card__artwork--front">
-                <img src="/t3.png" />
-                {/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/9b1b5b5-1.png" /> */}
+            <div className="testimonialContainer">
+              <img src="/team3.webp" alt="" />
+              <div>
+                <h5>BY GAZ BATTERSBY</h5>
+                <h6>GENERAL MANAGER</h6>
+                <p className="mt-4">
+                  We picked Nextupgrad to create our financial calculator app
+                  all the way from the beginning.Right from our first talk, we
+                  were super impressed with how professional, knowledgeable and
+                  commited they were to givig us really great results. Now our
+                  app is up and running, and the feedback from users is awesome!
+                </p>
               </div>
-              <div className="perspective-card__artwork perspective-card__artwork--rear">
-                {/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-fullview.png" /> */}
-              </div>
-              <div className="perspective-card__shine" />
             </div>
           </div>
-        </div>
+        </Tilt>
       </div>
-      <p></p>
-      <p></p>
-      <p></p>
-    </section>
+    </>
   );
 };
 
