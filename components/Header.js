@@ -53,7 +53,7 @@ const Header = () => {
           className={activeTab === "Home" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "Home")}
         >
-          <i className="fab fa-superpowers"></i>Home
+          Home
         </Link>
 
         <Link
@@ -61,7 +61,7 @@ const Header = () => {
           className={activeTab === "About Us" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "About Us")}
         >
-          <i className="fas fa-hand-rock"></i>About Us
+          About Us
         </Link>
         <span className={activeTab === "Services" ? "active" : ""}>
           <Menu
@@ -72,10 +72,10 @@ const Header = () => {
             <MenuItem onClick={(e) => Router.push("/Hiring")}>
               Hire Dedicated Developer
             </MenuItem>
-            <MenuItem onClick={(e) => Router.push("/Hiring")}>
+            <MenuItem onClick={(e) => Router.push("/website-design")}>
               Website Development
             </MenuItem>
-            <MenuItem onClick={(e) => Router.push("/Hiring")}>
+            <MenuItem onClick={(e) => Router.push("/software-development")}>
               Software Development
             </MenuItem>
             <MenuItem onClick={(e) => Router.push("/Mobile")}>
@@ -96,21 +96,21 @@ const Header = () => {
           className={activeTab === "Contact Us" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "Contact Us")}
         >
-          <i className="fas fa-burn"></i>Contact Us
+          Contact Us
         </Link>
         <Link
           href="/Portfolio"
           className={activeTab === "Portfolio" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "Portfolio")}
         >
-          <i className="fas fa-burn"></i>Portfolio
+          Portfolio
         </Link>
         <Link
           href="/Blog"
           className={activeTab === "Blog" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "Blog")}
         >
-          <i className="fas fa-burn"></i>Blog
+          Blog
         </Link>
         <a href="/ContactUs">
           <button id="header-btn">Let's Discuss</button>
