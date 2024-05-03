@@ -4617,3 +4617,9 @@ pre {
 }
 
 /*...............*/
+
+.footerSubmenu button {
+  background-color: #192733 !important;
+  color: #fff !important;
+  padding: 0;
+}
