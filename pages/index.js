@@ -17,7 +17,7 @@ import { FaPhp } from "react-icons/fa";
 import { FaLaravel } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
-import Paarticles from "@/components/Paarticles";
+
 export default function Home() {
   const controls = useAnimation();
   const { ref, inView } = useInView({ threshold: 0.1 });

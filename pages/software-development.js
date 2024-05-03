@@ -2,7 +2,7 @@ const Software = () => {
   return (
     <>
       <>
-        <main id="sec">
+        <main id="sect">
           <div className="sec1">
             <h1>
               <span className="sp">
@@ -23,7 +23,8 @@ const Software = () => {
             <p>
               From consultation through development, seamless integration, to
               steadfast
-              <br /> maintenance—we’ve got every facet in hand.
+              <br />
+              maintenance—we’ve got every facet in hand.
             </p>
           </div>
           <div className="uni2">
@@ -34,9 +35,11 @@ const Software = () => {
               <h1>Software Consulting</h1>
               <p>
                 Prepare for success in your software development project.
-                <br /> We specialize in seamless planning, execution, and <br />
+                <br />
+                We specialize in seamless planning, execution, and <br />
                 management. Our expertise extends to project change
-                <br /> management, ensuring professional and timely stakeholder{" "}
+                <br />
+                management, ensuring professional and timely stakeholder
                 <br />
                 communication.
                 <br />
@@ -52,7 +55,8 @@ const Software = () => {
                   <li>Platform Optimization</li>
                   <li>
                     Efficient Resource
-                    <br /> Allocation
+                    <br />
+                    Allocation
                   </li>
                   <li>
                     Smooth Implementation <br />
@@ -68,7 +72,8 @@ const Software = () => {
                   <li>Platform Optimization</li>
                   <li>
                     Efficient Resource
-                    <br /> Allocation
+                    <br />
+                    Allocation
                   </li>
                   <li>
                     Smooth Implementation <br />
@@ -83,7 +88,8 @@ const Software = () => {
               <h1>Custom Software Development</h1>
               <p>
                 Whether it’s building a new application or upgrading your
-                <br /> existing system, NextUpgrad’s expert software <br />
+                <br />
+                existing system, NextUpgrad’s expert software <br />
                 development team has the capacity and resources to deliver. From
                 initial design to
                 <br />
@@ -103,7 +109,8 @@ const Software = () => {
                   <li>Platform Optimization</li>
                   <li>
                     Efficient Resource
-                    <br /> Allocation
+                    <br />
+                    Allocation
                   </li>
                   <li>
                     Smooth Implementation <br />
@@ -119,7 +126,8 @@ const Software = () => {
                   <li>Platform Optimization</li>
                   <li>
                     Efficient Resource
-                    <br /> Allocation
+                    <br />
+                    Allocation
                   </li>
                   <li>
                     Smooth Implementation <br />
@@ -143,9 +151,11 @@ const Software = () => {
               </h1>
               <p>
                 Prepare for success in your software development project.
-                <br /> We specialize in seamless planning, execution, and <br />
+                <br />
+                We specialize in seamless planning, execution, and <br />
                 management. Our expertise extends to project change
-                <br /> management, ensuring professional and timely stakeholder{" "}
+                <br />
+                management, ensuring professional and timely stakeholder
                 <br />
                 communication.
                 <br />
@@ -161,7 +171,8 @@ const Software = () => {
                   <li>Platform Optimization</li>
                   <li>
                     Efficient Resource
-                    <br /> Allocation
+                    <br />
+                    Allocation
                   </li>
                   <li>
                     Smooth Implementation <br />
@@ -177,7 +188,8 @@ const Software = () => {
                   <li>Platform Optimization</li>
                   <li>
                     Efficient Resource
-                    <br /> Allocation
+                    <br />
+                    Allocation
                   </li>
                   <li>
                     Smooth Implementation <br />
@@ -191,10 +203,12 @@ const Software = () => {
             <div className="unim22">
               <h1>
                 Modernization of Legacy
-                <br /> Applications
+                <br />
+                Applications
               </h1>
               <p>
-                Upgrade your business by transforming outdated legacy <br />
+                Upgrade your business by transforming outdated legacy
+                <br />
                 applications with NextUpgrad’s modernization service. We
                 streamline and enhance your processes, making them agile and
                 efficient. Don’t let the complexity of legacy systems hold you
@@ -213,9 +227,11 @@ const Software = () => {
               <h1>Cloud App Development</h1>
               <p>
                 Prepare for success in your software development project.
-                <br /> We specialize in seamless planning, execution, and <br />
+                <br />
+                We specialize in seamless planning, execution, and <br />
                 management. Our expertise extends to project change
-                <br /> management, ensuring professional and timely stakeholder{" "}
+                <br />
+                management, ensuring professional and timely stakeholder
                 <br />
                 communication.
                 <br />
@@ -244,14 +260,15 @@ const Software = () => {
               <h1>STEP 1</h1>
               <p>
                 At the outset, let’s talk about your
-                <br /> business requirements and how we <br />
+                <br />
+                business requirements and how we <br />
                 can address them.
               </p>
               <ul>
                 <li>Time to endorse the NDA!</li>
                 <li>
                   We finalize business terms and <br />
-                  support structure.{" "}
+                  support structure.
                 </li>
               </ul>
             </div>
@@ -260,13 +277,15 @@ const Software = () => {
               <h1>STEP 2</h1>
               <p>
                 At the outset, let’s talk about your
-                <br /> business requirements and how we <br />
+                <br />
+                business requirements and how we <br />
                 can address them.
               </p>
               <ul>
                 <li>
                   We select the tools to be utilized
-                  <br /> throughout our collaboration.
+                  <br />
+                  throughout our collaboration.
                 </li>
                 <li>The kick-off meeting takes place.</li>
                 <li>
@@ -280,19 +299,23 @@ const Software = () => {
               <h1>STEP 3</h1>
               <p>
                 At the outset, let’s talk about your
-                <br /> business requirements and how we <br />
+                <br />
+                business requirements and how we <br />
                 can address them.
               </p>
               <ul>
                 <li>
                   Manage expectations and drive
-                  <br /> improvements—present!
+                  <br />
+                  improvements—present!
                 </li>
                 <li>You can reach our support anytime.</li>
                 <li>
                   …And your project is progressing
-                  <br /> seamlessly through an agile
-                  <br /> approach.
+                  <br />
+                  seamlessly through an agile
+                  <br />
+                  approach.
                 </li>
               </ul>
             </div>
@@ -316,11 +339,14 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
@@ -339,11 +365,14 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
@@ -359,16 +388,17 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
-          </div>
-          <div className="tech2">
             <div className="tech21">
               <div className="tec">
                 <div className="tech211">
@@ -381,11 +411,14 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
@@ -404,11 +437,14 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
@@ -428,16 +464,17 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
-          </div>
-          <div className="tech2">
             <div className="tech21">
               <div className="tec">
                 <div className="tech211">
@@ -450,11 +487,14 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
@@ -470,11 +510,14 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
@@ -490,11 +533,14 @@ const Software = () => {
               <div className="tech223">
                 <p>
                   .NET finds applications in web and
-                  <br /> desktop applications, cross-
                   <br />
-                  platform solutions, embedded <br />
+                  desktop applications, cross-
+                  <br />
+                  platform solutions, embedded
+                  <br />
                   systems, Web Services, distributed
-                  <br /> applications, and cloud solutions.
+                  <br />
+                  applications, and cloud solutions.
                 </p>
               </div>
             </div>
@@ -507,9 +553,9 @@ const Software = () => {
           </div>
           <div className="test2">
             <div className="container-fluid bg-body-tertiary py-3">
-              <div id="testimonialCarousel" className="carousel">
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
+              <div id="testimonialCarousel" className="carr">
+                <div className="carr-inner">
+                  <div className="carr-item active">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -526,7 +572,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">Jane Doe</h5>
@@ -538,7 +584,7 @@ const Software = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carr-item">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -555,7 +601,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">June Doe</h5>
@@ -567,7 +613,7 @@ const Software = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carr-item">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -584,7 +630,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">John Doe</h5>
@@ -596,7 +642,7 @@ const Software = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carr-item">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -613,7 +659,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">John Doe</h5>
@@ -625,7 +671,7 @@ const Software = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carr-item">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -642,7 +688,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">John Doe</h5>
@@ -654,7 +700,7 @@ const Software = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carr-item">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -671,7 +717,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">John Doe</h5>
@@ -683,7 +729,7 @@ const Software = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carr-item">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -700,7 +746,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">John Doe</h5>
@@ -712,7 +758,7 @@ const Software = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carr-item">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -729,7 +775,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">John Doe</h5>
@@ -741,7 +787,7 @@ const Software = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carr-item">
                     <div className="card shadow-sm rounded-3">
                       <div className="quotes display-2 text-body-tertiary">
                         <i className="bi bi-quote" />
@@ -758,7 +804,7 @@ const Software = () => {
                         <div className="d-flex align-items-center pt-2">
                           <img
                             src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carousel slider 2"
+                            alt="bootstrap testimonial carr slider 2"
                           />
                           <div>
                             <h5 className="card-title fw-bold">John Doe</h5>
@@ -771,14 +817,14 @@ const Software = () => {
                     </div>
                   </div>
                 </div>
-                {/* <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                {/* <button class="carr-control-prev" type="button" data-bs-target="#testimonialCarousel"
       data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carr-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+    <button class="carr-control-next" type="button" data-bs-target="#testimonialCarousel"
       data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carr-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button> */}
               </div>
