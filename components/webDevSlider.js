@@ -27,7 +27,7 @@ const WebDevSlider = () => {
             containerStyle={{
               width: "100%",
               display: "grid",
-              padding: "8rem 0",
+              padding: "10rem 1rem",
               gridTemplateColumns: "auto auto auto auto auto",
             }}
             globalFactorX={0.3}
