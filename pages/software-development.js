@@ -3,7 +3,7 @@ const Software = () => {
     <>
       <>
         <main id="sect">
-          <div className="sec1">
+          <div className="sect1">
             <h1>
               <span className="sp">
                 CUSTOM SOFTWARE

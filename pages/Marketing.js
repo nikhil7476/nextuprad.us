@@ -39,47 +39,44 @@ const digitalmarketingservices = () => {
               </p>
             </div>
             <div className="fourcolbox">
-              <div className="row">
-                <div className="col-md-3">
-                  <h2>
-                    <span>S</span>Strategizing
-                  </h2>
-                  <p>
-                    Collaborate to identify business goals, target audiences,
-                    and unique selling points. Develop a customized strategy
-                    through market research and competitor analysis.
-                  </p>
-                </div>
-                <div className="col-md-3">
-                  <h2>
-                    <span>E</span>Execution
-                  </h2>
-                  <p>
-                    Execute the strategic plan across various channels—SEO,
-                    social media, email, and PPC. Employ creative content and
-                    data-driven approaches to enhance brand visibility.
-                  </p>
-                </div>
-                <div className="col-md-3">
-                  <h2>
-                    <span>S</span>Surveillance
-                  </h2>
-                  <p>
-                    Regularly track and analyze key performance indicators using
-                    analytics tools. Provide clients with transparent reports
-                    and updates on the campaign’s progress.
-                  </p>
-                </div>
-                <div className="col-md-3">
-                  <h2>
-                    <span>O</span>Optimization
-                  </h2>
-                  <p>
-                    Continuously refine strategies based on performance
-                    insights, adapting to market changes for optimal campaign
-                    effectiveness.
-                  </p>
-                </div>
+              <div className="innerMarketingItems">
+                <h2>
+                  <span>S</span>Strategizing
+                </h2>
+                <p>
+                  Collaborate to identify business goals, target audiences, and
+                  unique selling points. Develop a customized strategy through
+                  market research and competitor analysis.
+                </p>
+              </div>
+              <div className="innerMarketingItems">
+                <h2>
+                  <span>E</span>Execution
+                </h2>
+                <p>
+                  Execute the strategic plan across various channels—SEO, social
+                  media, email, and PPC. Employ creative content and data-driven
+                  approaches to enhance brand visibility.
+                </p>
+              </div>
+              <div className="innerMarketingItems">
+                <h2>
+                  <span>S</span>Surveillance
+                </h2>
+                <p>
+                  Regularly track and analyze key performance indicators using
+                  analytics tools. Provide clients with transparent reports and
+                  updates on the campaign’s progress.
+                </p>
+              </div>
+              <div className="innerMarketingItems">
+                <h2>
+                  <span>O</span>Optimization
+                </h2>
+                <p>
+                  Continuously refine strategies based on performance insights,
+                  adapting to market changes for optimal campaign effectiveness.
+                </p>
               </div>
             </div>
           </div>
@@ -118,86 +115,86 @@ const digitalmarketingservices = () => {
                 From pin to plane, we’ve covered it all for you!
               </p>
             </div>
-            <div className="col-md-12 listing">
-              <ul>
-                <li>
-                  {" "}
-                  <img src="dg2.webp" />
-                  <h2>SEO Solution</h2>
-                  <p>
-                    Make sure you are on top of the digital race with innovative
-                    and custom strategies.
-                  </p>
-                </li>
-                <li>
-                  {" "}
-                  <img src="dg3.webp" />
-                  <h2>PPC Marketing</h2>
-                  <p>
-                    Advertise among the target audience and drive immediate,
-                    measurable results.
-                  </p>
-                </li>
-                <li>
-                  {" "}
-                  <img src="dg4.webp" />
-                  <h2>Assessment</h2>
-                  <p>
-                    We carve success by identifying trends and steering
-                    continual improvement.
-                  </p>
-                </li>
-                <li>
-                  {" "}
-                  <img src="dg5.webp" />
-                  <h2>AppPromo</h2>
-                  <p>
-                    We ensure that your app not only gets noticed but also
-                    receives the attention it deserves.
-                  </p>
-                </li>
-                <li>
-                  {" "}
-                  <img src="dg6.webp" />
-                  <h2>Social Marketing</h2>
-                  <p>
-                    Boost brand awareness with compelling content, a target
-                    campaign, and a strong social media presence.
-                  </p>
-                </li>
-                <li>
-                  {" "}
-                  <img src="dg7.webp" />
-                  <h2>Content Craft</h2>
-                  <p>
-                    Convey your brand story with an effective content strategy
-                    that engages your target audience and drives conversion.
-                  </p>
-                </li>
-                <li>
-                  {" "}
-                  <img src="dg8.webp" />
-                  <h2>VIDEO</h2>
-                  <p>
-                    We ensure high-quality shareable content that captivates
-                    your audience and enhances your brand's reach.
-                  </p>
-                </li>
-                <li>
-                  {" "}
-                  <img src="dg9.webp" />
-                  <h2>Email Marketng</h2>
-                  <p>
-                    We design and execute personalized campaigns to nurture
-                    leads and drive customer retention.
-                  </p>
-                </li>
-              </ul>
-              <Link class="listing-elementor-button" href="#">
-                Connect for Brand Transformation!
-              </Link>
-            </div>
           </div>
+          <section className="container  ">
+            <div className=" listing">
+              <div>
+                {" "}
+                <img src="dg2.webp" />
+                <h2>SEO Solution</h2>
+                <p>
+                  Make sure you are on top of the digital race with innovative
+                  and custom strategies.
+                </p>
+              </div>
+              <div>
+                {" "}
+                <img src="dg3.webp" />
+                <h2>PPC Marketing</h2>
+                <p>
+                  Advertise among the target audience and drive immediate,
+                  measurable results.
+                </p>
+              </div>
+              <div>
+                {" "}
+                <img src="dg4.webp" />
+                <h2>Assessment</h2>
+                <p>
+                  We carve success by identifying trends and steering continual
+                  improvement.
+                </p>
+              </div>
+              <div>
+                {" "}
+                <img src="dg5.webp" />
+                <h2>AppPromo</h2>
+                <p>
+                  We ensure that your app not only gets noticed but also
+                  receives the attention it deserves.
+                </p>
+              </div>
+              <div>
+                {" "}
+                <img src="dg6.webp" />
+                <h2>Social Marketing</h2>
+                <p>
+                  Boost brand awareness with compelling content, a target
+                  campaign, and a strong social media presence.
+                </p>
+              </div>
+              <div>
+                {" "}
+                <img src="dg7.webp" />
+                <h2>Content Craft</h2>
+                <p>
+                  Convey your brand story with an effective content strategy
+                  that engages your target audience and drives conversion.
+                </p>
+              </div>
+              <div>
+                {" "}
+                <img src="dg8.webp" />
+                <h2>VIDEO</h2>
+                <p>
+                  We ensure high-quality shareable content that captivates your
+                  audience and enhances your brand's reach.
+                </p>
+              </div>
+              <div>
+                {" "}
+                <img src="dg9.webp" />
+                <h2>Email Marketng</h2>
+                <p>
+                  We design and execute personalized campaigns to nurture leads
+                  and drive customer retention.
+                </p>
+              </div>
+            </div>
+            <Link class="listing-elementor-button" href="#">
+              Connect for Brand Transformation!
+            </Link>
+          </section>
         </div>
       </div>
       <div className="digital-box">
