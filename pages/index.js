@@ -10,6 +10,7 @@ import { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import Head from "next/head";
 import { motion, useAnimation } from "framer-motion";
+import Carousel from "react-bootstrap/Carousel";
 
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
@@ -1391,8 +1392,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <Cards />
+        <Carousel>
+          <Carousel.Item interval={1700}>
+            <Cards />
+          </Carousel.Item>
+          <Carousel.Item interval={1700}>
+            <Cards />
+          </Carousel.Item>
+          <Carousel.Item interval={1700}>
+            <Cards />
+          </Carousel.Item>
+        </Carousel>
 
         {/* <section className="articles-list">
         <ul className="articles-list__articles stacked">

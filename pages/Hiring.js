@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Form, Button } from "react-bootstrap";
+import styles from "../styles/Hiring.module.css";
 const hirededicateddeveloper = () => {
   return (
     <>
@@ -32,7 +34,56 @@ const hirededicateddeveloper = () => {
           <img src="hire-banner.webp" alt="img" />
         </div>
       </main>
-      <section id="sect">
+      <section className={`${styles.section2piy} `}>
+        <div className="container px-4">
+          <h1>Skills held by NextUpgrad's dedicated developers.</h1>
+          <p className="my-4">
+            Embark on a journey of unique solutions with a dedicated developer
+            from NextUpgrad. Our certified professionals are ready to connect
+            the dots and deliver top-notch quality at your service.
+          </p>
+          <div className={`${styles.innerSection} my-4`}>
+            <span>Theme Development</span>
+            <span>API Integration</span>
+            <span>Performance Optimization</span>
+            <span>Security Implementation</span>
+            <span>System Design & Architecture</span>
+            <span>Community & Social Engagement</span>
+          </div>
+        </div>
+        <div className="container px-4 ">
+          <Form className={`${styles.hiringForm}`}>
+            <Form.Group controlId="formName">
+              <Form.Label>Your name</Form.Label>
+              <Form.Control type="text" placeholder="Enter your name" />
+            </Form.Group>
+
+            <Form.Group controlId="formEmail">
+              <Form.Label>Your email</Form.Label>
+              <Form.Control type="email" placeholder="Enter your email" />
+            </Form.Group>
+
+            <Form.Group controlId="formSubject">
+              <Form.Label>Subject</Form.Label>
+              <Form.Control type="text" placeholder="Enter subject" />
+            </Form.Group>
+
+            <Form.Group controlId="formMessage">
+              <Form.Label>Your message (optional)</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={5}
+                placeholder="Enter your message"
+              />
+            </Form.Group>
+
+            <div className="d-flex justify-content-center">
+              <button className="w-100 mt-5 contactFormBtn">Submit</button>
+            </div>
+          </Form>
+        </div>
+      </section>
+      {/* <section id="sect">
         <div className="sec1">
           <span className="line" />
           <h1>
@@ -89,8 +140,8 @@ const hirededicateddeveloper = () => {
             <button id="btn2">Submit</button>
           </form>
         </div>
-      </section>
-      <section id="exp">
+      </section> */}
+      <section id="exp" className="container">
         <div className="exp1">
           <span className="line1" />
           <h1>Our Developer Expertise</h1>

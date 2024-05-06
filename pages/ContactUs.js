@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import { Form, Button } from "react-bootstrap";
 const conatactus = () => {
   return (
     <>
@@ -98,7 +99,7 @@ const conatactus = () => {
                         >
                           <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
                         </svg>{" "}
-                        Click Here
+                        <div>Click Here</div>
                       </Link>
                     </div>
                     <div className="col-md-6">
@@ -109,15 +110,17 @@ const conatactus = () => {
                         rel="nofollow"
                         className="svgbutton"
                       >
-                        <svg
-                          aria-hidden="true"
-                          className="e-font-icon-svg e-fas-phone-alt"
-                          viewBox="0 0 512 512"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
-                        </svg>{" "}
-                        Click Here
+                        <div>
+                          <svg
+                            aria-hidden="true"
+                            className="e-font-icon-svg e-fas-phone-alt "
+                            viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
+                          </svg>
+                          <div className="">Click Here</div>
+                        </div>
                       </Link>
                     </div>
                   </div>
@@ -222,23 +225,37 @@ const conatactus = () => {
                   <br />
                   We look forward to connecting with you!
                 </p>
-                <form action="">
-                  <label htmlFor="">Your name</label>
-                  <input type="text" name="your-name" />
-                  <label htmlFor="">Your email</label>
-                  <input type="email" name="Your email" />
-                  <label htmlFor="">Subject</label>
-                  <input type="text" name="Subject" />
-                  <label htmlFor="">Your message (optional)</label>
-                  <textarea
-                    name=""
-                    id=""
-                    cols={60}
-                    rows={17}
-                    defaultValue={""}
-                  />
-                  <button id="btn2">Submit</button>
-                </form>
+                <Form>
+                  <Form.Group controlId="formName">
+                    <Form.Label>Your name</Form.Label>
+                    <Form.Control type="text" placeholder="Enter your name" />
+                  </Form.Group>
+
+                  <Form.Group controlId="formEmail">
+                    <Form.Label>Your email</Form.Label>
+                    <Form.Control type="email" placeholder="Enter your email" />
+                  </Form.Group>
+
+                  <Form.Group controlId="formSubject">
+                    <Form.Label>Subject</Form.Label>
+                    <Form.Control type="text" placeholder="Enter subject" />
+                  </Form.Group>
+
+                  <Form.Group controlId="formMessage">
+                    <Form.Label>Your message (optional)</Form.Label>
+                    <Form.Control
+                      as="textarea"
+                      rows={5}
+                      placeholder="Enter your message"
+                    />
+                  </Form.Group>
+
+                  <div className="d-flex justify-content-center">
+                    <button className="w-100 mt-5 contactFormBtn">
+                      Submit
+                    </button>
+                  </div>
+                </Form>
               </div>
             </div>
           </div>
