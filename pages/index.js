@@ -930,10 +930,7 @@ export default function Home() {
                       <Dropdown.Item eventKey="Digital Marketing">
                         Digital Marketing
                       </Dropdown.Item>
-                      <Dropdown.Item
-                        eventKey="Website Service"
-                        href="#/action-2"
-                      >
+                      <Dropdown.Item eventKey="Website Service">
                         Website Service
                       </Dropdown.Item>
                       <Dropdown.Item
