@@ -31,7 +31,11 @@ const hirededicateddeveloper = () => {
           </div>
         </div>
         <div className="sec2">
-          <img src="hire-banner.webp" alt="img" />
+          <img
+            className={`${styles.bannerimg}`}
+            src="hire-banner.webp"
+            alt="img"
+          />
         </div>
       </main>
       <section className={`${styles.section2piy} `}>

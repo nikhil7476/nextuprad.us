@@ -1672,21 +1672,10 @@ img.pmplogo {
 /*about us end*/
 
 /*hirededicateddeveloper*/
-#sec {
-  display: flex;
-  height: 700px;
-  padding-top: 130px;
-  padding-left: 130px;
-  padding-right: 150px;
-}
 
 .part {
   display: flex;
   margin-top: 24px;
-}
-
-.sec1 {
-  width: 60%;
 }
 
 .sec1 h1 {
@@ -1779,13 +1768,18 @@ img.pmplogo {
 } */
 
 #sec {
-  display: flex;
-  height: 100%;
-  padding-top: 130px;
-  padding-left: 130px;
-  padding-right: 150px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 9rem;
+  gap: 2rem;
   padding-bottom: 130px;
   background-color: #fbf8f2;
+}
+
+#sec p {
+  font-size: 17px;
 }
 
 .line {
