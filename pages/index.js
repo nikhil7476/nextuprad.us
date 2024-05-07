@@ -933,19 +933,13 @@ export default function Home() {
                       <Dropdown.Item eventKey="Website Service">
                         Website Service
                       </Dropdown.Item>
-                      <Dropdown.Item
-                        eventKey="Software Service"
-                        href="#/action-3"
-                      >
+                      <Dropdown.Item eventKey="Software Service">
                         Software Service
                       </Dropdown.Item>
-                      <Dropdown.Item eventKey="Mobile App" href="#/action-3">
+                      <Dropdown.Item eventKey="Mobile App">
                         Mobile App
                       </Dropdown.Item>
-                      <Dropdown.Item
-                        eventKey="Custom Service"
-                        href="#/action-3"
-                      >
+                      <Dropdown.Item eventKey="Custom Service">
                         Custom Service
                       </Dropdown.Item>
                     </Dropdown.Menu>
