@@ -802,7 +802,7 @@ export default function Home() {
                         duration={2.4}
                         ref={countUpRef}
                         redraw={true}
-                        suffix=" +"
+                        suffix="+"
                       />
                     )}
 
@@ -817,7 +817,7 @@ export default function Home() {
                         duration={2.75}
                         ref={countUpRef}
                         redraw={true}
-                        suffix=" +"
+                        suffix="+"
                       />
                     )}
 
@@ -832,7 +832,7 @@ export default function Home() {
                         duration={3}
                         ref={countUpRef}
                         redraw={true}
-                        suffix=" +"
+                        suffix="+"
                       />
                     )}
 
@@ -847,7 +847,7 @@ export default function Home() {
                         duration={2.4}
                         ref={countUpRef}
                         redraw={true}
-                        suffix=" +"
+                        suffix="+"
                       />
                     )}
 
@@ -862,7 +862,7 @@ export default function Home() {
                         duration={2.4}
                         ref={countUpRef}
                         redraw={true}
-                        suffix=" +"
+                        suffix="+"
                       />
                     )}
 
@@ -877,7 +877,7 @@ export default function Home() {
                         duration={3}
                         ref={countUpRef}
                         redraw={true}
-                        suffix=" +"
+                        suffix="+"
                       />
                     )}
 
