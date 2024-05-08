@@ -1920,13 +1920,12 @@ img.pmplogo {
 }
 
 .expt2 {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   border-radius: 12px;
   /* border: 2px solid #CFCFCF; */
   padding: 30px;
   /* margin-top: 70px; */
-  margin-left: 70px;
-  margin-right: 130px;
 }
 
 #expt {
@@ -1952,7 +1951,7 @@ img.pmplogo {
   transition: 0.4s ease;
   padding: 30px 20px 30px 30px;
   border-radius: 12px;
-  margin-left: 20px;
+
   border: 2px solid #cfcfcf;
 }
 
@@ -1960,7 +1959,7 @@ img.pmplogo {
   transition: 0.4s ease;
   padding: 30px 20px 30px 30px;
   border-radius: 12px;
-  margin-left: 20px;
+
   border: 2px solid #cfcfcf;
 }
 
@@ -1968,7 +1967,7 @@ img.pmplogo {
   transition: 0.4s ease;
   padding: 30px 20px 30px 30px;
   border-radius: 12px;
-  margin-left: 20px;
+
   border: 2px solid #cfcfcf;
 }
 
@@ -1976,7 +1975,7 @@ img.pmplogo {
   transition: 0.4s ease;
   padding: 30px 20px 30px 30px;
   border-radius: 12px;
-  margin-left: 20px;
+
   border: 2px solid #cfcfcf;
 }
 
@@ -2003,6 +2002,8 @@ img.pmplogo {
 .expt2 h1 {
   margin-top: 20px;
   font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .expt2 p {
@@ -2022,13 +2023,6 @@ img.pmplogo {
   margin-top: 70px;
   margin-left: 130px;
   margin-left: 130px;
-}
-
-.expt1 {
-  /* padding-top: 130px; */
-  padding-left: 130px;
-  padding-right: 150px;
-  /* padding-bottom: 130px; */
 }
 
 .exp2 img {
@@ -5125,7 +5119,13 @@ pre {
 /**/
 
 /*media query piyush*/
-@media (max-width: 1000px) {
+@media (max-width: 1090px) {
+  #sec {
+    grid-template-columns: auto;
+  }
+  .sec2 {
+    display: none;
+  }
   .fourcolbox {
     display: grid;
     grid-template-columns: 1fr 1fr;

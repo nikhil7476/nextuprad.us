@@ -1,3 +1,5 @@
+import Cards from "@/components/Cards";
+import Carousel from "react-bootstrap/Carousel";
 const Software = () => {
   return (
     <>
@@ -546,291 +548,26 @@ const Software = () => {
             </div>
           </div>
         </section>
-        <section id="test">
-          <div className="test1">
-            <span className="line3" />
-            <h1>Testimonial</h1>
-          </div>
-          <div className="test2">
-            <div className="container-fluid bg-body-tertiary py-3">
-              <div id="testimonialCarousel" className="carr">
-                <div className="carr-inner">
-                  <div className="carr-item active">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">Jane Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carr-item">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">June Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carr-item">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">John Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carr-item">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">John Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carr-item">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">John Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carr-item">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">John Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carr-item">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">John Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carr-item">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">John Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carr-item">
-                    <div className="card shadow-sm rounded-3">
-                      <div className="quotes display-2 text-body-tertiary">
-                        <i className="bi bi-quote" />
-                      </div>
-                      <div className="card-body">
-                        <p className="card-text">
-                          "I can't thank NextUpgrad enough for the incredible
-                          software development service they provided. From the
-                          initial consultation to the final product, their team
-                          demonstrated a deep understanding of our industry. The
-                          result was a robust and user-friendly software that
-                          has significantly improved our operations."
-                        </p>
-                        <div className="d-flex align-items-center pt-2">
-                          <img
-                            src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
-                            alt="bootstrap testimonial carr slider 2"
-                          />
-                          <div>
-                            <h5 className="card-title fw-bold">John Doe</h5>
-                            <span className="text-secondary">
-                              CEO, Example Company
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* <button class="carr-control-prev" type="button" data-bs-target="#testimonialCarousel"
-      data-bs-slide="prev">
-      <span class="carr-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carr-control-next" type="button" data-bs-target="#testimonialCarousel"
-      data-bs-slide="next">
-      <span class="carr-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button> */}
+        <div className="testimonials mt-5 ">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2>Testimonials</h2>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+        <Carousel className="mb-5">
+          <Carousel.Item interval={1700}>
+            <Cards />
+          </Carousel.Item>
+          <Carousel.Item interval={1700}>
+            <Cards />
+          </Carousel.Item>
+          <Carousel.Item interval={1700}>
+            <Cards />
+          </Carousel.Item>
+        </Carousel>
       </>
     </>
   );
