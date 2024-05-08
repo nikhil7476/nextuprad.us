@@ -144,7 +144,10 @@ body {
 .szh-menu-button {
   border: 0;
   background-color: #fff;
-  color: #777;
+  font-family: "Montserrat", Sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
 }
 .NavImg {
   width: 100px;
@@ -190,6 +193,11 @@ body {
   position: relative;
   z-index: 1;
   transition-duration: 0.6s;
+  text-decoration: none !important;
+    font-family: "Montserrat", Sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .tabs a.active {
@@ -216,7 +224,13 @@ body {
     rgba(231, 111, 81, 1) 0%,
     rgba(242, 192, 85, 1) 100%
   );
-
+  .szh-menu-button {
+    text-decoration: none !important;
+    font-family: "Montserrat", Sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
   /* background: #05abe0;
   background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
   background: -webkit-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
@@ -571,6 +585,7 @@ h2.design-heading span {
   font-weight: 600;
   line-height: 63px;
   margin-bottom: 60px;
+  text-align: left;
 }
 .deserve h2::before {
   content: "";
@@ -1450,6 +1465,7 @@ span.elementor-screen-only {
   font-family: "Montserrat", Sans-serif;
   font-size: 45px;
   font-weight: 600;
+  color: #fff;
   line-height: 63px;
   margin-bottom: 60px;
 }
@@ -1513,9 +1529,10 @@ span.elementor-screen-only {
   background-color: #fbf8f2;
   padding: 100px 0px;
   color: #000000;
-  font-family: "Poppins", Sans-serif;
+  font-family: "Montserrat", Sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400; 
+  line-height: 30px;
 }
 .sec-3-1,
 .sec-3-2 {
@@ -1542,7 +1559,7 @@ span.elementor-screen-only {
   font-family: "Montserrat", Sans-serif;
   font-size: 45px;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 3px;
 }
 .sec-3-1-2 p {
   font-size: 18px;
@@ -1556,10 +1573,23 @@ span.elementor-screen-only {
   font-weight: 600;
 }
 .sec-3 img {
+  display: block;
+  margin: 0 auto;
+}
+.custmer-detail .col-md-6 {
+  margin-bottom: 30px;
+}
+.invoasionbox{
   width: 300px;
 }
+.custmer-detail h2 {
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
 .sec-3 .container {
-  padding: 0 10%;
+  padding: 0 0%;
 }
 .sec-3-2 .sec-3-2-2 {
   text-align: right;
@@ -2367,7 +2397,7 @@ img.pmplogo {
   padding: 5px 0px 5px 0px;
   background-color: #ffffff;
   text-align: center;
-  margin: 0 20%;
+  margin: 0 10%;
 }
 .digital p {
   text-align: center;
@@ -2703,10 +2733,10 @@ a.listing-elementor-button:hover {
   margin: 0 auto;
   border-radius: 12px;
   width: 222px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;    text-align: center;
 }
 .logosecond-box {
-  margin-top: 55px;
+  margin-top: 55px !important;
 }
 .accreditation .col-md-6 .logosecond-box span {
   background: #fff;
@@ -2714,7 +2744,7 @@ a.listing-elementor-button:hover {
   margin: 0 auto;
   border-radius: 12px;
   width: 222px;
-  margin-bottom: 10px;
+  margin-bottom: 10px;    text-align: center;
 }
 .accreditation .col-md-6 .lgofirstsection span img,
 .accreditation .col-md-6 .logosecond-box span img {
@@ -2803,15 +2833,20 @@ a.kickstart-button:hover {
   font-size: 45px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 67px 20px 67px;
+  position: relative;
 }
 .sec-two h2:before {
   content: " ";
-  width: 18%;
-  height: 5px;
+  width: 23%;
+  height: 4px;
   background-color: #e76f51;
   position: absolute;
-  left: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  top: -3px;
 }
 .sec-two p {
   text-align: center;
@@ -2893,6 +2928,8 @@ a.kickstart-button:hover {
   font-size: 45px;
   font-weight: 500;
   margin-bottom: 20px;
+  color: #000;
+  position: relative;
 }
 .sec-four h2:before {
   content: " ";
@@ -2900,13 +2937,17 @@ a.kickstart-button:hover {
   height: 5px;
   background-color: #e76f51;
   position: absolute;
-  left: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -11px;
 }
 .sec-four p {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 40px;
   margin-bottom: 40px;
+  color: #000;
 }
 .sec-four a {
   color: white;
@@ -2921,7 +2962,7 @@ a.kickstart-button:hover {
 }
 .sec-four a:hover {
   background-color: #02010100;
-  color: white;
+  color: #020101;
   text-decoration: none;
 }
 
@@ -2931,10 +2972,11 @@ a.kickstart-button:hover {
 }
 .sec-five h2 {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-size: 45px;
   font-weight: 600;
   margin-bottom: 20px;
+  position: relative;
 }
 .sec-five h2:before {
   content: " ";
@@ -2942,11 +2984,14 @@ a.kickstart-button:hover {
   height: 5px;
   background-color: #e76f51;
   position: absolute;
-  left: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -11px;
 }
 .sec-five p {
   text-align: center;
-  color: #000000;
+  color: #fff;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 40px;
@@ -2955,7 +3000,11 @@ a.kickstart-button:hover {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border: 6px solid #132733;
+  /*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);*/
+}
+.sec-five .row {
+  margin-bottom: 15px;
 }
 .brand-hd h2 {
   color: #000000;
@@ -3009,20 +3058,24 @@ a.kickstart-button:hover {
   display: none;
 }
 .coltwo {
-  display: flex;
+  /*display: flex;  gap: 10px;*/
   justify-content: center;
   vertical-align: middle;
-  gap: 10px;
+
 }
 .coltwo h2 {
-  color: #9b9b9b;
+  color: #9b9b9b !important;
   font-family: "Poppins", Sans-serif !important;
-  font-size: 58px;
-  font-weight: 700;
-  margin-bottom: 0px;
+  font-size: 58px !important;
+  font-weight: 700 !important;
+  margin-bottom: 0px !important;
+  line-height: 63px;
 }
 .coltwo h2:before {
   display: none;
+}
+.colone {
+  margin-bottom: 25px;
 }
 .coltwo img {
   width: 50px;
@@ -3033,6 +3086,15 @@ a.kickstart-button:hover {
   border-color: #ffffff;
   border-radius: 42px 42px 42px 42px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  float: left;
+  margin-right: 16px;
+}
+.mobilebox h2 {
+  color: #000000 !important;
+  font-family: "Montserrat", Sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px;
 }
 .pr-one {
   background-color: #21a371;
@@ -3081,6 +3143,7 @@ a.kickstart-button:hover {
   height: 5px;
   background-color: #e76f51;
   position: absolute;
+  top: -3px;
 }
 .sec-eight {
   text-align: center;
@@ -3091,15 +3154,19 @@ a.kickstart-button:hover {
   color: #000000;
   font-size: 45px;
   font-weight: 600;
-  margin-bottom: 20px;
+  position: relative;
+  margin: 0 55px 26px 55px;
 }
 .sec-eight h2:before {
   content: " ";
   width: 18%;
-  height: 5px;
+  height: 4px;
   background-color: #e76f51;
   position: absolute;
-  left: 45%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -5px;
 }
 .sec-eight p {
   color: #000000;
@@ -3637,12 +3704,15 @@ a.elementor-buttoncontact:hover {
   fill: #4658c0;
   transition: fill 0.3s;
   width: 18px !important;
+  float: left;
+  margin-right: 20px;
 }
 .contactdetails .col-md-6 a.svgbutton {
   font-family: "Montserrat", Sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #4658c0;
+  width: 100%;
 }
 .contactphone {
   padding: 50px 0px 70px 0px;
@@ -3652,6 +3722,13 @@ a.elementor-buttoncontact:hover {
   color: #ffffff;
   font-family: "Montserrat", Sans-serif;
   font-size: 40px;
+  font-weight: 600;
+}
+.contactphone a{
+  color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 25px;
+  margin-right: 95px;
   font-weight: 600;
 }
 .contactphone h2::before {
@@ -3869,7 +3946,8 @@ ul {
 
 .ftr-subs h2 {
   color: #fff;
-  font-size: 2.7rem;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1em;
   margin-bottom: 40px;
@@ -4207,27 +4285,52 @@ a:hover {
 }
 .sec-three h2 {
   color: #ffffff;
+  line-height: 58px;
+  position: relative;
   font-family: "Montserrat", Sans-serif;
   font-size: 45px;
   font-weight: 600;
-  line-height: 50px;
 }
 .sec-three h2:before {
   content: " ";
   width: 25%;
-  height: 5px;
+  height: 4px;
   background-color: #e76f51;
   position: absolute;
-  top: 8px;
+  top: -9px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 .sec-three p {
-  color: #ffffff;
+  color: #fff;
   font-family: "Montserrat", Sans-serif;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 120px;
+  margin-bottom: 0;
   margin-top: 20px;
 }
+.dev-col h2 {
+  font-size: 20px;
+  line-height: normal;
+  color: #000;
+  margin-top: 22px;
+}
+.col-md-3.dev-col {
+  background: #fff;
+  border-radius: 11px;
+  border: 8px solid #132733;
+  padding: 28px;
+}
+.dev-col p {
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
 .sec-three-btn {
   color: white;
   font-family: "Montserrat", Sans-serif;
@@ -4339,9 +4442,18 @@ a:hover {
   color: #000000;
   font-size: 45px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  position: relative;
+  font-family: "Montserrat", Sans-serif;
 }
-
+.sec-six h2:before {
+  content: " ";
+  width: 18%;
+  height: 4px;
+  background-color: #e76f51;
+  position: absolute;
+  top: -6px;
+}
 .sec-six-hd:before {
   content: " ";
   width: 18%;
@@ -4360,6 +4472,8 @@ a:hover {
   font-size: 45px;
   font-weight: 600;
   margin-bottom: 20px;
+  text-align: left;
+  position: relative;
 }
 .sec-sev-hd,
 .sec-six-hd {
@@ -4379,14 +4493,12 @@ a:hover {
   font-weight: 400;
   margin-bottom: 40px;
 }
-.skicon,
-.mlicon,
-.wpicon {
+.skicon, .mlicon, .wpicon {
   border-radius: 50px;
   color: white;
   background-color: #00aff0;
   font-size: 20px;
-  padding: 10px;
+  padding: 13px 16px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -5098,6 +5210,9 @@ pre {
 
 .testimonialContainer div {
   margin-top: 15px;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #dee2e6!important;
 }
 
 @media screen and (min-width: 768px) {

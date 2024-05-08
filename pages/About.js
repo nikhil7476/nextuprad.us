@@ -246,7 +246,7 @@ const About = () => {
                   </p>
                 </div>
                 <div className="col-md-6">
-                  <img src="/innovation.png" alt="image" />
+                  <img src="/innovation.png" className="invoasionbox"  alt="image" />
                 </div>
                 <div className="col-md-6">
                   <img src="/agile.png" alt="image" />

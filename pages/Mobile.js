@@ -281,7 +281,7 @@ const mobileapp = () => {
                   <img className="pr-one" src="/planner.png" alt="img" />
                   <h2>1</h2>
                 </div>
-                <div>
+                <div className="mobilebox">
                   <h2>Planner</h2>
                   <ul>
                     <li>Define project objectives.</li>
@@ -295,7 +295,7 @@ const mobileapp = () => {
                   <img className="pr-two" src="/blueprint.webp" alt="img" />
                   <h2>2</h2>
                 </div>
-                <div>
+                <div className="mobilebox">
                   <h2>Blueprinting</h2>
                   <ul>
                     <li>Create basic app structure.</li>
@@ -309,7 +309,7 @@ const mobileapp = () => {
                   <img className="pr-three" src="/app.webp" alt="img" />
                   <h2>3</h2>
                 </div>
-                <div>
+                <div className="mobilebox">
                   <h2>App Design</h2>
                   <ul>
                     <li>Develop visual style.</li>
@@ -323,7 +323,7 @@ const mobileapp = () => {
                   <img className="pr-four" src="/imple.webp" alt="img" />
                   <h2>4</h2>
                 </div>
-                <div>
+                <div className="mobilebox">
                   <h2>Implementation</h2>
                   <ul>
                     <li>Write required code.</li>
@@ -339,7 +339,7 @@ const mobileapp = () => {
                   <img className="pr-five" src="/testing.webp" alt="img" />
                   <h2>5</h2>
                 </div>
-                <div>
+                <div className="mobilebox">
                   <h2>Quality Analysis &amp; Testing</h2>
                   <ul>
                     <li>Conduct thorough testing.</li>
@@ -353,7 +353,7 @@ const mobileapp = () => {
                   <img className="pr-six" src="/play.webp" alt="img" />
                   <h2>6</h2>
                 </div>
-                <div>
+                <div className="mobilebox">
                   <h2>Set in Motion</h2>
                   <ul>
                     <li>Deploy to app stores.</li>
@@ -367,7 +367,7 @@ const mobileapp = () => {
                   <img className="pr-sev" src="/support.webp" alt="img" />
                   <h2>7</h2>
                 </div>
-                <div>
+                <div className="mobilebox">
                   <h2>Post-Service Support</h2>
                   <ul>
                     <li>Monitor app performance.</li>
