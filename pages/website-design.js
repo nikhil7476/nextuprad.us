@@ -1,4 +1,5 @@
 import WebDevSlider from "@/components/webDevSlider";
+import HomeAccordian from "@/components/HomeAccordian";
 import Head from "next/head";
 const Webdesign = () => {
   return (
@@ -370,67 +371,73 @@ const Webdesign = () => {
           </div>
         </div>
         <div className="clearfix" />
-        <div className="sec-five"> <div class="container">
-         
-          <div className="row">
-            <div className="col-md-5 sec-five-one">
-              <h2>Why Choose NextUpgrad?</h2>
-              <p>
-                We prioritize our customers’ best interests, incorporating
-                cutting-edge innovations and staying abreast of the latest
-                trends. Our services offer the freedom of personalization and
-                customization. Backed by our experience in delivering
-                excellence, we have earned recognition as a premier ‘Website
-                Solution Provider’ in the industry.
-              </p>
-            </div>
-            <div className="col-md-7 sec-five-two">
-              <div className="col-md-4">
-                <div className="icn-box">
-                  <img src="web1.webp" alt="" />
-                  <h3>5000 +</h3>
-                  <p>Happy Clients</p>
+        <div className="sec-five">
+          {" "}
+          <div class="container">
+            <div className="row">
+              <div className="col-md-5 sec-five-one">
+                <h2>Why Choose NextUpgrad?</h2>
+                <p>
+                  We prioritize our customers’ best interests, incorporating
+                  cutting-edge innovations and staying abreast of the latest
+                  trends. Our services offer the freedom of personalization and
+                  customization. Backed by our experience in delivering
+                  excellence, we have earned recognition as a premier ‘Website
+                  Solution Provider’ in the industry.
+                </p>
+              </div>
+              <div className="col-md-7 sec-five-two">
+                <div className="col-md-4">
+                  <div className="icn-box">
+                    <img src="web1.webp" alt="" />
+                    <h3>5000 +</h3>
+                    <p>Happy Clients</p>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="icn-box">
+                    <img src="web2.webp" alt="" />
+                    <h3>2500 +</h3>
+                    <p>Website Designed</p>
+                  </div>
+                  <div className="icn-box">
+                    <img src="web3.webp" alt="" />
+                    <h3>5 +</h3>
+                    <p>Countries</p>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="icn-box">
+                    <img src="web4.webp" alt="" />
+                    <h3>500 +</h3>
+                    <p>Professionals</p>
+                  </div>
+                  <div className="icn-box">
+                    <img src="web5.webp" alt="" />
+                    <h3>1500 +</h3>
+                    <p>
+                      Customized
+                      <br />
+                      Solutions
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="col-md-4">
-                <div className="icn-box">
-                  <img src="web2.webp" alt="" />
-                  <h3>2500 +</h3>
-                  <p>Website Designed</p>
-                </div>
-                <div className="icn-box">
-                  <img src="web3.webp" alt="" />
-                  <h3>5 +</h3>
-                  <p>Countries</p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="icn-box">
-                  <img src="web4.webp" alt="" />
-                  <h3>500 +</h3>
-                  <p>Professionals</p>
-                </div>
-                <div className="icn-box">
-                  <img src="web5.webp" alt="" />
-                  <h3>1500 +</h3>
-                  <p>
-                    Customized
-                    <br />
-                    Solutions
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div></div>
-         
-        </div>
-        <div className="sec-six">
-          <div className="container">
-            <div className="sec-six-hd">
-              <h2>Frequently Asked Questions</h2>
             </div>
           </div>
         </div>
+        <div className="testimonials mt-5 pt-5">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2>Frequently Asked Questions</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section className="container pb-5  ">
+          <HomeAccordian />
+        </section>
         <div className="sec-sev">
           <div className="container">
             <div className="sec-sev-hd">
