@@ -3256,8 +3256,8 @@ a.kickstart-button:hover {
 
 #work {
   min-height: 100%;
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -4768,12 +4768,13 @@ pre {
 }
 
 .work1 {
-  padding-top: 60px;
+ 
 }
 
 #uni {
   padding-left: 110px;
   padding-right: 150px;
+  padding-bottom: 150px;
   background-color: #fbf8f2;
 }
 
@@ -4804,12 +4805,11 @@ pre {
 }
 
 .uni1 p {
-  margin-top: 20px;
-  font-size: 17px;
-  letter-spacing: 1px;
-  line-height: 24px;
-  font-family: sans-serif;
-  color: #5f5d5d;
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .line {
@@ -4822,8 +4822,7 @@ pre {
 }
 
 .unid21 img {
-  height: 90%;
-  width: 90%;
+  width: 500px;
 }
 
 .uni2 {
@@ -4849,21 +4848,17 @@ pre {
 }
 
 .unimmm22 p {
-  margin-top: 20px;
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 28px;
-  font-family: sans-serif;
-  color: #5f5d5d;
+  color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .unii22 p {
-  margin-top: 20px;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
   font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 28px;
-  font-family: sans-serif;
-  color: #5f5d5d;
+  font-weight: 400;
 }
 
 .unimm22 h1 {
@@ -4876,12 +4871,10 @@ pre {
 }
 
 .unimm22 p {
-  margin-top: 20px;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
   font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 28px;
-  font-family: sans-serif;
-  color: #5f5d5d;
+  font-weight: 400;
 }
 
 .uni21 img {
@@ -4899,19 +4892,16 @@ pre {
 }
 
 .uni22 p {
-  margin-top: 20px;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
   font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 28px;
-  font-family: sans-serif;
-  color: #5f5d5d;
+  font-weight: 400;
 }
 
 .unili {
   display: flex;
   margin-top: 40px;
 }
-
 .unili ul {
   font-family: "Montserrat", Sans-serif;
   font-size: 18px;
@@ -4919,8 +4909,10 @@ pre {
   color: #5f5d5d;
   line-height: 30px;
   letter-spacing: 1px;
+  padding: 0;
+  margin: 15px 0 15px 20px;
+  text-align: left;
 }
-
 .unilm {
   margin-left: 20px;
 }
@@ -4962,12 +4954,10 @@ pre {
 }
 
 .unim22 p {
-  margin-top: 20px;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
   font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 32px;
-  font-family: sans-serif;
-  color: #5f5d5d;
+  font-weight: 400;
 }
 
 #work {
@@ -4984,8 +4974,18 @@ pre {
   letter-spacing: 2px;
   margin-top: 30px;
   line-height: 40px;
+  text-align: left;
+  position: relative;
 }
-
+.work1 h1::before {
+  content: "";
+  width: 20%;
+  display: block;
+  height: 4px;
+  background: #e76f51;
+  top: 20px;
+  position: absolute;
+}
 .line2 {
   content: " ";
   width: 12%;
@@ -5002,8 +5002,7 @@ pre {
 }
 
 .work21 {
-  width: 50%;
-  padding-left: 70px;
+  width: 100%;
 }
 
 .work21 img {
@@ -5038,7 +5037,12 @@ pre {
   margin-top: 30px;
   line-height: 30px;
 }
-
+.work21 ul li {
+  list-style: disc;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
 #tech {
   padding-left: 110px;
   padding-right: 150px;
@@ -5055,8 +5059,18 @@ pre {
   letter-spacing: 2px;
   margin-top: 30px;
   line-height: 40px;
+  text-align: left;
+  position: relative;
 }
-
+.tech1 h1::before {
+  content: "";
+  width: 20%;
+  display: block;
+  height: 4px;
+  background: #e76f51;
+  top: 20px;
+  position: absolute;
+}
 .tec {
   display: flex;
 }
@@ -5094,9 +5108,7 @@ pre {
   font-family: "Montserrat", Sans-serif;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 50px;
-  letter-spacing: 0.5px;
-  line-height: 30px;
+  padding: 60px 0px 0px 0px;
 }
 
 #test {
@@ -5130,14 +5142,16 @@ pre {
 }
 
 .unili li {
-  font-size: 16px;
-  font-weight: 400;
-  background: url("/icon.png");
+  background: url(/icon.png);
   background-size: 18px;
   background-repeat: no-repeat;
   list-style: none;
-  padding: 0 0 8px 30px;
+  padding: 0 0 8px 27px;
   margin: 0;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  color: #000000;
+  font-weight: 400;
   background-position: 0 5px;
 }
 

@@ -22,9 +22,7 @@ const Software = () => {
             <h1>Unique Service Array</h1>
             <p>
               From consultation through development, seamless integration, to
-              steadfast
-              <br />
-              maintenance—we’ve got every facet in hand.
+              steadfast maintenance—we’ve got every facet in hand.
             </p>
           </div>
           <div className="uni2">
@@ -36,12 +34,9 @@ const Software = () => {
               <p>
                 Prepare for success in your software development project.
                 <br />
-                We specialize in seamless planning, execution, and <br />
-                management. Our expertise extends to project change
+                We specialize in seamless planning, execution, and management. Our expertise extends to project change
                 <br />
-                management, ensuring professional and timely stakeholder
-                <br />
-                communication.
+                management, ensuring professional and timely stakeholder communication.
                 <br />
                 Our consultants guide you in
               </p>
@@ -49,35 +44,27 @@ const Software = () => {
                 <ul className="unilm">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
                 <ul className="unilo">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
               </div>
@@ -87,51 +74,34 @@ const Software = () => {
             <div className="unii22">
               <h1>Custom Software Development</h1>
               <p>
-                Whether it’s building a new application or upgrading your
-                <br />
-                existing system, NextUpgrad’s expert software <br />
-                development team has the capacity and resources to deliver. From
-                initial design to
-                <br />
-                system integration, scaling, and upgrades, we’ve got you
-                covered.
-                <br />
-                Partnering with NextUpgrad for custom software development
+                Whether it’s building a new application or upgrading your existing system, NextUpgrad’s expert software development team has the capacity and resources to deliver. From initial design to system integration, scaling, and upgrades, we’ve got you covered. Partnering with NextUpgrad for custom software development
                 empowers you to:
               </p>
               <div className="unili">
                 <ul className="unilm">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
                 <ul className="unilo">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
               </div>
@@ -146,54 +116,37 @@ const Software = () => {
             </div>
             <div className="unimm22">
               <h1>
-                Designing and Embedding ERP <br />
-                Solutions
+                Designing and Embedding ERP Solutions
               </h1>
               <p>
-                Prepare for success in your software development project.
-                <br />
-                We specialize in seamless planning, execution, and <br />
-                management. Our expertise extends to project change
-                <br />
-                management, ensuring professional and timely stakeholder
-                <br />
-                communication.
-                <br />
-                Our consultants guide you in
+                Prepare for success in your software development project. 
+                We specialize in seamless planning, execution, and management. Our expertise extends to project change management, ensuring professional and timely stakeholder communication.  Our consultants guide you in
               </p>
               <div className="unili">
                 <ul className="unilm">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
                 <ul className="unilo">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
               </div>
@@ -202,17 +155,11 @@ const Software = () => {
           <div className="uni2">
             <div className="unim22">
               <h1>
-                Modernization of Legacy
-                <br />
-                Applications
+                Modernization of Legacy Applications
               </h1>
               <p>
-                Upgrade your business by transforming outdated legacy
-                <br />
-                applications with NextUpgrad’s modernization service. We
-                streamline and enhance your processes, making them agile and
-                efficient. Don’t let the complexity of legacy systems hold you
-                back—embrace innovation with our tailored solutions.
+                Upgrade your business by transforming outdated legacy applications with NextUpgrad’s modernization service. We
+                streamline and enhance your processes, making them agile and efficient. Don’t let the complexity of legacy systems hold you back—embrace innovation with our tailored solutions.
               </p>
             </div>
             <div className="uni21">
@@ -221,21 +168,12 @@ const Software = () => {
           </div>
           <div className="uni2">
             <div className="unid21">
-              <img src="development-services.svg" alt="" />
+              <img src="/development-services.svg" alt="" />
             </div>
             <div className="unimmm22">
               <h1>Cloud App Development</h1>
               <p>
-                Prepare for success in your software development project.
-                <br />
-                We specialize in seamless planning, execution, and <br />
-                management. Our expertise extends to project change
-                <br />
-                management, ensuring professional and timely stakeholder
-                <br />
-                communication.
-                <br />
-                Our consultants guide you in
+                Prepare for success in your software development project. We specialize in seamless planning, execution, and management. Our expertise extends to project change management, ensuring professional and timely stakeholder communication. Our consultants guide you in
               </p>
               <div className="unili">
                 <ul className="unilm">
@@ -250,8 +188,7 @@ const Software = () => {
           </div>
         </section>
         <section id="work">
-          <div className="work1">
-            <span className="line2" />
+          <div className="work1">           
             <h1>How do we work?</h1>
           </div>
           <div className="work2">
@@ -323,7 +260,6 @@ const Software = () => {
         </section>
         <section id="tech">
           <div className="tech1">
-            <span className="line2" />
             <h1>Primary Coding Technologies</h1>
           </div>
           <div className="tech2">
@@ -337,16 +273,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                <p>.NET finds applications in web and desktop applications, cross-platform solutions, embedded systems, Web Services, distributed applications, and cloud solutions.
                 </p>
               </div>
             </div>
@@ -357,22 +284,13 @@ const Software = () => {
                 </div>
                 <div className="tech222">
                   <h1>
-                    .NET <br />
-                    CORE
+                    .NET CORE
                   </h1>
                 </div>
               </div>
               <div className="tech223">
                 <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                .NET Core finds applications in diverse software development projects, including cloud-based applications, IoT applications, mobile app back-ends, cross-platform libraries, websites, and more.
                 </p>
               </div>
             </div>
@@ -387,15 +305,7 @@ const Software = () => {
               </div>
               <div className="tech223">
                 <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                C# stands as a versatile programming language crafted by Microsoft, ideal for developing web and cross-platform applications, as well as tailored FinTech and RegTech software solutions.
                 </p>
               </div>
             </div>
@@ -409,16 +319,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                <p>Go, also known as Golang, is a statically typed, compiled programming language developed by Google. It provides memory safety and structural typing, similar to Java.
                 </p>
               </div>
             </div>
@@ -435,16 +336,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                <p>Our UX/UI design team develops digital products that align with your business objectives, viewing the product through the eyes of the user.
                 </p>
               </div>
             </div>
@@ -454,24 +346,12 @@ const Software = () => {
                   <img src="pr6.webp" alt="" />
                 </div>
                 <div className="tech222">
-                  <h1>
-                    FRONT-
-                    <br />
-                    END
-                  </h1>
+                  <h1>FRONT-END</h1>
                 </div>
               </div>
               <div className="tech223">
                 <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                Front-end web development revolves around creating a user-friendly interface. Our chosen front-end technologies include JavaScript, TypeScript, AngularJS, and ReactJS.
                 </p>
               </div>
             </div>
@@ -485,16 +365,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                <p>Java software development encompasses web, back-end, mobile development, and standalone software creation.
                 </p>
               </div>
             </div>
@@ -508,16 +379,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                <p>Developing software for mobile applications on Android and iOS platforms.
                 </p>
               </div>
             </div>
@@ -531,16 +393,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
+                <p>PHP, an open-source scripting language, is excellent for various web development projects.
                 </p>
               </div>
             </div>
