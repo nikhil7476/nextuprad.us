@@ -2823,14 +2823,15 @@ a.kickstart-button:hover {
   padding: 100px 0px 100px 0px;
 }
 .sec-two h2 {
-  color: #000000;
-  font-size: 45px;
-  font-weight: 500;
-  text-align: center;
-  margin: 0 67px 20px 67px;
+  margin: 23px 0 0 0;
   position: relative;
+  color: #4E515C;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 18px;
 }
-.sec-two h2:before {
+/*.sec-two h2:before {
   content: " ";
   width: 23%;
   height: 4px;
@@ -2841,13 +2842,14 @@ a.kickstart-button:hover {
   text-align: center;
   margin: 0 auto;
   top: -3px;
-}
+}*/
 .sec-two p {
-  text-align: center;
-  color: #000000;
-  font-size: 18px;
-  font-weight: 400;
+  text-align: left;
   margin-bottom: 40px;
+  color: #4E515C;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .sec-two-lis li {
   font-size: 18px;
@@ -2860,11 +2862,11 @@ a.kickstart-button:hover {
   margin: 0 0 8px 0;
   background-position: 0 5px;
 }
-.sec-three {
+/*.sec-three {
   background-color: #fbf8f2;
   padding: 100px 0px 100px 0px;
   text-align: center;
-}
+}*/
 .sec-three h2 {
   color: #000000;
   font-size: 45px;
@@ -2912,19 +2914,12 @@ a.kickstart-button:hover {
   width: 80px;
   height: 80px;
 }
-.sec-four {
+/*.sec-four {
   text-align: center;
   color: white;
   background-color: #192733;
   padding: 100px 0px 100px 0px;
-}
-.sec-four h2 {
-  font-size: 45px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  color: #000;
-  position: relative;
-}
+}*/
 .sec-four h2:before {
   content: " ";
   width: 18%;
@@ -2936,6 +2931,14 @@ a.kickstart-button:hover {
   margin: 0 auto;
   top: -11px;
 }
+.sec-four h2 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #000;
+  position: relative;
+}
+
 .sec-four p {
   font-size: 18px;
   font-weight: 400;
@@ -4230,14 +4233,15 @@ a:hover {
   font-weight: 600;
   line-height: 63px;
   margin-bottom: 30px;
+  position: relative;
 }
 .sec-two h1:before {
   content: " ";
-  width: 18%;
+  width: 22%;
   height: 5px;
   background-color: #e76f51;
   position: absolute;
-  /* top: 100px; */
+  top: -9px;
 }
 .sec-two-btn {
   color: #fff;
@@ -4267,6 +4271,7 @@ a:hover {
 }
 .img-box:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 27px;
 }
 .sec-two-box img {
   height: 70px;
@@ -4292,7 +4297,7 @@ a:hover {
   background-color: #e76f51;
   position: absolute;
   top: -9px;
-  margin: 0 auto;
+  margin: 0;
   left: 0;
   right: 0;
 }
@@ -4336,6 +4341,8 @@ a:hover {
   border-color: #e76f51;
   border-radius: 30px 30px 30px 30px;
   padding: 15px 25px 15px 25px;
+  margin-top: 110px !important;
+  display: inline-block;
 }
 .sec-three-btn:hover {
   color: white;
@@ -4347,7 +4354,7 @@ a:hover {
   background-color: #fbf8f2;
 }
 .sec-four-two {
-  padding-top: 50px;
+  padding-top: 400px;
   text-align: center;
 }
 .sec-four-two h2 {
@@ -4355,6 +4362,9 @@ a:hover {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+.sec-four-two h2:before{
+display: none;
 }
 .sec-four-two a {
   color: #fff;
@@ -4366,6 +4376,9 @@ a:hover {
   border-color: #e76f51;
   border-radius: 30px 30px 30px 30px;
   padding: 15px 35px 15px 35px;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
 }
 .sec-four-two a:hover {
   color: black;
@@ -4565,6 +4578,9 @@ a:hover {
 .flip-card-back ul {
   font-size: 16px;
 }
+.flip-card-back ul li {
+  list-style: disc;
+}
 /* .flip-row{
   display: flex;
   gap: 20px;
@@ -4648,7 +4664,7 @@ pre {
   content: "";
   position: absolute;
   top: 0;
-  left: -13px;
+  left: 8px;
   width: 2px;
   height: 100%;
   background: #dfcbc3;
