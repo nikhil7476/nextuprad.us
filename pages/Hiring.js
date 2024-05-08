@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Form, Button } from "react-bootstrap";
 
+import styles from "../styles/Hiring.module.css"
+
 const hirededicateddeveloper = () => {
   return (
     <>
@@ -225,7 +227,7 @@ const hirededicateddeveloper = () => {
           </div>
 
           <div className="exp21">
-            <SlBadge />
+            
             <h1>Quality Assurance</h1>
             <p>
               NextUpgrad's dedicated developers are committed to delivering
@@ -234,7 +236,7 @@ const hirededicateddeveloper = () => {
             </p>
           </div>
           <div className="exp21">
-            <GiReceiveMoney />
+           
             <h1>Trimmed Admin Costs</h1>
             <p>
               Minimize the burden of project management tasks as NextUpgrad
@@ -243,7 +245,7 @@ const hirededicateddeveloper = () => {
             </p>
           </div>
           <div className="exp21">
-            <PiFileMagnifyingGlass />
+           
             <h1>Focused Attention</h1>
             <p>
               A dedicated developer provides undivided attention to your

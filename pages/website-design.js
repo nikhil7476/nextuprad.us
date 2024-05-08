@@ -370,8 +370,8 @@ const Webdesign = () => {
           </div>
         </div>
         <div className="clearfix" />
-        <div className="sec-five">
-          {/* <div class="container"> */}
+        <div className="sec-five"> <div class="container">
+         
           <div className="row">
             <div className="col-md-5 sec-five-one">
               <h2>Why Choose NextUpgrad?</h2>
@@ -421,8 +421,8 @@ const Webdesign = () => {
                 </div>
               </div>
             </div>
-          </div>
-          {/* </div> */}
+          </div></div>
+         
         </div>
         <div className="sec-six">
           <div className="container">
