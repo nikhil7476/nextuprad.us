@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HomeAccordian from "@/components/HomeAccordian";
 const mobileapp = () => {
   return (
     <>
@@ -383,6 +384,9 @@ const mobileapp = () => {
           <div className="container">
             <h2>Frequently Asked Questions</h2>
           </div>
+          <section className="container pb-5  ">
+            <HomeAccordian />
+          </section>
         </div>
         <div className="sec-eight">
           <div className="container">
