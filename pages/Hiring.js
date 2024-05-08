@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Form, Button } from "react-bootstrap";
-import styles from "../styles/Hiring.module.css";
+
 const hirededicateddeveloper = () => {
   return (
     <>
@@ -145,12 +145,12 @@ const hirededicateddeveloper = () => {
           </form>
         </div>
       </section> */}
-      <section id="exp" className="container">
+      <section id="exp" className="mx-5">
         <div className="exp1">
           <span className="line1" />
           <h1>Our Developer Expertise</h1>
         </div>
-        <div className="exp2">
+        <div className={`${styles.exp2}`}>
           <div className="exp211">
             <img src="hire1 (1).webp" alt="" />
             <p>
@@ -190,7 +190,7 @@ const hirededicateddeveloper = () => {
         </div>
       </section>
       <section id="expt">
-        <div className="expt1">
+        <div className="expt1 mx-5">
           <span className="line1" />
           <h1>
             Benefits of hiring dedicated resource from
@@ -223,31 +223,32 @@ const hirededicateddeveloper = () => {
               collaborative development along with BitBucket, etc
             </p>
           </div>
-        </div>
-        <div className="expt2">
+
           <div className="exp21">
-            <img src="ded1.webp" alt="" />
-            <h1>Expertise and Experience</h1>
+            <SlBadge />
+            <h1>Quality Assurance</h1>
             <p>
-              Proficiency in building and styling web pages, along with
-              interactivity using JavaScript and libraries like React, Angular,
-              or Vue.js.
+              NextUpgrad's dedicated developers are committed to delivering
+              high-quality code, reducing the likelihood of errors and ensuring
+              a robust final product.
             </p>
           </div>
           <div className="exp21">
-            <img src="ded2.webp" alt="" />
-            <h1>Cost-Efficiency</h1>
+            <GiReceiveMoney />
+            <h1>Trimmed Admin Costs</h1>
             <p>
-              Competence in server-side language, such as Node.js, Python
-              (Django/Flask), Ruby (Ruby on Rails), Java, or PHP.
+              Minimize the burden of project management tasks as NextUpgrad
+              takes care of administrative responsibilities, allowing you to
+              focus on core business activities.
             </p>
           </div>
           <div className="exp21">
-            <img src="ded3.webp" alt="" />
-            <h1>Flexibility and Scalability</h1>
+            <PiFileMagnifyingGlass />
+            <h1>Focused Attention</h1>
             <p>
-              Strong knowledge of version control systems, especially Git, for
-              collaborative development along with BitBucket, etc
+              A dedicated developer provides undivided attention to your
+              project, fostering a deeper understanding of your goals and
+              requirements.
             </p>
           </div>
         </div>
