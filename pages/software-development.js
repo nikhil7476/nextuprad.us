@@ -401,7 +401,6 @@ const Software = () => {
         </section>
         <section id="test">
           <div className="test1">
-            <span className="line3" />
             <h1>Testimonial</h1>
           </div>
           <div className="test2">
