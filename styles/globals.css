@@ -5373,5 +5373,53 @@ pre {
 }
 }
 @media screen and (max-width: 991px) {
-  
+  .container, .container-md, .container-sm {
+    max-width: 900px !important;
+}
+.ps-timeline-sec .container ol.ps-timeline li .ps-top {
+  margin-left: 20px;
+}
+.ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+  margin-left: 23px;
+}
+.contactimg img {
+  width: 100%;
+}
+.Hiring_innerSection__knmpc {
+  grid-template-columns: auto auto !important;
+}
+.col-md-6.time-sidebar {
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+.time-sidebar h3 {
+  -webkit-margin-before: 0em;
+  margin-block-start: 0;
+  -webkit-margin-after: 0em;
+  margin-block-end: 0;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;    background: #fcf8f2;
+}
+
+.time-sidebar p {
+  margin-top: 0;    background: #fcf8f2;
+}
+.time-sidebar {
+  position: static !important;
+    height: 2vh;
+    min-height: 179px !important;
+}
+.uni21 img {
+  margin-top: 60px;
+  margin-left: -20px;
+  width: 302px;
+}
+.mobile-second .col-md-6 img {
+  width: 100%;
+}
+}
+@media screen and (max-width: 941px) {
 }
