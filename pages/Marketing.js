@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FaqDigitalMarketing from "@/components/FaqDigitalMarketing";
 const digitalmarketingservices = () => {
   return (
     <>
@@ -1359,6 +1360,18 @@ const digitalmarketingservices = () => {
           </div>
         </div>
       </div>
+      <div className="testimonials mt-5 pt-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h2>Frequently Asked Questions</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section className="container pb-5  ">
+        <FaqDigitalMarketing />
+      </section>
     </>
   );
 };
