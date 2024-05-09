@@ -1,9 +1,9 @@
+import React, { useRef, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Link from "next/link";
-import { useRef, useEffect } from "react";
 
 const Header2 = () => {
   const navRef = useRef(null);
@@ -24,6 +24,13 @@ const Header2 = () => {
     };
   }, []);
 
+  const handleMenuItemClick = () => {
+    const navbarToggler = document.getElementById("navbar-toggler");
+    if (navbarToggler) {
+      navbarToggler.click();
+    }
+  };
+
   return (
     <section className="header2">
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -36,28 +43,41 @@ const Header2 = () => {
           <Navbar.Toggle id="navbar-toggler" aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link href="/">Home</Link>
-              <Link href="/About">About Us</Link>
+              <Link href="/" onClick={handleMenuItemClick}>
+                Home
+              </Link>
+              <Link href="/About" onClick={handleMenuItemClick}>
+                About Us
+              </Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
-                <Link href="/Hiring">
+                <Link href="/Hiring" onClick={handleMenuItemClick}>
                   <NavDropdown.Item>Hire Dedicated Developers</NavDropdown.Item>
                 </Link>
-                <Link href="/website-development">
+                <Link href="/website-development" onClick={handleMenuItemClick}>
                   <NavDropdown.Item>Website Development</NavDropdown.Item>
                 </Link>
-                <Link href="/software-development">
+                <Link
+                  href="/software-development"
+                  onClick={handleMenuItemClick}
+                >
                   <NavDropdown.Item>Software Development</NavDropdown.Item>
                 </Link>
-                <Link href="/Mobile">
+                <Link href="/Mobile" onClick={handleMenuItemClick}>
                   <NavDropdown.Item>Mobile App Development</NavDropdown.Item>
                 </Link>
-                <Link href="/Marketing">
+                <Link href="/Marketing" onClick={handleMenuItemClick}>
                   <NavDropdown.Item>Digital Marketing</NavDropdown.Item>
                 </Link>
               </NavDropdown>
-              <Link href="/">Contact us</Link>
-              <Link href="/About">Portfolio</Link>
-              <Link href="/About">Blog</Link>
+              <Link href="/" onClick={handleMenuItemClick}>
+                Contact us
+              </Link>
+              <Link href="/About" onClick={handleMenuItemClick}>
+                Portfolio
+              </Link>
+              <Link href="/About" onClick={handleMenuItemClick}>
+                Blog
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
