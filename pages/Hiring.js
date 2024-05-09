@@ -363,25 +363,25 @@ const hirededicateddeveloper = () => {
           </div>
           <div className="sl12">
             <img src="years-of-Experience.png" alt="" />
-            <h1>10+</h1>
-            <p>Teams</p>
+            <h1>15+</h1>
+            <p>Years in Industry</p>
           </div>
           <div className="sl13">
             <img src="satisfied-customers.png" alt="" />
-            <h1>10+</h1>
-            <p>Teams</p>
+            <h1>3500+</h1>
+            <p>Happy Patron</p>
             </div>
             </div>
             <div className="col-md-6"> 
           <div className="sl14">
             <img src="global-partners.png" alt="" />
-            <h1>10+</h1>
-            <p>Teams</p>
+            <h1>50+</h1>
+            <p>Company Partnerships</p>
           </div>
           <div className="sl15">
             <img src="awards-and-accolades.png" alt="" />
-            <h1>10+</h1>
-            <p>Teams</p>
+            <h1>500+</h1>
+            <p>Community Project Contribution</p>
           </div>
           </div>
           </div>

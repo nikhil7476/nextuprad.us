@@ -2272,7 +2272,41 @@ ul.list1 {
     line-height: 35px;
     letter-spacing: 0.6px;
 }
-
+.sec-two.mobile-second h2 {
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 46px;
+  margin: 0;
+}
+.sec-two.mobile-second p{
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.mobilesix h2 {
+  margin-bottom: 13px;
+}
+.mobilesix ul {
+  margin: 0;
+  padding: 0;
+}
+.sec-two.mobile-second h2:before {
+  content: " ";
+  width: 25%;
+  height: 4px;
+  background-color: #e76f51;
+  position: absolute;
+  top: -9px;
+  margin: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
 .li1 span {
   font-size: 19px;
   font-weight: 600;
@@ -2281,8 +2315,28 @@ ul.list1 {
   line-height: 20px;
   text-decoration: underline;
 }
+.sec-five.mobilefive {
+  padding: 112px 0;
+  background: #192733;
+}
+.sl1 .col-md-6 div{
+  padding: 19px 0;
+  text-align: center;
+}
 
+.sl1 .col-md-6 div h1{
+  padding-top: 0px;
+    margin-top: 0px;
+}
 
+.sl1 .col-md-6 div p{
+  margin: 0;
+  color: #FFFFFF;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
 
 .sl11 {
   border: 2px solid #fff;
