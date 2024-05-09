@@ -11,12 +11,14 @@ export function Layout({ children }) {
   const router = useRouter();
 
   useEffect(() => {
-    setrouteName();
-  }, []);
+    console.log(router.asPath);
+
+    setrouteName(router.asPath);
+  }, [router.asPath]);
 
   return (
     <>
-      {router.asPath == "LandingPage" ? null : <Header />}
+      {router.asPath == "/LandingPage" ? null : <Header />}
 
       <Head>
         <link rel="icon" href="/logo-2orange-1.png" />
@@ -27,7 +29,7 @@ export function Layout({ children }) {
       </Head>
       {children}
 
-      {router.asPath == "LandingPage" ? null : <Footer />}
+      {router.asPath == "/LandingPage" ? null : <Footer />}
     </>
   );
 }
