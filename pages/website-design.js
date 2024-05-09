@@ -101,7 +101,7 @@ const Webdesign = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <h2>Nextupgrad-Backend Technology Platform Ecosystem</h2>
+                <h2>Nextupgrad Technology Platform Ecosystem</h2>
                 <p>
                   Unlock Business Growth with Tailored Solutions for Leading
                   Technology Platforms.
