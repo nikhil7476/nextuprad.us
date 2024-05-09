@@ -337,17 +337,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>.NET finds applications in web and desktop applications, cross-platform solutions, embedded systems, Web Services, distributed applications, and cloud solutions.</p>
               </div>
             </div>
             <div className="techm21">
@@ -356,24 +346,12 @@ const Software = () => {
                   <img src="pr2.webp" alt="" />
                 </div>
                 <div className="tech222">
-                  <h1>
-                    .NET <br />
-                    CORE
+                  <h1> .NET CORE
                   </h1>
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>.NET Core finds applications in diverse software development projects, including cloud-based applications, IoT applications, mobile app back-ends, cross-platform libraries, websites, and more.</p>
               </div>
             </div>
             <div className="techm21">
@@ -386,17 +364,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>C# stands as a versatile programming language crafted by Microsoft, ideal for developing web and cross-platform applications, as well as tailored FinTech and RegTech software solutions.</p>
               </div>
             </div>
             <div className="tech21">
@@ -409,17 +377,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>Go, also known as Golang, is a statically typed, compiled programming language developed by Google. It provides memory safety and structural typing, similar to Java.</p>
               </div>
             </div>
             <div className="techm21">
@@ -429,23 +387,12 @@ const Software = () => {
                 </div>
                 <div className="tech222">
                   <h1>
-                    UX/UI <br />
-                    DESIGN
+                    UX/UI  DESIGN
                   </h1>
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>Our UX/UI design team develops digital products that align with your business objectives, viewing the product through the eyes of the user.</p>
               </div>
             </div>
             <div className="techm21">
@@ -455,24 +402,12 @@ const Software = () => {
                 </div>
                 <div className="tech222">
                   <h1>
-                    FRONT-
-                    <br />
-                    END
+                    FRONT-END
                   </h1>
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>Front-end web development revolves around creating a user-friendly interface. Our chosen front-end technologies include JavaScript, TypeScript, AngularJS, and ReactJS.</p>
               </div>
             </div>
             <div className="tech21">
@@ -485,17 +420,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>Java software development encompasses web, back-end, mobile development, and standalone software creation.</p>
               </div>
             </div>
             <div className="techm21">
@@ -508,17 +433,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>Developing software for mobile applications on Android and iOS platforms.</p>
               </div>
             </div>
             <div className="techm21">
@@ -531,17 +446,7 @@ const Software = () => {
                 </div>
               </div>
               <div className="tech223">
-                <p>
-                  .NET finds applications in web and
-                  <br />
-                  desktop applications, cross-
-                  <br />
-                  platform solutions, embedded
-                  <br />
-                  systems, Web Services, distributed
-                  <br />
-                  applications, and cloud solutions.
-                </p>
+                <p>PHP, an open-source scripting language, is excellent for various web development projects.</p>
               </div>
             </div>
           </div>
