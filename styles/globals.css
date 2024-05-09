@@ -1798,20 +1798,29 @@ img.pmplogo {
 } */
 
 #sec {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
+ /* display: grid; 
+   grid-template-columns: auto auto; */
+  /* padding-left: 3rem; */
+  /* padding-right: 3rem; */
   padding-top: 9rem;
-  gap: 2rem;
+  /* grid-gap: 2rem; */
+  /* gap: 2rem; */
   padding-bottom: 130px;
   background-color: #fbf8f2;
 }
 
 #sec p {
-  font-size: 17px;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
-
+.my-4 {
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
 .line {
   content: " ";
   width: 10.5%;
@@ -1931,7 +1940,16 @@ img.pmplogo {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
-
+#exp .Hiring_exp2__q__sA div p{
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+#exp .Hiring_exp2__q__sA div img {
+  margin-top: -51px;
+}
 .exp1 h1 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
@@ -1948,6 +1966,9 @@ img.pmplogo {
   /* padding: 30px; */
   margin-top: 70px;
 }
+
+
+
 
 .expt2 {
   display: grid;
@@ -1966,20 +1987,20 @@ img.pmplogo {
 
 .exp211 {
   transition: 0.4s ease;
-  padding: 30px 20px 30px 30px;
+  padding: 10px;
   border-radius: 12px;
   border: 2px solid #cfcfcf;
 }
 
 .exp21 {
   transition: 0.4s ease;
-  padding: 30px 20px 30px 30px;
+  padding: 10px;
   border-radius: 12px;
 }
 
 .exp212 {
   transition: 0.4s ease;
-  padding: 30px 20px 30px 30px;
+  padding: 10px;
   border-radius: 12px;
 
   border: 2px solid #cfcfcf;
@@ -1987,7 +2008,7 @@ img.pmplogo {
 
 .exp213 {
   transition: 0.4s ease;
-  padding: 30px 20px 30px 30px;
+  padding: 10px;
   border-radius: 12px;
 
   border: 2px solid #cfcfcf;
@@ -1995,7 +2016,7 @@ img.pmplogo {
 
 .exp214 {
   transition: 0.4s ease;
-  padding: 30px 20px 30px 30px;
+  padding: 10px;
   border-radius: 12px;
 
   border: 2px solid #cfcfcf;
@@ -2003,7 +2024,7 @@ img.pmplogo {
 
 .exp215 {
   transition: 0.4s ease;
-  padding: 30px 20px 30px 30px;
+  padding: 10px;
   border-radius: 12px;
 
   border: 2px solid #cfcfcf;
@@ -2031,18 +2052,19 @@ img.pmplogo {
 
 .expt2 h1 {
   margin-top: 20px;
-  font-family: sans-serif;
-  font-size: 25px;
-  font-weight: 700;
+  margin-bottom: 15px;
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .expt2 p {
   margin-top: 20px;
-  font-size: 17px;
-  letter-spacing: 1px;
-  line-height: 20px;
-  font-family: sans-serif;
-  color: #5f5d5d;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .expt20 {
@@ -2080,16 +2102,16 @@ img.pmplogo {
 }
 
 #skill {
-  display: flex;
-  height: 100%;
-  padding-top: 130px;
-  padding-right: 150px;
-  padding-bottom: 130px;
-  background-color: #192733;
+    /* display: flex; */
+    /* height: 100%; */
+    padding-top: 130px;
+    /* padding-right: 150px; */
+     padding-bottom: 130px; 
+    background-color: #192733;
 }
 
 .skill1 {
-  margin-left: 150px;
+  
 }
 
 .skill1 h1 {
@@ -2102,7 +2124,7 @@ img.pmplogo {
 }
 
 .skill2 {
-  margin-left: 100px;
+
 }
 
 #btn1 {
@@ -2129,7 +2151,6 @@ img.pmplogo {
   display: flex;
   height: 100%;
   padding-top: 130px;
-  padding-right: 150px;
   padding-bottom: 70px;
 }
 
@@ -2138,7 +2159,7 @@ img.pmplogo {
 }
 
 .ada1 {
-  margin-left: 150px;
+  
 }
 
 .ada1 h1 {
@@ -2158,71 +2179,62 @@ img.pmplogo {
 }
 
 .adap {
-  display: flex;
-  margin-right: 150px;
-  margin-left: 150px;
+  
   text-align: center;
-  /* background-color: #f5f5f5; */
+  /*display: flex; background-color: #f5f5f5; */
 }
 
 .adap img {
-  width: 40%;
-  height: 60%;
-  margin-top: 20px;
+  width: 111px;
+  margin-top: -1px;
 }
 
 .adap h1 {
-  font-family: sans-serif;
-  font-weight: 600;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .adap p {
-  margin-top: 20px;
-  font-size: 17px;
-  letter-spacing: 1px;
-  line-height: 22px;
-  font-family: sans-serif;
-  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .adap1 {
   padding: 60px 40px 60px 40px;
-  height: 70%;
-  width: 45%;
   background-color: #f5f5f5;
   border-radius: 12px;
 }
 
 .adap2 {
-  /* margin: 60px 40px 60px 40px; */
-  height: 70%;
-  width: 45%;
-  margin-left: 30px;
+  /* margin: 60px 40px 60px 40px; */  
   padding: 60px 40px 60px 40px;
   background-color: #f5f5f5;
   border-radius: 12px;
 }
 
 .adap3 {
-  padding: 60px 40px 60px 40px;
-  height: 70%;
-  width: 45%;
-  margin-left: 30px;
-  background-color: #f5f5f5;
+  padding: 60px 40px 60px 40px; 
+   background-color: #f5f5f5;
   border-radius: 12px;
 }
-
+#adapt .adap .col-md-4 {
+  border: 9px solid #fff;
+}
 #last {
-  display: flex;
+  
   height: 100%;
   padding-top: 130px;
-  padding-right: 150px;
   padding-bottom: 130px;
   background-color: #192733;
 }
 
 .last1 {
-  margin-left: 70px;
 }
 
 .last1 h1 {
@@ -2247,12 +2259,18 @@ img.pmplogo {
   padding-left: 80px;
   padding-top: 40px;
 }
-
+ul.list1 {
+  padding: 0;
+  margin: 0;
+}
 .li1 {
-  font-size: 18px;
   padding: 10px;
-  line-height: 25px;
-  font-family: sans-serif;
+  color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.6px;
 }
 
 .li1 span {
@@ -2264,10 +2282,7 @@ img.pmplogo {
   text-decoration: underline;
 }
 
-.sl1 {
-  margin-left: 100px;
-  margin-top: 30px;
-}
+
 
 .sl11 {
   border: 2px solid #fff;
@@ -2843,6 +2858,12 @@ a.kickstart-button:hover {
   margin: 0 auto;
   top: -3px;
 }*/
+.Hiring_exp2__q__sA div p{
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
 .sec-two p {
   text-align: left;
   margin-bottom: 40px;

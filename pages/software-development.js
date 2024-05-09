@@ -253,7 +253,6 @@ const Software = () => {
         </section>
         <section id="work">
           <div className="work1">
-            <span className="line2" />
             <h1>How do we work?</h1>
           </div>
           <div className="work2">
@@ -324,8 +323,7 @@ const Software = () => {
           </div>
         </section>
         <section id="tech">
-          <div className="tech1">
-            <span className="line2" />
+          <div className="tech1">           
             <h1>Primary Coding Technologies</h1>
           </div>
           <div className="tech2">
