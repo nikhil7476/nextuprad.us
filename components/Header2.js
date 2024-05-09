@@ -50,24 +50,38 @@ const Header2 = () => {
                 About Us
               </Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
-                <Link href="/Hiring" onClick={handleMenuItemClick}>
-                  <NavDropdown.Item>Hire Dedicated Developers</NavDropdown.Item>
-                </Link>
-                <Link href="/website-development" onClick={handleMenuItemClick}>
-                  <NavDropdown.Item>Website Development</NavDropdown.Item>
-                </Link>
-                <Link
-                  href="/software-development"
-                  onClick={handleMenuItemClick}
-                >
-                  <NavDropdown.Item>Software Development</NavDropdown.Item>
-                </Link>
-                <Link href="/Mobile" onClick={handleMenuItemClick}>
-                  <NavDropdown.Item>Mobile App Development</NavDropdown.Item>
-                </Link>
-                <Link href="/Marketing" onClick={handleMenuItemClick}>
-                  <NavDropdown.Item>Digital Marketing</NavDropdown.Item>
-                </Link>
+                <NavDropdown.Item>
+                  <Link href="/Hiring" onClick={handleMenuItemClick}>
+                    Hire Dedicated Developers
+                  </Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item>
+                  <Link href="/website-design" onClick={handleMenuItemClick}>
+                    Website Development
+                  </Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item>
+                  <Link
+                    href="/software-development"
+                    onClick={handleMenuItemClick}
+                  >
+                    Software Development
+                  </Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item>
+                  <Link href="/Mobile" onClick={handleMenuItemClick}>
+                    Mobile App Development{" "}
+                  </Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item>
+                  <Link href="/Marketing" onClick={handleMenuItemClick}>
+                    Digital Marketing
+                  </Link>
+                </NavDropdown.Item>
               </NavDropdown>
               <Link href="/ContactUs" onClick={handleMenuItemClick}>
                 Contact us
