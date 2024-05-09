@@ -1,6 +1,8 @@
 import WebDevSlider from "@/components/webDevSlider";
 import HomeAccordian from "@/components/HomeAccordian";
 import Head from "next/head";
+import styles from "../styles/LandingPage.module.css";
+import { Form, Button } from "react-bootstrap";
 const LandingPage = () => {
   return (
     <>
@@ -14,7 +16,60 @@ const LandingPage = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         ></link>
       </Head>
-      <WebDevSlider />
+      <section className={`${styles.section2piy} `}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <h1>Skills held by NextUpgrad's dedicated developers.</h1>
+              <p className="my-4">
+                Embark on a journey of unique solutions with a dedicated
+                developer from NextUpgrad. Our certified professionals are ready
+                to connect the dots and deliver top-notch quality at your
+                service.
+              </p>
+              <div className={`${styles.innerSection} my-4`}>
+                <span>Theme Development</span>
+                <span>API Integration</span>
+                <span>Performance Optimization</span>
+                <span>Security Implementation</span>
+                <span>System Design & Architecture</span>
+                <span>Community & Social Engagement</span>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <Form className={`${styles.hiringForm}`}>
+                <Form.Group controlId="formName">
+                  <Form.Label>Your name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter your name" />
+                </Form.Group>
+
+                <Form.Group controlId="formEmail">
+                  <Form.Label>Your email</Form.Label>
+                  <Form.Control type="email" placeholder="Enter your email" />
+                </Form.Group>
+
+                <Form.Group controlId="formSubject">
+                  <Form.Label>Subject</Form.Label>
+                  <Form.Control type="text" placeholder="Enter subject" />
+                </Form.Group>
+
+                <Form.Group controlId="formMessage">
+                  <Form.Label>Your message (optional)</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    rows={5}
+                    placeholder="Enter your message"
+                  />
+                </Form.Group>
+
+                <div className="d-flex justify-content-center">
+                  <button className="w-100 mt-5 contactFormBtn">Submit</button>
+                </div>
+              </Form>
+            </div>{" "}
+          </div>
+        </div>
+      </section>
       <div>
         <div className="sec-two">
           <div className="container">
