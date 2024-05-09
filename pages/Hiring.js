@@ -7,7 +7,9 @@ const hirededicateddeveloper = () => {
   return (
     <>
       <main id="sec">
-        <div className="sec1">
+        <div className="container">
+          <div className="row">
+        <div className="sec1 col-md-6">
           <h1>
             Hire Dedicated <br />
             Developer
@@ -32,16 +34,18 @@ const hirededicateddeveloper = () => {
             </div>
           </div>
         </div>
-        <div className="sec2">
+        <div className="sec2 col-md-6">
           <img
             className={`${styles.bannerimg}`}
             src="hire-banner.webp"
             alt="img"
           />
-        </div>
+        </div></div></div>
       </main>
       <section className={`${styles.section2piy} `}>
-        <div className="container px-4">
+        <div className="container">
+           <div className="row">
+           <div className="col-md-6">
           <h1>Skills held by NextUpgrad's dedicated developers.</h1>
           <p className="my-4">
             Embark on a journey of unique solutions with a dedicated developer
@@ -56,8 +60,8 @@ const hirededicateddeveloper = () => {
             <span>System Design & Architecture</span>
             <span>Community & Social Engagement</span>
           </div>
-        </div>
-        <div className="container px-4 ">
+          </div>
+        <div className="col-md-6">
           <Form className={`${styles.hiringForm}`}>
             <Form.Group controlId="formName">
               <Form.Label>Your name</Form.Label>
@@ -87,7 +91,8 @@ const hirededicateddeveloper = () => {
               <button className="w-100 mt-5 contactFormBtn">Submit</button>
             </div>
           </Form>
-        </div>
+          </div> </div>
+          </div> 
       </section>
       {/* <section id="sect">
         <div className="sec1">
@@ -148,6 +153,7 @@ const hirededicateddeveloper = () => {
         </div>
       </section> */}
       <section id="exp" className="mx-5">
+      <div className="container">
         <div className="exp1">
           <span className="line1" />
           <h1>Our Developer Expertise</h1>
@@ -190,13 +196,14 @@ const hirededicateddeveloper = () => {
             </p>
           </div>
         </div>
+        </div>
       </section>
       <section id="expt">
+      <div className="container">
         <div className="expt1 mx-5">
           <span className="line1" />
           <h1>
-            Benefits of hiring dedicated resource from
-            <br /> NextUpgrad
+            Benefits of hiring dedicated resource from NextUpgrad
           </h1>
         </div>
         <div className="expt2">
@@ -253,35 +260,40 @@ const hirededicateddeveloper = () => {
               requirements.
             </p>
           </div>
-        </div>
+        </div> </div>
       </section>
       <section id="skill">
-        <div className="skill1">
-          <span className="line1" />
+        <div className="container">
+        <div className="row">
+        <div className="skill1 col-md-8">
+          <span className="line1 " />
           <h1>
             Get started now! Contact our skilled
             <br /> developers to bring your ideas to life.
           </h1>
         </div>
-        <div className="skill2">
+        <div className="skill2  col-md-4">
           <button id="btn1">Schedule a Meeting</button>
+        </div>
+        </div>
         </div>
       </section>
       <section id="adapt">
-        <div className="ada">
-          <div className="ada1">
+      <div className="container">
+        <div className="ada row">
+          <div className="ada1 col-md-6">
             <span className="line1" />
             <h1>Adaptable Hiring Model</h1>
           </div>
-          <div className="ada2">
+          <div className="ada2  col-md-6">
             <p>
               Ready to onboard dedicated developers? Discover our
               <br /> tailored pricing solutions
             </p>
           </div>
         </div>
-        <div className="adap">
-          <div className="adap1">
+        <div className="adap row">
+          <div className="adap1  col-md-4">
             <h1>Pay-per-use</h1>
             <img src="img-4-removebg-preview.png" alt="" />
             <p>
@@ -289,7 +301,7 @@ const hirededicateddeveloper = () => {
               our developer to manage your project.
             </p>
           </div>
-          <div className="adap2">
+          <div className="adap2   col-md-4">
             <h1>Pay-per-use</h1>
             <img src="img-3-removebg-preview.png" alt="" />
             <p>
@@ -297,7 +309,7 @@ const hirededicateddeveloper = () => {
               our developer to manage your project.
             </p>
           </div>
-          <div className="adap3">
+          <div className="adap3   col-md-4">
             <h1>Pay-per-use</h1>
             <img src="img-2-removebg-preview.png" alt="" />
             <p>
@@ -306,51 +318,44 @@ const hirededicateddeveloper = () => {
             </p>
           </div>
         </div>
+        </div>
       </section>
       <section id="last">
-        <div className="last1">
-          <div className="last1">
+      <div className="container">
+        <div className="last1 row">
+          <div className="last1 col-md-7">
             <span className="line1" />
             <h1>
-              Compelling Reasons to
-              <br /> Engage Dedicated
-              <br /> Developers at <br />
-              NextUpgrad
+              Compelling Reasons to Engage Dedicated Developers at  NextUpgrad
             </h1>
-          </div>
-          <div className="last11">
+          
             <ul className="list1">
               <li className="li1">
                 <span>Certified Developers :</span>
-                Our exceptionally skilled team is <br />
-                prepared to tackle the most intricate projects.
+                Our exceptionally skilled team is prepared to tackle the most intricate projects.
               </li>
               <li className="li1">
                 <span>Reliable Support :</span>
-                Our established communication channels
-                <br /> guarantee constant availability for assistance at all
+                Our established communication channels guarantee constant availability for assistance at all
                 times.
               </li>
               <li className="li1">
                 <span>Tailored Solutions :</span>
-                Let your brand’s unique personality shine
-                <br /> through with our developers, who can bring your
-                <br /> unconventional concepts to life.
+                Let your brand’s unique personality shine through with our developers, who can bring your unconventional concepts to life.
               </li>
               <li className="li1">
                 <span>Client-Centric Focus :</span>
-                Placing clients at the core of our <br />
-                strategy, we aim to ensure every investment counts.
+                Placing clients at the core of our strategy, we aim to ensure every investment counts.
               </li>
               <li className="li1">
                 <span>All-in-One Solution :</span>
-                From ideation to project execution,
-                <br /> we’ve got everything covered for you.
+                From ideation to project execution, we’ve got everything covered for you.
               </li>
             </ul>
           </div>
-        </div>
-        <div className="sl1">
+          <div className="sl1 col-md-5">  
+          <div className="row"> 
+          <div className="col-md-6">      
           <div className="sl11">
             <img src="teams.png" alt="" />
             <h1>10+</h1>
@@ -358,27 +363,32 @@ const hirededicateddeveloper = () => {
           </div>
           <div className="sl12">
             <img src="years-of-Experience.png" alt="" />
-            <h1>10+</h1>
-            <p>Teams</p>
+            <h1>15+</h1>
+            <p>Years in Industry</p>
           </div>
           <div className="sl13">
             <img src="satisfied-customers.png" alt="" />
-            <h1>10+</h1>
-            <p>Teams</p>
-          </div>
-        </div>
-        <div className="sl2">
+            <h1>3500+</h1>
+            <p>Happy Patron</p>
+            </div>
+            </div>
+            <div className="col-md-6"> 
           <div className="sl14">
             <img src="global-partners.png" alt="" />
-            <h1>10+</h1>
-            <p>Teams</p>
+            <h1>50+</h1>
+            <p>Company Partnerships</p>
           </div>
           <div className="sl15">
             <img src="awards-and-accolades.png" alt="" />
-            <h1>10+</h1>
-            <p>Teams</p>
+            <h1>500+</h1>
+            <p>Community Project Contribution</p>
           </div>
+          </div>
+          </div>
+          </div>
+          
         </div>
+         </div>
       </section>
     </>
   );

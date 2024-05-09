@@ -21,7 +21,7 @@ const mobileapp = () => {
             </div>
           </div>
         </div>
-        <div className="sec-two">
+        <div className="sec-two mobile-second">
           <div className="container">
             <h2>Our Exclusive Mobile App Development Services</h2>
             <p>
@@ -108,7 +108,7 @@ const mobileapp = () => {
             <Link href="#">Let's Connect</Link>
           </div>
         </div>
-        <div className="sec-five">
+        <div className="sec-five mobilefive">
           <div className="container">
             <h2>Our Expertise in Mobile App Development Technologies</h2>
             <p>
@@ -273,7 +273,7 @@ const mobileapp = () => {
             </div>
           </div>
         </div>
-        <div className="sec-six">
+        <div className="sec-six mobilesix">
           <div className="container">
             <h2>Mobile app creation process</h2>
             <div className="row">
