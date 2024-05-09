@@ -51,7 +51,7 @@ const Header = () => {
         <Link
           href="/"
           className={activeTab === "Home" ? "active" : ""}
-          onClick={(e) => handleTabClick(e, "Home")}
+          onClick={(e) => handleTabClick(e, "h")}
         >
           Home
         </Link>
@@ -59,7 +59,7 @@ const Header = () => {
         <Link
           href="/About"
           className={activeTab === "About Us" ? "active" : ""}
-          onClick={(e) => handleTabClick(e, "About Us")}
+          onClick={(e) => handleTabClick(e, "h Us")}
         >
           About Us
         </Link>
@@ -94,21 +94,21 @@ const Header = () => {
         <Link
           href="/ContactUs"
           className={activeTab === "Contact Us" ? "active" : ""}
-          onClick={(e) => handleTabClick(e, "Contact Us")}
+          onClick={(e) => handleTabClick(e, "h Us")}
         >
           Contact Us
         </Link>
         <Link
           href="/Portfolio"
           className={activeTab === "Portfolio" ? "active" : ""}
-          onClick={(e) => handleTabClick(e, "Portfolio")}
+          onClick={(e) => handleTabClick(e, "h")}
         >
           Portfolio
         </Link>
         <Link
           href="/Blog"
           className={activeTab === "Blog" ? "active" : ""}
-          onClick={(e) => handleTabClick(e, "Blog")}
+          onClick={(e) => handleTabClick(e, "h")}
         >
           Blog
         </Link>
