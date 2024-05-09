@@ -18,7 +18,12 @@ export function Layout({ children }) {
 
   return (
     <>
-      {router.asPath == "/LandingPage" ? null : <Header />}
+      {router.asPath == "/LandingPage" ? null : (
+        <>
+          <Header />
+          <Header2 />
+        </>
+      )}
 
       <Head>
         <link rel="icon" href="/logo-2orange-1.png" />

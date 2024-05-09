@@ -1,53 +1,68 @@
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Link from "next/link";
+import { useRef, useEffect } from "react";
+
 const Header2 = () => {
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        const navbarToggler = document.getElementById("navbar-toggler");
+        if (navbarToggler) {
+          navbarToggler.click();
+        }
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <>
-      <>
-        <section className="et-hero-tabs">
-          <h1>STICKY SLIDER NAV</h1>
-          <h3>Sliding content with sticky tab nav</h3>
-          <div className="et-hero-tabs-container">
-            <a className="et-hero-tab" href="#tab-es6">
-              ES6
-            </a>
-            <a className="et-hero-tab" href="#tab-flexbox">
-              Flexbox
-            </a>
-            <a className="et-hero-tab" href="#tab-react">
-              React
-            </a>
-            <a className="et-hero-tab" href="#tab-angular">
-              Angular
-            </a>
-            <a className="et-hero-tab" href="#tab-other">
-              Other
-            </a>
-            <span className="et-hero-tab-slider" />
-          </div>
-        </section>
-        <main className="et-main">
-          <section className="et-slide" id="tab-es6">
-            <h1>ES6</h1>
-            <h3>something about es6</h3>
-          </section>
-          <section className="et-slide" id="tab-flexbox">
-            <h1>Flexbox</h1>
-            <h3>something about flexbox</h3>
-          </section>
-          <section className="et-slide" id="tab-react">
-            <h1>React</h1>
-            <h3>something about react</h3>
-          </section>
-          <section className="et-slide" id="tab-angular">
-            <h1>Angular</h1>
-            <h3>something about angular</h3>
-          </section>
-          <section className="et-slide" id="tab-other">
-            <h1>Other</h1>
-            <h3>something about other</h3>
-          </section>
-        </main>
-      </>
-    </>
+    <section className="header2">
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container ref={navRef}>
+          <Link href="/">
+            <Navbar.Brand>
+              <img className="NavImg" src="/logo-2orange-1.png" alt="" />
+            </Navbar.Brand>
+          </Link>
+          <Navbar.Toggle id="navbar-toggler" aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Link href="/">Home</Link>
+              <Link href="/About">About Us</Link>
+              <NavDropdown title="Services" id="basic-nav-dropdown">
+                <Link href="/Hiring">
+                  <NavDropdown.Item>Hire Dedicated Developers</NavDropdown.Item>
+                </Link>
+                <Link href="/website-development">
+                  <NavDropdown.Item>Website Development</NavDropdown.Item>
+                </Link>
+                <Link href="/software-development">
+                  <NavDropdown.Item>Software Development</NavDropdown.Item>
+                </Link>
+                <Link href="/Mobile">
+                  <NavDropdown.Item>Mobile App Development</NavDropdown.Item>
+                </Link>
+                <Link href="/Marketing">
+                  <NavDropdown.Item>Digital Marketing</NavDropdown.Item>
+                </Link>
+              </NavDropdown>
+              <Link href="/">Contact us</Link>
+              <Link href="/About">Portfolio</Link>
+              <Link href="/About">Blog</Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </section>
   );
 };
 
