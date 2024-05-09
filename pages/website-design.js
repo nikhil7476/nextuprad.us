@@ -1,6 +1,7 @@
 import WebDevSlider from "@/components/webDevSlider";
 import HomeAccordian from "@/components/HomeAccordian";
 import Head from "next/head";
+import FaqWebdev from "@/components/faqWebDev";
 const Webdesign = () => {
   return (
     <>
@@ -436,7 +437,7 @@ const Webdesign = () => {
           </div>
         </div>
         <section className="container pb-5  ">
-          <HomeAccordian />
+          <FaqWebdev />
         </section>
         <div className="sec-sev">
           <div className="container">

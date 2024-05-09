@@ -1,5 +1,5 @@
 import Cards from "@/components/Cards";
-import Cards2 from "@/components/Cards2";
+import Cards4 from "@/components/Cards4";
 import Carousel from "react-bootstrap/Carousel";
 const Software = () => {
   return (
@@ -376,14 +376,7 @@ const Software = () => {
             </div>
           </div>
         </div>
-        <Carousel className="mb-5">
-          <Carousel.Item interval={1700}>
-            <Cards />
-          </Carousel.Item>
-          <Carousel.Item interval={1700}>
-            <Cards2 />
-          </Carousel.Item>
-        </Carousel>
+        <Cards4 />
       </>
     </>
   );

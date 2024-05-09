@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Form, Button } from "react-bootstrap";
 import HomeAccordian from "@/components/HomeAccordian";
 import styles from "../styles/Hiring.module.css";
+import FaqHiring from "../components/faqHiring";
 
 const hirededicateddeveloper = () => {
   return (
@@ -236,7 +237,7 @@ const hirededicateddeveloper = () => {
             </div>
 
             <div className="exp21">
-            <img src="ded4.webp" alt="" />
+              <img src="ded4.webp" alt="" />
               <h1>Quality Assurance</h1>
               <p>
                 NextUpgrad's dedicated developers are committed to delivering
@@ -245,7 +246,7 @@ const hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="exp21">
-            <img src="ded5.webp" alt="" />
+              <img src="ded5.webp" alt="" />
               <h1>Trimmed Admin Costs</h1>
               <p>
                 Minimize the burden of project management tasks as NextUpgrad
@@ -254,7 +255,7 @@ const hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="exp21">
-            <img src="ded6.webp" alt="" />
+              <img src="ded6.webp" alt="" />
               <h1>Focused Attention</h1>
               <p>
                 A dedicated developer provides undivided attention to your
@@ -271,7 +272,8 @@ const hirededicateddeveloper = () => {
             <div className="skill1 col-md-8">
               <span className="line1 " />
               <h1>
-                Get started now! Contact our skilled developers to bring your ideas to life.
+                Get started now! Contact our skilled developers to bring your
+                ideas to life.
               </h1>
             </div>
             <div className="skill2  col-md-4">
@@ -289,7 +291,8 @@ const hirededicateddeveloper = () => {
             </div>
             <div className="ada2  col-md-6">
               <p>
-                Ready to onboard dedicated developers? Discover our tailored pricing solutions
+                Ready to onboard dedicated developers? Discover our tailored
+                pricing solutions
               </p>
             </div>
           </div>
@@ -406,7 +409,7 @@ const hirededicateddeveloper = () => {
           </div>
         </div>
         <section className="container pb-5  ">
-          <HomeAccordian />
+          <FaqHiring />
         </section>
       </section>
     </>
