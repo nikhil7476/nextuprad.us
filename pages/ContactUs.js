@@ -139,7 +139,7 @@ const conatactus = () => {
         <div className="contactphone">
           <div className="container">
             <div className="row">
-              <div className="col-md-8">
+              <div className="col-md-12">
                 <h2>Call Us At</h2>
                 <Link href="tel:+1%20(408)%20400-3232">+1 (408) 400-3232</Link>
                 <Link href="tel:+1%20(408)%20786-5558">+1 (408) 786-5558</Link>

@@ -268,8 +268,7 @@ const hirededicateddeveloper = () => {
             <div className="skill1 col-md-8">
               <span className="line1 " />
               <h1>
-                Get started now! Contact our skilled
-                <br /> developers to bring your ideas to life.
+                Get started now! Contact our skilled developers to bring your ideas to life.
               </h1>
             </div>
             <div className="skill2  col-md-4">
@@ -287,8 +286,7 @@ const hirededicateddeveloper = () => {
             </div>
             <div className="ada2  col-md-6">
               <p>
-                Ready to onboard dedicated developers? Discover our
-                <br /> tailored pricing solutions
+                Ready to onboard dedicated developers? Discover our tailored pricing solutions
               </p>
             </div>
           </div>
