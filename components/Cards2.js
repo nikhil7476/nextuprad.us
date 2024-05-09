@@ -1,6 +1,6 @@
 import Tilt from "react-parallax-tilt";
 
-const Cards = () => {
+const Cards2 = () => {
   return (
     <>
       <div className="d-flex justify-content-center gap-5 my-5 ">
@@ -22,16 +22,16 @@ const Cards = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team1.webp" alt="" />
+              <img src="/team6.webp" alt="" />
               <div>
-                <h5>BY MICHAEL SMITH</h5>
-                <h6>GENERAL MANAGER</h6>
+                <h5>BY WILLIAM DAVIS</h5>
+                <h6>CREATIVE DIRECTOR</h6>
                 <p className="mt-4">
-                  We picked Nextupgrad to create our financial calculator app
-                  all the way from the beginning.Right from our first talk, we
-                  were super impressed with how professional, knowledgeable and
-                  commited they were to givig us really great results. Now our
-                  app is up and running, and the feedback from users is awesome!
+                  Nextupgrad is like a real-life superhero for us! They're
+                  honest, quick to help with anything, and totally dependable.
+                  We can always trust them to do what they promise without any
+                  nonsense. They've been a blessing that went beyond what we
+                  hoped for.
                 </p>
               </div>
             </div>
@@ -48,17 +48,16 @@ const Cards = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team5.webp" alt="" />
+              <img src="/team1.webp" alt="" />
               <div>
-                <h5>BY TOM BAGNALL</h5>
+                <h5>BY SHANE QUIGLEY</h5>
                 <h6>MANAGING DIRECTOR</h6>
                 <p className="mt-4">
-                  We needed help with our tricky online store, and that's when
-                  we found NextUpgrad. What stood out was how they not only got
-                  what we wanted but also shared smart ideas to make things
-                  easier for our customers. They really know how to put
-                  themselves in our customers' shoes, and that made a big
-                  difference.
+                  Thanks to NextUpGrad's digital marketing expertise, our
+                  project achieved remarkable success. Their organic strategies
+                  and clear communication made a significant impact, driving
+                  results beyond our expectations. Highly recommend for
+                  effective and results-driven digital marketing solutions!"
                 </p>
               </div>
             </div>
@@ -75,16 +74,15 @@ const Cards = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team3.webp" alt="" />
+              <img src="/team5.webp" alt="" />
               <div>
-                <h5>BY GAZ BATTERSBY</h5>
+                <h5>BY LANCE BURTON</h5>
                 <h6>COMMERCIAL MANAGER</h6>
                 <p className="mt-4">
                   These guys are just amazing! They really helped us grow our
-                  business, and now our biggest issue is having too many
-                  customers – which is a great problem to have. We're exactly
-                  where we wanted to be, and Nextupgrad made it happen. Thanks a
-                  bunch!
+                  business.We can always trust them to do what they promise
+                  without any nonsense. They've been a blessing that went beyond
+                  what we hoped for.
                 </p>
               </div>
             </div>
@@ -95,4 +93,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Cards2;

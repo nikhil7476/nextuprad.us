@@ -4,6 +4,7 @@ import CountUp from "react-countup";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Form, Button } from "react-bootstrap";
 import Cards from "@/components/Cards";
+import Cards2 from "@/components/Cards2";
 import HomeAccordian from "@/components/HomeAccordian";
 import { TypeAnimation } from "react-type-animation";
 import { useState, useEffect, useRef } from "react";
@@ -1388,10 +1389,7 @@ export default function Home() {
             <Cards />
           </Carousel.Item>
           <Carousel.Item interval={1700}>
-            <Cards />
-          </Carousel.Item>
-          <Carousel.Item interval={1700}>
-            <Cards />
+            <Cards2 />
           </Carousel.Item>
         </Carousel>
 
