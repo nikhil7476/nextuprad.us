@@ -5443,7 +5443,238 @@ pre {
   .dropdown {
     color: #000 !important;
   }
-
-
-  
+}
+@media screen and (max-width: 768px) {
+  .achieved .col-md-4 {
+    width: 100%;
+}
+.achieved .col-md-8 {
+  width: 100%;
+}
+.digiSolutions {
+  grid-template-columns: auto;
+}
+.discover .col-md-6 {
+  width: 100%;
+}
+.deserve .col-md-4 {
+  width: 49%;
+}
+.industries .col-md-3 {
+  width: 49%;
+}
+.accordion .row {
+  display: block;
+}
+.sec-1-1 {
+  display: block;
+}
+.sec-1-1-1 {
+  width: 100%;
+  text-align: center;
+}
+.sec-1-1-1 img {
+  height: 100%;
+  width: 50%;
+}
+.sec-1-1-2{
+  width: 100%;
+  padding: 20px;
+}
+.sec-3-1, .sec-3-2 {
+  display: block;
+  padding: 20px;
+}
+.sec-3-1-1, .sec-3-1-2, .sec-3-2-1, .sec-3-2-2 {
+  width: 100%;
+}
+.custmer-detail {
+  padding: 20px;
+}
+.custmer-detail .col-md-6 img {
+  width: 100%;
+}
+.sec-3 {
+  padding: 0px 0px;
+}
+.sec-4, .contactbox, .contactvisit {
+  padding: 20px;
+}
+.sec-4 .col-md-6 {
+  width: 100%;
+}
+.sec-4 ul li {
+  width: 47%;
+  min-height: 300px;
+  margin-bottom: 15px;
+}
+.ftr-logos img {
+  width: 100px;
+  height: 100px;
+}
+.contactbox .col-md-6 {
+  width: 100%;
+}
+.contactdetails .col-md-6 {
+  width: 50%;
+}
+.contactimg img {
+  width: 64%;
+  margin: 0 auto;
+  display: block;
+}
+.contactvisit .col-md-4 {
+  width: 100%;
+}
+.contactform {
+  padding: 20px;
+}
+.Hiring_bannerimg__fjIpD {
+  width: 100%;
+}
+.Hiring_section2piy__uGgm7 .col-md-6 {
+  width: 100%;
+}
+.expt2 {
+  grid-template-columns: auto auto;
+}
+#last .last1.col-md-7 {
+  width: 100%;
+  padding: 0 20px;
+}
+#last .sl1.col-md-5 {
+  width: 100%;
+  padding: 25px;
+}
+.sec-three .col-md-6 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.sec-five {
+  background: #192733;
+}
+.col-md-5.sec-five-one {
+  width: 100%;
+  margin: 0;
+  padding: 58px 20px 23px 20px;
+}
+.col-md-7.sec-five-two {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+#uni {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+#uni div {
+  display: block;
+  width: 100%;
+  margin: 0px;
+}
+#work {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.work2 {
+  display: block;
+}
+#tech {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.tech2 {
+  grid-template-columns: 1fr;
+}
+.techm21 {
+  margin-left: 0;
+}
+.main-sec .col-md-6 {
+  width: 100%;
+  padding: 20px;
+}
+.main-sec {
+  padding: 138px 0px 0px 0px;
+}
+.col-md-3.dev-col {
+  width: 50%;
+}
+.col-md-4.brand-hd {
+  width: 80%;
+  margin: 0 auto;
+}
+.col-md-3.colone {
+  width: 50%;
+}
+.sec-six {
+  padding: 30px 0px 30px 0px;
+}
+.sec-sev h2 {
+  margin-bottom: 0px;
+}
+.holisticnew {
+  padding: 30px 0px 30px 0px;
+}
+.fourcolbox {
+  grid-template-columns: 1fr 1fr;
+}
+.exceeding {
+  padding: 30px 0px 30px 0px;
+}
+.exceeding .col-md-7 {
+  width: 100%;
+}
+.exceeding .col-md-5 {
+  width: 100%;
+}
+.Seamless {
+  padding: 30px 0px 30px 0px;
+}
+.Seamless .col-md-6 {
+  width: 100%;
+}
+.listing {
+  grid-template-columns: 1fr 1fr;
+}
+.digital-box {
+  padding: 40px 0px 40px 0px;
+}
+.digital-box .col-md-6 {
+  width: 100%;
+}
+.digital-box .col-md-6 img {
+  width: 31%;
+  margin: 0 auto;
+  display: block;
+}
+.digital-box .col-md-6 {
+  width: 100%;
+  padding: 20px;
+}
+.glitter-box {
+  padding: 40px 0px 40px 0px;
+}
+.glitter-box h1 {
+  font-size: 38px;
+  padding: 0 50px;
+}
+.glitter-box ul {
+  display: block;
+}
+.glitter-box ul li {
+  width: 48%;
+  float: left;
+  margin: 0 7px;
+}
+.accreditation .col-md-6 {
+  width: 100%;
+}
+.accreditation {
+  background-color: #000000;
+  padding: 40px 0px 40px 0px;
+}
+.accreditation .col-md-6 .col-md-6 {
+  width: 50%;
+}
 }

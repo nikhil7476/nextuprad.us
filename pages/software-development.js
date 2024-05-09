@@ -8,11 +8,8 @@ const Software = () => {
           <div className="sect1">
             <h1>
               <span className="sp">
-                CUSTOM SOFTWARE
-                <br />
-                DEVELOPMENT SERVICES
+                CUSTOM SOFTWARE DEVELOPMENT SERVICES
               </span>
-              <br />
               TO SUIT YOUR REQUIREMENT
             </h1>
           </div>
@@ -23,10 +20,7 @@ const Software = () => {
             <span className="line" />
             <h1>Unique Service Array</h1>
             <p>
-              From consultation through development, seamless integration, to
-              steadfast
-              <br />
-              maintenance—we’ve got every facet in hand.
+              From consultation through development, seamless integration, to  steadfast maintenance—we’ve got every facet in hand.
             </p>
           </div>
           <div className="uni2">
@@ -36,50 +30,33 @@ const Software = () => {
             <div className="uni22">
               <h1>Software Consulting</h1>
               <p>
-                Prepare for success in your software development project.
-                <br />
-                We specialize in seamless planning, execution, and <br />
-                management. Our expertise extends to project change
-                <br />
-                management, ensuring professional and timely stakeholder
-                <br />
-                communication.
-                <br />
-                Our consultants guide you in
+                Prepare for success in your software development project. We specialize in seamless planning, execution, and  management. Our expertise extends to project change management, ensuring professional and timely stakeholder communication. Our consultants guide you in
               </p>
               <div className="unili">
                 <ul className="unilm">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
                 <ul className="unilo">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and  Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
               </div>
@@ -89,51 +66,34 @@ const Software = () => {
             <div className="unii22">
               <h1>Custom Software Development</h1>
               <p>
-                Whether it’s building a new application or upgrading your
-                <br />
-                existing system, NextUpgrad’s expert software <br />
-                development team has the capacity and resources to deliver. From
-                initial design to
-                <br />
-                system integration, scaling, and upgrades, we’ve got you
-                covered.
-                <br />
-                Partnering with NextUpgrad for custom software development
+                Whether it’s building a new application or upgrading your existing system, NextUpgrad’s expert software development team has the capacity and resources to deliver. From initial design to system integration, scaling, and upgrades, we’ve got you covered. Partnering with NextUpgrad for custom software development
                 empowers you to:
               </p>
               <div className="unili">
                 <ul className="unilm">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
                 <ul className="unilo">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
               </div>
@@ -148,54 +108,36 @@ const Software = () => {
             </div>
             <div className="unimm22">
               <h1>
-                Designing and Embedding ERP <br />
-                Solutions
+                Designing and Embedding ERP Solutions
               </h1>
               <p>
-                Prepare for success in your software development project.
-                <br />
-                We specialize in seamless planning, execution, and <br />
-                management. Our expertise extends to project change
-                <br />
-                management, ensuring professional and timely stakeholder
-                <br />
-                communication.
-                <br />
-                Our consultants guide you in
+                Prepare for success in your software development project. We specialize in seamless planning, execution, and  management. Our expertise extends to project change management, ensuring professional and timely stakeholder communication. Our consultants guide you in
               </p>
               <div className="unili">
                 <ul className="unilm">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
                 <ul className="unilo">
                   <li>Strategic Goal Alignment</li>
                   <li>
-                    Needs Assessment and <br />
-                    Prioritization
+                    Needs Assessment and Prioritization
                   </li>
                   <li>Platform Optimization</li>
                   <li>
-                    Efficient Resource
-                    <br />
-                    Allocation
+                    Efficient Resource Allocation
                   </li>
                   <li>
-                    Smooth Implementation <br />
-                    and Rollout
+                    Smooth Implementation and Rollout
                   </li>
                 </ul>
               </div>
@@ -204,17 +146,10 @@ const Software = () => {
           <div className="uni2">
             <div className="unim22">
               <h1>
-                Modernization of Legacy
-                <br />
-                Applications
+                Modernization of Legacy Applications
               </h1>
               <p>
-                Upgrade your business by transforming outdated legacy
-                <br />
-                applications with NextUpgrad’s modernization service. We
-                streamline and enhance your processes, making them agile and
-                efficient. Don’t let the complexity of legacy systems hold you
-                back—embrace innovation with our tailored solutions.
+                Upgrade your business by transforming outdated legacy applications with NextUpgrad’s modernization service. We streamline and enhance your processes, making them agile and efficient. Don’t let the complexity of legacy systems hold you back—embrace innovation with our tailored solutions.
               </p>
             </div>
             <div className="uni21">
@@ -228,16 +163,7 @@ const Software = () => {
             <div className="unimmm22">
               <h1>Cloud App Development</h1>
               <p>
-                Prepare for success in your software development project.
-                <br />
-                We specialize in seamless planning, execution, and <br />
-                management. Our expertise extends to project change
-                <br />
-                management, ensuring professional and timely stakeholder
-                <br />
-                communication.
-                <br />
-                Our consultants guide you in
+                Prepare for success in your software development project. We specialize in seamless planning, execution, and  management. Our expertise extends to project change management, ensuring professional and timely stakeholder communication. Our consultants guide you in
               </p>
               <div className="unili">
                 <ul className="unilm">
@@ -260,16 +186,12 @@ const Software = () => {
               <img src="s1.webp" alt="" />
               <h1>STEP 1</h1>
               <p>
-                At the outset, let’s talk about your
-                <br />
-                business requirements and how we <br />
-                can address them.
+                At the outset, let’s talk about your business requirements and how we can address them.
               </p>
               <ul>
                 <li>Time to endorse the NDA!</li>
                 <li>
-                  We finalize business terms and <br />
-                  support structure.
+                  We finalize business terms and support structure.
                 </li>
               </ul>
             </div>
@@ -277,21 +199,15 @@ const Software = () => {
               <img src="s2.webp" alt="" />
               <h1>STEP 2</h1>
               <p>
-                At the outset, let’s talk about your
-                <br />
-                business requirements and how we <br />
-                can address them.
+                At the outset, let’s talk about your business requirements and how we can address them.
               </p>
               <ul>
                 <li>
-                  We select the tools to be utilized
-                  <br />
-                  throughout our collaboration.
+                  We select the tools to be utilized throughout our collaboration.
                 </li>
                 <li>The kick-off meeting takes place.</li>
                 <li>
-                  The formal contract and service <br />
-                  order are drafted.
+                  The formal contract and service order are drafted.
                 </li>
               </ul>
             </div>
@@ -299,24 +215,15 @@ const Software = () => {
               <img src="s3.webp" alt="" />
               <h1>STEP 3</h1>
               <p>
-                At the outset, let’s talk about your
-                <br />
-                business requirements and how we <br />
-                can address them.
+                At the outset, let’s talk about your business requirements and how we  can address them.
               </p>
               <ul>
                 <li>
-                  Manage expectations and drive
-                  <br />
-                  improvements—present!
+                  Manage expectations and drive improvements—present!
                 </li>
                 <li>You can reach our support anytime.</li>
                 <li>
-                  …And your project is progressing
-                  <br />
-                  seamlessly through an agile
-                  <br />
-                  approach.
+                  …And your project is progressing seamlessly through an agile approach.
                 </li>
               </ul>
             </div>
