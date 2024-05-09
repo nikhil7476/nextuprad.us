@@ -12,8 +12,12 @@ const Header2 = () => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
         const navbarToggler = document.getElementById("navbar-toggler");
-        if (navbarToggler) {
-          navbarToggler.click();
+        const navbarCollapse = document.getElementById("basic-navbar-nav");
+        if (navbarToggler && navbarCollapse) {
+          const isNavbarOpen = navbarCollapse.classList.contains("show");
+          if (isNavbarOpen) {
+            navbarToggler.click();
+          }
         }
       }
     };
