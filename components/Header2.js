@@ -69,13 +69,13 @@ const Header2 = () => {
                   <NavDropdown.Item>Digital Marketing</NavDropdown.Item>
                 </Link>
               </NavDropdown>
-              <Link href="/" onClick={handleMenuItemClick}>
+              <Link href="/ContactUs" onClick={handleMenuItemClick}>
                 Contact us
               </Link>
-              <Link href="/About" onClick={handleMenuItemClick}>
+              <Link href="/Portfolio" onClick={handleMenuItemClick}>
                 Portfolio
               </Link>
-              <Link href="/About" onClick={handleMenuItemClick}>
+              <Link href="/Blog" onClick={handleMenuItemClick}>
                 Blog
               </Link>
             </Nav>
