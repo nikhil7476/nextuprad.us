@@ -194,10 +194,10 @@ body {
   z-index: 1;
   transition-duration: 0.6s;
   text-decoration: none !important;
-    font-family: "Montserrat", Sans-serif;
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
+  font-family: "Montserrat", Sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .tabs a.active {
@@ -230,7 +230,7 @@ body {
     color: #000;
     font-size: 16px;
     font-weight: 500;
-}
+  }
   /* background: #05abe0;
   background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
   background: -webkit-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
@@ -1531,7 +1531,7 @@ span.elementor-screen-only {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
   font-size: 16px;
-  font-weight: 400; 
+  font-weight: 400;
   line-height: 30px;
 }
 .sec-3-1,
@@ -1579,7 +1579,7 @@ span.elementor-screen-only {
 .custmer-detail .col-md-6 {
   margin-bottom: 30px;
 }
-.invoasionbox{
+.invoasionbox {
   width: 300px;
 }
 .custmer-detail h2 {
@@ -2796,7 +2796,8 @@ a.listing-elementor-button:hover {
   margin: 0 auto;
   border-radius: 12px;
   width: 222px;
-  margin-bottom: 10px;    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .logosecond-box {
   margin-top: 55px !important;
@@ -2807,7 +2808,8 @@ a.listing-elementor-button:hover {
   margin: 0 auto;
   border-radius: 12px;
   width: 222px;
-  margin-bottom: 10px;    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .accreditation .col-md-6 .lgofirstsection span img,
 .accreditation .col-md-6 .logosecond-box span img {
@@ -2894,7 +2896,7 @@ a.kickstart-button:hover {
 .sec-two h2 {
   margin: 23px 0 0 0;
   position: relative;
-  color: #4E515C;
+  color: #4e515c;
   font-family: "Montserrat", Sans-serif;
   font-size: 19px;
   font-weight: 500;
@@ -2921,7 +2923,7 @@ a.kickstart-button:hover {
 .sec-two p {
   text-align: left;
   margin-bottom: 40px;
-  color: #4E515C;
+  color: #4e515c;
   font-family: "Montserrat", Sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -3133,7 +3135,6 @@ a.kickstart-button:hover {
   /*display: flex;  gap: 10px;*/
   justify-content: center;
   vertical-align: middle;
-
 }
 .coltwo h2 {
   color: #9b9b9b !important;
@@ -3796,7 +3797,7 @@ a.elementor-buttoncontact:hover {
   font-size: 40px;
   font-weight: 600;
 }
-.contactphone a{
+.contactphone a {
   color: #ffffff;
   font-family: "Montserrat", Sans-serif;
   font-size: 25px;
@@ -4324,6 +4325,7 @@ a:hover {
   top: -9px;
 }
 .sec-two-btn {
+  transition: 0.4s ease;
   color: #fff;
   font-family: "Montserrat", Sans-serif;
   font-size: 18px;
@@ -4348,6 +4350,7 @@ a:hover {
 }
 .img-box {
   padding: 30px 15px 30px 15px;
+  transition: 0.4s ease;
 }
 .img-box:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -4423,6 +4426,7 @@ a:hover {
   padding: 15px 25px 15px 25px;
   margin-top: 110px !important;
   display: inline-block;
+  transition: 0.4s;
 }
 .sec-three-btn:hover {
   color: white;
@@ -4443,8 +4447,8 @@ a:hover {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.sec-four-two h2:before{
-display: none;
+.sec-four-two h2:before {
+  display: none;
 }
 .sec-four-two a {
   color: #fff;
@@ -4472,7 +4476,7 @@ display: none;
 }
 .sec-five-one {
   padding: 100px 20px 100px 20px;
- 
+
   color: #fff;
 }
 .sec-five-one h2 {
@@ -4511,6 +4515,7 @@ display: none;
   border-radius: 20px;
   background-color: #fff;
   text-align: center;
+  transition: 0.4s ease;
 }
 .icn-box img {
   background: none;
@@ -4591,7 +4596,9 @@ display: none;
   font-weight: 400;
   margin-bottom: 40px;
 }
-.skicon, .mlicon, .wpicon {
+.skicon,
+.mlicon,
+.wpicon {
   border-radius: 50px;
   color: white;
   background-color: #00aff0;
@@ -4869,7 +4876,6 @@ pre {
 }
 
 .work1 {
- 
 }
 
 #uni {
@@ -4950,9 +4956,9 @@ pre {
 
 .unimmm22 p {
   color: #000000;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .unii22 p {
@@ -5339,7 +5345,7 @@ pre {
   margin-top: 15px;
 }
 .accordion-item:not(:first-of-type) {
-  border-top: 1px solid #dee2e6!important;
+  border-top: 1px solid #dee2e6 !important;
 }
 
 @media screen and (min-width: 768px) {
