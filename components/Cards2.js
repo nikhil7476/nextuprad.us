@@ -22,7 +22,7 @@ const Cards2 = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team6.webp" alt="" />
+              <img src="/team6.webp" alt="WILLIAM DAVIS" />
               <div>
                 <h5>BY WILLIAM DAVIS</h5>
                 <h6>CREATIVE DIRECTOR</h6>
@@ -48,7 +48,7 @@ const Cards2 = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team1.webp" alt="" />
+              <img src="/team1.webp" alt="SHANE QUIGLEY" />
               <div>
                 <h5>BY SHANE QUIGLEY</h5>
                 <h6>MANAGING DIRECTOR</h6>
@@ -74,7 +74,7 @@ const Cards2 = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team5.webp" alt="" />
+              <img src="/team5.webp" alt="LANCE BURTON" />
               <div>
                 <h5>BY LANCE BURTON</h5>
                 <h6>COMMERCIAL MANAGER</h6>

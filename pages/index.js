@@ -1062,7 +1062,7 @@ export default function Home() {
               <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/download1.png" alt="" />
+                  <img src="/download1.png" alt=" Experience-Driven Resources" />
                   Experience-Driven Resources
                 </h3>
                 <p>
@@ -1074,7 +1074,7 @@ export default function Home() {
               <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/download.png" alt="" />
+                  <img src="/download.png" alt="Budget-Centric Resource" />
                   Budget-Centric Resource
                 </h3>
                 <p>
@@ -1087,7 +1087,7 @@ export default function Home() {
               <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/download2.png" alt="" />
+                  <img src="/download2.png" alt="Expertise-Centric Resources!" />
                   Expertise-Centric Resources!
                 </h3>
                 <p>
@@ -1100,7 +1100,7 @@ export default function Home() {
               <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/download3.png" alt="" />
+                  <img src="/download3.png" alt="Fusion of Experience, Budget, and Expertise" />
                   Fusion of Experience, Budget, and Expertise
                 </h3>
                 <p>
@@ -1225,7 +1225,7 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>
                   {" "}
-                  <img src="/downloadnew.png" alt="" />
+                  <img src="/downloadnew.png" alt="Unique pricing models" />
                   Unique pricing models
                 </h3>
                 <p>
@@ -1238,7 +1238,7 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>
                   {" "}
-                  <img src="/downloadnew1.png" alt="" />
+                  <img src="/downloadnew1.png" alt="Project Isolation Setup" />
                   Project Isolation Setup
                 </h3>
                 <p>
@@ -1250,7 +1250,7 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>
                   {" "}
-                  <img src="/downloadnew2.png" alt="" />
+                  <img src="/downloadnew2.png" alt="Complimentary Maintenance Services" />
                   Complimentary Maintenance Services
                 </h3>
                 <p>
@@ -1262,7 +1262,7 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>
                   {" "}
-                  <img src="/downloadnew3.png" alt="" />
+                  <img src="/downloadnew3.png" alt="Guaranteed Timely Delivery" />
                   Guaranteed Timely Delivery
                 </h3>
                 <p>
@@ -1274,7 +1274,7 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>
                   {" "}
-                  <img src="/downloadnew4.png" alt="" />
+                  <img src="/downloadnew4.png" alt="Gratis Shadow Resource" />
                   Gratis Shadow Resource
                 </h3>
                 <p>
@@ -1286,7 +1286,7 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>
                   {" "}
-                  <img src="/downloadnew5.png" alt="" />
+                  <img src="/downloadnew5.png" alt="Free Ideation Session" />
                   Free Ideation Session
                 </h3>
                 <p>
@@ -1310,7 +1310,7 @@ export default function Home() {
                 <div className="indus-content">
                   <h3>
                     {" "}
-                    <img src="/eccomm-1.webp" alt="" />
+                    <img src="/eccomm-1.webp" alt="Ecommerce" />
                     Ecommerce
                   </h3>
                   <p>
@@ -1324,7 +1324,7 @@ export default function Home() {
                   {" "}
                   <h3>
                     {" "}
-                    <img src="/health-1.webp" alt="" />
+                    <img src="/health-1.webp" alt=" Healthcare" />
                     Healthcare
                   </h3>
                   <p>
@@ -1338,7 +1338,7 @@ export default function Home() {
                   {" "}
                   <h3>
                     {" "}
-                    <img src="/e-learn.webp" alt="" />
+                    <img src="/e-learn.webp" alt="Education/ E-learning" />
                     Education/ E-learning
                   </h3>
                   <p>
@@ -1352,7 +1352,7 @@ export default function Home() {
                   {" "}
                   <h3>
                     {" "}
-                    <img src="/sports.webp" alt="" />
+                    <img src="/sports.webp" alt=" Sports" />
                     Sports
                   </h3>
                   <p>
@@ -1365,7 +1365,7 @@ export default function Home() {
                 <div className="indus-content">
                   <h3>
                     {" "}
-                    <img src="/media.webp" alt="" />
+                    <img src="/media.webp" alt="Media and Entertainment" />
                     Media and Entertainment
                   </h3>
                   <p>
@@ -1378,7 +1378,7 @@ export default function Home() {
                 <div className="indus-content">
                   <h3>
                     {" "}
-                    <img src="/realstate.webp" alt="" />
+                    <img src="/realstate.webp" alt="Real estate" />
                     Real estate
                   </h3>
                   <p>
@@ -1392,7 +1392,7 @@ export default function Home() {
                 <div className="indus-content">
                   <h3>
                     {" "}
-                    <img src="/ld.webp" alt="" />
+                    <img src="/ld.webp" alt="Logistics and Distribution" />
                     Logistics and Distribution
                   </h3>
                   <p>
@@ -1406,7 +1406,7 @@ export default function Home() {
                   {" "}
                   <h3>
                     {" "}
-                    <img src="/retail.webp" alt="" />
+                    <img src="/retail.webp" alt="Retail" />
                     Retail
                   </h3>
                   <p>

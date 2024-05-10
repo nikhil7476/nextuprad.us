@@ -22,7 +22,7 @@ const Cards = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team1.webp" alt="" />
+              <img src="/team1.webp" alt="MICHAEL SMITH" />
               <div>
                 <h5>BY MICHAEL SMITH</h5>
                 <h6>GENERAL MANAGER</h6>
@@ -48,7 +48,7 @@ const Cards = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team5.webp" alt="" />
+              <img src="/team5.webp" alt="TOM BAGNALL" />
               <div>
                 <h5>BY TOM BAGNALL</h5>
                 <h6>MANAGING DIRECTOR</h6>
@@ -75,7 +75,7 @@ const Cards = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/team3.webp" alt="" />
+              <img src="/team3.webp" alt="GAZ BATTERSBY" />
               <div>
                 <h5>BY GAZ BATTERSBY</h5>
                 <h6>COMMERCIAL MANAGER</h6>

@@ -23,7 +23,7 @@ const Webdesign = () => {
             <div className="row">
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
-                  <img src="custom_developement.png" alt="" />
+                  <img src="custom_developement.png" alt="Custom Website Development" />
                   <h2>Custom Website Development</h2>
                 </div>
                 <p>
@@ -33,7 +33,7 @@ const Webdesign = () => {
               </div>
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
-                  <img src="cms.png" alt="" />
+                  <img src="cms.png" alt="CMS Integration" />
                   <h2>CMS Integration</h2>
                 </div>
                 <p>
@@ -47,7 +47,7 @@ const Webdesign = () => {
             <div className="row">
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
-                  <img src="ecom.png" alt="" />
+                  <img src="ecom.png" alt="E-Commerce Development" />
                   <h2>E-Commerce Development</h2>
                 </div>
                 <p>
@@ -58,7 +58,7 @@ const Webdesign = () => {
               </div>
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
-                  <img src="full_stack.png" alt="" />
+                  <img src="full_stack.png" alt="Full Stack" />
                   <h2>Full Stack</h2>
                 </div>
                 <p>
@@ -72,7 +72,7 @@ const Webdesign = () => {
             <div className="row last-row">
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
-                  <img src="web-security.png" alt="" />
+                  <img src="web-security.png" alt="Web Security" />
                   <h2>Web Security</h2>
                 </div>
                 <p>
@@ -83,7 +83,7 @@ const Webdesign = () => {
               </div>
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
-                  <img src="training.png" alt="" />
+                  <img src="training.png" alt="Training and Documentation" />
                   <h2>Training and Documentation</h2>
                 </div>
                 <p>
@@ -117,7 +117,7 @@ const Webdesign = () => {
                     <div className="flip-card">
                       <div className="flip-card-inner">
                         <div className="flip-card-front">
-                          <img src="frontend.png" alt="Avatar" />
+                          <img src="frontend.png" alt="Front-end" />
                           <h3>Front-end</h3>
                         </div>
                         <div className="flip-card-back">
@@ -138,7 +138,7 @@ const Webdesign = () => {
                     <div className="flip-card">
                       <div className="flip-card-inner">
                         <div className="flip-card-front">
-                          <img src="backend.png" alt="Avatar" />
+                          <img src="backend.png" alt="Back-end" />
                           <h3>Back-end</h3>
                         </div>
                         <div className="flip-card-back">
@@ -158,7 +158,7 @@ const Webdesign = () => {
                     <div className="flip-card">
                       <div className="flip-card-inner">
                         <div className="flip-card-front">
-                          <img src="project-management.png" alt="Avatar" />
+                          <img src="project-management.png" alt="Project Management" />
                           <h3>Project Management</h3>
                         </div>
                         <div className="flip-card-back">
@@ -180,7 +180,7 @@ const Webdesign = () => {
                     <div className="flip-card">
                       <div className="flip-card-inner">
                         <div className="flip-card-front">
-                          <img src="mobile-app.png" alt="Avatar" />
+                          <img src="mobile-app.png" alt="CMS" />
                           <h3>CMS</h3>
                         </div>
                         <div className="flip-card-back">
@@ -200,7 +200,7 @@ const Webdesign = () => {
                     <div className="flip-card">
                       <div className="flip-card-inner">
                         <div className="flip-card-front">
-                          <img src="database.png" alt="Avatar" />
+                          <img src="database.png" alt="Database" />
                           <h3>Database</h3>
                         </div>
                         <div className="flip-card-back">
@@ -218,7 +218,7 @@ const Webdesign = () => {
                     <div className="flip-card">
                       <div className="flip-card-inner">
                         <div className="flip-card-front">
-                          <img src="servers.png" alt="Avatar" />
+                          <img src="servers.png" alt="Servers" />
                           <h3>Servers</h3>
                         </div>
                         <div className="flip-card-back">
@@ -390,31 +390,31 @@ const Webdesign = () => {
               <div className="col-md-7 sec-five-two">
                 <div className="col-md-4">
                   <div className="icn-box">
-                    <img src="web1.webp" alt="" />
+                    <img src="web1.webp" alt="Happy Clients" />
                     <h3>5000 +</h3>
                     <p>Happy Clients</p>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="icn-box">
-                    <img src="web2.webp" alt="" />
+                    <img src="web2.webp" alt="Website Designed" />
                     <h3>2500 +</h3>
                     <p>Website Designed</p>
                   </div>
                   <div className="icn-box">
-                    <img src="web3.webp" alt="" />
+                    <img src="web3.webp" alt="Countries" />
                     <h3>5 +</h3>
                     <p>Countries</p>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="icn-box">
-                    <img src="web4.webp" alt="" />
+                    <img src="web4.webp" alt="Professionals" />
                     <h3>500 +</h3>
                     <p>Professionals</p>
                   </div>
                   <div className="icn-box">
-                    <img src="web5.webp" alt="" />
+                    <img src="web5.webp" alt="Customized Solutions" />
                     <h3>1500 +</h3>
                     <p>
                       Customized

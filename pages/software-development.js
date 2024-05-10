@@ -25,7 +25,7 @@ const Software = () => {
           </div>
           <div className="uni2">
             <div className="uni21">
-              <img src="soft1.webp" alt="" />
+              <img src="soft1.webp" alt="Software Consulting" />
             </div>
             <div className="uni22">
               <h1>Software Consulting</h1>
@@ -83,12 +83,12 @@ const Software = () => {
               </div>
             </div>
             <div className="uni21">
-              <img src="soft2.webp" alt="" />
+              <img src="soft2.webp" alt="Custom Software Development" />
             </div>
           </div>
           <div className="uni2">
             <div className="uni21">
-              <img src="soft3.webp" alt="" />
+              <img src="soft3.webp" alt="Designing and Embedding ERP Solutions" />
             </div>
             <div className="unimm22">
               <h1>Designing and Embedding ERP Solutions</h1>
@@ -129,12 +129,12 @@ const Software = () => {
               </p>
             </div>
             <div className="uni21">
-              <img src="soft4.webp" alt="" />
+              <img src="soft4.webp" alt="Modernization of Legacy Applications" />
             </div>
           </div>
           <div className="uni2">
             <div className="unid21">
-              <img src="development-services.svg" alt="" />
+              <img src="development-services.svg" alt="Cloud App Development" />
             </div>
             <div className="unimmm22">
               <h1>Cloud App Development</h1>
@@ -163,7 +163,7 @@ const Software = () => {
           </div>
           <div className="work2">
             <div className="work21">
-              <img src="s1.webp" alt="" />
+              <img src="s1.webp" alt="STEP 1" />
               <h1>STEP 1</h1>
               <p>
                 At the outset, let’s talk about your business requirements and
@@ -175,7 +175,7 @@ const Software = () => {
               </ul>
             </div>
             <div className="work21">
-              <img src="s2.webp" alt="" />
+              <img src="s2.webp" alt="STEP 2" />
               <h1>STEP 2</h1>
               <p>
                 At the outset, let’s talk about your business requirements and
@@ -191,7 +191,7 @@ const Software = () => {
               </ul>
             </div>
             <div className="work21">
-              <img src="s3.webp" alt="" />
+              <img src="s3.webp" alt="STEP 3" />
               <h1>STEP 3</h1>
               <p>
                 At the outset, let’s talk about your business requirements and
@@ -216,7 +216,7 @@ const Software = () => {
             <div className="tech21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr1.webp" alt="" />
+                  <img src="pr1.webp" alt=".NET" />
                 </div>
                 <div className="tech222">
                   <h1>.NET</h1>
@@ -233,7 +233,7 @@ const Software = () => {
             <div className="techm21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr2.webp" alt="" />
+                  <img src="pr2.webp" alt=".NET CORE" />
                 </div>
                 <div className="tech222">
                   <h1> .NET CORE</h1>
@@ -251,7 +251,7 @@ const Software = () => {
             <div className="techm21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr3.webp" alt="" />
+                  <img src="pr3.webp" alt="C#" />
                 </div>
                 <div className="tech222">
                   <h1>C#</h1>
@@ -269,7 +269,7 @@ const Software = () => {
             <div className="tech21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr4.webp" alt="" />
+                  <img src="pr4.webp" alt="GOLANG" />
                 </div>
                 <div className="tech222">
                   <h1>GOLANG</h1>
@@ -286,7 +286,7 @@ const Software = () => {
             <div className="techm21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr5.webp" alt="" />
+                  <img src="pr5.webp" alt="UX/UI DESIGN" />
                 </div>
                 <div className="tech222">
                   <h1>UX/UI DESIGN</h1>
@@ -303,7 +303,7 @@ const Software = () => {
             <div className="techm21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr6.webp" alt="" />
+                  <img src="pr6.webp" alt="FRONT-END" />
                 </div>
                 <div className="tech222">
                   <h1>FRONT-END</h1>
@@ -320,7 +320,7 @@ const Software = () => {
             <div className="tech21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr7.webp" alt="" />
+                  <img src="pr7.webp" alt="JAVA" />
                 </div>
                 <div className="tech222">
                   <h1>JAVA</h1>
@@ -336,7 +336,7 @@ const Software = () => {
             <div className="techm21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr8.webp" alt="" />
+                  <img src="pr8.webp" alt="MOBILE" />
                 </div>
                 <div className="tech222">
                   <h1>MOBILE</h1>
@@ -352,7 +352,7 @@ const Software = () => {
             <div className="techm21">
               <div className="tec">
                 <div className="tech211">
-                  <img src="pr9.webp" alt="" />
+                  <img src="pr9.webp" alt="PHP" />
                 </div>
                 <div className="tech222">
                   <h1>PHP</h1>

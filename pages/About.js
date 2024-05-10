@@ -68,7 +68,7 @@ const About = () => {
           <h1>About NextUpgrad USA</h1>
           <div className="sec-1-1">
             <div className="sec-1-1-1">
-              <img src="ceo.png" alt="ceo-pic" />
+              <img src="ceo.png" alt="Deepak Tandon" />
             </div>
             <div className="sec-1-1-2">
               <p>
@@ -235,10 +235,10 @@ const About = () => {
                   </p>
                 </div>
                 <div className="col-md-6">
-                  <img src="/philosophy.png" alt="image" />
+                  <img src="/philosophy.png" alt="Customer-Centric Philosophy" />
                 </div>
                 <div className="col-md-6">
-                  <img src="/experience.png" alt="image" />
+                  <img src="/experience.png" alt="Unparalleled Customer Experience" />
                 </div>
                 <div className="col-md-6">
                   <h2>Unparalleled Customer Experience</h2>
@@ -260,11 +260,11 @@ const About = () => {
                   <img
                     src="/innovation.png"
                     className="invoasionbox"
-                    alt="image"
+                    alt="Driving Innovation and Adaptability"
                   />
                 </div>
                 <div className="col-md-6">
-                  <img src="/agile.png" alt="image" />
+                  <img src="/agile.png" alt="Executing Agile Development" />
                 </div>
                 <div className="col-md-6">
                   <h2>Executing Agile Development</h2>
@@ -284,7 +284,7 @@ const About = () => {
                   </p>
                 </div>
                 <div className="col-md-6">
-                  <img src="/satisfaction.png" alt="image" />
+                  <img src="/satisfaction.png" alt="Unprecedented client Satisfaction" />
                 </div>
               </div>
             </div>
@@ -310,25 +310,25 @@ const About = () => {
                   <img
                     src="/hubspot.png"
                     className="hubspot"
-                    alt="hubspot-logo"
+                    alt="hubspot"
                   />
                   <h2>Certified Marketing Expert</h2>
                 </motion.li>
 
                 <motion.li whileHover={{ scale: 1.1 }}>
-                  <img src="/adobe.png" className="adobe" alt="adobe-logo" />
+                  <img src="/adobe.png" className="adobe" alt="adobe" />
                   <h2>Adobe Certified Professional</h2>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }}>
                   <img
                     src="/Hubspot-Agency.png"
                     className="agency"
-                    alt="hubspot-agency-logo"
+                    alt="HubSpot Partner"
                   />
                   <h2>Leading HubSpot Partner</h2>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }}>
-                  <img src="/pmp.png" className="pmplogo" alt="pmp-logo" />
+                  <img src="/pmp.png" className="pmplogo" alt="Project Management Professional" />
                   <h2>Project Management Professional</h2>
                 </motion.li>
               </ul>

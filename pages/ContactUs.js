@@ -129,7 +129,7 @@ const conatactus = () => {
               </div>
               <div className="col-md-6">
                 <div className="contactimg">
-                  <img src="/contact.webp" alt="image" />
+                  <img src="/contact.webp" alt="Contact Us" />
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@ const conatactus = () => {
                 >
                   <motion.img
                     src="/usa1.webp"
-                    alt="image"
+                    alt="USA"
                     initial={{ opacity: 0, scale: 0.5, x: "50%", y: "-50%" }}
                     animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -175,7 +175,7 @@ const conatactus = () => {
                 >
                   <motion.img
                     src="/abudabhi3.webp"
-                    alt="image"
+                    alt="UAE"
                     initial={{ opacity: 0, scale: 0.5, x: "50%", y: "-50%" }}
                     animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -195,7 +195,7 @@ const conatactus = () => {
                 >
                   <motion.img
                     src="/lko2.webp"
-                    alt="image"
+                    alt="INDIA"
                     initial={{ opacity: 0, scale: 0.5, x: "50%", y: "-50%" }}
                     animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
                     transition={{ duration: 0.5 }}

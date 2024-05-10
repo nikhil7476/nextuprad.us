@@ -88,7 +88,7 @@ const digitalmarketingservices = () => {
           <div className="row">
             <div className="col-md-7">
               {" "}
-              <img src="dg1.webp" alt="Exceeding" />
+              <img src="dg1.webp" alt="Exceeding Expectations Beyond Leads" />
             </div>
             <div className="col-md-5">
               <h2>Exceeding Expectations Beyond Leads</h2>
@@ -121,7 +121,7 @@ const digitalmarketingservices = () => {
             <div className=" listing">
               <div>
                 {" "}
-                <img src="dg2.webp" />
+                <img src="dg2.webp" alt="SEO Solution" />
                 <h2>SEO Solution</h2>
                 <p>
                   Make sure you are on top of the digital race with innovative
@@ -130,7 +130,7 @@ const digitalmarketingservices = () => {
               </div>
               <div>
                 {" "}
-                <img src="dg3.webp" />
+                <img src="dg3.webp" alt="PPC Marketing" />
                 <h2>PPC Marketing</h2>
                 <p>
                   Advertise among the target audience and drive immediate,
@@ -139,7 +139,7 @@ const digitalmarketingservices = () => {
               </div>
               <div>
                 {" "}
-                <img src="dg4.webp" />
+                <img src="dg4.webp" alt="Assessment" />
                 <h2>Assessment</h2>
                 <p>
                   We carve success by identifying trends and steering continual
@@ -148,7 +148,7 @@ const digitalmarketingservices = () => {
               </div>
               <div>
                 {" "}
-                <img src="dg5.webp" />
+                <img src="dg5.webp" alt="AppPromo" />
                 <h2>AppPromo</h2>
                 <p>
                   We ensure that your app not only gets noticed but also
@@ -157,7 +157,7 @@ const digitalmarketingservices = () => {
               </div>
               <div>
                 {" "}
-                <img src="dg6.webp" />
+                <img src="dg6.webp" alt="Social Marketing" />
                 <h2>Social Marketing</h2>
                 <p>
                   Boost brand awareness with compelling content, a target
@@ -166,7 +166,7 @@ const digitalmarketingservices = () => {
               </div>
               <div>
                 {" "}
-                <img src="dg7.webp" />
+                <img src="dg7.webp" alt="Content Craft" />
                 <h2>Content Craft</h2>
                 <p>
                   Convey your brand story with an effective content strategy
@@ -175,7 +175,7 @@ const digitalmarketingservices = () => {
               </div>
               <div>
                 {" "}
-                <img src="dg8.webp" />
+                <img src="dg8.webp" alt="VIDEO" />
                 <h2>VIDEO</h2>
                 <p>
                   We ensure high-quality shareable content that captivates your
@@ -184,7 +184,7 @@ const digitalmarketingservices = () => {
               </div>
               <div>
                 {" "}
-                <img src="dg9.webp" />
+                <img src="dg9.webp" alt="Email Marketng" />
                 <h2>Email Marketng</h2>
                 <p>
                   We design and execute personalized campaigns to nurture leads
@@ -203,7 +203,7 @@ const digitalmarketingservices = () => {
           <div className="row">
             <div className="col-md-6">
               {" "}
-              <img src="dg10.webp" />
+              <img src="dg10.webp" alt="Our digital guidelines" />
               <h1>Our digital guidelines</h1>
             </div>
             <div className="col-md-6">
@@ -1278,22 +1278,22 @@ const digitalmarketingservices = () => {
               </p>
               <ul>
                 <li>
-                  <img src="dg11.webp" />
+                  <img src="dg11.webp" alt="Satisfied Clients" />
                   <h2>500+</h2>
                   <h3>Satisfied Clients</h3>
                 </li>
                 <li>
-                  <img src="dg12.webp" />
+                  <img src="dg12.webp" alt="Countries" />
                   <h2>5+</h2>
                   <h3>Countries</h3>
                 </li>
                 <li>
-                  <img src="dg13.webp" />
+                  <img src="dg13.webp" alt="Professionals" />
                   <h2>30+</h2>
                   <h3>Professionals</h3>
                 </li>
                 <li>
-                  <img src="dg14.webp" />
+                  <img src="dg14.webp" alt="Product" />
                   <h2>10+</h2>
                   <h3>Product</h3>
                 </li>
@@ -1316,21 +1316,21 @@ const digitalmarketingservices = () => {
               <div className="row">
                 <div className="col-md-6 lgofirstsection">
                   <span>
-                    <img src="dg15.webp" />
+                    <img src="dg15.webp" alt="Google Digital Garage" />
                   </span>
                   <span>
-                    <img src="dg16.webp" />
+                    <img src="dg16.webp" alt="Google Analytics" />
                   </span>
                   <span>
-                    <img src="dg17.webp" />
+                    <img src="dg17.webp" alt="Semrush" />
                   </span>
                 </div>
                 <div className="col-md-6 logosecond-box">
                   <span>
-                    <img src="dg18.webp" />
+                    <img src="dg18.webp" alt="Google ADs" />
                   </span>
                   <span>
-                    <img src="dg19.webp" />
+                    <img src="dg19.webp" alt="Hubspot Academy" />
                   </span>
                 </div>
               </div>

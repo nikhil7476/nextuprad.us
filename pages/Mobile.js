@@ -16,7 +16,7 @@ const mobileapp = () => {
                 <Link href="#">Connect with a specialist</Link>
               </div>
               <div className="col-md-6">
-                <img src="/mobile-banner.webp" alt="image" />
+                <img src="/mobile-banner.webp" alt="Connect with a specialist" />
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ const mobileapp = () => {
                 </ul>
               </div>
               <div className="col-md-6">
-                <img src="/mob-1.webp" alt="mobile-image" />
+                <img src="/mob-1.webp" alt="Mobile App Development" />
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const mobileapp = () => {
             </p>
             <div className="row">
               <div className="col-md-3 dev-col">
-                <img src="/mobile.webp" alt="img" />
+                <img src="/mobile.webp" alt="Native Mobile App Development" />
                 <h2>Native Mobile App Development</h2>
                 <p>
                   Tailored mobile apps for iOS and Android, ensuring peak
@@ -71,7 +71,7 @@ const mobileapp = () => {
                 </p>
               </div>
               <div className="col-md-3 dev-col">
-                <img src="/hybrid.webp" alt="img" />
+                <img src="/hybrid.webp" alt="Hybrid Mobile App Development" />
                 <h2>Hybrid Mobile App Development</h2>
                 <p>
                   Build versatile apps for multiple OSs, saving time and money
@@ -79,7 +79,7 @@ const mobileapp = () => {
                 </p>
               </div>
               <div className="col-md-3 dev-col">
-                <img src="/web.webp" alt="img" />
+                <img src="/web.webp" alt="Progressive Web App Development" />
                 <h2>Progressive Web App Development</h2>
                 <p>
                   Offline functionality, fast loading, and responsiveness across
@@ -87,7 +87,7 @@ const mobileapp = () => {
                 </p>
               </div>
               <div className="col-md-3 dev-col">
-                <img src="/software.webp" alt="img" />
+                <img src="/software.webp" alt="Wearables and Embedded Software" />
                 <h2>Wearables and Embedded Software</h2>
                 <p>
                   Dive into wearables and embedded systems with our innovative
@@ -122,7 +122,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="kotlin.webp" alt="/kotlin-logo" />
+                    <img src="/kotlin.webp" alt="Kotlin" />
                   </div>
                   <div className="col-md-3">
                     <h2>Kotlin</h2>
@@ -139,7 +139,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="ionic.webp" alt="/ionic-logo" />
+                    <img src="/ionic.webp" alt="Ionic" />
                   </div>
                   <div className="col-md-3">
                     <h2>Ionic</h2>
@@ -156,7 +156,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="xamarin.webp" alt="/xamarin-logo" />
+                    <img src="/xamarin.webp" alt="Xamarin" />
                   </div>
                   <div className="col-md-3">
                     <h2>Xamarin</h2>
@@ -174,7 +174,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="phonegap.webp" alt="/phonegap-logo" />
+                    <img src="/phonegap.webp" alt="Phonegap" />
                   </div>
                   <div className="col-md-3">
                     <h2>Phonegap</h2>
@@ -191,7 +191,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="flutter.webp" alt="/flutter-logo" />
+                    <img src="/flutter.webp" alt="Flutter" />
                   </div>
                   <div className="col-md-3">
                     <h2>Flutter</h2>
@@ -207,7 +207,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="python.webp" alt="/python-logo" />
+                    <img src="/python.webp" alt="Python" />
                   </div>
                   <div className="col-md-3">
                     <h2>Python</h2>
@@ -225,7 +225,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="java.webp" alt="/java-logo" />
+                    <img src="/java.webp" alt="Java" />
                   </div>
                   <div className="col-md-3">
                     <h2>Java</h2>
@@ -241,7 +241,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="swift.webp" alt="/swift-logo" />
+                    <img src="/swift.webp" alt="Swift" />
                   </div>
                   <div className="col-md-3">
                     <h2>Swift</h2>
@@ -257,7 +257,7 @@ const mobileapp = () => {
               <div className="col-md-4 brand-hd">
                 <div className="row">
                   <div className="col-md-3">
-                    <img src="react.webp" alt="/react-logo" />
+                    <img src="/react.webp" alt="React" />
                   </div>
                   <div className="col-md-3">
                     <h2>React</h2>
@@ -279,7 +279,7 @@ const mobileapp = () => {
             <div className="row">
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-one" src="/planner.png" alt="img" />
+                  <img className="pr-one" src="/planner.png" alt="Planner" />
                   <h2>1</h2>
                 </div>
                 <div className="mobilebox">
@@ -293,7 +293,7 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-two" src="/blueprint.webp" alt="img" />
+                  <img className="pr-two" src="/blueprint.webp" alt="Blueprinting" />
                   <h2>2</h2>
                 </div>
                 <div className="mobilebox">
@@ -307,7 +307,7 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-three" src="/app.webp" alt="img" />
+                  <img className="pr-three" src="/app.webp" alt="App Design" />
                   <h2>3</h2>
                 </div>
                 <div className="mobilebox">
@@ -321,7 +321,7 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-four" src="/imple.webp" alt="img" />
+                  <img className="pr-four" src="/imple.webp" alt="Implementation" />
                   <h2>4</h2>
                 </div>
                 <div className="mobilebox">
@@ -337,7 +337,7 @@ const mobileapp = () => {
             <div className="row">
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-five" src="/testing.webp" alt="img" />
+                  <img className="pr-five" src="/testing.webp" alt="Quality Analysis &amp; Testing" />
                   <h2>5</h2>
                 </div>
                 <div className="mobilebox">
@@ -351,7 +351,7 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-six" src="/play.webp" alt="img" />
+                  <img className="pr-six" src="/play.webp" alt="Set in Motion" />
                   <h2>6</h2>
                 </div>
                 <div className="mobilebox">
@@ -365,7 +365,7 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-sev" src="/support.webp" alt="img" />
+                  <img className="pr-sev" src="/support.webp" alt="Post-Service Support" />
                   <h2>7</h2>
                 </div>
                 <div className="mobilebox">

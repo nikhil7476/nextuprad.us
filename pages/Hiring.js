@@ -25,13 +25,13 @@ const hirededicateddeveloper = () => {
               <button id="btn">Place your inquiry</button>
               <div className="part">
                 <div className="part1">
-                  <img src="professional (1).png" alt="img" />
+                  <img src="professional (1).png" alt="Adobe Certified" />
                 </div>
                 <div className="part2">
-                  <img src="professional (1).png" alt="" />
+                  <img src="professional (1).png" alt="Adobe Certified" />
                 </div>
                 <div className="part3">
-                  <img src="bronze.png" alt="" />
+                  <img src="bronze.png" alt="Bronze Soltuion Partner" />
                 </div>
               </div>
             </div>
@@ -39,7 +39,8 @@ const hirededicateddeveloper = () => {
               <img
                 className={`${styles.bannerimg}`}
                 src="hire-banner.webp"
-                alt="img"
+                alt="Hire Dedicated
+                Developer"
               />
             </div>
           </div>
@@ -165,7 +166,7 @@ const hirededicateddeveloper = () => {
           </div>
           <div className={`${styles.exp2}`}>
             <div className="exp211">
-              <img src="hire1 (1).webp" alt="" />
+              <img src="hire1 (1).webp" alt="Proficiency" />
               <p>
                 Proficiency in building and styling web pages, along with
                 interactivity using JavaScript and libraries like React,
@@ -173,28 +174,28 @@ const hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="exp212">
-              <img src="hire2.webp" alt="" />
+              <img src="hire2.webp" alt="Competence" />
               <p>
                 Competence in server-side language, such as Node.js, Python
                 (Django/Flask), Ruby (Ruby on Rails), Java, or PHP.
               </p>
             </div>
             <div className="exp213">
-              <img src="hire3.webp" alt="" />
+              <img src="hire3.webp" alt="Strong knowledge" />
               <p>
                 Strong knowledge of version control systems, especially Git, for
                 collaborative development along with BitBucket, etc
               </p>
             </div>
             <div className="exp214">
-              <img src="hire4.webp" alt="" />
+              <img src="hire4.webp" alt=" Control over fundamental design principles" />
               <p>
                 Control over fundamental design principles, collaborating with
                 designers using tools such as Figma or Sketch.
               </p>
             </div>
             <div className="exp215">
-              <img src="hire5.webp" alt="" />
+              <img src="hire5.webp" alt="Good communication skills" />
               <p>
                 Good communication skills for the collaborating team mates with
                 team members and designers and stakeholders.
@@ -211,7 +212,7 @@ const hirededicateddeveloper = () => {
           </div>
           <div className="expt2">
             <div className="exp21">
-              <img src="ded1.webp" alt="" />
+              <img src="ded1.webp" alt="Expertise and Experience" />
               <h1>Expertise and Experience</h1>
               <p>
                 Proficiency in building and styling web pages, along with
@@ -220,7 +221,7 @@ const hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="exp21">
-              <img src="ded2.webp" alt="" />
+              <img src="ded2.webp" alt="Cost-Efficiency" />
               <h1>Cost-Efficiency</h1>
               <p>
                 Competence in server-side language, such as Node.js, Python
@@ -228,7 +229,7 @@ const hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="exp21">
-              <img src="ded3.webp" alt="" />
+              <img src="ded3.webp" alt="Flexibility and Scalability" />
               <h1>Flexibility and Scalability</h1>
               <p>
                 Strong knowledge of version control systems, especially Git, for
@@ -237,7 +238,7 @@ const hirededicateddeveloper = () => {
             </div>
 
             <div className="exp21">
-              <img src="ded4.webp" alt="" />
+              <img src="ded4.webp" alt="Quality Assurance" />
               <h1>Quality Assurance</h1>
               <p>
                 NextUpgrad's dedicated developers are committed to delivering
@@ -246,7 +247,7 @@ const hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="exp21">
-              <img src="ded5.webp" alt="" />
+              <img src="ded5.webp" alt="Trimmed Admin Costs" />
               <h1>Trimmed Admin Costs</h1>
               <p>
                 Minimize the burden of project management tasks as NextUpgrad
@@ -255,7 +256,7 @@ const hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="exp21">
-              <img src="ded6.webp" alt="" />
+              <img src="ded6.webp" alt="Focused Attention" />
               <h1>Focused Attention</h1>
               <p>
                 A dedicated developer provides undivided attention to your
@@ -299,7 +300,7 @@ const hirededicateddeveloper = () => {
           <div className="adap row">
             <div className="adap1  col-md-4">
               <h1>Pay-per-use</h1>
-              <img src="img-4-removebg-preview.png" alt="" />
+              <img src="img-4-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
                 our developer to manage your project.
@@ -307,7 +308,7 @@ const hirededicateddeveloper = () => {
             </div>
             <div className="adap2   col-md-4">
               <h1>Pay-per-use</h1>
-              <img src="img-3-removebg-preview.png" alt="" />
+              <img src="img-3-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
                 our developer to manage your project.
@@ -315,7 +316,7 @@ const hirededicateddeveloper = () => {
             </div>
             <div className="adap3   col-md-4">
               <h1>Pay-per-use</h1>
-              <img src="img-2-removebg-preview.png" alt="" />
+              <img src="img-2-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
                 our developer to manage your project.
@@ -366,29 +367,29 @@ const hirededicateddeveloper = () => {
               <div className="row">
                 <div className="col-md-6">
                   <div className="sl11">
-                    <img src="teams.png" alt="" />
+                    <img src="teams.png" alt="Teams" />
                     <h1>10+</h1>
                     <p>Teams</p>
                   </div>
                   <div className="sl12">
-                    <img src="years-of-Experience.png" alt="" />
+                    <img src="years-of-Experience.png" alt="Years in Industry" />
                     <h1>15+</h1>
                     <p>Years in Industry</p>
                   </div>
                   <div className="sl13">
-                    <img src="satisfied-customers.png" alt="" />
+                    <img src="satisfied-customers.png" alt="Happy Patron" />
                     <h1>3500+</h1>
                     <p>Happy Patron</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="sl14">
-                    <img src="global-partners.png" alt="" />
+                    <img src="global-partners.png" alt="Company Partnerships" />
                     <h1>50+</h1>
                     <p>Company Partnerships</p>
                   </div>
                   <div className="sl15">
-                    <img src="awards-and-accolades.png" alt="" />
+                    <img src="awards-and-accolades.png" alt="Community Project Contribution" />
                     <h1>500+</h1>
                     <p>Community Project Contribution</p>
                   </div>
