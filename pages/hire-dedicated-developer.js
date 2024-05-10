@@ -69,7 +69,10 @@ const Hirededicateddeveloper = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <Form className={`${styles.hiringForm}`}>
+              <Form
+                onSubmit={(event) => event.preventDefault()}
+                className={`${styles.hiringForm}`}
+              >
                 <Form.Group controlId="formName">
                   <Form.Label>Your name</Form.Label>
                   <Form.Control type="text" placeholder="Enter your name" />

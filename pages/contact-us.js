@@ -226,7 +226,7 @@ const Conatactus = () => {
                   <br />
                   We look forward to connecting with you!
                 </p>
-                <Form>
+                <Form onSubmit={(event) => event.preventDefault()}>
                   <Form.Group controlId="formName">
                     <Form.Label>Your name</Form.Label>
                     <Form.Control type="text" placeholder="Enter your name" />
