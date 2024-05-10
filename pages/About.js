@@ -153,6 +153,7 @@ const About = () => {
                 Countries.
               </p>
             </div>
+            <div className="clearfix"></div>
           </div>
           <div className="sec-2-2">
             <div className="sec-2-2-1">
@@ -197,6 +198,7 @@ const About = () => {
               )}
               <p className="mt-3">Technology Certified Resources</p>
             </div>
+            <div className="clearfix"></div>
           </div>
         </div>
         <div className="sec-3">
