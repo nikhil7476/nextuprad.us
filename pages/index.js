@@ -1171,7 +1171,7 @@ export default function Home() {
             </ol>
           </div>
         </div>
-        <div class="timeline-container-mobilenew">
+        <div className="timeline-container-mobilenew">
           <h2>Hiring Process for a Dedicated Developer</h2>
           <ul>
             <li>

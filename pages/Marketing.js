@@ -192,7 +192,7 @@ const digitalmarketingservices = () => {
                 </p>
               </div>
             </div>
-            <Link class="listing-elementor-button" href="#">
+            <Link className="listing-elementor-button" href="#">
               Connect for Brand Transformation!
             </Link>
           </section>
@@ -1349,7 +1349,7 @@ const digitalmarketingservices = () => {
             </div>
             <div className="col-md-6">
               <Link
-                class="kickstart-button"
+                className="kickstart-button"
                 href="https://calendly.com/ron-wilsonbdm/service"
                 target="_blank"
                 rel="nofollow"
