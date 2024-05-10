@@ -982,7 +982,7 @@ export default function Home() {
                           </span>
                         ))}
                   </div>
-                  <Form onSubmit={submitContactForm}>
+                  <Form onSubmit={(event) => event.preventDefault()}>
                     <Form.Group controlId="formName ">
                       <Form.Label>Your name</Form.Label>
                       <Form.Control
