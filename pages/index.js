@@ -792,9 +792,9 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>Our Achieved Milestones on Display</h3>
               </div>
-              <div className="col-md-8">
+              <div className="col-md-8" ref={ref}>
                 <ul>
-                  <li ref={ref}>
+                  <li>
                     {inView && (
                       <CountUp
                         className="homeCountup"
@@ -809,7 +809,7 @@ export default function Home() {
 
                     <span>Product Developed</span>
                   </li>
-                  <li ref={ref}>
+                  <li>
                     {inView && (
                       <CountUp
                         className="homeCountup"
@@ -824,7 +824,7 @@ export default function Home() {
 
                     <span>Industries</span>
                   </li>
-                  <li ref={ref}>
+                  <li>
                     {inView && (
                       <CountUp
                         className="homeCountup"
@@ -839,7 +839,7 @@ export default function Home() {
 
                     <span>Website Designed</span>
                   </li>
-                  <li ref={ref}>
+                  <li>
                     {inView && (
                       <CountUp
                         className="homeCountup"
@@ -854,7 +854,7 @@ export default function Home() {
 
                     <span>Country Served</span>
                   </li>
-                  <li ref={ref}>
+                  <li>
                     {inView && (
                       <CountUp
                         className="homeCountup"
@@ -869,7 +869,7 @@ export default function Home() {
 
                     <span>SEO Campaigns Completed</span>
                   </li>
-                  <li ref={ref}>
+                  <li>
                     {inView && (
                       <CountUp
                         className="homeCountup"

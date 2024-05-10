@@ -93,11 +93,11 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="sec-2">
+        <div className="sec-2" ref={ref}>
           <hr className="solid" />
           <h2>Our Community</h2>
           <div className="sec-2-1">
-            <div className="sec-2-1-1" ref={ref}>
+            <div className="sec-2-1-1">
               {inView && (
                 <CountUp
                   className="homeCountup "
@@ -111,7 +111,9 @@ const About = () => {
               )}
 
               <p className="mt-3">
-                Expert Developers in<br/>15 Innovative.
+                Expert Developers in
+                <br />
+                15 Innovative.
               </p>
             </div>
             <div className="sec-2-1-2">
@@ -127,7 +129,8 @@ const About = () => {
                 />
               )}
               <p className="mt-3">
-                Digital Marketers in <br />10 Different Verticals.
+                Digital Marketers in <br />
+                10 Different Verticals.
               </p>
             </div>
             <div className="sec-2-1-3">
@@ -246,7 +249,11 @@ const About = () => {
                   </p>
                 </div>
                 <div className="col-md-6">
-                  <img src="/innovation.png" className="invoasionbox"  alt="image" />
+                  <img
+                    src="/innovation.png"
+                    className="invoasionbox"
+                    alt="image"
+                  />
                 </div>
                 <div className="col-md-6">
                   <img src="/agile.png" alt="image" />
