@@ -5355,22 +5355,22 @@ pre {
 
 /* css for mobile timeline*/
 
-.timeline-container {
-  display: none;
+.timeline-container-mobilenew {
   font-family: "Roboto", sans-serif;
   width: 50%;
   margin: auto;
   display: block;
   position: relative;
+  display: none;
 }
 
-.timeline-container ul {
+.timeline-container-mobilenew ul {
   margin: 20px 0;
   padding: 0;
   display: inline-block;
 }
 
-.timeline-container ul li {
+.timeline-container-mobilenew ul li {
   list-style: none;
   margin: auto;
   min-height: 50px;
@@ -5381,11 +5381,11 @@ pre {
   flex-direction: row;
 }
 
-.timeline-container ul li:last-child {
+.timeline-container-mobilenew ul li:last-child {
   border: none !important;
 }
 
-.timeline-container ul li span {
+.timeline-container-mobilenew ul li span {
   position: absolute;
   left: -18px;
   top: -5px;
@@ -5400,13 +5400,13 @@ pre {
   text-align: center;
 }
 
-.timeline-container ul li h3 {
+.timeline-container-mobilenew ul li h3 {
   font-weight: 600;
   font-size: 18px;
   margin: 0px;
 }
 
-.timeline-container ul li p {
+.timeline-container-mobilenew ul li p {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
   font-weight: 400;
@@ -5512,7 +5512,7 @@ pre {
     display: none;
   }
 
-  .timeline-container {
+  .timeline-container-mobilenew {
     display: block;
   }
   .achieved .col-md-4 {
