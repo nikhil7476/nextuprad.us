@@ -5353,6 +5353,69 @@ pre {
   border-top: 1px solid #dee2e6 !important;
 }
 
+/* css for mobile timeline*/
+
+.timeline-container {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.timeline-container ul {
+  margin: 20px 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.timeline-container ul li {
+  list-style: none;
+  margin: auto;
+  min-height: 50px;
+  border-left: 1px solid #000 !important;
+  padding: 0 0 50px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline-container ul li:last-child {
+  border: none !important;
+}
+
+.timeline-container ul li span {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid #e76f51;
+  border-radius: 500%;
+  background: #e76f51;
+  height: 20px;
+  width: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.timeline-container ul li h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.timeline-container ul li p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+/*.........*/
+
 @media screen and (max-width: 1200px) {
   .achieved ul li {
     width: 29%;
@@ -5445,6 +5508,13 @@ pre {
   }
 }
 @media screen and (max-width: 768px) {
+  .ps-timeline-sec {
+    display: none;
+  }
+
+  .timeline-container {
+    display: block;
+  }
   .achieved .col-md-4 {
     width: 100%;
   }

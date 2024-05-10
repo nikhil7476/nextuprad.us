@@ -1171,6 +1171,49 @@ export default function Home() {
             </ol>
           </div>
         </div>
+        <div class="timeline-container">
+          <ul>
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Discovery</h3>
+                <p>Discussion & Requirement Gathering</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Profile Spotlight</h3>
+                <p>
+                  Spotlighting Top Resumes and Projets with-in Depth Interiews
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Candidate Selection</h3>
+                <p>Shortlisting Candidates</p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <h3>Planning</h3>
+                <p>Proposal Discussion, Timeline, and Work Segregation</p>
+              </div>
+            </li>
+            <li>
+              <span>05</span>
+              <div>
+                <h3>Execution</h3>
+                <p>
+                  Deal Closure, NDA Signing and Effecient Resource Deployment
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
         <div className="deserve">
           <div className="container">
