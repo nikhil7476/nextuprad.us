@@ -29,23 +29,39 @@ const Footer = () => {
                         menuButton={<MenuButton> Our Services</MenuButton>}
                         transition
                       >
-                        <MenuItem onClick={(e) => Router.push("/Hiring")}>
+                        <MenuItem
+                          onClick={(e) =>
+                            Router.push("/hire-dedicated-developer")
+                          }
+                        >
                           Hire Dedicated Developer
                         </MenuItem>
                         <MenuItem
-                          onClick={(e) => Router.push("/website-design")}
+                          onClick={(e) =>
+                            Router.push("/website-design-development-servece")
+                          }
                         >
                           Website Development
                         </MenuItem>
                         <MenuItem
-                          onClick={(e) => Router.push("/software-development")}
+                          onClick={(e) =>
+                            Router.push("/software-development-services")
+                          }
                         >
                           Software Development
                         </MenuItem>
-                        <MenuItem onClick={(e) => Router.push("/Mobile")}>
+                        <MenuItem
+                          onClick={(e) =>
+                            Router.push("/mobile-app-development-services")
+                          }
+                        >
                           Mobile App Development
                         </MenuItem>
-                        <MenuItem onClick={(e) => Router.push("/Marketing")}>
+                        <MenuItem
+                          onClick={(e) =>
+                            Router.push("/digital-marketing-services")
+                          }
+                        >
                           Digital Marketing
                         </MenuItem>
                       </Menu>
