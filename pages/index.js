@@ -1062,7 +1062,10 @@ export default function Home() {
               <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/download1.png" alt=" Experience-Driven Resources" />
+                  <img
+                    src="/download1.png"
+                    alt=" Experience-Driven Resources"
+                  />
                   Experience-Driven Resources
                 </h3>
                 <p>
@@ -1087,7 +1090,10 @@ export default function Home() {
               <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/download2.png" alt="Expertise-Centric Resources!" />
+                  <img
+                    src="/download2.png"
+                    alt="Expertise-Centric Resources!"
+                  />
                   Expertise-Centric Resources!
                 </h3>
                 <p>
@@ -1100,7 +1106,10 @@ export default function Home() {
               <div className="col-md-6">
                 <h3>
                   {" "}
-                  <img src="/download3.png" alt="Fusion of Experience, Budget, and Expertise" />
+                  <img
+                    src="/download3.png"
+                    alt="Fusion of Experience, Budget, and Expertise"
+                  />
                   Fusion of Experience, Budget, and Expertise
                 </h3>
                 <p>
@@ -1250,7 +1259,10 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>
                   {" "}
-                  <img src="/downloadnew2.png" alt="Complimentary Maintenance Services" />
+                  <img
+                    src="/downloadnew2.png"
+                    alt="Complimentary Maintenance Services"
+                  />
                   Complimentary Maintenance Services
                 </h3>
                 <p>
@@ -1262,7 +1274,10 @@ export default function Home() {
               <div className="col-md-4">
                 <h3>
                   {" "}
-                  <img src="/downloadnew3.png" alt="Guaranteed Timely Delivery" />
+                  <img
+                    src="/downloadnew3.png"
+                    alt="Guaranteed Timely Delivery"
+                  />
                   Guaranteed Timely Delivery
                 </h3>
                 <p>
