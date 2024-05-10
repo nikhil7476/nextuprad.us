@@ -41,7 +41,11 @@ const Header2 = () => {
         <Container ref={navRef}>
           <Link href="/">
             <Navbar.Brand>
-              <img className="NavImg" src="/logo-2orange-1.png" alt="NextUpgrad Web Solutions" />
+              <img
+                className="NavImg"
+                src="/logo-2orange-1.png"
+                alt="NextUpgrad Web Solutions"
+              />
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle id="navbar-toggler" aria-controls="basic-navbar-nav" />
@@ -50,25 +54,31 @@ const Header2 = () => {
               <Link href="/" onClick={handleMenuItemClick}>
                 Home
               </Link>
-              <Link href="/About" onClick={handleMenuItemClick}>
+              <Link href="/about-us" onClick={handleMenuItemClick}>
                 About Us
               </Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
                 <NavDropdown.Item>
-                  <Link href="/Hiring" onClick={handleMenuItemClick}>
+                  <Link
+                    href="/hire-dedicated-developer"
+                    onClick={handleMenuItemClick}
+                  >
                     Hire Dedicated Developers
                   </Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
-                  <Link href="/website-design" onClick={handleMenuItemClick}>
+                  <Link
+                    href="/website-design-development-services"
+                    onClick={handleMenuItemClick}
+                  >
                     Website Development
                   </Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
                   <Link
-                    href="/software-development"
+                    href="/software-development-services"
                     onClick={handleMenuItemClick}
                   >
                     Software Development
@@ -76,24 +86,30 @@ const Header2 = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
-                  <Link href="/Mobile" onClick={handleMenuItemClick}>
+                  <Link
+                    href="/mobile-app-development-services"
+                    onClick={handleMenuItemClick}
+                  >
                     Mobile App Development{" "}
                   </Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
-                  <Link href="/Marketing" onClick={handleMenuItemClick}>
+                  <Link
+                    href="/digital-marketing-services"
+                    onClick={handleMenuItemClick}
+                  >
                     Digital Marketing
                   </Link>
                 </NavDropdown.Item>
               </NavDropdown>
-              <Link href="/ContactUs" onClick={handleMenuItemClick}>
+              <Link href="/contact-us" onClick={handleMenuItemClick}>
                 Contact us
               </Link>
-              <Link href="/Portfolio" onClick={handleMenuItemClick}>
+              <Link href="/portfolio" onClick={handleMenuItemClick}>
                 Portfolio
               </Link>
-              <Link href="/Blog" onClick={handleMenuItemClick}>
+              <Link href="/blog" onClick={handleMenuItemClick}>
                 Blog
               </Link>
             </Nav>

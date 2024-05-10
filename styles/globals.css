@@ -503,13 +503,13 @@ h2.design-heading span {
   font-family: "Montserrat", Sans-serif;
   font-size: 15px;
   font-weight: 600;
-  background-color: #fff;
+  background-color: #e76f51;
   border-style: solid;
   border-width: 2px 2px 2px 2px;
   border-color: #e76f51;
   border-radius: 50px;
   padding: 15px 30px 15px 30px;
-  color: #212529;
+  color: #fff;
   text-decoration: none;
   margin-top: 50px;
   display: inline-block;
@@ -524,13 +524,13 @@ h2.design-heading span {
   font-family: "Montserrat", Sans-serif;
   font-size: 15px;
   font-weight: 600;
-  background-color: #e76f51;
+  background-color: #fff;
   border-style: solid;
   border-width: 2px 2px 2px 2px;
   border-color: #e76f51;
   border-radius: 50px;
   padding: 15px 30px 15px 30px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   margin-top: 50px;
   display: inline-block;
@@ -656,6 +656,7 @@ h2.design-heading span {
   font-weight: 400;
 }
 .industries .col-md-3 .indus-content {
+  min-height: 365px;
   cursor: pointer;
   text-align: center;
   background-color: #fbf8f2;
@@ -5420,6 +5421,18 @@ pre {
 
 /*.........*/
 
+/*..............Software dev page testimonial...........*/
+.softDevTestimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+/*..............................*/
+
 @media screen and (max-width: 1200px) {
   .achieved ul li {
     width: 29%;
@@ -5520,7 +5533,7 @@ pre {
     font-family: "Montserrat", Sans-serif;
     font-size: 30px;
     margin-bottom: 30px;
-}
+  }
   .timeline-container-mobilenew {
     display: block;
   }
@@ -5769,7 +5782,7 @@ pre {
     font-family: "Montserrat", Sans-serif;
     font-size: 30px;
     margin-bottom: 30px;
-}
+  }
   #mouse-parallax-container div img {
     height: 100% !important;
     width: 100%;
@@ -5861,18 +5874,18 @@ pre {
   .deserve h2 {
     font-size: 30px;
     margin-bottom: 30px;
-}
-.industries h2 {
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-.video_testimonials h3 {
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-.holistic h3 {
-  font-size: 30px;
-}
+  }
+  .industries h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .video_testimonials h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .holistic h3 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 634px) {
   .blog-cat {

@@ -13,10 +13,13 @@ const mobileapp = () => {
                   Get ahead with our powerful, efficient, and dependable custom
                   Android apps for top performance.
                 </p>
-                <Link href="#">Connect with a specialist</Link>
+                <Link href="/contact-us">Connect with a specialist</Link>
               </div>
               <div className="col-md-6">
-                <img src="/mobile-banner.webp" alt="Connect with a specialist" />
+                <img
+                  src="/mobile-banner.webp"
+                  alt="Connect with a specialist"
+                />
               </div>
             </div>
           </div>
@@ -87,7 +90,10 @@ const mobileapp = () => {
                 </p>
               </div>
               <div className="col-md-3 dev-col">
-                <img src="/software.webp" alt="Wearables and Embedded Software" />
+                <img
+                  src="/software.webp"
+                  alt="Wearables and Embedded Software"
+                />
                 <h2>Wearables and Embedded Software</h2>
                 <p>
                   Dive into wearables and embedded systems with our innovative
@@ -105,7 +111,7 @@ const mobileapp = () => {
               We are excited to leverage the skills of our 100+ certified
               developers to bring your vision to reality.
             </p>
-            <Link href="#">Let's Connect</Link>
+            <Link href="/contact-us">Let's Connect</Link>
           </div>
         </div>
         <div className="sec-five mobilefive">
@@ -293,7 +299,11 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-two" src="/blueprint.webp" alt="Blueprinting" />
+                  <img
+                    className="pr-two"
+                    src="/blueprint.webp"
+                    alt="Blueprinting"
+                  />
                   <h2>2</h2>
                 </div>
                 <div className="mobilebox">
@@ -321,7 +331,11 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-four" src="/imple.webp" alt="Implementation" />
+                  <img
+                    className="pr-four"
+                    src="/imple.webp"
+                    alt="Implementation"
+                  />
                   <h2>4</h2>
                 </div>
                 <div className="mobilebox">
@@ -337,7 +351,11 @@ const mobileapp = () => {
             <div className="row">
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-five" src="/testing.webp" alt="Quality Analysis &amp; Testing" />
+                  <img
+                    className="pr-five"
+                    src="/testing.webp"
+                    alt="Quality Analysis &amp; Testing"
+                  />
                   <h2>5</h2>
                 </div>
                 <div className="mobilebox">
@@ -351,7 +369,11 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-six" src="/play.webp" alt="Set in Motion" />
+                  <img
+                    className="pr-six"
+                    src="/play.webp"
+                    alt="Set in Motion"
+                  />
                   <h2>6</h2>
                 </div>
                 <div className="mobilebox">
@@ -365,7 +387,11 @@ const mobileapp = () => {
               </div>
               <div className="col-md-3 colone">
                 <div className="coltwo">
-                  <img className="pr-sev" src="/support.webp" alt="Post-Service Support" />
+                  <img
+                    className="pr-sev"
+                    src="/support.webp"
+                    alt="Post-Service Support"
+                  />
                   <h2>7</h2>
                 </div>
                 <div className="mobilebox">

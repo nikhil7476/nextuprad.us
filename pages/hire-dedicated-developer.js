@@ -22,7 +22,9 @@ const hirededicateddeveloper = () => {
                 experience from a diverse pool of technologies, ensuring the
                 right skills and expertise for successful project execution.
               </p>
-              <button id="btn">Place your inquiry</button>
+              <Link href="/contact-us">
+                <button id="btn">Place your inquiry</button>
+              </Link>
               <div className="part">
                 <div className="part1">
                   <img src="professional (1).png" alt="Adobe Certified" />
@@ -188,7 +190,10 @@ const hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="exp214">
-              <img src="hire4.webp" alt=" Control over fundamental design principles" />
+              <img
+                src="hire4.webp"
+                alt=" Control over fundamental design principles"
+              />
               <p>
                 Control over fundamental design principles, collaborating with
                 designers using tools such as Figma or Sketch.
@@ -278,7 +283,9 @@ const hirededicateddeveloper = () => {
               </h1>
             </div>
             <div className="skill2  col-md-4">
-              <button id="btn1">Schedule a Meeting</button>
+              <Link href="/contact-us">
+                <button id="btn1">Schedule a Meeting</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -372,7 +379,10 @@ const hirededicateddeveloper = () => {
                     <p>Teams</p>
                   </div>
                   <div className="sl12">
-                    <img src="years-of-Experience.png" alt="Years in Industry" />
+                    <img
+                      src="years-of-Experience.png"
+                      alt="Years in Industry"
+                    />
                     <h1>15+</h1>
                     <p>Years in Industry</p>
                   </div>
@@ -389,7 +399,10 @@ const hirededicateddeveloper = () => {
                     <p>Company Partnerships</p>
                   </div>
                   <div className="sl15">
-                    <img src="awards-and-accolades.png" alt="Community Project Contribution" />
+                    <img
+                      src="awards-and-accolades.png"
+                      alt="Community Project Contribution"
+                    />
                     <h1>500+</h1>
                     <p>Community Project Contribution</p>
                   </div>

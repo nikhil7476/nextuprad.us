@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 const Cards4 = () => {
   return (
     <>
-      <div className="d-flex justify-content-center gap-5 my-5 ">
+      <div className="softDevTestimonials">
         <Tilt
           style={{
             height: "320px",

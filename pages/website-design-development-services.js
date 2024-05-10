@@ -2,6 +2,7 @@ import WebDevSlider from "@/components/webDevSlider";
 import HomeAccordian from "@/components/HomeAccordian";
 import Head from "next/head";
 import FaqWebdev from "@/components/faqWebDev";
+import Link from "next/link";
 const Webdesign = () => {
   return (
     <>
@@ -23,7 +24,10 @@ const Webdesign = () => {
             <div className="row">
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
-                  <img src="custom_developement.png" alt="Custom Website Development" />
+                  <img
+                    src="custom_developement.png"
+                    alt="Custom Website Development"
+                  />
                   <h2>Custom Website Development</h2>
                 </div>
                 <p>
@@ -93,9 +97,9 @@ const Webdesign = () => {
                 </p>
               </div>
             </div>
-            <a href="#" className="sec-two-btn">
+            <Link href="/contact-us" className="sec-two-btn">
               Consult Expert Now!
-            </a>
+            </Link>
           </div>
         </div>
         <div className="sec-three">
@@ -107,9 +111,9 @@ const Webdesign = () => {
                   Unlock Business Growth with Tailored Solutions for Leading
                   Technology Platforms.
                 </p>
-                <a href="#" className="sec-three-btn">
+                <Link href="/contact-us" className="sec-three-btn">
                   Let's Discuss!
-                </a>
+                </Link>
               </div>
               <div className="col-md-6">
                 <div className="row">
@@ -158,7 +162,10 @@ const Webdesign = () => {
                     <div className="flip-card">
                       <div className="flip-card-inner">
                         <div className="flip-card-front">
-                          <img src="project-management.png" alt="Project Management" />
+                          <img
+                            src="project-management.png"
+                            alt="Project Management"
+                          />
                           <h3>Project Management</h3>
                         </div>
                         <div className="flip-card-back">

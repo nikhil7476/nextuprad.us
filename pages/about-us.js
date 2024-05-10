@@ -235,10 +235,16 @@ const About = () => {
                   </p>
                 </div>
                 <div className="col-md-6">
-                  <img src="/philosophy.png" alt="Customer-Centric Philosophy" />
+                  <img
+                    src="/philosophy.png"
+                    alt="Customer-Centric Philosophy"
+                  />
                 </div>
                 <div className="col-md-6">
-                  <img src="/experience.png" alt="Unparalleled Customer Experience" />
+                  <img
+                    src="/experience.png"
+                    alt="Unparalleled Customer Experience"
+                  />
                 </div>
                 <div className="col-md-6">
                   <h2>Unparalleled Customer Experience</h2>
@@ -284,7 +290,10 @@ const About = () => {
                   </p>
                 </div>
                 <div className="col-md-6">
-                  <img src="/satisfaction.png" alt="Unprecedented client Satisfaction" />
+                  <img
+                    src="/satisfaction.png"
+                    alt="Unprecedented client Satisfaction"
+                  />
                 </div>
               </div>
             </div>
@@ -307,11 +316,7 @@ const About = () => {
 
               <ul>
                 <motion.li whileHover={{ scale: 1.1 }}>
-                  <img
-                    src="/hubspot.png"
-                    className="hubspot"
-                    alt="hubspot"
-                  />
+                  <img src="/hubspot.png" className="hubspot" alt="hubspot" />
                   <h2>Certified Marketing Expert</h2>
                 </motion.li>
 
@@ -328,7 +333,11 @@ const About = () => {
                   <h2>Leading HubSpot Partner</h2>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }}>
-                  <img src="/pmp.png" className="pmplogo" alt="Project Management Professional" />
+                  <img
+                    src="/pmp.png"
+                    className="pmplogo"
+                    alt="Project Management Professional"
+                  />
                   <h2>Project Management Professional</h2>
                 </motion.li>
               </ul>
@@ -343,7 +352,7 @@ const About = () => {
                 <h2>
                   Looking for a committed partnership to boost your business?
                 </h2>
-                <Link href="#">Call Us Now</Link>
+                <Link href="/contact-us">Call Us Now</Link>
               </div>
             </div>
           </div>

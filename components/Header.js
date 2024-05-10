@@ -44,7 +44,11 @@ const Header = () => {
     <div className="header">
       <nav className="tabs ">
         <Link href="/">
-          <img className="NavImg" src="/logo-2orange-1.png" alt="NextUpgrad Web Solutions" />
+          <img
+            className="NavImg"
+            src="/logo-2orange-1.png"
+            alt="NextUpgrad Web Solutions"
+          />
         </Link>
         <div className="selector"></div>
 
@@ -57,7 +61,7 @@ const Header = () => {
         </Link>
 
         <Link
-          href="/About"
+          href="/about-us"
           className={activeTab === "About Us" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "h Us")}
         >
@@ -69,19 +73,29 @@ const Header = () => {
             menuButton={<MenuButton>Services</MenuButton>}
             transition
           >
-            <MenuItem onClick={(e) => Router.push("/Hiring")}>
+            <MenuItem onClick={(e) => Router.push("/hire-dedicated-developer")}>
               Hire Dedicated Developer
             </MenuItem>
-            <MenuItem onClick={(e) => Router.push("/website-design")}>
+            <MenuItem
+              onClick={(e) =>
+                Router.push("/website-design-development-services")
+              }
+            >
               Website Development
             </MenuItem>
-            <MenuItem onClick={(e) => Router.push("/software-development")}>
+            <MenuItem
+              onClick={(e) => Router.push("/software-development-services")}
+            >
               Software Development
             </MenuItem>
-            <MenuItem onClick={(e) => Router.push("/Mobile")}>
+            <MenuItem
+              onClick={(e) => Router.push("/mobile-app-development-services")}
+            >
               Mobile App Development
             </MenuItem>
-            <MenuItem onClick={(e) => Router.push("/Marketing")}>
+            <MenuItem
+              onClick={(e) => Router.push("/digital-marketing-services")}
+            >
               Digital Marketing
             </MenuItem>
           </Menu>
@@ -92,29 +106,29 @@ const Header = () => {
           <i className="fas fa-bolt"></i>Services
         </a> */}
         <Link
-          href="/ContactUs"
+          href="/contact-us"
           className={activeTab === "Contact Us" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "h Us")}
         >
           Contact Us
         </Link>
         <Link
-          href="/Portfolio"
+          href="/portfolio"
           className={activeTab === "Portfolio" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "h")}
         >
           Portfolio
         </Link>
         <Link
-          href="/Blog"
+          href="/blog"
           className={activeTab === "Blog" ? "active" : ""}
           onClick={(e) => handleTabClick(e, "h")}
         >
           Blog
         </Link>
-        <a href="/ContactUs">
+        <Link href="/contact-us">
           <button id="header-btn">Let's Discuss</button>
-        </a>
+        </Link>
       </nav>
     </div>
   );
