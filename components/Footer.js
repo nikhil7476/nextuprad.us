@@ -143,7 +143,7 @@ const Footer = () => {
             <div className="row logos">
               <div className="ftr-logos">
                 <img src="/ISO.png" alt="ISO-logo" />
-                <img src="/PMP.png" alt="PMP-logo" />
+                <img src="/pmp.png" alt="PMP-logo" />
                 <img src="/ISO-2.png" alt="ISO-logo" />
                 <img src="/Clutch.png" alt="Clutch-logo" />
                 <img src="/ISO-3.png" alt="ISO-logo" />
