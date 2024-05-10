@@ -5357,7 +5357,7 @@ pre {
 
 .timeline-container-mobilenew {
   font-family: "Roboto", sans-serif;
-  width: 50%;
+  width: 90%;
   margin: auto;
   display: block;
   position: relative;
@@ -5393,22 +5393,26 @@ pre {
   border: 8px solid #e76f51;
   border-radius: 500%;
   background: #e76f51;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   font-size: 15px;
   font-weight: 600;
   text-align: center;
+  color: #fff;
+  font-family: "Montserrat", Sans-serif;
 }
 
 .timeline-container-mobilenew ul li h3 {
-  font-weight: 600;
-  font-size: 18px;
   margin: 0px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .timeline-container-mobilenew ul li p {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
+  color: #000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 17px;
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -5511,7 +5515,12 @@ pre {
   .ps-timeline-sec {
     display: none;
   }
-
+  .timeline-container-mobilenew h2 {
+    color: #4e515c;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
   .timeline-container-mobilenew {
     display: block;
   }
@@ -5755,6 +5764,12 @@ pre {
   }
 }
 @media screen and (max-width: 664px) {
+  .discover h2 {
+    color: #4e515c;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
   #mouse-parallax-container div img {
     height: 100% !important;
     width: 100%;
@@ -5843,6 +5858,21 @@ pre {
     font-size: 30px;
     margin-bottom: 10px;
   }
+  .deserve h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.industries h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.video_testimonials h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.holistic h3 {
+  font-size: 30px;
+}
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
