@@ -6,20 +6,22 @@ const Blog = () => {
       <div className="blogMain">
         <div className="sec">
           <div className="blog-cat">
-            <ul>
-              <li>
-                <Link href="#">Website Developement</Link>
-              </li>
-              <li>
-                <Link href="#">Software Developement</Link>
-              </li>
-              <li>
-                <Link href="#">Mobile App Developement</Link>
-              </li>
-              <li>
-                <Link href="#">Digital Marketing</Link>
-              </li>
-            </ul>
+            <div className="container">
+              <ul>
+                <li>
+                  <Link href="#">Website Developement</Link>
+                </li>
+                <li>
+                  <Link href="#">Software Developement</Link>
+                </li>
+                <li>
+                  <Link href="#">Mobile App Developement</Link>
+                </li>
+                <li>
+                  <Link href="#">Digital Marketing</Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="container">
             <div className="sec-hd g-5">

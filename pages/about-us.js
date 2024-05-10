@@ -155,7 +155,6 @@ const About = () => {
                 Countries.
               </p>
             </div>
-            <div className="clearfix"></div>
           </div>
           <div className="sec-2-2">
             <div className="sec-2-2-1">
@@ -203,10 +202,9 @@ const About = () => {
               <h2>75+</h2>
               <p className="mt-3">Technology Certified Resources</p>
             </div>
-            <div className="clearfix"></div>
           </div>
         </div>
-        <div className="clearfix"></div>
+
         <div className="sec-3">
           <div className="container">
             <div className="sec-3-1">
