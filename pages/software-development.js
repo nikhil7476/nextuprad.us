@@ -10,9 +10,9 @@ const Software = () => {
             <h1>
               <span className="sp">CUSTOM SOFTWARE DEVELOPMENT SERVICES</span>
               TO SUIT YOUR REQUIREMENT
-            </h1>
+            </h1> <div className="overlay" />
           </div>
-          <div className="overlay" />
+         
         </main>
         <section id="uni">
           <div className="uni1">
