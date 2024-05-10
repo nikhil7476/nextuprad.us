@@ -41,7 +41,7 @@ const Header2 = () => {
         <Container ref={navRef}>
           <Link href="/">
             <Navbar.Brand>
-              <img className="NavImg" src="/logo-2orange-1.png" alt="" />
+              <img className="NavImg" src="/logo-2orange-1.png" alt="NextUpgrad Web Solutions" />
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle id="navbar-toggler" aria-controls="basic-navbar-nav" />

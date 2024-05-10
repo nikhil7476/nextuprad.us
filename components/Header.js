@@ -44,7 +44,7 @@ const Header = () => {
     <div className="header">
       <nav className="tabs ">
         <Link href="/">
-          <img className="NavImg" src="/logo-2orange-1.png" alt="" />
+          <img className="NavImg" src="/logo-2orange-1.png" alt="NextUpgrad Web Solutions" />
         </Link>
         <div className="selector"></div>
 
