@@ -93,7 +93,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="sec-2" ref={ref}>
+        <div className="sec-2">
           <hr className="solid" />
           <h2>Our Community</h2>
           <div className="sec-2-1">
@@ -109,7 +109,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
-
+              <h2>60+</h2>
               <p className="mt-3">
                 Expert Developers in
                 <br />
@@ -128,6 +128,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
+              <h2>60+</h2>
               <p className="mt-3">
                 Digital Marketers in <br />
                 10 Different Verticals.
@@ -145,6 +146,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
+              <h2>60+</h2>
               <p className="mt-3">
                 Customer Served in
                 <br />
@@ -168,6 +170,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
+              <h2>10+</h2>
               <p className="mt-3">Quality Assurance Resources</p>
             </div>
             <div className="sec-2-2-2">
@@ -182,6 +185,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
+              <h2>400+</h2>
               <p className="mt-3">Client Satisfied</p>
             </div>
             <div className="sec-2-2-3">
@@ -196,11 +200,13 @@ const About = () => {
                   suffix=" +"
                 />
               )}
+              <h2>75+</h2>
               <p className="mt-3">Technology Certified Resources</p>
             </div>
             <div className="clearfix"></div>
           </div>
         </div>
+        <div className="clearfix"></div>
         <div className="sec-3">
           <div className="container">
             <div className="sec-3-1">
@@ -285,8 +291,8 @@ const About = () => {
           </div>
         </div>
         <div className="sec-4">
-          <div class="container">
-            <div class="row">
+          <div className="container">
+            <div className="row">
               <div className="col-md-6">
                 <hr className="solid" />
                 <h2>Certifications</h2>
@@ -331,8 +337,8 @@ const About = () => {
         </div>
 
         <div className="sec-5">
-          <div class="container">
-            <div class="row">
+          <div className="container">
+            <div className="row">
               <div className="col-md-12">
                 <h2>
                   Looking for a committed partnership to boost your business?
