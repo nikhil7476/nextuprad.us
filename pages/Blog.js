@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-const blog = () => {
+const Blog = () => {
   return (
     <>
       <Head>
@@ -75,8 +75,11 @@ const blog = () => {
                 <div className="blog">
                   <div className="blog-img">
                     <Link href="#">
-                      <img src="Brandin.png" alt="Branding and Digital Marketing Strategies for Small
-                        Businesses." />
+                      <img
+                        src="Brandin.png"
+                        alt="Branding and Digital Marketing Strategies for Small
+                        Businesses."
+                      />
                     </Link>
                     <h2>
                       <Link href="#">
@@ -92,8 +95,11 @@ const blog = () => {
                 <div className="blog">
                   <div className="blog-img">
                     <Link href="#">
-                      <img src="Local-SEO.png" alt="Local SEO Demystified Winning Strategies for Small
-                        Business Growth." />
+                      <img
+                        src="Local-SEO.png"
+                        alt="Local SEO Demystified Winning Strategies for Small
+                        Business Growth."
+                      />
                     </Link>
                     <h2>
                       <Link href="#">
@@ -109,8 +115,11 @@ const blog = () => {
                 <div className="blog">
                   <div className="blog-img">
                     <Link href="#">
-                      <img src="Web-Design.jpg" alt="Digital Marketing and Website Development A Dream Team
-                        Of Successful Business." />
+                      <img
+                        src="Web-Design.jpg"
+                        alt="Digital Marketing and Website Development A Dream Team
+                        Of Successful Business."
+                      />
                     </Link>
                     <h2>
                       <Link href="#">
@@ -126,8 +135,11 @@ const blog = () => {
                 <div className="blog">
                   <div className="blog-img">
                     <Link href="#">
-                      <img src="website_structure.png" alt="Step-by-step guide for building the ultimate website
-                        structure" />
+                      <img
+                        src="website_structure.png"
+                        alt="Step-by-step guide for building the ultimate website
+                        structure"
+                      />
                     </Link>
                     <h2>
                       <Link href="#">
@@ -143,7 +155,10 @@ const blog = () => {
                 <div className="blog">
                   <div className="blog-img">
                     <Link href="#">
-                      <img src="blog4.png" alt=" 5 Factors Slowing Down Your Website and Fixes" />
+                      <img
+                        src="blog4.png"
+                        alt=" 5 Factors Slowing Down Your Website and Fixes"
+                      />
                     </Link>
                     <h2>
                       <Link href="#">
@@ -170,4 +185,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default Blog;

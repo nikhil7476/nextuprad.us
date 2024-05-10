@@ -1,5 +1,5 @@
 import Link from "next/link";
-const singlepost = () => {
+const Singlepost = () => {
   return (
     <>
       <main className="main">
@@ -321,4 +321,4 @@ const singlepost = () => {
   );
 };
 
-export default singlepost;
+export default Singlepost;

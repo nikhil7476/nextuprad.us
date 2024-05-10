@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-const portfolio = () => {
+const Portfolio = () => {
   return (
     <>
       <Head>
@@ -72,4 +72,4 @@ const portfolio = () => {
   );
 };
 
-export default portfolio;
+export default Portfolio;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import FaqDigitalMarketing from "@/components/FaqDigitalMarketing";
-const digitalmarketingservices = () => {
+const Digitalmarketingservices = () => {
   return (
     <>
       <main className="digital">
@@ -1376,4 +1376,4 @@ const digitalmarketingservices = () => {
   );
 };
 
-export default digitalmarketingservices;
+export default Digitalmarketingservices;

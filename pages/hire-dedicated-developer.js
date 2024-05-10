@@ -4,7 +4,7 @@ import HomeAccordian from "@/components/HomeAccordian";
 import styles from "../styles/Hiring.module.css";
 import FaqHiring from "../components/faqHiring";
 
-const hirededicateddeveloper = () => {
+const Hirededicateddeveloper = () => {
   return (
     <>
       <main id="sec">
@@ -430,4 +430,4 @@ const hirededicateddeveloper = () => {
   );
 };
 
-export default hirededicateddeveloper;
+export default Hirededicateddeveloper;

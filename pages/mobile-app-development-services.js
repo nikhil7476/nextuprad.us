@@ -1,6 +1,6 @@
 import Link from "next/link";
 import HomeAccordian from "@/components/HomeAccordian";
-const mobileapp = () => {
+const Mobileapp = () => {
   return (
     <>
       <main className="main">
@@ -442,4 +442,4 @@ const mobileapp = () => {
   );
 };
 
-export default mobileapp;
+export default Mobileapp;
