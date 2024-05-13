@@ -581,6 +581,54 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        <div className="video_testimonials mt-5 pt-5 ">
+          <div className="container">
+            <h3>Video Testimonials</h3>
+            <div
+              className="owl-carousel owl-theme testimonials-container owl-loaded owl-drag"
+              id="testimonials-container"
+            >
+              <div className="item-card1">
+                <div className="card-body">
+                  <div className="item1">
+                    <i className="fa fa-star checked icon" />
+                    <i className="fa fa-star checked" />
+                    <i className="fa fa-star checked" />
+                    <i className="fa fa-star checked" />
+                    <i className="fa fa-star checked" />
+                    <i className="fa fa-star checked" />
+                    <h2>
+                      Recommend NextUpgrad for website development and business
+                      marketing
+                    </h2>
+                    <p>
+                      I’m working with nextupgrad since april and these guys are
+                      amazing team. They have been there from day 1 for me. They
+                      also worked on weekends just to make sure my website and
+                      products were up to the standard.
+                    </p>
+                    <p>Patrick </p>
+                    <h3>Client For</h3>
+                    <span className="ic1">
+                      Website Development and Digital Marketing
+                    </span>
+                  </div>
+                  <div className="item2">
+                    <iframe
+                      width={560}
+                      height={315}
+                      src="https://www.youtube.com/embed/eIQ9JhJF3R8?si=fT6cHoKSIJRt1fJD"
+                      title="YouTube video player"
+                      frameBorder={0}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="testimonials mt-5 pt-5">
           <div className="container">
             <div className="row">
