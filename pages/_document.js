@@ -9,8 +9,9 @@ export default function Document() {
       <Head>
         <GoogleTagManagerScript gtmId="GTM-KVP3JR9B" />
       </Head>
-      <GoogleTagManager gtmId="G-NZ5VGKXPYG" />
+
       <body>
+        <GoogleTagManager gtmId="G-NZ5VGKXPYG" />
         <GoogleTagManagerNoscript gtmId={"GTM-KVP3JR9B"} />
         <Main />
         <NextScript />
