@@ -1,8 +1,9 @@
 .section2piy {
   /*display: grid;*/
   grid-template-columns: 1.2fr 1fr;
-  background-color: #fbf8f2;
-  padding: 5rem 3rem 7rem 3rem;
+  position: relative;
+
+  /* padding: 5rem 3rem 7rem 3rem; */
 }
 .section2piy h1 {
   color: #000000;

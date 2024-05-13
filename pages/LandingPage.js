@@ -3,6 +3,7 @@ import HomeAccordian from "@/components/HomeAccordian";
 import Head from "next/head";
 import styles from "../styles/LandingPage.module.css";
 import { Form, Button } from "react-bootstrap";
+import ReactPlayer from "react-player";
 const LandingPage = () => {
   return (
     <>
@@ -17,24 +18,35 @@ const LandingPage = () => {
         ></link>
       </Head>
       <section className={`${styles.section2piy} `}>
-        <div className="container">
+        <video
+          className="w-100 bannerVideo"
+          src="/banVid.webm"
+          autoPlay
+          muted
+          loop
+        />
+
+        <div className="overlayVid"></div>
+        <div className="container bannerContentLanding">
           <div className="row">
             <div className="col-md-6">
-              <h1>Skills held by NextUpgrad's dedicated developers.</h1>
-              <p className="my-4">
+              <h1 className="text-light">
+                Skills held by NextUpgrad's dedicated developers.
+              </h1>
+              <p className="my-4 text-light">
                 Embark on a journey of unique solutions with a dedicated
                 developer from NextUpgrad. Our certified professionals are ready
                 to connect the dots and deliver top-notch quality at your
                 service.
               </p>
-              <div className={`${styles.innerSection} my-4`}>
+              {/* <div className={`${styles.innerSection} my-4`}>
                 <span>Theme Development</span>
                 <span>API Integration</span>
                 <span>Performance Optimization</span>
                 <span>Security Implementation</span>
                 <span>System Design & Architecture</span>
                 <span>Community & Social Engagement</span>
-              </div>
+              </div> */}
             </div>
             <div className="col-md-6">
               <Form className={`${styles.hiringForm}`}>
