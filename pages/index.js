@@ -33,6 +33,7 @@ export default function Home() {
     subject: "",
     message: "",
   });
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -657,7 +658,51 @@ export default function Home() {
     console.log("filterIndex", filterIndex);
   };
 
-  async function submitContactForm() {}
+  const validateForm = () => {
+    let errors = {};
+    let isValid = true;
+
+    if (!formData.name.trim()) {
+      errors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      errors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Email is invalid";
+      isValid = false;
+    }
+
+    if (!formData.subject.trim()) {
+      errors.subject = "Subject is required";
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      errors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(errors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      try {
+        const response = await axios.post("your-api-endpoint", formData);
+        console.log(response.data);
+        if (response.status == 200) {
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        // Handle error response
+      }
+    }
+  };
 
   return (
     <>
@@ -982,7 +1027,7 @@ export default function Home() {
                           </span>
                         ))}
                   </div>
-                  <Form onSubmit={(event) => event.preventDefault()}>
+                  <Form onSubmit={(event) => handleSubmit(event)}>
                     <Form.Group controlId="formName ">
                       <Form.Label>Your name</Form.Label>
                       <Form.Control

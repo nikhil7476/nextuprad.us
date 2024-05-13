@@ -5419,6 +5419,10 @@ pre {
   margin-bottom: 0px;
 }
 
+.accordion-body {
+  font-size: 15px;
+}
+
 /*.........*/
 
 /*..............Software dev page testimonial...........*/

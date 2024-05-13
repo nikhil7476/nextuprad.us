@@ -1,0 +1,8 @@
+.topHeading {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.topHeading img {
+  width: 100px;
+}

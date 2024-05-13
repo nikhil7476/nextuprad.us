@@ -2,7 +2,68 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import { Form, Button } from "react-bootstrap";
+import { useState } from "react";
 const Conatactus = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    // Clear validation error if the field is corrected
+    setErrors({ ...errors, [name]: "" });
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+    let newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid";
+      isValid = false;
+    }
+
+    if (!formData.subject.trim()) {
+      newErrors.subject = "Subject is required";
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      try {
+        const response = await axios.post("your-api-endpoint", formData);
+        console.log(response.data);
+        // Handle success response here
+      } catch (error) {
+        console.error("Error:", error);
+        // Handle error response here
+      }
+    }
+  };
   return (
     <>
       <Head>
@@ -226,20 +287,38 @@ const Conatactus = () => {
                   <br />
                   We look forward to connecting with you!
                 </p>
-                <Form onSubmit={(event) => event.preventDefault()}>
+                <Form onSubmit={handleSubmit}>
                   <Form.Group controlId="formName">
                     <Form.Label>Your name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your name" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
                   </Form.Group>
 
                   <Form.Group controlId="formEmail">
                     <Form.Label>Your email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter your email" />
+                    <Form.Control
+                      type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
                   </Form.Group>
 
                   <Form.Group controlId="formSubject">
                     <Form.Label>Subject</Form.Label>
-                    <Form.Control type="text" placeholder="Enter subject" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                    />
                   </Form.Group>
 
                   <Form.Group controlId="formMessage">
@@ -248,11 +327,14 @@ const Conatactus = () => {
                       as="textarea"
                       rows={5}
                       placeholder="Enter your message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                     />
                   </Form.Group>
 
                   <div className="d-flex justify-content-center">
-                    <button className="w-100 mt-5 contactFormBtn">
+                    <button className="w-100 mt-5 contactFormBtn" type="submit">
                       Submit
                     </button>
                   </div>

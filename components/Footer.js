@@ -1,7 +1,36 @@
-"use client";
 import Link from "next/link";
 import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
+import { useState } from "react";
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [errors, setErrors] = useState("");
+
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+    setErrors(""); // Clear previous validation errors when the user types
+  };
+
+  const validateEmail = (email) => {
+    const isValid = /\S+@\S+\.\S+/.test(email);
+    return isValid;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!validateEmail(email)) {
+      setErrors("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      const response = await axios.post("your-api-endpoint", { email });
+      console.log(response.data);
+      // Handle success response here
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle error response here
+    }
+  };
   return (
     <>
       <div className="ftr-main">
@@ -12,12 +41,18 @@ const Footer = () => {
                 <h2>
                   Subscribe to our newsletter to stay in touch with the latest.
                 </h2>
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="mail-inpt">
-                    <input type="email" placeholder="Email" />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      value={email}
+                      onChange={handleChange}
+                    />
+                    {errors && <span className="text-danger">{errors}</span>}
                   </div>
                   <div className="mail-sub">
-                    <input type="submit" />
+                    <input type="submit" value="Submit" />
                   </div>
                 </form>
               </div>

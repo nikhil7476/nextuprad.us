@@ -3,8 +3,65 @@ import { Form, Button } from "react-bootstrap";
 import HomeAccordian from "@/components/HomeAccordian";
 import styles from "../styles/Hiring.module.css";
 import FaqHiring from "../components/faqHiring";
+import { useState } from "react";
 
 const Hirededicateddeveloper = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validateForm = () => {
+    let errors = {};
+    let isValid = true;
+
+    if (!formData.name.trim()) {
+      errors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      errors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Email is invalid";
+      isValid = false;
+    }
+
+    if (!formData.subject.trim()) {
+      errors.subject = "Subject is required";
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      errors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(errors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      try {
+        const response = await axios.post("your-api-endpoint", formData);
+        console.log(response.data);
+        // Do something with the response if needed
+      } catch (error) {
+        console.error("Error:", error);
+        // Handle error response
+      }
+    }
+  };
   return (
     <>
       <main id="sec">
@@ -69,23 +126,38 @@ const Hirededicateddeveloper = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <Form
-                onSubmit={(event) => event.preventDefault()}
-                className={`${styles.hiringForm}`}
-              >
+              <Form onSubmit={handleSubmit} className={`${styles.hiringForm}`}>
                 <Form.Group controlId="formName">
                   <Form.Label>Your name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter your name" />
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter your name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
                 </Form.Group>
 
                 <Form.Group controlId="formEmail">
                   <Form.Label>Your email</Form.Label>
-                  <Form.Control type="email" placeholder="Enter your email" />
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter your email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
                 </Form.Group>
 
                 <Form.Group controlId="formSubject">
                   <Form.Label>Subject</Form.Label>
-                  <Form.Control type="text" placeholder="Enter subject" />
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                  />
                 </Form.Group>
 
                 <Form.Group controlId="formMessage">
@@ -94,11 +166,16 @@ const Hirededicateddeveloper = () => {
                     as="textarea"
                     rows={5}
                     placeholder="Enter your message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </Form.Group>
 
                 <div className="d-flex justify-content-center">
-                  <button className="w-100 mt-5 contactFormBtn">Submit</button>
+                  <button className="w-100 mt-5 contactFormBtn" type="submit">
+                    Submit
+                  </button>
                 </div>
               </Form>
             </div>{" "}
