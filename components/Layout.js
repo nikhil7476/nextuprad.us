@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Header2 from "./Header2";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 
 export function Layout({ children }) {
   const [routeName, setrouteName] = useState("");
@@ -32,6 +33,7 @@ export function Layout({ children }) {
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         ></link>
       </Head>
+
       {children}
 
       {router.asPath == "/LandingPage" ? null : <Footer />}
