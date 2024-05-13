@@ -12,7 +12,7 @@ import { useInView } from "react-intersection-observer";
 import Head from "next/head";
 import { motion, useAnimation } from "framer-motion";
 import Carousel from "react-bootstrap/Carousel";
-
+import axiosInstance from "@/axios/axios";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaPhp } from "react-icons/fa";
@@ -693,7 +693,10 @@ export default function Home() {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axios.post("your-api-endpoint", formData);
+        const response = await axiosInstance.post(
+          "your-api-endpoint",
+          formData
+        );
         console.log(response.data);
         if (response.status == 200) {
         }

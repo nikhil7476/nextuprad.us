@@ -4,7 +4,64 @@ import Head from "next/head";
 import styles from "../styles/LandingPage.module.css";
 import { Form, Button } from "react-bootstrap";
 import ReactPlayer from "react-player";
+import { useState } from "react";
+import axiosInstance from "@/axios/axios";
 const LandingPage = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const validateForm = () => {
+    const { name, email, subject } = formData;
+    const errors = {};
+
+    if (!name.trim()) {
+      errors.name = "Name is required";
+    }
+    if (!email.trim()) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = "Invalid email format";
+    }
+    if (!subject.trim()) {
+      errors.subject = "Subject is required";
+    }
+
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      try {
+        const response = await axiosInstance.post(
+          "YOUR_API_ENDPOINT",
+          formData
+        );
+        console.log("Form submitted successfully:", response.data);
+        // Handle success (e.g., show success message, reset form)
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        // Handle error (e.g., show error message)
+      }
+    } else {
+      console.log("Form has validation errors");
+    }
+  };
+
   return (
     <>
       <Head>
@@ -49,33 +106,64 @@ const LandingPage = () => {
               </div> */}
             </div>
             <div className="col-md-6">
-              <Form className={`${styles.hiringForm}`}>
-                <Form.Group controlId="formName">
+              <Form className={`${styles.hiringForm}`} onSubmit={handleSubmit}>
+                <Form.Group controlId="name">
                   <Form.Label>Your name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter your name" />
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter your name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    isInvalid={!!errors.name}
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    {errors.name}
+                  </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group controlId="formEmail">
+                <Form.Group controlId="email">
                   <Form.Label>Your email</Form.Label>
-                  <Form.Control type="email" placeholder="Enter your email" />
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    isInvalid={!!errors.email}
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    {errors.email}
+                  </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group controlId="formSubject">
+                <Form.Group controlId="subject">
                   <Form.Label>Subject</Form.Label>
-                  <Form.Control type="text" placeholder="Enter subject" />
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    isInvalid={!!errors.subject}
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    {errors.subject}
+                  </Form.Control.Feedback>
                 </Form.Group>
 
-                <Form.Group controlId="formMessage">
+                <Form.Group controlId="message">
                   <Form.Label>Your message (optional)</Form.Label>
                   <Form.Control
                     as="textarea"
                     rows={5}
                     placeholder="Enter your message"
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </Form.Group>
 
                 <div className="d-flex justify-content-center">
-                  <button className="w-100 mt-5 contactFormBtn">Submit</button>
+                  <button type="submit" className="w-100 mt-5 contactFormBtn">
+                    Submit
+                  </button>
                 </div>
               </Form>
             </div>{" "}

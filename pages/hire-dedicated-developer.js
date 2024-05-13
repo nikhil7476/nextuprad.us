@@ -4,6 +4,7 @@ import HomeAccordian from "@/components/HomeAccordian";
 import styles from "../styles/Hiring.module.css";
 import FaqHiring from "../components/faqHiring";
 import { useState } from "react";
+import axiosInstance from "@/axios/axios";
 
 const Hirededicateddeveloper = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +54,10 @@ const Hirededicateddeveloper = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axios.post("your-api-endpoint", formData);
+        const response = await axiosInstance.post(
+          "your-api-endpoint",
+          formData
+        );
         console.log(response.data);
         // Do something with the response if needed
       } catch (error) {

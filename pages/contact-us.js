@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
+import axiosInstance from "@/axios/axios";
 const Conatactus = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -55,7 +56,10 @@ const Conatactus = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axios.post("your-api-endpoint", formData);
+        const response = await axiosInstance.post(
+          "your-api-endpoint",
+          formData
+        );
         console.log(response.data);
         // Handle success response here
       } catch (error) {
