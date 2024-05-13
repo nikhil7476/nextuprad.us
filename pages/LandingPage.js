@@ -20,7 +20,7 @@ const LandingPage = () => {
       <section className={`${styles.section2piy} `}>
         <video
           className="w-100 bannerVideo"
-          src="/BanVid.webm"
+          src="/bannerVid.mp4"
           autoPlay
           muted
           loop
