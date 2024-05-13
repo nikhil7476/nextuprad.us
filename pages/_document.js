@@ -5,11 +5,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <GoogleTagManager gtmId="G-NZ5VGKXPYG" />
+        <GoogleTagManager gtmId="GTM-KVP3JR9B" />
       </Head>
       <body>
         <Main />
         <NextScript />
+        <GoogleTagManager gtmId="GTM-KVP3JR9B" />
       </body>
     </Html>
   );
