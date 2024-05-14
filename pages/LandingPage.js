@@ -6,6 +6,10 @@ import { Form, Button } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import axiosInstance from "@/axios/axios";
+import Image from "next/image";
+import ReCAPTCHA from "react-google-recaptcha";
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -14,13 +18,14 @@ const LandingPage = () => {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const [recaptcha, setRecaptcha] = useState(null);
 
   const handleChange = (e) => {
-    const { id, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [id]: value,
-    }));
+    // const { id, value } = e.target;
+    // setFormData((prevData) => ({
+    //   ...prevData,
+    //   [id]: value,
+    // }));
   };
 
   const validateForm = () => {
@@ -42,6 +47,8 @@ const LandingPage = () => {
     setErrors(errors);
     return Object.keys(errors).length === 0;
   };
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -85,8 +92,9 @@ const LandingPage = () => {
 
         <div className="overlayVid"></div>
         <div className="container bannerContentLanding">
-          <div className="row">
+          <div className="row  justify-content-between">
             <div className="col-md-6">
+              <Image src='/nextlogo.png' height={100} width={250} alt="logo" />
               <h1 className="text-light">
                 Skills held by NextUpgrad's dedicated developers.
               </h1>
@@ -105,12 +113,13 @@ const LandingPage = () => {
                 <span>Community & Social Engagement</span>
               </div> */}
             </div>
-            <div className="col-md-6">
+            <div className="col-md-4">
               <Form className={`${styles.hiringForm}`} onSubmit={handleSubmit}>
                 <Form.Group controlId="name">
-                  <Form.Label>Your name</Form.Label>
+                  <Form.Label></Form.Label>
                   <Form.Control
                     type="text"
+                    className="mt-0"
                     placeholder="Enter your name"
                     value={formData.name}
                     onChange={handleChange}
@@ -122,7 +131,7 @@ const LandingPage = () => {
                 </Form.Group>
 
                 <Form.Group controlId="email">
-                  <Form.Label>Your email</Form.Label>
+                  <Form.Label></Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="Enter your email"
@@ -135,8 +144,23 @@ const LandingPage = () => {
                   </Form.Control.Feedback>
                 </Form.Group>
 
+                <Form.Group controlId="phone">
+                  <Form.Label></Form.Label>
+                  <PhoneInput
+                    defaultCountry="us"
+                    type="number"
+                    placeholder="Enter your Phone"
+                    value={formData.email}
+                    onChange={handleChange}
+                    isInvalid={!!errors.email}
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    {errors.email}
+                  </Form.Control.Feedback>
+                </Form.Group>
+
                 <Form.Group controlId="subject">
-                  <Form.Label>Subject</Form.Label>
+                  <Form.Label></Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Enter subject"
@@ -150,18 +174,34 @@ const LandingPage = () => {
                 </Form.Group>
 
                 <Form.Group controlId="message">
-                  <Form.Label>Your message (optional)</Form.Label>
-                  <Form.Control
+                  <Form.Label></Form.Label>
+                  {/* <Form.Control
                     as="textarea"
-                    rows={5}
+                    className="p-2"
+                    rows={3}
+                    cols={50}
                     placeholder="Enter your message"
                     value={formData.message}
                     onChange={handleChange}
+                  /> */}
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter your message"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    isInvalid={!!errors.subject}
                   />
                 </Form.Group>
+                <div className='captcha'>
+                  <ReCAPTCHA
+                    sitekey="6LcGBtwpAAAAAMIIcX5Jj5_g81CDzC8ofoeoSJgz"
+                    onChange={(val) => setRecaptcha(val)}
+                    
+                  />
+                </div>
 
                 <div className="d-flex justify-content-center">
-                  <button type="submit" className="w-100 mt-5 contactFormBtn">
+                  <button type="submit" className="w-100 mt-3 contactFormBtn" disabled={!recaptcha}>
                     Submit
                   </button>
                 </div>

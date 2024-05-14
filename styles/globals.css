@@ -259,12 +259,22 @@ body {
 
 .contactFormBtn {
   background-color: #e76f51;
+  /* border:1px solid #e76f51; */
   color: #fff;
   padding: 10px 15px;
   border-radius: 25px;
   border: 0;
   margin-top: 2rem;
   width: 100%;
+  cursor: pointer;
+}
+.contactFormBtn:hover{
+  background-color: #fff;
+  /* border:1px solid #e76f51; */
+  color:#e76f51;
+  
+  transition-duration: 0.5s;
+  cursor: pointer;
 }
 
 .gridsDropdown {
@@ -677,7 +687,8 @@ h2.design-heading span {
   line-height: 63px;
   margin-bottom: 60px;
 }
-.testimonials h2::before {
+.testimonials h2::after {
+  margin-top:15px;
   content: "";
   width: 25%;
   display: block;
@@ -3978,9 +3989,9 @@ ul {
 }
 .form-control,
 .mail-inpt input {
-  border-radius: 10px !important;
-  padding: 8px !important;
-  height: 48px !important;
+  border-radius: 5px !important;
+  /* padding: 8px !important;
+  height: 48px !important; */
 }
 .ftr-socio i {
   color: #fff;
@@ -4336,6 +4347,7 @@ a:hover {
 }
 .sec-two-btn:hover {
   background-color: #fff;
+  color:#e76f51;
 }
 .last-row {
   margin-bottom: 50px;
@@ -5233,6 +5245,23 @@ pre {
   padding-top: 60px;
 }
 
+#rc-anchor-container{
+  border: none !important;
+}
+.rc-anchor-normal{
+  width:0 !important;
+}
+.captcha{
+  display: flex;
+  justify-content: center;
+  background:#f9f9f9;
+  border:none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.captcha #rc-anchor-container{
+  border:1px soild black !important;
+}
 .test1 h1 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
@@ -5452,7 +5481,7 @@ pre {
 }
 .bannerContentLanding {
   position: absolute;
-  top: 50%;
+  top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
