@@ -9,18 +9,149 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   color: #fff;
 }
+
 .topHeading img {
-  width: 150px;
+  width: 180px;
 }
+
 .topHeading span {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
 }
+
 .PodcastSidebarAndPage {
+  justify-content: center;
   display: flex;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  gap: 2rem;
+}
+
+.topBanner {
+  width: 100%;
+  background-color: #2d3e50;
+  padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+.pill {
+  background-color: #6a78d1 !important;
+}
+
+.topBanner img {
+  width: 250px;
+}
+
+.podcasts {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  justify-items: center;
+}
+.podcasts img {
+  width: 200px;
+}
+
+.innerDiv {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.listenNowBtn {
+  transition: 0.4s ease;
+  border: 1px solid #fff;
+  background-color: #2d3e50;
+  color: #fff;
+}
+
+.listenNowBtn:hover {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #2d3e50;
+}
+
+@media (max-width: 1020px) {
+  .listenNowBtn {
+    margin-top: 1rem;
+  }
+  .innerDiv {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: auto;
+  }
+
+  .topBanner {
+    width: 100%;
+  }
+
+  .podcasts {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    justify-items: left;
+  }
+
+  .podcasts img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .innerDiv {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: auto;
+  }
+
+  .topBanner {
+    width: 85%;
+  }
+
+  .podcasts {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+  }
+
+  .podcasts img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 610px) {
+  .innerDiv {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: auto;
+  }
+
+  .topBanner {
+    width: 85%;
+  }
+
+  .podcasts {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+    justify-items: left;
+  }
+
+  .podcasts img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .PodcastSidebarAndPage {
+    flex-direction: column;
+  }
+  .topBanner img {
+    width: 150px;
+  }
 }
