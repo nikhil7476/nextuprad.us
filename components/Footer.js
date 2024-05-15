@@ -139,22 +139,22 @@ const Footer = () => {
                       </div>
                     </li> */}
                     <li className="nav-item active">
-                      <a className="nav-link" href="#">
-                        About Me
+                      <a className="nav-link" href="/about-us">
+                        About
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <a className="nav-link" href="/contact-us">
                         Contact Us
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        Bolg
+                      <a className="nav-link" href="/blog">
+                        Blog
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <a className="nav-link" href="/portfolio">
                         Portfolio
                       </a>
                     </li>

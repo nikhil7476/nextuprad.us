@@ -3992,7 +3992,9 @@ ul {
   border-radius: 5px !important;
   /* padding: 8px !important;
   height: 48px !important; */
+  color:#000 !important;
 }
+
 .ftr-socio i {
   color: #fff;
   font-size: 25px;

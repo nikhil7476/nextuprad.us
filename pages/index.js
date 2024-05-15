@@ -782,7 +782,7 @@ export default function Home() {
                 Digital Solutions – Redefining <br /> Business Experiences Like
                 Never Before!
               </p>
-              <Link className="Personalize-button2" href="#largeHeading">
+              <Link className="Personalize-button2" href="/contact-us">
                 Let's Discuss
               </Link>
             </div>
