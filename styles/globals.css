@@ -259,7 +259,7 @@ body {
 
 .contactFormBtn {
   background-color: #e76f51;
-  /* border:1px solid #e76f51; */
+  border:1px solid #e76f51;
   color: #fff;
   padding: 10px 15px;
   border-radius: 25px;
@@ -270,9 +270,8 @@ body {
 }
 .contactFormBtn:hover {
   background-color: #fff;
-  /* border:1px solid #e76f51; */
   color: #e76f51;
-
+  border:1px solid #e76f51;
   transition-duration: 0.5s;
   cursor: pointer;
 }
@@ -331,7 +330,7 @@ body {
 .homeCountup {
   margin-top: 20px;
   margin-bottom: 25px;
-  font-size: 55px !important;
+  font-size: 50px !important;
   font-weight: 600 !important;
 }
 .container {
@@ -1389,6 +1388,10 @@ span.elementor-screen-only {
   display: block;
   height: 3px;
   background: #e76f51;
+}
+
+.carousel-control-next-icon{
+  background-image: url('/arrow.png') !important;
 }
 
 /*homepage-end*/
