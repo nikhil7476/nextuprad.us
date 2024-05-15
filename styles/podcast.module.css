@@ -1,8 +1,24 @@
+.banner {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  margin-top: -8rem;
+  background-color: #192733;
+}
 .topHeading {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
+
+  color: #fff;
 }
 .topHeading img {
-  width: 100px;
+  width: 150px;
+}
+.topHeading span {
+  font-size: 17px;
+  font-weight: 400;
+}
+.PodcastSidebarAndPage {
+  display: flex;
 }

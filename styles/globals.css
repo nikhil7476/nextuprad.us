@@ -268,11 +268,11 @@ body {
   width: 100%;
   cursor: pointer;
 }
-.contactFormBtn:hover{
+.contactFormBtn:hover {
   background-color: #fff;
   /* border:1px solid #e76f51; */
-  color:#e76f51;
-  
+  color: #e76f51;
+
   transition-duration: 0.5s;
   cursor: pointer;
 }
@@ -688,7 +688,7 @@ h2.design-heading span {
   margin-bottom: 60px;
 }
 .testimonials h2::after {
-  margin-top:15px;
+  margin-top: 15px;
   content: "";
   width: 25%;
   display: block;
@@ -3992,7 +3992,7 @@ ul {
   border-radius: 5px !important;
   /* padding: 8px !important;
   height: 48px !important; */
-  color:#000 !important;
+  color: #000 !important;
 }
 
 .ftr-socio i {
@@ -4349,7 +4349,7 @@ a:hover {
 }
 .sec-two-btn:hover {
   background-color: #fff;
-  color:#e76f51;
+  color: #e76f51;
 }
 .last-row {
   margin-bottom: 50px;
@@ -5247,22 +5247,22 @@ pre {
   padding-top: 60px;
 }
 
-#rc-anchor-container{
+#rc-anchor-container {
   border: none !important;
 }
-.rc-anchor-normal{
-  width:0 !important;
+.rc-anchor-normal {
+  width: 0 !important;
 }
-.captcha{
+.captcha {
   display: flex;
   justify-content: center;
-  background:#f9f9f9;
-  border:none;
+  background: #f9f9f9;
+  border: none;
   margin-top: 20px;
   border-radius: 5px;
 }
-.captcha #rc-anchor-container{
-  border:1px soild black !important;
+.captcha #rc-anchor-container {
+  border: 1px soild black !important;
 }
 .test1 h1 {
   color: #000000;
@@ -5488,6 +5488,11 @@ pre {
   transform: translate(-50%, -50%);
   z-index: 1;
   color: #fff;
+}
+
+.podcastSidebar {
+  display: flex;
+  flex-direction: column;
 }
 
 /*..............................*/
