@@ -8,12 +8,13 @@ import { useState } from "react";
 import axiosInstance from "@/axios/axios";
 import Image from "next/image";
 import ReCAPTCHA from "react-google-recaptcha";
-import { PhoneInput } from 'react-international-phone';
-import 'react-international-phone/style.css';
+import { PhoneInput } from "react-international-phone";
+import "react-international-phone/style.css";
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -21,15 +22,15 @@ const LandingPage = () => {
   const [recaptcha, setRecaptcha] = useState(null);
 
   const handleChange = (e) => {
-    // const { id, value } = e.target;
-    // setFormData((prevData) => ({
-    //   ...prevData,
-    //   [id]: value,
-    // }));
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
   };
 
   const validateForm = () => {
-    const { name, email, subject } = formData;
+    const { name, email, subject, phone, message } = formData;
     const errors = {};
 
     if (!name.trim()) {
@@ -43,12 +44,16 @@ const LandingPage = () => {
     if (!subject.trim()) {
       errors.subject = "Subject is required";
     }
+    if (!phone.trim()) {
+      errors.phone = "Phone is required";
+    }
+    if (!message.trim()) {
+      errors.message = "Message is required";
+    }
 
     setErrors(errors);
     return Object.keys(errors).length === 0;
   };
-
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -94,7 +99,7 @@ const LandingPage = () => {
         <div className="container bannerContentLanding">
           <div className="row  justify-content-between">
             <div className="col-md-6">
-              <Image src='/nextlogo.png' height={100} width={250} alt="logo" />
+              <Image src="/nextlogo.png" height={100} width={250} alt="logo" />
               <h1 className="text-light">
                 Skills held by NextUpgrad's dedicated developers.
               </h1>
@@ -114,12 +119,11 @@ const LandingPage = () => {
               </div> */}
             </div>
             <div className="col-md-4">
-              <Form className={`${styles.hiringForm}`} onSubmit={handleSubmit}>
+              <Form className="hiringForm" onSubmit={handleSubmit}>
                 <Form.Group controlId="name">
-                  <Form.Label></Form.Label>
+                  <Form.Label>Name</Form.Label>
                   <Form.Control
                     type="text"
-                    className="mt-0"
                     placeholder="Enter your name"
                     value={formData.name}
                     onChange={handleChange}
@@ -131,7 +135,7 @@ const LandingPage = () => {
                 </Form.Group>
 
                 <Form.Group controlId="email">
-                  <Form.Label></Form.Label>
+                  <Form.Label>Email</Form.Label>
                   <Form.Control
                     type="email"
                     placeholder="Enter your email"
@@ -145,22 +149,26 @@ const LandingPage = () => {
                 </Form.Group>
 
                 <Form.Group controlId="phone">
-                  <Form.Label></Form.Label>
+                  <Form.Label>Phone</Form.Label>
                   <PhoneInput
-                    defaultCountry="us"
-                    type="number"
-                    placeholder="Enter your Phone"
-                    value={formData.email}
-                    onChange={handleChange}
-                    isInvalid={!!errors.email}
+                    defaultCountry="US"
+                    placeholder="Enter your phone number"
+                    value={formData.phone}
+                    onChange={(value) =>
+                      setFormData((prevData) => ({
+                        ...prevData,
+                        phone: value,
+                      }))
+                    }
+                    isInvalid={!!errors.phone}
                   />
                   <Form.Control.Feedback type="invalid">
-                    {errors.email}
+                    {errors.phone}
                   </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group controlId="subject">
-                  <Form.Label></Form.Label>
+                  <Form.Label>Subject</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder="Enter subject"
@@ -174,39 +182,41 @@ const LandingPage = () => {
                 </Form.Group>
 
                 <Form.Group controlId="message">
-                  <Form.Label></Form.Label>
-                  {/* <Form.Control
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control
                     as="textarea"
-                    className="p-2"
                     rows={3}
-                    cols={50}
                     placeholder="Enter your message"
                     value={formData.message}
                     onChange={handleChange}
-                  /> */}
-                  <Form.Control
-                    type="text"
-                    placeholder="Enter your message"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    isInvalid={!!errors.subject}
+                    isInvalid={!!errors.message}
                   />
+                  <Form.Control.Feedback type="invalid">
+                    {errors.message}
+                  </Form.Control.Feedback>
                 </Form.Group>
-                <div className='captcha'>
+
+                <div className="captcha">
                   <ReCAPTCHA
-                    sitekey="6LcGBtwpAAAAAMIIcX5Jj5_g81CDzC8ofoeoSJgz"
-                    onChange={(val) => setRecaptcha(val)}
-                    
+                    sitekey="6LcsJt0pAAAAADojY-EwlCuhurrgweKE5lZS89lU"
+                    onChange={(val) => {
+                      console.log("recaptcha value", val);
+                      setRecaptcha(val);
+                    }}
                   />
                 </div>
 
                 <div className="d-flex justify-content-center">
-                  <button type="submit" className="w-100 mt-3 contactFormBtn" disabled={!recaptcha}>
+                  <button
+                    type="submit"
+                    className="w-100 mt-3 contactFormBtn"
+                    disabled={!recaptcha}
+                  >
                     Submit
                   </button>
                 </div>
               </Form>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </section>
