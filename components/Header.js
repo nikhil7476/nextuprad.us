@@ -60,12 +60,12 @@ const Header = () => {
           Home
         </Link>
 
-        <Link
-          href="/about-us"
-          className={activeTab === "About Us" ? "active" : ""}
-          onClick={(e) => handleTabClick(e, "h Us")}
-        >
-          About Us
+        <Link 
+         href="/about-us" 
+         className={activeTab === "About Us" ? "active" : ""} 
+        target="_blank"
+        > 
+         About 
         </Link>
         <span className={activeTab === "Services" ? "active" : ""}>
           <Menu
@@ -73,8 +73,10 @@ const Header = () => {
             menuButton={<MenuButton>Services</MenuButton>}
             transition
           >
-            <MenuItem onClick={(e) => Router.push("/hire-dedicated-developer")}>
+            <MenuItem>
+             <Link href="/hire-dedicated-developer" target="_blank" style={{ fontSize: '14px', fontFamily: '"Montserrat", Sans-serif'}}>
               Hire Dedicated Developer
+            </Link>
             </MenuItem>
             <MenuItem
               onClick={(e) =>
@@ -108,13 +110,13 @@ const Header = () => {
         <Link
           href="/contact-us"
           className={activeTab === "Contact Us" ? "active" : ""}
-          onClick={(e) => handleTabClick(e, "h Us")}
+          target="_blank"
         >
           Contact Us
         </Link>
-        <Link href="/portfolio">Portfolio</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/contact-us">
+        <Link href="/portfolio" target="_blank" >Portfolio</Link>
+        <Link href="/blog" target="_blank">Blog</Link>
+        <Link href="/contact-us" target="_blank">
           <button id="header-btn">Let's Discuss</button>
         </Link>
       </nav>

@@ -66,7 +66,7 @@ export default function Home() {
       "Growth analysis",
       "Sound Design",
       "CMS",
-      "About us",
+      "About",
       "DML",
       "Accessibility",
       "NoSQL Databases",
@@ -847,7 +847,7 @@ export default function Home() {
                       <CountUp
                         className="homeCountup"
                         start={0}
-                        end={95}
+                        end={150}
                         duration={2.4}
                         ref={countUpRef}
                         redraw={true}
@@ -855,14 +855,14 @@ export default function Home() {
                       />
                     )}
 
-                    <span>Product Developed</span>
+                    <span>Products Developed</span>
                   </li>
                   <li>
                     {inView && (
                       <CountUp
                         className="homeCountup"
                         start={0}
-                        end={20}
+                        end={80}
                         duration={2.75}
                         ref={countUpRef}
                         redraw={true}
@@ -877,7 +877,7 @@ export default function Home() {
                       <CountUp
                         className="homeCountup"
                         start={0}
-                        end={250}
+                        end={500}
                         duration={3}
                         ref={countUpRef}
                         redraw={true}
@@ -907,7 +907,7 @@ export default function Home() {
                       <CountUp
                         className="homeCountup"
                         start={0}
-                        end={60}
+                        end={200}
                         duration={2.4}
                         ref={countUpRef}
                         redraw={true}
@@ -922,7 +922,7 @@ export default function Home() {
                       <CountUp
                         className="homeCountup"
                         start={0}
-                        end={40}
+                        end={150}
                         duration={3}
                         ref={countUpRef}
                         redraw={true}

@@ -99,7 +99,7 @@ const LandingPage = () => {
         <div className="container bannerContentLanding">
           <div className="row  justify-content-between">
             <div className="col-md-6">
-              <Image src="/nextlogo.png" height={100} width={250} alt="logo" />
+              <Image src="/Nextupgradlogo.png" height={100} width={250} alt="logo" />
               <h1 className="text-light">
                 Skills held by NextUpgrad's dedicated developers.
               </h1>
