@@ -755,10 +755,8 @@ export default function Home() {
         <meta name="google" content="notranslate" />
       </Head>
       <main>
-        {/* <div className="banner2">
+        <div className="banner2">
           <div className="container bannerContainer">
-           
-
             <div className="newBannerMain">
               <TypeAnimation
                 sequence={[
@@ -784,10 +782,9 @@ export default function Home() {
                 Let's Discuss
               </Link>
             </div>
-            
           </div>
-        </div> */}
-        <div className="banner">
+        </div>
+        {/* <div className="banner">
           <div className="container">
             <div className="row">
               <div className="col-md-7">
@@ -829,7 +826,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="achieved">
           <div className="container">
             <div className="row">
