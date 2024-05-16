@@ -710,49 +710,36 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* Primary Meta Tags */}
         <title>Nextupgrad</title>
+        <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
           content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
         />
 
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="nextupgrad.us" />
-        <meta property="og:title" content="Nextupgrad web solutions" />
+        <meta property="og:url" content="https://nextupgrad.us/" />
+        <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
           content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
         />
-        <meta property="og:image" content="nextupgrad.us/logo-2orange-1.png" />
-
-        {/* Twitter */}
         <meta
-          property="twitter:card"
-          content="nextupgrad.us/logo-2orange-1.png"
+          property="og:image"
+          content="https://metatags.io/images/meta-tags.png"
         />
-        <meta property="twitter:url" content="nextupgrad.us" />
-        <meta property="twitter:title" content="Nextupgrad web solutions" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://nextupgrad.us/" />
+        <meta property="twitter:title" content="Nextupgrad" />
         <meta
           property="twitter:description"
           content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
         />
         <meta
           property="twitter:image"
-          content="nextupgrad.us/logo-2orange-1.png"
+          content="https://metatags.io/images/meta-tags.png"
         />
-
-        {/* Viewport Meta Tag */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* Favicon */}
-        <link rel="icon" href="/logo-2orange-1.png" />
-
-        <meta name="robots" content="all" />
-        <meta name="googlebot" content="noindex,nofollow" />
-        <meta name="google" content="nositelinkssearchbox" />
-        <meta name="google" content="notranslate" />
       </Head>
       <main>
         <div className="banner2">
