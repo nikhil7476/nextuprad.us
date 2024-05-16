@@ -726,7 +726,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://nextupgrad.us/logo-2orange-1.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -738,7 +738,7 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://nextupgrad.us/logo-2orange-1.png"
         />
       </Head>
       <main>
