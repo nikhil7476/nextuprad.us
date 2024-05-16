@@ -1485,10 +1485,10 @@ export default function Home() {
           </div>
         </div>
         <Carousel>
-          <Carousel.Item interval={1700}>
+          <Carousel.Item interval={3500}>
             <Cards />
           </Carousel.Item>
-          <Carousel.Item interval={1700}>
+          <Carousel.Item interval={3500}>
             <Cards2 />
           </Carousel.Item>
         </Carousel>

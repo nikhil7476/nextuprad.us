@@ -73,7 +73,7 @@ const Footer = () => {
                         </MenuItem>
                         <MenuItem
                           onClick={(e) =>
-                            Router.push("/website-design-development-servece")
+                            Router.push("/website-design-development-services")
                           }
                         >
                           Website Development
@@ -139,24 +139,24 @@ const Footer = () => {
                       </div>
                     </li> */}
                     <li className="nav-item active">
-                      <a className="nav-link" href="/about-us">
+                      <Link className="nav-link" href="/about-us">
                         About
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/contact-us">
+                      <Link className="nav-link" href="/contact-us">
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/blog">
+                      <Link className="nav-link" href="/blog">
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/portfolio">
+                      <Link className="nav-link" href="/portfolio">
                         Portfolio
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>

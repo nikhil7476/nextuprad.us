@@ -75,7 +75,7 @@ const Conatactus = () => {
         <title>Nextupgrad</title>
         <meta
           name="description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Connect with us effortlessly through our Contact Us page. Reach out for inquiries, support, or collaborations, and let's start a conversation today. Your feedback matters to us!"
         />
 
         {/* Open Graph / Facebook */}
@@ -84,7 +84,7 @@ const Conatactus = () => {
         <meta property="og:title" content="Nextupgrad web solutions" />
         <meta
           property="og:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Connect with us effortlessly through our Contact Us page. Reach out for inquiries, support, or collaborations, and let's start a conversation today. Your feedback matters to us!"
         />
         <meta property="og:image" content="nextupgrad.us/logo-2orange-1.png" />
 

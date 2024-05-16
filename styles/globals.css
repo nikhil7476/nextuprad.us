@@ -259,7 +259,7 @@ body {
 
 .contactFormBtn {
   background-color: #e76f51;
-  border:1px solid #e76f51;
+  border: 1px solid #e76f51;
   color: #fff;
   padding: 10px 15px;
   border-radius: 25px;
@@ -271,7 +271,7 @@ body {
 .contactFormBtn:hover {
   background-color: #fff;
   color: #e76f51;
-  border:1px solid #e76f51;
+  border: 1px solid #e76f51;
   transition-duration: 0.5s;
   cursor: pointer;
 }
@@ -1390,8 +1390,8 @@ span.elementor-screen-only {
   background: #e76f51;
 }
 
-.carousel-control-next-icon{
-  background-image: url('/arrow.png') !important;
+.carousel-control-next-icon {
+  background-image: url("/arrow.png") !important;
 }
 
 /*homepage-end*/
@@ -5518,6 +5518,14 @@ pre {
 
 /*..............................*/
 
+.carousel-control-prev-icon {
+  margin-right: 7rem;
+  background-image: url("/leftArrow.png") !important;
+}
+.carousel-control-next-icon {
+  margin-left: 7rem;
+  background-image: url("/rightArrow.png") !important;
+}
 @media screen and (max-width: 1200px) {
   .achieved ul li {
     width: 29%;
@@ -5862,6 +5870,23 @@ pre {
   }
 }
 @media screen and (max-width: 664px) {
+  .newBannerMain p {
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    position: relative;
+    z-index: 12;
+  }
+  .newBannerMain span {
+    font-size: 1.7em;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    position: relative;
+    z-index: 12;
+  }
   .discover h2 {
     color: #4e515c;
     font-family: "Montserrat", Sans-serif;
