@@ -6,6 +6,7 @@ import "react-tabs/style/react-tabs.css";
 import axios from "axios";
 import Badge from "react-bootstrap/Badge";
 import { IoMdPlay } from "react-icons/io";
+import Head from "next/head";
 const Podcast = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -140,6 +141,38 @@ const Podcast = () => {
 
   return (
     <>
+      <Head>
+        <title>Nextupgrad</title>
+        <meta name="title" content="Nextupgrad" />
+        <meta
+          name="description"
+          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nextupgrad.us/" />
+        <meta property="og:title" content="Nextupgrad" />
+        <meta
+          property="og:description"
+          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+        />
+        <meta
+          property="og:image"
+          content="https://nextupgrad.us/logo-2orange-1.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://nextupgrad.us/" />
+        <meta property="twitter:title" content="Nextupgrad" />
+        <meta
+          property="twitter:description"
+          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+        />
+        <meta
+          property="twitter:image"
+          content="https://nextupgrad.us/logo-2orange-1.png"
+        />
+      </Head>
       <section className={styles.banner}>
         <div className={styles.topHeading}>
           <img src="/logo-2orange-1.png" alt="" />
