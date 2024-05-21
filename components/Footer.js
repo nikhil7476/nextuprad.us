@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import { useState } from "react";
+import Swal from "sweetalert2";
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState("");
@@ -23,9 +24,34 @@ const Footer = () => {
     }
 
     try {
-      const response = await axios.post("your-api-endpoint", { email });
-      console.log(response.data);
-      // Handle success response here
+      const response = await fetch(
+        "https://53c50cd527.nxcli.io/calculator/api/postNewsletter",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
+      const data = await response.json();
+
+      console.log(data);
+      if (data.status == 200 || data.status == 201) {
+        setEmail("");
+        Swal.fire({
+          title: "Subscribed!",
+          text: "thank you for subscribing to nextupgrad!",
+          icon: "success",
+        });
+      }
+      if (data.status == 500) {
+        Swal.fire({
+          title: "Already Subscribed!",
+          text: "this email is already subscribed!",
+          icon: "error",
+        });
+      }
     } catch (error) {
       console.error("Error:", error);
       // Handle error response here

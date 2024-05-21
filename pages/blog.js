@@ -1,6 +1,25 @@
 import Link from "next/link";
 import Head from "next/head";
+import axiosInstance from "@/axios/axios";
+import { useEffect, useState } from "react";
+import { formatDate } from "@/utils/helper";
 const Blog = () => {
+  const [blogs, setblogs] = useState([]);
+  useEffect(() => {
+    getBlogs();
+  }, []);
+
+  async function getBlogs() {
+    try {
+      const res = await axiosInstance.get("/getBlog");
+      console.log("==>", res);
+      if (res.status == 200) {
+        setblogs(res.data.data);
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  }
   return (
     <>
       <Head>
@@ -61,104 +80,31 @@ const Blog = () => {
             </div>
             <div className="row">
               <div className="col-md-8">
-                <div className="blog">
-                  <div className="blog-img">
-                    <Link href="#">
-                      <img
-                        src="Brandin.png"
-                        alt="Branding and Digital Marketing Strategies for Small
-                        Businesses."
-                      />
-                    </Link>
-                    <h2>
-                      <Link href="#">
-                        Branding and Digital Marketing Strategies for Small
-                        Businesses.
-                      </Link>
-                    </h2>
-                    <div className="bttn">
-                      <Link href="#">Learn More</Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="blog">
-                  <div className="blog-img">
-                    <Link href="#">
-                      <img
-                        src="Local-SEO.png"
-                        alt="Local SEO Demystified Winning Strategies for Small
-                        Business Growth."
-                      />
-                    </Link>
-                    <h2>
-                      <Link href="#">
-                        Local SEO Demystified Winning Strategies for Small
-                        Business Growth.
-                      </Link>
-                    </h2>
-                    <div className="bttn">
-                      <Link href="#">Learn More</Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="blog">
-                  <div className="blog-img">
-                    <Link href="#">
-                      <img
-                        src="Web-Design.jpg"
-                        alt="Digital Marketing and Website Development A Dream Team
-                        Of Successful Business."
-                      />
-                    </Link>
-                    <h2>
-                      <Link href="#">
-                        Digital Marketing and Website Development – A Dream Team
-                        Of Successful Business.
-                      </Link>
-                    </h2>
-                    <div className="bttn">
-                      <Link href="#">Learn More</Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="blog">
-                  <div className="blog-img">
-                    <Link href="#">
-                      <img
-                        src="website_structure.png"
-                        alt="Step-by-step guide for building the ultimate website
-                        structure"
-                      />
-                    </Link>
-                    <h2>
-                      <Link href="#">
-                        Step-by-step guide for building the ultimate website
-                        structure
-                      </Link>
-                    </h2>
-                    <div className="bttn">
-                      <Link href="#">Learn More</Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="blog">
-                  <div className="blog-img">
-                    <Link href="#">
-                      <img
-                        src="blog4.png"
-                        alt=" 5 Factors Slowing Down Your Website and Fixes"
-                      />
-                    </Link>
-                    <h2>
-                      <Link href="#">
-                        5 Factors Slowing Down Your Website and Fixes
-                      </Link>
-                    </h2>
-                    <div className="bttn">
-                      <Link href="#">Learn More</Link>
-                    </div>
-                  </div>
-                </div>
+                {blogs.length
+                  ? blogs.map((item, index) => (
+                      <div key={index} className="blog">
+                        <div className="blog-img">
+                          <Link href={`/blog/${item.id}`}>
+                            <img
+                              src={`https://53c50cd527.nxcli.io/calculator/public/next_resources/${item.banner_image}`}
+                              alt="Branding and Digital Marketing Strategies for Small
+                          Businesses."
+                            />
+                          </Link>
+                          <h2>
+                            <Link href={`/blog/${item.id}`}>{item.title}</Link>
+                            <div>
+                              <p>{item.author}</p>
+                              <p>{formatDate(item.updated_at)}</p>
+                            </div>
+                          </h2>
+                          <div className="bttn">
+                            <Link href={`/blog/${item.id}`}>Learn More</Link>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  : null}
               </div>
               <div className="col-md-4 blog-search">
                 <h2>Search Articles</h2>

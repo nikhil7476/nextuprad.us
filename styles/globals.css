@@ -7612,3 +7612,8 @@ header.musthead.sticky-top.bg-light {
     color: #fff;
   }
 }
+
+.navbar-nav li a:hover:after,
+.accordion-header:before {
+  display: none !important;
+}
