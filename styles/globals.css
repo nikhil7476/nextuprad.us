@@ -5485,6 +5485,7 @@ pre {
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
 }
 .bannerContentLanding {
+  padding-top: 4rem;
   position: absolute;
   top: 39%;
   left: 50%;
