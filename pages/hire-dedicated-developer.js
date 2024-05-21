@@ -6,13 +6,16 @@ import FaqHiring from "../components/faqHiring";
 import { useState } from "react";
 import axiosInstance from "@/axios/axios";
 import Head from "next/head";
+import { toast } from "sonner";
 const Hirededicateddeveloper = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
+    form_name: "hiring",
   });
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -54,12 +57,18 @@ const Hirededicateddeveloper = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axiosInstance.post(
-          "your-api-endpoint",
-          formData
-        );
+        const response = await axiosInstance.post("/postFormData", formData);
         console.log(response.data);
-        // Do something with the response if needed
+        if (response.status == 200 || response.status == 201) {
+          toast.success("Email sent");
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            form_name: "hiring",
+          });
+        }
       } catch (error) {
         console.error("Error:", error);
         // Handle error response

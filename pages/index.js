@@ -19,6 +19,7 @@ import { FaPhp } from "react-icons/fa";
 import { FaLaravel } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
+import { Toaster, toast } from "sonner";
 
 export default function Home() {
   const controls = useAnimation();
@@ -32,6 +33,7 @@ export default function Home() {
     email: "",
     subject: "",
     message: "",
+    form_name: "home",
   });
   const [errors, setErrors] = useState({});
 
@@ -693,16 +695,20 @@ export default function Home() {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axiosInstance.post(
-          "your-api-endpoint",
-          formData
-        );
+        const response = await axiosInstance.post("/postFormData", formData);
         console.log(response.data);
-        if (response.status == 200) {
+        if (response.status == 200 || response.status == 201) {
+          toast.success("Email sent");
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            form_name: "home",
+          });
         }
       } catch (error) {
         console.error("Error:", error);
-        // Handle error response
       }
     }
   };

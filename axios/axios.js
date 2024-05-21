@@ -3,7 +3,9 @@ import Router from "next/router";
 
 //Axios instance for setting up base url automatically
 const axiosInstance = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_SITE_URL || "",
+  baseURL:
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://53c50cd527.nxcli.io/calculator/api",
   timeout: 10000, // Set a timeout
 });
 

@@ -4,12 +4,14 @@ import Head from "next/head";
 import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
 import axiosInstance from "@/axios/axios";
+import { toast } from "sonner";
 const Conatactus = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
+    form_name: "contact",
   });
 
   const [errors, setErrors] = useState({});
@@ -56,12 +58,18 @@ const Conatactus = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axiosInstance.post(
-          "your-api-endpoint",
-          formData
-        );
+        const response = await axiosInstance.post("/postFormData", formData);
         console.log(response.data);
-        // Handle success response here
+        if (response.status == 200 || response.status == 201) {
+          toast.success("Email sent");
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            form_name: "contact",
+          });
+        }
       } catch (error) {
         console.error("Error:", error);
         // Handle error response here

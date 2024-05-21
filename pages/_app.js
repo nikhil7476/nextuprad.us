@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Layout } from "@/components/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
+import { Toaster, toast } from "sonner";
 
 export default function App({ Component, pageProps, router }) {
   const variants = {
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps, router }) {
         variants={variants}
         transition={{ type: "linear", duration: 1.2 }}
       >
+        <Toaster position="top-right" />
         <Component {...pageProps} />
       </motion.div>
     </Layout>
