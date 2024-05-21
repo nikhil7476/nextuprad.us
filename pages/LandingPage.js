@@ -10,6 +10,7 @@ import Image from "next/image";
 import ReCAPTCHA from "react-google-recaptcha";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
+import { toast } from "sonner";
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,6 +18,7 @@ const LandingPage = () => {
     phone: "",
     subject: "",
     message: "",
+    form_name: "landingPage",
   });
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);
@@ -59,12 +61,18 @@ const LandingPage = () => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axiosInstance.post(
-          "YOUR_API_ENDPOINT",
-          formData
-        );
-        console.log("Form submitted successfully:", response.data);
-        // Handle success (e.g., show success message, reset form)
+        const response = await axiosInstance.post("/postFormData", formData);
+        console.log(response.data);
+        if (response.status == 200 || response.status == 201) {
+          toast.success("Email sent");
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            form_name: "landingPage",
+          });
+        }
       } catch (error) {
         console.error("Error submitting form:", error);
         // Handle error (e.g., show error message)
@@ -99,7 +107,12 @@ const LandingPage = () => {
         <div className="container bannerContentLanding">
           <div className="row  justify-content-between">
             <div className="col-md-6">
-              <Image src="/Nextupgradlogo.png" height={100} width={250} alt="logo" />
+              <Image
+                src="/Nextupgradlogo.png"
+                height={100}
+                width={250}
+                alt="logo"
+              />
               <h1 className="text-light">
                 Skills held by NextUpgrad's dedicated developers.
               </h1>
