@@ -54,6 +54,14 @@
   font-weight:600;
 }
 
+.devex{
+  font-size: 35px !important;
+  font-family: Montserrat, Sans-serif;
+  font-weight:600;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
 @media (max-width: 1100px) {
   .exp2 {
     grid-template-columns: auto auto auto;

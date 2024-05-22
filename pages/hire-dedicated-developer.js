@@ -289,7 +289,7 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="exp1">
             <span className="line1" />
-            <h1>Our Developer Expertise</h1>
+            <h2 className={`${styles.devex}`}>Our Developer Expertise</h2>
           </div>
           <div className={`${styles.exp2}`}>
             <div className="exp211">
