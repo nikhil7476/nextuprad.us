@@ -154,7 +154,7 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h1>Skills held by NextUpgrad's dedicated developers.</h1>
+              <h2 className={`${styles.skills}`}>Skills held by NextUpgrad's dedicated developers.</h2>
               <p className="my-4">
                 Embark on a journey of unique solutions with a dedicated
                 developer from NextUpgrad. Our certified professionals are ready
@@ -289,7 +289,7 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="exp1">
             <span className="line1" />
-            <h1>Our Developer Expertise</h1>
+            <h2 className={`${styles.devex}`}>Our Developer Expertise</h2>
           </div>
           <div className={`${styles.exp2}`}>
             <div className="exp211">

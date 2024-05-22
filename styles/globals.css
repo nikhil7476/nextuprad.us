@@ -685,6 +685,9 @@ h2.design-heading span {
   background-color: #f9f6dd;
 }
 /*----------------tesimonial home-----------------------*/
+.video_testimonials h4 {
+  color: #fff;
+}
 
 .testimonials h2 {
   color: #4e515c;
@@ -694,7 +697,7 @@ h2.design-heading span {
   line-height: 63px;
   margin-bottom: 60px;
 }
-.testimonials h2::after {
+.testimonials h2::before {
   margin-top: 15px;
   content: "";
   width: 25%;
@@ -5582,7 +5585,7 @@ pre {
 
 .navbar-nav {
   display: flex;
-  gap: 20px;
+  gap: 0px;
 }
 
 .navbar-nav a {
@@ -5938,7 +5941,7 @@ pre {
 .testimonials-container {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   scroll-behavior: smooth;
 }
 

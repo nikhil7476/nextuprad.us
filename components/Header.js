@@ -73,30 +73,33 @@ const Header = () => {
             menuButton={<MenuButton>Services</MenuButton>}
             transition
           >
-            <MenuItem>
-             <Link href="/hire-dedicated-developer" target="_blank" style={{ fontSize: '14px', fontFamily: '"Montserrat", Sans-serif'}}>
+            
+            <MenuItem
+              onClick={(e) =>
+                window.open("/hire-dedicated-developer", '_blank')
+              }
+            >
               Hire Dedicated Developer
-            </Link>
             </MenuItem>
             <MenuItem
               onClick={(e) =>
-                Router.push("/website-design-development-services")
+                window.open("/website-design-development-services", '_blank')
               }
             >
               Website Development
             </MenuItem>
             <MenuItem
-              onClick={(e) => Router.push("/software-development-services")}
+              onClick={(e) =>  window.open("/software-development-services", '_blank')}
             >
               Software Development
             </MenuItem>
             <MenuItem
-              onClick={(e) => Router.push("/mobile-app-development-services")}
+              onClick={(e) =>   window.open("/mobile-app-development-services", '_blank')}
             >
               Mobile App Development
             </MenuItem>
             <MenuItem
-              onClick={(e) => Router.push("/digital-marketing-services")}
+              onClick={(e) =>   window.open("/digital-marketing-services", '_blank')}
             >
               Digital Marketing
             </MenuItem>

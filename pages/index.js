@@ -1786,7 +1786,7 @@ export default function Home() {
                       products were up to the standard.
                     </p>
                     <p>Patrick </p>
-                    <h3>Client For</h3>
+                    <h4>Client For</h4>
                     <span className="ic1">
                       Website Development and Digital Marketing
                     </span>
