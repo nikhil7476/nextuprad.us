@@ -5941,7 +5941,7 @@ pre {
 .testimonials-container {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   scroll-behavior: smooth;
 }
 
