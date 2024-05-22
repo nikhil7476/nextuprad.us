@@ -3,18 +3,36 @@ import Head from "next/head";
 import axiosInstance from "@/axios/axios";
 import { useEffect, useState } from "react";
 import { formatDate } from "@/utils/helper";
-const Blog = () => {
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+const blog = () => {
   const [blogs, setblogs] = useState([]);
+  const [blogsBackup, setblogsBackup] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
   useEffect(() => {
     getBlogs();
   }, []);
+
+  useEffect(() => {
+    if (searchQuery == "") {
+      setblogs(blogsBackup);
+    } else {
+      const filteredBlogs = blogs.filter((item) =>
+        item.title.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      setblogs(filteredBlogs);
+    }
+  }, [searchQuery]);
 
   async function getBlogs() {
     try {
       const res = await axiosInstance.get("/getBlog");
       console.log("==>", res);
       if (res.status == 200) {
-        setblogs(res.data.data);
+        setTimeout(() => {
+          setblogs(res.data.data);
+          setblogsBackup(res.data.data);
+        }, 1500);
       }
     } catch (err) {
       console.log(err);
@@ -80,36 +98,65 @@ const Blog = () => {
             </div>
             <div className="row">
               <div className="col-md-8">
-                {blogs.length
-                  ? blogs.map((item, index) => (
-                      <div key={index} className="blog">
-                        <div className="blog-img">
-                          <Link href={`/blog/${item.id}`}>
-                            <img
-                              src={`https://53c50cd527.nxcli.io/calculator/public/next_resources/${item.banner_image}`}
-                              alt="Branding and Digital Marketing Strategies for Small
+                {blogs.length ? (
+                  blogs.map((item, index) => (
+                    <div key={index} className="blog">
+                      <div className="blog-img">
+                        <Link href={`/blog/${item.id}`}>
+                          <img
+                            src={`https://53c50cd527.nxcli.io/calculator/public/next_resources/${item.banner_image}`}
+                            alt="Branding and Digital Marketing Strategies for Small
                           Businesses."
-                            />
-                          </Link>
-                          <h2>
-                            <Link href={`/blog/${item.id}`}>{item.title}</Link>
-                            <div>
-                              <p>{item.author}</p>
-                              <p>{formatDate(item.updated_at)}</p>
-                            </div>
-                          </h2>
-                          <div className="bttn">
-                            <Link href={`/blog/${item.id}`}>Learn More</Link>
+                          />
+                        </Link>
+                        <h2>
+                          <Link href={`/blog/${item.id}`}>{item.title}</Link>
+                          <div>
+                            <p>{item.author}</p>
+                            <p>{formatDate(item.updated_at)}</p>
                           </div>
+                        </h2>
+                        <div className="bttn">
+                          <Link href={`/blog/${item.id}`}>Learn More</Link>
                         </div>
                       </div>
-                    ))
-                  : null}
+                    </div>
+                  ))
+                ) : (
+                  <SkeletonTheme
+                    color="var(--skeleton-color)"
+                    highlightColor="var(--skeleton-highlight-color)"
+                  >
+                    <div className="blog">
+                      <div className="blog-img">
+                        <Skeleton height={200} />
+                        <h2>
+                          <Skeleton height={30} width={`80%`} />
+                          <div>
+                            <p>
+                              <Skeleton width={`50%`} />
+                            </p>
+                            <p>
+                              <Skeleton width={`40%`} />
+                            </p>
+                          </div>
+                        </h2>
+                        <div className="bttn">
+                          <Skeleton width={100} height={30} />
+                        </div>
+                      </div>
+                    </div>
+                  </SkeletonTheme>
+                )}
               </div>
               <div className="col-md-4 blog-search">
                 <h2>Search Articles</h2>
                 <form>
-                  <input type="text" placeholder="Search..." />
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                  />
                 </form>
               </div>
             </div>
@@ -120,4 +167,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default blog;
