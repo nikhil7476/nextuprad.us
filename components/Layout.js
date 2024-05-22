@@ -20,7 +20,8 @@ export function Layout({ children }) {
   return (
     <>
       {router.asPath == "/LandingPage" ||
-      router.asPath == "/LandingPagee" ? null : (
+      router.asPath == "/LandingPagee" ||
+      router.asPath.includes("/admin") ? null : (
         <>
           <Header />
           <Header2 />
@@ -38,7 +39,8 @@ export function Layout({ children }) {
       {children}
 
       {router.asPath == "/LandingPage" ||
-      router.asPath == "/LandingPagee" ? null : (
+      router.asPath == "/LandingPagee" ||
+      router.asPath.includes("/admin") ? null : (
         <Footer />
       )}
     </>

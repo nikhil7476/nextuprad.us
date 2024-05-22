@@ -4182,7 +4182,7 @@ scrollbar css
   width: 12px;
 }
 *::-webkit-scrollbar-track {
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: #dfe9eb;
 }
 
@@ -4191,7 +4191,7 @@ scrollbar css
 }
 
 *::-webkit-scrollbar-thumb {
-  border-radius: 5px;
+  border-radius: 0px;
   /* background: linear-gradient(
     135deg,
     rgba(231, 111, 81, 1) 0%,
@@ -5536,7 +5536,7 @@ pre {
   background-image: url("/rightArrow.png") !important;
 }
 
-/******* LANDING PAGE PRADEEP SIR*********/
+/**************LANDING PAGE NEW CSS*************/
 .container {
   max-width: 1225px !important;
 }
@@ -6710,20 +6710,27 @@ header.musthead.sticky-top.bg-light {
 
 @media screen and (max-width: 1024px) {
   /* .container{
-        padding-left: 10px !important;
-    } */
+      padding-left: 10px !important;
+  } */
+  input.poim {
+    width: auto !important;
+  }
+
   .testimonial {
     width: 50% !important;
   }
+
   .j-flex {
     width: 100% !important;
     display: flex;
     justify-content: flex-start !important;
   }
-  .musthead {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
+
+  /* .musthead {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+  } */
+
   .bann {
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -6733,26 +6740,32 @@ header.musthead.sticky-top.bg-light {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
   .tab-acc {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
   .studies {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
   .stories {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
   .slider-land {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
   .footland {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
   .mark-bus {
     width: 100% !important;
   }
@@ -6785,27 +6798,30 @@ header.musthead.sticky-top.bg-light {
     border-top: 1px solid #e7e7e7 !important;
     border-bottom: 1px solid #e7e7e7 !important;
   }
-  .input-fill input {
-    width: 100% !important;
-  }
+
   .missard h4 {
     margin-top: 20px !important;
     font-size: 26px !important;
   }
+
   .missard p {
     font-size: 20px !important;
   }
+
   .missardl h4 {
     margin-top: 20px !important;
     font-size: 26px !important;
   }
+
   .missardl p {
     font-size: 20px !important;
   }
+
   .missardm h4 {
     margin-top: 20px !important;
     font-size: 26px !important;
   }
+
   .missardm p {
     font-size: 20px !important;
   }
@@ -6817,8 +6833,8 @@ header.musthead.sticky-top.bg-light {
   }
 
   /* .row-img {
-        justify-content: end;
-    } */
+      justify-content: end;
+  } */
 
   .container {
     width: 100% !important;
@@ -6841,14 +6857,40 @@ header.musthead.sticky-top.bg-light {
   .storm-img img {
     width: 100% !important;
   }
+
+  .navbar {
+    display: block !important;
+    margin-top: -28px;
+  }
+
+  .me-auto {
+    margin-right: auto !important;
+    background: #fff;
+    padding: 11px;
+    margin-top: 13px;
+  }
+
+  .row-img.olm {
+    width: 100% !important;
+    position: relative !important;
+    float: right !important;
+    text-align: right !important;
+    margin: 0 0;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 889px) {
   .nav-pills {
     gap: 20px !important;
   }
+
   #navbar-example2 {
     display: none !important;
+  }
+
+  input.poim {
+    width: auto !important;
   }
 }
 
@@ -6871,26 +6913,32 @@ header.musthead.sticky-top.bg-light {
     width: 100% !important;
     max-width: 100% !important;
   }
+
   .end-foo {
     width: 100% !important;
     display: flex;
     justify-content: flex-start !important;
   }
+
   .foot-log {
     width: 100% !important;
   }
+
   .foot-stor h2 {
     font-size: 30px !important;
   }
+
   .r-flex {
     width: 100% !important;
     display: flex;
     justify-content: flex-start !important;
   }
+
   .foot-logm {
     width: 100% !important;
     /* margin-top: 20px !important; */
   }
+
   .foot-op {
     width: 100% !important;
     margin-top: 30px !important;
@@ -6939,6 +6987,7 @@ header.musthead.sticky-top.bg-light {
   .studies h1 {
     font-size: 30px !important;
   }
+
   .testimonial {
     width: 100% !important;
   }
@@ -6973,6 +7022,10 @@ header.musthead.sticky-top.bg-light {
     font-size: 30px !important;
   }
 
+  .navbar {
+    margin-top: -55px;
+  }
+
   .aft-ban h1 {
     font-size: 30px !important;
   }
@@ -6980,18 +7033,55 @@ header.musthead.sticky-top.bg-light {
   .studies h1 {
     font-size: 30px !important;
   }
+
+  .row-img {
+    float: left !important;
+    width: 80% !important;
+    padding-top: 4%;
+  }
+
+  header.musthead.sticky-top {
+    position: relative;
+    min-height: 70px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .nav-pills {
     display: none !important;
   }
+
   .storm-img img {
     width: 100% !important;
   }
-}
 
-/*****************************************/
+  .main-ost {
+    display: block !important;
+  }
+
+  .portfolioDisc {
+    opacity: 1 !important;
+    bottom: 40px !important;
+  }
+  .navbar {
+    width: 100% !important;
+  }
+  .me-auto {
+    margin-right: auto !important;
+    background: #fff;
+    padding: 20px 0px 20px 20px;
+    margin-top: 9px;
+  }
+
+  .row-img.olm {
+    width: 100% !important;
+    position: relative !important;
+    float: right !important;
+    text-align: right !important;
+    margin: 0 0;
+  }
+}
+/*************LANDING PAGE CSS END*/
 
 @media screen and (max-width: 1200px) {
   .achieved ul li {
