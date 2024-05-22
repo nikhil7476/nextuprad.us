@@ -48,6 +48,12 @@
   font-size: 17px;
 }
 
+.skills{
+  font-size: 35px !important;
+  font-family: Montserrat, Sans-serif;
+  font-weight:600;
+}
+
 @media (max-width: 1100px) {
   .exp2 {
     grid-template-columns: auto auto auto;
