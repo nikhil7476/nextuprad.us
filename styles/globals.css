@@ -7081,6 +7081,9 @@ header.musthead.sticky-top.bg-light {
     margin: 0 0;
   }
 }
+.landingPageIcon {
+  font-size: 22px;
+}
 /*************LANDING PAGE CSS END*/
 
 @media screen and (max-width: 1200px) {
