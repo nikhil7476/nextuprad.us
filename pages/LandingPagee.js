@@ -8,7 +8,7 @@ const LandingPagee = () => {
               <div className="col-md-2 row-img">
                 <a>
                   {" "}
-                  <img src="landpress-logo.svg" alt="not found" />
+                  <img src="/landpress-logo.svg" alt="not found" />
                 </a>
               </div>
               <div className="col-md-6 row-img olm">
@@ -254,7 +254,7 @@ const LandingPagee = () => {
                       <div className="col-6 store-img">
                         <div className="storm-img">
                           <img
-                            src="./images/landpress-consulting-6.jpg"
+                            src="/landpress-consulting-6.jpg"
                             alt=""
                             srcSet=""
                           />
@@ -287,7 +287,7 @@ const LandingPagee = () => {
                       <div className="col-6 store-img">
                         <div className="storm-img">
                           <img
-                            src="./images/landpress-consulting-5.jpg"
+                            src="/landpress-consulting-5.jpg"
                             alt=""
                             srcSet=""
                           />
@@ -320,7 +320,7 @@ const LandingPagee = () => {
                       <div className="col-6 store-img">
                         <div className="storm-img">
                           <img
-                            src="./images/landpress-consulting-4.jpg"
+                            src="./landpress-consulting-4.jpg"
                             alt=""
                             srcSet=""
                           />
@@ -363,7 +363,7 @@ const LandingPagee = () => {
                   <div className="porti">
                     <div className="img-hover-zoom">
                       <img
-                        src="./images/portrait4.jpg"
+                        src="/portrait4.jpg"
                         className="card-img-top"
                         alt="..."
                       />
@@ -398,7 +398,7 @@ const LandingPagee = () => {
                   <div className="porti">
                     <div className="img-hover-zoom">
                       <img
-                        src="./images/portrait3.jpg"
+                        src="/portrait3.jpg"
                         className="card-img-top"
                         alt="..."
                       />
@@ -433,7 +433,7 @@ const LandingPagee = () => {
                   <div className="porti">
                     <div className="img-hover-zoom">
                       <img
-                        src="./images/portrait2.jpg"
+                        src="/portrait2.jpg"
                         className="card-img-top"
                         alt="..."
                       />
@@ -471,11 +471,7 @@ const LandingPagee = () => {
             <div className="row">
               <div className="col-6 land-imi">
                 <div className="storm-img-land land-im">
-                  <img
-                    src="./images/landpress-consulting-4.jpg"
-                    alt=""
-                    srcSet=""
-                  />
+                  <img src="/landpress-consulting-4.jpg" alt="" srcSet="" />
                 </div>
               </div>
               <div className="col-6 land-imo">
@@ -563,7 +559,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -632,7 +628,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -701,7 +697,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -770,7 +766,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -839,7 +835,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -908,7 +904,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -977,7 +973,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -1046,7 +1042,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -1115,7 +1111,7 @@ const LandingPagee = () => {
                     <img
                       className="img-fluid rounded rounded-circle mb-3"
                       loading="lazy"
-                      src="./images/testimonial-1.jpg"
+                      src="/testimonial-1.jpg"
                       alt=""
                     />
                   </div>
@@ -1165,7 +1161,7 @@ const LandingPagee = () => {
               <div className="col-4 f-flex">
                 <div className="img-hover-zoom">
                   <img
-                    src="./images/blog-post-1.jpg"
+                    src="/blog-post-1.jpg"
                     className="card-img-top"
                     alt="..."
                   />
@@ -1189,7 +1185,7 @@ const LandingPagee = () => {
               <div className="col-4 f-flex">
                 <div className="img-hover-zoom">
                   <img
-                    src="./images/blog-post-2.jpg"
+                    src="/blog-post-2.jpg"
                     className="card-img-top"
                     alt="..."
                   />
@@ -1213,7 +1209,7 @@ const LandingPagee = () => {
               <div className="col-4 f-flex">
                 <div className="img-hover-zoom">
                   <img
-                    src="./images/blog-post-3.jpg"
+                    src="/blog-post-3.jpg"
                     className="card-img-top"
                     alt="..."
                   />
@@ -1267,7 +1263,7 @@ const LandingPagee = () => {
           <div className="container foot-high">
             <div className="row">
               <div className="col-4 foot-log">
-                <img src="./images/landpress-logo-white.svg" alt="" srcSet="" />
+                <img src="/landpress-logo-white.svg" alt="" srcSet="" />
                 <p>
                   Modern landing pages that captivate
                   <br /> audiences and drive conversions.

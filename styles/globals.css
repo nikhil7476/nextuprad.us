@@ -6318,7 +6318,7 @@ pre {
 .opti li a {
   font-size: 20px;
   font-weight: 400;
-  color: #1e4550;
+  color: #1e4550 !important;
   font-weight: 500;
 }
 
