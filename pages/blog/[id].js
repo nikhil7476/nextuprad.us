@@ -4,8 +4,10 @@ import axiosInstance from "@/axios/axios";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import styles from "../../styles/blog.module.css";
 const SingleBlog = () => {
   const [blog, setblogs] = useState({});
+
   const [id, setid] = useState(false);
   const router = useRouter();
   const { isReady } = useRouter();
@@ -77,8 +79,18 @@ const SingleBlog = () => {
     // </>
     <>
       <>
+        <div className={`blogBanner banner2 ${styles.singlePost}`}>
+          <div className="container bannerContainer">
+            <div className="newBannerMain">
+              <h1 className="display-3 text-light position-relative z-3">
+                {id}
+              </h1>
+              {/* <p>Discover Insights, Tips, and Stories – Your Go-To Blog Hub!</p> */}
+            </div>
+          </div>
+        </div>
         {Object.keys(blog).length ? (
-          <Container className="">
+          <Container className="mt-5">
             <Row className="justify-content-center">
               <Col md={10} lg={8}>
                 <div className=" bg-white shadow-sm rounded">
