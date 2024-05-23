@@ -255,13 +255,13 @@ body {
   color: #4e515c;
   position: relative;
 }
-#largeHeading::before {
+#largeHeading::after {
   content: "";
   position: absolute;
-  top: -20px; /* Half of the line height (30px/2) */
+  bottom: -13px;
   left: 0;
-  width: 10rem;
-  height: 5px;
+  width: 38%;
+  height: 3px;
   background-color: #e76f51;
 }
 
@@ -431,11 +431,11 @@ h2.design-heading span {
   line-height: 63px;
   margin-top: 55px;
 }
-.achieved h3::before {
+.achieved h3::after {
   content: "";
   width: 38%;
   display: block;
-  height: 2px;
+  height: 3px;
   background: #e76f51;
 }
 .countUp {
@@ -502,9 +502,9 @@ h2.design-heading span {
   line-height: 54px;
   position: relative;
 }
-.Personalize h2::before {
+.Personalize h2::after {
   content: "";
-  width: 29%;
+  width: 38%;
   display: block;
   height: 3px;
   background: #e76f51;
@@ -582,9 +582,9 @@ h2.design-heading span {
   line-height: 63px;
   margin-bottom: 60px;
 }
-.discover h2::before {
+.discover h2::after {
   content: "";
-  width: 25%;
+  width: 38%;
   display: block;
   height: 3px;
   background: #e76f51;
@@ -631,9 +631,9 @@ h2.design-heading span {
   margin-bottom: 60px;
   text-align: left;
 }
-.deserve h2::before {
+.deserve h2::after {
   content: "";
-  width: 25%;
+  width: 38%;
   display: block;
   height: 3px;
   background: #e76f51;
@@ -671,9 +671,9 @@ h2.design-heading span {
   line-height: 63px;
   margin-bottom: 60px;
 }
-.industries h2::before {
+.industries h2::after {
   content: "";
-  width: 25%;
+  width: 38%;
   display: block;
   height: 3px;
   background: #e76f51;
@@ -724,7 +724,7 @@ color: #fff;
   line-height: 63px;
   margin-bottom: 60px;
 }
-.testimonials h2::before {
+.testimonials h2::after {
   margin-top: 15px;
   content: "";
   width: 25%;
@@ -955,7 +955,7 @@ h3.article__title.caps.f-bold.h4 {
   line-height: 63px;
   margin-bottom: 60px;
 }
-.video_testimonials h3::before {
+.video_testimonials h3::after {
   content: "";
   width: 25%;
   display: block;
@@ -1113,13 +1113,13 @@ button.owl-next {
   line-height: 63px;
   text-align: center;
 }
-.holistic h3::before {
+.holistic h3::after {
   content: "";
-  width: 29%;
+  width: 38%;
   display: block;
   height: 3px;
   background: #e76f51;
-  margin: 0 auto 11px auto;
+  margin: 8px auto 11px auto;
 }
 .holistic p {
   text-align: center;
@@ -1420,9 +1420,9 @@ span.elementor-screen-only {
   font-weight: 600;
   line-height: 63px;
 }
-.ps-timeline-sec h2::before {
+.ps-timeline-sec h2::after {
   content: "";
-  width: 25%;
+  width: 38%;
   display: block;
   height: 3px;
   background: #e76f51;
