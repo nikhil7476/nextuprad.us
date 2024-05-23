@@ -82,8 +82,8 @@ const SingleBlog = () => {
         <div className={`blogBanner banner2 ${styles.singlePost}`}>
           <div className="container bannerContainer">
             <div className="newBannerMain">
-              <h1 className="display-3 text-light position-relative z-3">
-                {id}
+              <h1 className="display-3 text-light position-relative z-3 text-capitalize">
+                {id.replace(/-/g, " ")}
               </h1>
               {/* <p>Discover Insights, Tips, and Stories – Your Go-To Blog Hub!</p> */}
             </div>
@@ -95,7 +95,7 @@ const SingleBlog = () => {
               <Col md={10} lg={8}>
                 <div className=" bg-white shadow-sm rounded">
                   <h1 className="display-4 text-center">{blog.title}</h1>
-                  <p className="text-muted text-center">
+                  <p className="text-muted text-center my-4">
                     {blog.author} |{" "}
                     {new Date(blog.created_at).toLocaleDateString()}
                   </p>
