@@ -614,6 +614,14 @@ h2.design-heading span {
   display: block;
   background: #fbf8f2;
 }
+.deserve .col-md-4 {
+  padding: 27px;
+  border: 15px solid #fbf8f2;
+  margin-bottom: 15px;
+}
+.deserve .col-md-4:hover{
+  background: #fff;
+}
 .deserve h2 {
   color: #4e515c;
   font-family: "Montserrat", Sans-serif;
@@ -698,7 +706,10 @@ h2.design-heading span {
 }
 .industries .col-md-3 .indus-content:hover {
   transition: 0.7s ease;
-  background-color: #f9f6dd;
+  background-color: #fc6746;
+}
+.industries .col-md-3 .indus-content:hover h3, .industries .col-md-3 .indus-content:hover p{
+color: #fff;
 }
 /*----------------tesimonial home-----------------------*/
 .video_testimonials h4 {
