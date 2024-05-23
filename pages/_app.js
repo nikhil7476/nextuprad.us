@@ -3,8 +3,14 @@ import { Layout } from "@/components/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import { Toaster, toast } from "sonner";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function App({ Component, pageProps, router }) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const variants = {
     hidden: { opacity: 0 },
     enter: { opacity: 1 },

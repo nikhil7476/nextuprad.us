@@ -6,6 +6,7 @@ import { formatDate } from "@/utils/helper";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import styles from ".././styles/blog.module.css";
+
 const blog = () => {
   const [blogs, setblogs] = useState([]);
   const [blogsBackup, setblogsBackup] = useState([]);
@@ -78,9 +79,11 @@ const blog = () => {
         <div className="blogBanner banner2 ">
           <div className="container bannerContainer">
             <div className="newBannerMain">
-              <h1 className="display-3 text-light position-relative z-3">
-                Blogs
-              </h1>
+              <div data-aos="fade-down">
+                <h1 className="display-3 text-light position-relative z-3">
+                  Blogs
+                </h1>
+              </div>
               <p>Discover Insights, Tips, and Stories – Your Go-To Blog Hub!</p>
             </div>
           </div>

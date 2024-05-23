@@ -749,7 +749,7 @@ export default function Home() {
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
       </Head>
-      <main>
+      <main className="mainOverflowHide">
         <div className="banner2">
           <div className="container bannerContainer">
             <div className="newBannerMain">
@@ -1181,7 +1181,7 @@ export default function Home() {
               <div className="col-md-12">
                 <h2>Discover Options For Hiring Dedicated Developers.</h2>{" "}
               </div>
-              <div className="col-md-6">
+              <div data-aos="fade-right" className="col-md-6">
                 <h3>
                   {" "}
                   <img
@@ -1196,7 +1196,7 @@ export default function Home() {
                   success in every endeavor.
                 </p>
               </div>
-              <div className="col-md-6">
+              <div data-aos="fade-left" className="col-md-6">
                 <h3>
                   {" "}
                   <img src="/download.png" alt="Budget-Centric Resource" />
@@ -1209,7 +1209,7 @@ export default function Home() {
                   success
                 </p>
               </div>
-              <div className="col-md-6">
+              <div data-aos="fade-right" className="col-md-6">
                 <h3>
                   {" "}
                   <img
@@ -1225,7 +1225,7 @@ export default function Home() {
                   project.
                 </p>
               </div>
-              <div className="col-md-6">
+              <div data-aos="fade-left" className="col-md-6">
                 <h3>
                   {" "}
                   <img
@@ -1353,7 +1353,12 @@ export default function Home() {
               <div className="col-md-12">
                 <h2>Why We Deserve to Be Your Digital Partner.</h2>{" "}
               </div>
-              <div className="col-md-4">
+              <div
+                data-aos="fade-down-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-4"
+              >
                 <h3>
                   {" "}
                   <img src="/downloadnew.png" alt="Unique pricing models" />
@@ -1378,7 +1383,12 @@ export default function Home() {
                   streamlined collaboration for optimal results.
                 </p>
               </div>
-              <div className="col-md-4">
+              <div
+                data-aos="fade-down-left"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-4"
+              >
                 <h3>
                   {" "}
                   <img
@@ -1393,7 +1403,12 @@ export default function Home() {
                   Your Solutions Running Smoothly.
                 </p>
               </div>
-              <div className="col-md-4">
+              <div
+                data-aos="fade-up-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-4"
+              >
                 <h3>
                   {" "}
                   <img
@@ -1420,7 +1435,12 @@ export default function Home() {
                   Extra Layer of Support, All Included in Your Service Package.
                 </p>
               </div>
-              <div className="col-md-4">
+              <div
+                data-aos="fade-up-left"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-4"
+              >
                 <h3>
                   {" "}
                   <img src="/downloadnew5.png" alt="Free Ideation Session" />
@@ -1443,7 +1463,12 @@ export default function Home() {
                 <h2>Industries We Serve .</h2>{" "}
               </div>
 
-              <div className="col-md-3">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-3"
+              >
                 <div className="indus-content">
                   <h3>
                     {" "}
@@ -1456,7 +1481,12 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-3"
+              >
                 <div className="indus-content">
                   {" "}
                   <h3>
@@ -1470,7 +1500,12 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-3"
+              >
                 <div className="indus-content">
                   {" "}
                   <h3>
@@ -1484,7 +1519,12 @@ export default function Home() {
                   </p>
                 </div>{" "}
               </div>
-              <div className="col-md-3">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-3"
+              >
                 <div className="indus-content">
                   {" "}
                   <h3>
@@ -1498,7 +1538,12 @@ export default function Home() {
                   </p>
                 </div>{" "}
               </div>
-              <div className="col-md-3">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-3"
+              >
                 <div className="indus-content">
                   <h3>
                     {" "}
@@ -1511,7 +1556,12 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-3"
+              >
                 <div className="indus-content">
                   <h3>
                     {" "}
@@ -1525,7 +1575,12 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-3"
+              >
                 <div className="indus-content">
                   <h3>
                     {" "}
@@ -1538,7 +1593,12 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                className="col-md-3"
+              >
                 <div className="indus-content">
                   {" "}
                   <h3>

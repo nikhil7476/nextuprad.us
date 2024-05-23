@@ -6779,6 +6779,9 @@ header.musthead.sticky-top.bg-light {
   justify-content: end;
   gap: 2px;
 }
+.mainOverflowHide {
+  overflow-x: hidden;
+}
 
 @media screen and (max-width: 1024px) {
   /* .container{

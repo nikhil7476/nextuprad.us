@@ -82,15 +82,17 @@ const SingleBlog = () => {
         <div className={`blogBanner banner2 ${styles.singlePost}`}>
           <div className="container bannerContainer">
             <div className="newBannerMain">
-              <h1 className="display-3 text-light position-relative z-3 text-capitalize">
-                {id ? id?.replace(/-/g, " ") : null}
-              </h1>
+              <div data-aos="fade-left">
+                <h1 className="display-3 text-light position-relative z-3 text-capitalize">
+                  {id ? id?.replace(/-/g, " ") : null}
+                </h1>
+              </div>
               {/* <p>Discover Insights, Tips, and Stories – Your Go-To Blog Hub!</p> */}
             </div>
           </div>
         </div>
         {Object.keys(blog).length ? (
-          <Container className="mt-5">
+          <Container className="my-5">
             <Row className="justify-content-center">
               <Col md={10} lg={8}>
                 <div className=" bg-white shadow-sm rounded">
