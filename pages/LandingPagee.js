@@ -1,7 +1,12 @@
+import Head from "next/head";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 const LandingPagee = () => {
   return (
     <>
       <>
+        <Head></Head>
         <header className="musthead sticky-top">
           <div className="container pt-2 pb-2">
             <div className="row main-ost">
@@ -1270,13 +1275,13 @@ const LandingPagee = () => {
                 </p>
                 <div className="ionm">
                   <a href="#!" role="button">
-                    <i className="fab fa-facebook-f fa-lg" />
+                    <FaFacebook className="landingPageIcon" />
                   </a>
                   <a href="#!" role="button">
-                    <i className="fab fa-twitter fa-lg" />
+                    <FaTwitter className="landingPageIcon" />
                   </a>
                   <a href="#!" role="button">
-                    <i className="fab fa-instagram fa-lg" />
+                    <FaInstagramSquare className="landingPageIcon" />
                   </a>
                 </div>
               </div>

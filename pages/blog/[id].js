@@ -25,13 +25,13 @@ const SingleBlog = () => {
 
   async function getBlogs() {
     try {
-      const res = await axiosInstance.get(`/getBlog/${id}`);
+      const res = await axiosInstance.get(`/getBlogBySlug/${id}`);
       console.log("==>", res);
       if (res.status == 200) {
         console.log("==>", res);
 
         setTimeout(() => {
-          setblogs(res.data.data);
+          setblogs(res.data.data[0]);
         }, 1500);
       }
     } catch (err) {

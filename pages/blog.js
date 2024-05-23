@@ -102,7 +102,7 @@ const blog = () => {
                   blogs.map((item, index) => (
                     <div key={index} className="blog">
                       <div className="blog-img">
-                        <Link href={`/blog/${item.id}`}>
+                        <Link href={`/blog/${item.slug}`}>
                           <img
                             src={`https://53c50cd527.nxcli.io/calculator/public/next_resources/${item.banner_image}`}
                             alt="Branding and Digital Marketing Strategies for Small
@@ -110,14 +110,14 @@ const blog = () => {
                           />
                         </Link>
                         <h2>
-                          <Link href={`/blog/${item.id}`}>{item.title}</Link>
+                          <Link href={`/blog/${item.slug}`}>{item.title}</Link>
                           <div>
                             <p>{item.author}</p>
                             <p>{formatDate(item.updated_at)}</p>
                           </div>
                         </h2>
                         <div className="bttn">
-                          <Link href={`/blog/${item.id}`}>Learn More</Link>
+                          <Link href={`/blog/${item.slug}`}>Learn More</Link>
                         </div>
                       </div>
                     </div>
