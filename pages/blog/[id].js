@@ -83,7 +83,7 @@ const SingleBlog = () => {
           <div className="container bannerContainer">
             <div className="newBannerMain">
               <h1 className="display-3 text-light position-relative z-3 text-capitalize">
-                {id.replace(/-/g, " ")}
+                {id ? id?.replace(/-/g, " ") : null}
               </h1>
               {/* <p>Discover Insights, Tips, and Stories – Your Go-To Blog Hub!</p> */}
             </div>
