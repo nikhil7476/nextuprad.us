@@ -338,12 +338,12 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="expt1 mx-5">
             <span className="line1" />
-            <h1>Benefits of hiring dedicated resource from NextUpgrad</h1>
+            <h2 className={`${styles.benhire}`}>Benefits of hiring dedicated resource from NextUpgrad</h2>
           </div>
           <div className="expt2">
             <div className="exp21">
               <img src="ded1.webp" alt="Expertise and Experience" />
-              <h1>Expertise and Experience</h1>
+              <h3 className={`${styles.h3ded}`}>Expertise and Experience</h3>
               <p>
                 Proficiency in building and styling web pages, along with
                 interactivity using JavaScript and libraries like React,
@@ -352,7 +352,7 @@ const Hirededicateddeveloper = () => {
             </div>
             <div className="exp21">
               <img src="ded2.webp" alt="Cost-Efficiency" />
-              <h1>Cost-Efficiency</h1>
+              <h3 className={`${styles.h3ded}`}>Cost-Efficiency</h3>
               <p>
                 Competence in server-side language, such as Node.js, Python
                 (Django/Flask), Ruby (Ruby on Rails), Java, or PHP.
@@ -360,7 +360,7 @@ const Hirededicateddeveloper = () => {
             </div>
             <div className="exp21">
               <img src="ded3.webp" alt="Flexibility and Scalability" />
-              <h1>Flexibility and Scalability</h1>
+              <h3 className={`${styles.h3ded}`}>Flexibility and Scalability</h3>
               <p>
                 Strong knowledge of version control systems, especially Git, for
                 collaborative development along with BitBucket, etc
@@ -369,7 +369,7 @@ const Hirededicateddeveloper = () => {
 
             <div className="exp21">
               <img src="ded4.webp" alt="Quality Assurance" />
-              <h1>Quality Assurance</h1>
+              <h3 className={`${styles.h3ded}`}>Quality Assurance</h3>
               <p>
                 NextUpgrad's dedicated developers are committed to delivering
                 high-quality code, reducing the likelihood of errors and
@@ -378,7 +378,7 @@ const Hirededicateddeveloper = () => {
             </div>
             <div className="exp21">
               <img src="ded5.webp" alt="Trimmed Admin Costs" />
-              <h1>Trimmed Admin Costs</h1>
+              <h3 className={`${styles.h3ded}`}>Trimmed Admin Costs</h3>
               <p>
                 Minimize the burden of project management tasks as NextUpgrad
                 takes care of administrative responsibilities, allowing you to
@@ -387,7 +387,7 @@ const Hirededicateddeveloper = () => {
             </div>
             <div className="exp21">
               <img src="ded6.webp" alt="Focused Attention" />
-              <h1>Focused Attention</h1>
+              <h3 className={`${styles.h3ded}`}>Focused Attention</h3>
               <p>
                 A dedicated developer provides undivided attention to your
                 project, fostering a deeper understanding of your goals and
@@ -402,10 +402,10 @@ const Hirededicateddeveloper = () => {
           <div className="row">
             <div className="skill1 col-md-8">
               <span className="line1 " />
-              <h1>
+              <h3 className={`${styles.getstrt}`}>
                 Get started now! Contact our skilled developers to bring your
                 ideas to life.
-              </h1>
+              </h3>
             </div>
             <div className="skill2  col-md-4">
               <Link href="/contact-us">
@@ -420,7 +420,7 @@ const Hirededicateddeveloper = () => {
           <div className="ada row">
             <div className="ada1 col-md-6">
               <span className="line1" />
-              <h1>Adaptable Hiring Model</h1>
+              <h3 className={`${styles.adptmd}`}>Adaptable Hiring Model</h3>
             </div>
             <div className="ada2  col-md-6">
               <p>
@@ -431,7 +431,7 @@ const Hirededicateddeveloper = () => {
           </div>
           <div className="adap row">
             <div className="adap1  col-md-4">
-              <h1>Pay-per-use</h1>
+              <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
               <img src="img-4-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
@@ -439,7 +439,7 @@ const Hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="adap2   col-md-4">
-              <h1>Pay-per-use</h1>
+            <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
               <img src="img-3-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
@@ -447,7 +447,7 @@ const Hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="adap3   col-md-4">
-              <h1>Pay-per-use</h1>
+            <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
               <img src="img-2-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
@@ -462,9 +462,9 @@ const Hirededicateddeveloper = () => {
           <div className="last1 row">
             <div className="last1 col-md-7">
               <span className="line1" />
-              <h1>
+              <h3 className={`${styles.comrea}`}>
                 Compelling Reasons to Engage Dedicated Developers at NextUpgrad
-              </h1>
+              </h3>
 
               <ul className="list1">
                 <li className="li1">
@@ -500,7 +500,7 @@ const Hirededicateddeveloper = () => {
                 <div className="col-md-6">
                   <div className="sl11">
                     <img src="teams.png" alt="Teams" />
-                    <h1>10+</h1>
+                    <h4 className={`${styles.cnthea}`}>10+</h4>
                     <p>Teams</p>
                   </div>
                   <div className="sl12">
@@ -508,19 +508,19 @@ const Hirededicateddeveloper = () => {
                       src="years-of-Experience.png"
                       alt="Years in Industry"
                     />
-                    <h1>15+</h1>
+                    <h4 className={`${styles.cnthea}`}>15+</h4>
                     <p>Years in Industry</p>
                   </div>
                   <div className="sl13">
                     <img src="satisfied-customers.png" alt="Happy Patron" />
-                    <h1>3500+</h1>
+                    <h4 className={`${styles.cnthea}`}>3500+</h4>
                     <p>Happy Patron</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="sl14">
                     <img src="global-partners.png" alt="Company Partnerships" />
-                    <h1>50+</h1>
+                    <h4 className={`${styles.cnthea}`}>50+</h4>
                     <p>Company Partnerships</p>
                   </div>
                   <div className="sl15">
@@ -528,7 +528,7 @@ const Hirededicateddeveloper = () => {
                       src="awards-and-accolades.png"
                       alt="Community Project Contribution"
                     />
-                    <h1>500+</h1>
+                    <h4 className={`${styles.cnthea}`}>500+</h4>
                     <p>Community Project Contribution</p>
                   </div>
                 </div>

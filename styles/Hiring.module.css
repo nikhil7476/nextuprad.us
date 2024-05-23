@@ -62,6 +62,54 @@
   padding-bottom:30px;
 }
 
+.benhire{
+  font-size: 35px !important;
+  font-family: Montserrat, Sans-serif;
+  font-weight:600;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.h3ded{
+    font-size: 22px;
+    padding-top: 20px;
+    font-family: Montserrat, Sans-serif;
+}
+
+.getstrt{
+  color:#fff;
+  font-family: Montserrat, Sans-serif;
+  font-size:30px;
+  padding-top:30px;
+}
+
+.cnthea{
+  font-size:40px;
+  font-weight:600;
+  padding-top:15px;
+}
+
+.adptmd{
+  font-size:40px;
+  font-family: Montserrat, Sans-serif;
+  padding-top:30px;
+  font-weight:600;
+  letter-spacing:2px;
+}
+
+.payuse{
+  font-size:25px;
+  font-family: Montserrat, Sans-serif;
+}
+
+.comrea{
+  color:#fff !important;
+  font-size:35px !important;
+  font-family: Montserrat, Sans-serif !important;
+  padding-top:30px !important;
+  padding-bottom:30px !important;
+}
+
 @media (max-width: 1100px) {
   .exp2 {
     grid-template-columns: auto auto auto;
