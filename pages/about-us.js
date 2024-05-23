@@ -57,7 +57,12 @@ const About = () => {
             <div className="sec-1-1-1">
               <img src="ceo.png" alt="Deepak Tandon" />
             </div>
-            <div className="sec-1-1-2">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="150"
+              data-aos-duration="1500"
+              className="sec-1-1-2"
+            >
               <p>
                 A decade ago, <strong>Deepak Tandon</strong>, aka Mac Robinson,
                 envisioned “<strong>NextUpgrad</strong>” as a response to the

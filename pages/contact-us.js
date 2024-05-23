@@ -5,6 +5,8 @@ import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
 import axiosInstance from "@/axios/axios";
 import { toast } from "sonner";
+import ReCAPTCHA from "react-google-recaptcha";
+import styles from "../styles/contactUs.module.css";
 const Conatactus = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -15,6 +17,7 @@ const Conatactus = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [recaptcha, setRecaptcha] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -286,18 +289,20 @@ const Conatactus = () => {
                   <br />
                   We look forward to connecting with you!
                 </p>
-</div>
-<div className="col-md-6 contactformmap"><iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8958144764765!2d80.99052167421846!3d26.843265863073835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3ec914fc37b%3A0xda24df84e2ce4216!2sNextupgrad%20Web%20Solutions%20%7C%20Web%20%7C%20Mobile%20App%20%7C%20Software%20Development%20Company!5e0!3m2!1sen!2sin!4v1716456824199!5m2!1sen!2sin"
-  width={"100%"}
-  height={330}
-  style={{ border: 0 }}
-  allowFullScreen=""
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/></div>
-                <div className="col-md-6">
-                <Form onSubmit={handleSubmit}>
+              </div>
+              <div className="col-md-6 contactformmap">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8958144764765!2d80.99052167421846!3d26.843265863073835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3ec914fc37b%3A0xda24df84e2ce4216!2sNextupgrad%20Web%20Solutions%20%7C%20Web%20%7C%20Mobile%20App%20%7C%20Software%20Development%20Company!5e0!3m2!1sen!2sin!4v1716456824199!5m2!1sen!2sin"
+                  width={"100%"}
+                  height={330}
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+              <div className="col-md-6">
+                {/* <Form onSubmit={handleSubmit}>
                   <Form.Group controlId="formName">                   
                     <Form.Control
                       type="text"
@@ -338,6 +343,64 @@ const Conatactus = () => {
                       onChange={handleChange}
                     />
                   </Form.Group>
+
+                  <div className="d-flex justify-content-center">
+                    <button className="w-100 mt-1 contactFormBtn" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </Form> */}
+                <Form onSubmit={handleSubmit}>
+                  <Form.Group controlId="formName">
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter Your Name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                  </Form.Group>
+
+                  <Form.Group controlId="formEmail">
+                    <Form.Control
+                      type="email"
+                      placeholder="Enter Your Email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                  </Form.Group>
+
+                  <Form.Group controlId="formSubject">
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter Subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                    />
+                  </Form.Group>
+
+                  <Form.Group controlId="formMessage">
+                    <Form.Control
+                      as="textarea"
+                      rows={5}
+                      placeholder="Enter Your Message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                    />
+                  </Form.Group>
+
+                  <div className={`captcha ${styles.contactPageRecaptcha}`}>
+                    <ReCAPTCHA
+                      sitekey="6LcsJt0pAAAAADojY-EwlCuhurrgweKE5lZS89lU"
+                      onChange={(val) => {
+                        console.log("recaptcha value", val);
+                        setRecaptcha(val);
+                      }}
+                    />
+                  </div>
 
                   <div className="d-flex justify-content-center">
                     <button className="w-100 mt-1 contactFormBtn" type="submit">
