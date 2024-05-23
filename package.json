@@ -20,6 +20,7 @@
     "next": "^14.2.3",
     "next-sitemap": "^4.2.3",
     "react": "^18",
+    "react-animate-on-scroll": "^2.1.9",
     "react-bootstrap": "^2.10.2",
     "react-chrono": "^2.6.1",
     "react-countup": "^6.5.3",

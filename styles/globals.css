@@ -352,6 +352,9 @@ body {
   margin-bottom: 0px;
   padding: 160px 60px 150px 60px;
 }
+.blogBanner {
+  background-image: url("/banner.jpg") !important;
+}
 .banner2 {
   background-image: url("/banner3.jpg");
   background-size: cover;
@@ -619,7 +622,7 @@ h2.design-heading span {
   border: 15px solid #fbf8f2;
   margin-bottom: 15px;
 }
-.deserve .col-md-4:hover{
+.deserve .col-md-4:hover {
   background: #fff;
 }
 .deserve h2 {
@@ -708,8 +711,9 @@ h2.design-heading span {
   transition: 0.7s ease;
   background-color: #fc6746;
 }
-.industries .col-md-3 .indus-content:hover h3, .industries .col-md-3 .indus-content:hover p{
-color: #fff;
+.industries .col-md-3 .indus-content:hover h3,
+.industries .col-md-3 .indus-content:hover p {
+  color: #fff;
 }
 /*----------------tesimonial home-----------------------*/
 .video_testimonials h4 {
@@ -3948,35 +3952,39 @@ a.elementor-buttoncontact:hover {
   line-height: 31px;
   font-weight: 400;
 }
-.contactform input, .contactform textarea {
+.contactform input,
+.contactform textarea {
   position: relative;
   z-index: 99;
   background-color: #000 !important;
   padding-top: 10px;
   padding-bottom: 25px;
-  color: #fff!important;
+  color: #fff !important;
   border-radius: 0px !important;
   width: 100%;
   box-shadow: none !important;
   border: 0px;
   border-bottom: 1px solid #fff !important;
-
 }
 
-.contactform input::-webkit-input-placeholder, .contactform textarea::-webkit-input-placeholder {
-  color:#ccc;
+.contactform input::-webkit-input-placeholder,
+.contactform textarea::-webkit-input-placeholder {
+  color: #ccc;
 }
 
-.contactform input::-moz-placeholder, .contactform textarea::-moz-placeholder {
-  color:#ccc;
+.contactform input::-moz-placeholder,
+.contactform textarea::-moz-placeholder {
+  color: #ccc;
 }
 
-.contactform input::-ms-placeholder, .contactform textarea::-ms-placeholder {
-  color:#ccc;
+.contactform input::-ms-placeholder,
+.contactform textarea::-ms-placeholder {
+  color: #ccc;
 }
 
-.contactform input::placeholder, .contactform textarea::placeholder {
-  color:#ccc;
+.contactform input::placeholder,
+.contactform textarea::placeholder {
+  color: #ccc;
 }
 .contactform form div {
   margin-top: 25px;
@@ -3996,12 +4004,12 @@ a.elementor-buttoncontact:hover {
 .contactformmap {
   padding: 24px 24px 24px 0px;
 }
-.contactformmap iframe{
+.contactformmap iframe {
   -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .contactform label {
   margin-bottom: 12px;
@@ -4227,7 +4235,7 @@ ul {
 .blogMain {
   padding-top: 4rem;
   background-color: #f9f9f9;
-  margin-top: -7.2rem;
+  margin-top: -10rem;
 }
 /**/
 

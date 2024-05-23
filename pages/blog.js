@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { formatDate } from "@/utils/helper";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import styles from ".././styles/blog.module.css";
 const blog = () => {
   const [blogs, setblogs] = useState([]);
   const [blogsBackup, setblogsBackup] = useState([]);
@@ -72,7 +73,18 @@ const blog = () => {
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
       </Head>
+
       <div className="blogMain">
+        <div className="blogBanner banner2 ">
+          <div className="container bannerContainer">
+            <div className="newBannerMain">
+              <h1 className="display-3 text-light position-relative z-3">
+                Blogs
+              </h1>
+              <p>Discover Insights, Tips, and Stories – Your Go-To Blog Hub!</p>
+            </div>
+          </div>
+        </div>
         <div className="sec">
           <div className="blog-cat">
             <div className="container">

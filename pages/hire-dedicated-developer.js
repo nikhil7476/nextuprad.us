@@ -7,6 +7,7 @@ import { useState } from "react";
 import axiosInstance from "@/axios/axios";
 import Head from "next/head";
 import { toast } from "sonner";
+import ReCAPTCHA from "react-google-recaptcha";
 const Hirededicateddeveloper = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -16,6 +17,7 @@ const Hirededicateddeveloper = () => {
     form_name: "hiring",
   });
   const [errors, setErrors] = useState({});
+  const [recaptcha, setRecaptcha] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -154,7 +156,9 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h2 className={`${styles.skills}`}>Skills held by NextUpgrad's dedicated developers.</h2>
+              <h2 className={`${styles.skills}`}>
+                Skills held by NextUpgrad's dedicated developers.
+              </h2>
               <p className="my-4">
                 Embark on a journey of unique solutions with a dedicated
                 developer from NextUpgrad. Our certified professionals are ready
@@ -171,7 +175,7 @@ const Hirededicateddeveloper = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <Form onSubmit={handleSubmit} className={`${styles.hiringForm}`}>
+              {/* <Form onSubmit={handleSubmit} className={`${styles.hiringForm}`}>
                 <Form.Group controlId="formName">
                   <Form.Label>Your name</Form.Label>
                   <Form.Control
@@ -219,6 +223,72 @@ const Hirededicateddeveloper = () => {
 
                 <div className="d-flex justify-content-center">
                   <button className="w-100 mt-5 contactFormBtn" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </Form> */}
+              <Form onSubmit={handleSubmit} className={`${styles.hiringForm}`}>
+                <Form.Group controlId="formName">
+                  <Form.Label>Your name</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter your name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
+
+                <Form.Group controlId="formEmail">
+                  <Form.Label>Your email</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter your email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
+
+                <Form.Group controlId="formSubject">
+                  <Form.Label>Subject</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
+
+                <Form.Group controlId="formMessage">
+                  <Form.Label>Your message (optional)</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    rows={5}
+                    placeholder="Enter your message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
+
+                <div className="captcha">
+                  <ReCAPTCHA
+                    sitekey="6LcsJt0pAAAAADojY-EwlCuhurrgweKE5lZS89lU"
+                    onChange={(val) => {
+                      console.log("recaptcha value", val);
+                      setRecaptcha(val);
+                    }}
+                  />
+                </div>
+
+                <div className="d-flex justify-content-center">
+                  <button
+                    className="w-100 mt-5 contactFormBtn"
+                    type="submit"
+                    disabled={!recaptcha}
+                  >
                     Submit
                   </button>
                 </div>
