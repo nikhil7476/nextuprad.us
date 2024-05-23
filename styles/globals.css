@@ -442,6 +442,22 @@ h2.design-heading span {
   font-size: 55px !important;
   font-weight: 600;
 }
+
+.digiSolutions form {
+  border: 1px solid #ccc;
+  padding: 25px 22px 14px 24px;
+  background: #f7f5f42e;
+  border-radius: 13px;
+}
+.discover .col-md-6 {
+  border: 12px solid #fff;
+  padding: 22px 23px;
+  border-radius: 35px;
+  margin-bottom: 20px;
+}
+.discover .col-md-6:hover {
+  background: #f7f2f2;
+}
 .achieved ul li {
   padding: 19px 10px 17px 10px;
   background-color: #f5f5fc;
@@ -3782,9 +3798,12 @@ a.elementor-buttoncontact {
   border-color: #e76f51;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  padding: 15px 40px 15px 40px;
+  padding: 15px 25px;
   color: #fff;
   text-decoration: none;
+  display: block;
+  margin-right: 27px;
+  text-align: center;
 }
 a.elementor-buttoncontact:hover {
   color: #000000;
@@ -3918,17 +3937,38 @@ a.elementor-buttoncontact:hover {
   line-height: 31px;
   font-weight: 400;
 }
-.contactform input {
+.contactform input, .contactform textarea {
   position: relative;
   z-index: 99;
-  background-color: #000;
+  background-color: #000 !important;
   padding-top: 10px;
-  padding-bottom: 10px;
-  color: #fff;
-  border-radius: 12px;
+  padding-bottom: 25px;
+  color: #fff!important;
+  border-radius: 0px !important;
   width: 100%;
   box-shadow: none !important;
-  border: 1px solid #fff;
+  border: 0px;
+  border-bottom: 1px solid #fff !important;
+
+}
+
+.contactform input::-webkit-input-placeholder, .contactform textarea::-webkit-input-placeholder {
+  color:#ccc;
+}
+
+.contactform input::-moz-placeholder, .contactform textarea::-moz-placeholder {
+  color:#ccc;
+}
+
+.contactform input::-ms-placeholder, .contactform textarea::-ms-placeholder {
+  color:#ccc;
+}
+
+.contactform input::placeholder, .contactform textarea::placeholder {
+  color:#ccc;
+}
+.contactform form div {
+  margin-top: 25px;
 }
 .contactform textarea {
   position: relative;
@@ -3941,6 +3981,16 @@ a.elementor-buttoncontact:hover {
   width: 100%;
   box-shadow: none !important;
   border: 1px solid #fff;
+}
+.contactformmap {
+  padding: 24px 24px 24px 0px;
+}
+.contactformmap iframe{
+  -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 .contactform label {
   margin-bottom: 12px;
