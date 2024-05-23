@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CountUp from "react-countup";
 import Dropdown from "react-bootstrap/Dropdown";
+import ReCAPTCHA from "react-google-recaptcha";
 import { Form, Button } from "react-bootstrap";
 import Cards from "@/components/Cards";
 import Cards2 from "@/components/Cards2";
@@ -36,6 +37,7 @@ export default function Home() {
     form_name: "home",
   });
   const [errors, setErrors] = useState({});
+  const [recaptcha, setRecaptcha] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -1016,7 +1018,7 @@ export default function Home() {
                           </span>
                         ))}
                   </div>
-                  <Form onSubmit={(event) => handleSubmit(event)}>
+                  {/* <Form onSubmit={(event) => handleSubmit(event)}>
                     <Form.Group controlId="formName ">
                       <Form.Label>Your name</Form.Label>
                       <Form.Control
@@ -1069,6 +1071,92 @@ export default function Home() {
                     <button className="contactFormBtn" type="submit">
                       Submit
                     </button>
+                  </Form> */}
+                  <Form onSubmit={handleSubmit}>
+                    <Form.Group controlId="formName">
+                      <Form.Label>Your name</Form.Label>
+                      <Form.Control
+                        type="text"
+                        className="mb-4"
+                        placeholder="Enter your name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        isInvalid={!!errors.name}
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        {errors.name}
+                      </Form.Control.Feedback>
+                    </Form.Group>
+
+                    <Form.Group controlId="formEmail">
+                      <Form.Label>Your email</Form.Label>
+                      <Form.Control
+                        type="email"
+                        className="mb-4"
+                        placeholder="Enter your email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        isInvalid={!!errors.email}
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        {errors.email}
+                      </Form.Control.Feedback>
+                    </Form.Group>
+
+                    <Form.Group controlId="formSubject">
+                      <Form.Label>Subject</Form.Label>
+                      <Form.Control
+                        type="text"
+                        className="mb-4"
+                        placeholder="Enter subject"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        isInvalid={!!errors.subject}
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        {errors.subject}
+                      </Form.Control.Feedback>
+                    </Form.Group>
+
+                    <Form.Group controlId="formMessage">
+                      <Form.Label>Your message (optional)</Form.Label>
+                      <Form.Control
+                        as="textarea"
+                        className="mb-4"
+                        rows={3}
+                        placeholder="Enter your message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        isInvalid={!!errors.message}
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        {errors.message}
+                      </Form.Control.Feedback>
+                    </Form.Group>
+
+                    <div className="captcha">
+                      <ReCAPTCHA
+                        sitekey="6LcsJt0pAAAAADojY-EwlCuhurrgweKE5lZS89lU"
+                        onChange={(val) => {
+                          console.log("recaptcha value", val);
+                          setRecaptcha(val);
+                        }}
+                      />
+                    </div>
+
+                    <div className="d-flex justify-content-center">
+                      <button
+                        className="contactFormBtn w-100 mt-3"
+                        type="submit"
+                        disabled={!recaptcha}
+                      >
+                        Submit
+                      </button>
+                    </div>
                   </Form>
                 </div>
               </div>
