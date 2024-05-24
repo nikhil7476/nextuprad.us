@@ -51,8 +51,7 @@ const Portfolio = () => {
       </section>
       <section id="work">
         <div className="work1">
-          <span className="line1" />
-          <h1>Work Showcase</h1>
+          <h2>Work Showcase</h2>
         </div>
       </section>
     </>
