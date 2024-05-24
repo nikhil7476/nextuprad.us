@@ -2,7 +2,52 @@ import Head from "next/head";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import React from "react";
 const LandingPagee = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+  };
+
+  const testimonials = [
+    {
+      rating: 5,
+      text: "Professional and results-driven. They relieved our expectations, boosting our sales significantly.",
+      name: "Luna John",
+      designation: "UX Designer",
+      image: "/testimonial-1.jpg",
+    },
+
+    {
+      rating: 5,
+      text: "Exceptional service! Highly recommend for anyone looking to enhance their online presence.",
+      name: "Sara Lee",
+      designation: "Marketing Director",
+      image: "/testimonial-1.jpg",
+    },
+    {
+      rating: 4,
+      text: "Their expertise and dedication were evident from the start. Very satisfied with the results.",
+      name: "David Brown",
+      designation: "CEO",
+      image: "/testimonial-2.jpg",
+    },
+    {
+      rating: 4,
+      text: "Their expertise and dedication were evident from the start. Very satisfied with the results.",
+      name: "David Brown",
+      designation: "CEO",
+      image: "/testimonial-2.jpg",
+    },
+  ];
+
   return (
     <>
       <>
@@ -504,639 +549,48 @@ const LandingPagee = () => {
         </section>
         <section className="slider-land">
           <div className="container">
-            <div className="testimonials-container">
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
+            <Slider {...settings}>
+              {testimonials.map((testimonial, index) => (
+                <div className="testimonial" key={index}>
+                  <div className="rating">
+                    {[5, 4, 3, 2, 1].map((value) => (
+                      <React.Fragment key={value}>
+                        <input
+                          id={`rating-${value}-${index}`}
+                          type="radio"
+                          name={`rating-${index}`}
+                          defaultValue={value}
+                          defaultChecked={testimonial.rating === value}
+                        />
+                        <label htmlFor={`rating-${value}-${index}`}>
+                          <i className="fas fa-3x fa-star" />
+                        </label>
+                      </React.Fragment>
+                    ))}
                   </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
+                  <p>{testimonial.text}</p>
+                  <div className="part d-flex">
+                    <div>
+                      <img
+                        className="img-fluid rounded rounded-circle mb-3"
+                        loading="lazy"
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                      />
+                    </div>
+                    <div className="part-desg mt-2">
+                      <h4 className="mb-2">{testimonial.name}</h4>
+                      <h5 className="fs-6 text-secondary mb-0">
+                        {testimonial.designation}
+                      </h5>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <div className="rating">
-                  <input
-                    id="rating-5"
-                    type="radio"
-                    name="rating"
-                    defaultValue={5}
-                  />
-                  <label htmlFor="rating-5">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-4"
-                    type="radio"
-                    name="rating"
-                    defaultValue={4}
-                    defaultChecked=""
-                  />
-                  <label htmlFor="rating-4">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-3"
-                    type="radio"
-                    name="rating"
-                    defaultValue={3}
-                  />
-                  <label htmlFor="rating-3">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-2"
-                    type="radio"
-                    name="rating"
-                    defaultValue={2}
-                  />
-                  <label htmlFor="rating-2">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                  <input
-                    id="rating-1"
-                    type="radio"
-                    name="rating"
-                    defaultValue={1}
-                  />
-                  <label htmlFor="rating-1">
-                    <i className="fas fa-3x fa-star" />
-                  </label>
-                </div>
-                <p>
-                  Professional and results-drien. They
-                  <br /> relief our epetations, boosting
-                  <br /> our sales signifiantly.
-                </p>
-                <div className="part d-flex">
-                  <div>
-                    <img
-                      className="img-fluid rounded rounded-circle mb-3"
-                      loading="lazy"
-                      src="/testimonial-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="part-desg mt-2">
-                    <h4 className="mb-2">Luna John</h4>
-                    <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="controls">
-              <button className="control-btn" onclick="scrollTestimonials(-1)">
-                <i className="bi bi-circle-fill" />
-              </button>
-              <button className="control-btn" onclick="scrollTestimonials(1)">
-                <i className="bi bi-circle-fill" />
-              </button>
-            </div>
+              ))}
+            </Slider>
           </div>
         </section>
+
         <section className="studies">
           <div className="container">
             <div className="row">
