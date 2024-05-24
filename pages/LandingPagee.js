@@ -14,6 +14,8 @@ const LandingPagee = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   const testimonials = [
@@ -52,7 +54,7 @@ const LandingPagee = () => {
     <>
       <>
         <Head></Head>
-        <header className="musthead sticky-top">
+        <header className="musthead sticky-top custom-cursor">
           <div className="container pt-2 pb-2">
             <div className="row main-ost">
               <div className="col-md-2 row-img">
@@ -78,7 +80,7 @@ const LandingPagee = () => {
                     className="collapse navbar-collapse"
                     id="navbarSupportedContent"
                   >
-                    <ul className="navbar-nav me-auto ">
+                    {/* <ul className="navbar-nav me-auto ">
                       <li>
                         <a href="#">About</a>
                       </li>
@@ -94,7 +96,7 @@ const LandingPagee = () => {
                       <li>
                         <a href="#">Contact</a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </nav>
               </div>
@@ -114,9 +116,14 @@ const LandingPagee = () => {
           </div>
         </header>
         <section className="bann">
-          <div className="container banner-sli pt-5 pb-5">
+          <div className="container banner-sli pt-1 pb-5">
             <div className="row">
-              <div className="col-6 mark-bus">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+                className="col-7 mark-bus"
+              >
                 <span>Market reasearh and analysis </span>
                 <div className="reasearch">
                   <h1>Empowering Your Business Potential</h1>
@@ -134,7 +141,7 @@ const LandingPagee = () => {
                   </button>
                 </div>
               </div>
-              <div className="col-6 consultation">
+              <div className="col-5 consultation">
                 <h3>Book free consultation </h3>
                 <p>
                   Fill out the form below, we'll arrange a<br /> consultation at
@@ -255,19 +262,34 @@ const LandingPagee = () => {
                   className="navbar navbar-light px-3 main-ton sticky-top must-main"
                 >
                   <ul className="nav nav-pills">
-                    <li className="nav-item">
+                    <li style={{ border: 0 }} className="sticky2Item">
                       <a className="nav-link" href="#scrollspyHeading1">
-                        Content Marketing
+                        Front-End
                       </a>
                     </li>
-                    <li className="nav-item">
+                    <li className="sticky2Item">
                       <a className="nav-link" href="#scrollspyHeading2">
-                        Campaign Optimizations
+                        Back-End
                       </a>
                     </li>
-                    <li className="nav-item">
+                    <li className="sticky2Item">
                       <a className="nav-link" href="#scrollspyHeading3">
-                        Market Reasearch
+                        Project Management
+                      </a>
+                    </li>
+                    <li className="sticky2Item">
+                      <a className="nav-link" href="#scrollspyHeading3">
+                        CMS
+                      </a>
+                    </li>
+                    <li className="sticky2Item">
+                      <a className="nav-link" href="#scrollspyHeading3">
+                        Database
+                      </a>
+                    </li>
+                    <li className="sticky2Item">
+                      <a className="nav-link" href="#scrollspyHeading3">
+                        Server
                       </a>
                     </li>
                   </ul>

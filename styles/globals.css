@@ -5620,6 +5620,17 @@ pre {
 }
 
 /**************LANDING PAGE NEW CSS*************/
+/* .custom-cursor {
+  cursor: url(''), auto;
+} */
+
+.sticky2Item {
+  display: inline;
+  border-left: 1px solid #e2e2e2;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: inline;
+}
 .container {
   max-width: 1225px !important;
 }
@@ -6301,6 +6312,7 @@ pre {
   border-top: 1px solid #f4fafa;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7;
+  transition: 0.7s;
 }
 
 .missardl {
@@ -6309,11 +6321,13 @@ pre {
   border-style: solid;
   border-color: #e7e7e7;
   border-top: 1px solid #f4fafa;
+  transition: 0.7s;
 }
 
 .missardm {
   padding: 40px 80px 40px 80px;
   border-top: 1px solid #f4fafa;
+  transition: 0.7s;
 }
 
 .missard:hover {
@@ -6778,7 +6792,7 @@ pre {
 
 nav#navbar-example2 {
   padding-top: 83px !important;
-  z-index: 0;
+  z-index: 100;
 }
 
 header.musthead.sticky-top.bg-light {
