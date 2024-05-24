@@ -41,8 +41,8 @@ const Software = () => {
         <main id="sect">
           <div className="sect1">
             <h1>
-              <span className="sp">CUSTOM SOFTWARE DEVELOPMENT SERVICES</span>
-              TO SUIT YOUR REQUIREMENT
+              <span className="sp">SOFTWARE DEVELOPMENT</span>
+               SERVICES
             </h1>{" "}
             <div className="overlay" />
           </div>
@@ -50,7 +50,7 @@ const Software = () => {
         <section id="uni">
           <div className="uni1">
             <span className="line" />
-            <h1>Unique Service Array</h1>
+            <h2 className="uniser">Unique Service Array</h2>
             <p>
               From consultation through development, seamless integration, to
               steadfast maintenance—we’ve got every facet in hand.
@@ -61,7 +61,7 @@ const Software = () => {
               <img src="soft1.webp" alt="Software Consulting" />
             </div>
             <div className="uni22">
-              <h1>Software Consulting</h1>
+              <h2 className="softcon">Software Consulting</h2>
               <p>
                 Prepare for success in your software development project. We
                 specialize in seamless planning, execution, and management. Our
@@ -89,7 +89,7 @@ const Software = () => {
           </div>
           <div className="uni2">
             <div className="unii22">
-              <h1>Custom Software Development</h1>
+              <h2 className="softcon">Custom Software Development</h2>
               <p>
                 Whether it’s building a new application or upgrading your
                 existing system, NextUpgrad’s expert software development team
@@ -127,7 +127,7 @@ const Software = () => {
               />
             </div>
             <div className="unimm22">
-              <h1>Designing and Embedding ERP Solutions</h1>
+              <h2 className="softcon">Designing and Embedding ERP Solutions</h2>
               <p>
                 Prepare for success in your software development project. We
                 specialize in seamless planning, execution, and management. Our
@@ -155,7 +155,7 @@ const Software = () => {
           </div>
           <div className="uni2">
             <div className="unim22">
-              <h1>Modernization of Legacy Applications</h1>
+              <h2 className="softcon">Modernization of Legacy Applications</h2>
               <p>
                 Upgrade your business by transforming outdated legacy
                 applications with NextUpgrad’s modernization service. We
@@ -176,7 +176,7 @@ const Software = () => {
               <img src="development-services.svg" alt="Cloud App Development" />
             </div>
             <div className="unimmm22">
-              <h1>Cloud App Development</h1>
+              <h2 className="softcon">Cloud App Development</h2>
               <p>
                 Prepare for success in your software development project. We
                 specialize in seamless planning, execution, and management. Our
@@ -198,12 +198,12 @@ const Software = () => {
         </section>
         <section id="work">
           <div className="work1">
-            <h1>How do we work?</h1>
+            <h2>How do we work?</h2>
           </div>
           <div className="work2">
             <div className="work21">
               <img src="s1.webp" alt="STEP 1" />
-              <h1>STEP 1</h1>
+              <h2>STEP 1</h2>
               <p>
                 At the outset, let’s talk about your business requirements and
                 how we can address them.
@@ -215,7 +215,7 @@ const Software = () => {
             </div>
             <div className="work21">
               <img src="s2.webp" alt="STEP 2" />
-              <h1>STEP 2</h1>
+              <h2>STEP 2</h2>
               <p>
                 At the outset, let’s talk about your business requirements and
                 how we can address them.
@@ -231,7 +231,7 @@ const Software = () => {
             </div>
             <div className="work21">
               <img src="s3.webp" alt="STEP 3" />
-              <h1>STEP 3</h1>
+              <h2>STEP 3</h2>
               <p>
                 At the outset, let’s talk about your business requirements and
                 how we can address them.
@@ -249,7 +249,7 @@ const Software = () => {
         </section>
         <section id="tech">
           <div className="tech1">
-            <h1>Primary Coding Technologies</h1>
+            <h2>Primary Coding Technologies</h2>
           </div>
           <div className="tech2">
             <div className="tech21">
@@ -258,7 +258,7 @@ const Software = () => {
                   <img src="pr1.webp" alt=".NET" />
                 </div>
                 <div className="tech222">
-                  <h1>.NET</h1>
+                  <h2>.NET</h2>
                 </div>
               </div>
               <div className="tech223">
@@ -275,7 +275,7 @@ const Software = () => {
                   <img src="pr2.webp" alt=".NET CORE" />
                 </div>
                 <div className="tech222">
-                  <h1> .NET CORE</h1>
+                  <h2> .NET CORE</h2>
                 </div>
               </div>
               <div className="tech223">
@@ -293,7 +293,7 @@ const Software = () => {
                   <img src="pr3.webp" alt="C#" />
                 </div>
                 <div className="tech222">
-                  <h1>C#</h1>
+                  <h2>C#</h2>
                 </div>
               </div>
               <div className="tech223">
@@ -311,7 +311,7 @@ const Software = () => {
                   <img src="pr4.webp" alt="GOLANG" />
                 </div>
                 <div className="tech222">
-                  <h1>GOLANG</h1>
+                  <h2>GOLANG</h2>
                 </div>
               </div>
               <div className="tech223">
@@ -328,7 +328,7 @@ const Software = () => {
                   <img src="pr5.webp" alt="UX/UI DESIGN" />
                 </div>
                 <div className="tech222">
-                  <h1>UX/UI DESIGN</h1>
+                  <h2>UX/UI DESIGN</h2>
                 </div>
               </div>
               <div className="tech223">
@@ -345,7 +345,7 @@ const Software = () => {
                   <img src="pr6.webp" alt="FRONT-END" />
                 </div>
                 <div className="tech222">
-                  <h1>FRONT-END</h1>
+                  <h2>FRONT-END</h2>
                 </div>
               </div>
               <div className="tech223">
@@ -362,7 +362,7 @@ const Software = () => {
                   <img src="pr7.webp" alt="JAVA" />
                 </div>
                 <div className="tech222">
-                  <h1>JAVA</h1>
+                  <h2>JAVA</h2>
                 </div>
               </div>
               <div className="tech223">
@@ -378,7 +378,7 @@ const Software = () => {
                   <img src="pr8.webp" alt="MOBILE" />
                 </div>
                 <div className="tech222">
-                  <h1>MOBILE</h1>
+                  <h2>MOBILE</h2>
                 </div>
               </div>
               <div className="tech223">
@@ -394,7 +394,7 @@ const Software = () => {
                   <img src="pr9.webp" alt="PHP" />
                 </div>
                 <div className="tech222">
-                  <h1>PHP</h1>
+                  <h2>PHP</h2>
                 </div>
               </div>
               <div className="tech223">

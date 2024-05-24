@@ -41,7 +41,7 @@ const Mobileapp = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-6 sec-one">
-                <h1>Custom Mobile App Development Company</h1>
+                <h1>Custom Mobile App Development Services</h1>
                 <p>
                   Get ahead with our powerful, efficient, and dependable custom
                   Android apps for top performance.
