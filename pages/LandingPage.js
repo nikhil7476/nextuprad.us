@@ -11,6 +11,11 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import { toast } from "sonner";
+import { IoBuild } from "react-icons/io5";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { BsPersonBadge } from "react-icons/bs";
+import Cards4 from "@/components/Cards4";
+import LandingPageSlider from "@/components/LandingPageSlider";
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -105,22 +110,27 @@ const LandingPage = () => {
 
         <div className="overlayVid"></div>
         <div className="container bannerContentLanding">
-          <div className="row  justify-content-between">
-            <div className="col-md-6">
+          <div
+            className={`row  justify-content-between ${styles.bannerContent}`}
+          >
+            <div
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-duration="1500"
+              className="col-md-6 mt-4"
+            >
               <Image
                 src="/Nextupgradlogo.png"
                 height={100}
                 width={250}
                 alt="logo"
               />
-              <h1 className="text-light">
-                Skills held by NextUpgrad's dedicated developers.
+              <h1 className={`text-light mt-5 ${styles.mainHeading}`}>
+                Consult with our Expert and Transform Your Vision into Reality
+                with our Website Development Services
               </h1>
               <p className="my-4 text-light">
-                Embark on a journey of unique solutions with a dedicated
-                developer from NextUpgrad. Our certified professionals are ready
-                to connect the dots and deliver top-notch quality at your
-                service.
+                Crafting Stunning, User-Centric Websites That Drive Results
               </p>
               {/* <div className={`${styles.innerSection} my-4`}>
                 <span>Theme Development</span>
@@ -130,71 +140,79 @@ const LandingPage = () => {
                 <span>System Design & Architecture</span>
                 <span>Community & Social Engagement</span>
               </div> */}
+              <button className="sec-two-btn mt-5">Get Started</button>
             </div>
-            <div className="col-md-4">
+            <div className={`col-md-4 ${styles.landingPageForm}`}>
+              <p className={styles.formHeading}>
+                Get Free Website Audit Consultation !!
+              </p>
               <Form className="hiringForm" onSubmit={handleSubmit}>
-                <Form.Group controlId="name">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="Enter your name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    isInvalid={!!errors.name}
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    {errors.name}
-                  </Form.Control.Feedback>
-                </Form.Group>
+                <div className="row">
+                  <Form.Group className="col-md-6" controlId="name">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      isInvalid={!!errors.name}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.name}
+                    </Form.Control.Feedback>
+                  </Form.Group>
 
-                <Form.Group controlId="email">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control
-                    type="email"
-                    placeholder="Enter your email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    isInvalid={!!errors.email}
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    {errors.email}
-                  </Form.Control.Feedback>
-                </Form.Group>
+                  <Form.Group className="col-md-6" controlId="email">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="Enter your email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      isInvalid={!!errors.email}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.email}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+                </div>
 
-                <Form.Group controlId="phone">
-                  <Form.Label>Phone</Form.Label>
-                  <PhoneInput
-                    defaultCountry="US"
-                    placeholder="Enter your phone number"
-                    value={formData.phone}
-                    onChange={(value) =>
-                      setFormData((prevData) => ({
-                        ...prevData,
-                        phone: value,
-                      }))
-                    }
-                    isInvalid={!!errors.phone}
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    {errors.phone}
-                  </Form.Control.Feedback>
-                </Form.Group>
+                <div className="row mt-4">
+                  <Form.Group className="col-6" controlId="phone">
+                    <Form.Label>Phone</Form.Label>
+                    <PhoneInput
+                      defaultCountry="US"
+                      placeholder="Enter your phone number"
+                      value={formData.phone}
+                      onChange={(value) =>
+                        setFormData((prevData) => ({
+                          ...prevData,
+                          phone: value,
+                        }))
+                      }
+                      isInvalid={!!errors.phone}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.phone}
+                    </Form.Control.Feedback>
+                  </Form.Group>
 
-                <Form.Group controlId="subject">
-                  <Form.Label>Subject</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="Enter subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    isInvalid={!!errors.subject}
-                  />
-                  <Form.Control.Feedback type="invalid">
-                    {errors.subject}
-                  </Form.Control.Feedback>
-                </Form.Group>
+                  <Form.Group className="col-6" controlId="subject">
+                    <Form.Label>Subject</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      isInvalid={!!errors.subject}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.subject}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+                </div>
 
-                <Form.Group controlId="message">
+                <Form.Group className="mt-4" controlId="message">
                   <Form.Label>Message</Form.Label>
                   <Form.Control
                     as="textarea"
@@ -209,7 +227,7 @@ const LandingPage = () => {
                   </Form.Control.Feedback>
                 </Form.Group>
 
-                <div className="captcha">
+                <div className={styles.captcha}>
                   <ReCAPTCHA
                     sitekey="6LcsJt0pAAAAADojY-EwlCuhurrgweKE5lZS89lU"
                     onChange={(val) => {
@@ -228,52 +246,164 @@ const LandingPage = () => {
                     Submit
                   </button>
                 </div>
+                <span className={`${styles.formBottomText} text-center`}>
+                  <p className="mt-3">
+                    I consent to be contacted by Nextupgrad Web Solutions at any
+                    email address or telephone number I provide and agree and
+                    consent to the Website's{" "}
+                    <strong>Terms and Conditions</strong> of Use or
+                    <strong>Privacy Policy</strong>.
+                  </p>
+                </span>
+
+                <span className={`${styles.formBottomText} `}>
+                  <p className="text-center">
+                    This site is protected by reCAPTCHA and the Google Privacy
+                    Policy and Terms of Service apply
+                  </p>
+                </span>
               </Form>
             </div>
           </div>
         </div>
       </section>
+
+      <section className={`${styles.expertiseSecMain} container`}>
+        <h3 className="text-start mt-5">Nextupgrad's Expertise</h3>
+        <p className="text-center mt-5">
+          We're an ROI driven team, always ready for challenges, No sales
+          presentations, and no gimmicks—just pure expertise. We craft impactful
+          solutions to make your business stand out.
+        </p>
+        <p className="mt-5 text-center">
+          We specialize in creating bespoke websites that cater to your unique
+          business needs. Our team of experienced developers and designers work
+          together to build visually stunning, highly functional websites that
+          engage your audience and drive conversions.
+        </p>
+        <div className={styles.expertiseGrid}>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="1500"
+            className="expertiseGridItems"
+          >
+            <IoBuild fontSize={85} className={`${styles.expertIcons} my-3 `} />
+            <h4>Custom-Built Designs</h4>
+            <p>
+              Each website is tailor-made to reflect your brand's unique
+              identity, ensuring a distinctive online presence.
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="1500"
+            className="expertiseGridItems"
+          >
+            <RiCustomerService2Fill
+              fontSize={85}
+              className={`${styles.expertIcons} my-3 `}
+            />
+            <h4>Comprehensive Support and Maintenance</h4>
+            <p>
+              We offer ongoing support and maintenance services to ensure your
+              website stays up-to-date and performs optimally.
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="1500"
+            className="expertiseGridItems"
+          >
+            <BsPersonBadge
+              fontSize={85}
+              className={`${styles.expertIcons} my-3 `}
+            />
+            <h4>Professional Expertise</h4>
+            <p>
+              Gain from our seasoned knowledge and insights at every stage,
+              guaranteeing a flawless web development journey
+            </p>
+          </div>
+        </div>
+      </section>
+      <div className="testimonials mt-5 ">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h2> Domains we serve</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section className="container my-4 ">
+        <LandingPageSlider />
+      </section>
       <div>
-        <div className="sec-two">
+        <div className={`sec-two ${styles.landingPageMain}`}>
           <div className="container">
-            <h1>Our Distinctive website development services</h1>
+            {/* <h1>Our Distinctive website development services</h1> */}
+            <h1>Our Offerings</h1>
             <div className="row">
-              <div className="col-md-6 img-box">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+                className="col-md-6 img-box px-3"
+              >
                 <div className="sec-two-box">
                   <img src="custom_developement.png" alt="" />
-                  <h2>Custom Website Development</h2>
+                  <h2>Custom Website Design</h2>
                 </div>
                 <p>
-                  We create uniquely tailored websites, employing custom coding
-                  for seamless front-end and back-end development.
+                  Our custom web design service ensures your website reflects
+                  your brand’s identity and meets your business goals. From
+                  wireframing to final design, we create websites that are both
+                  attractive and intuitive.
                 </p>
               </div>
-              <div className="col-md-6 img-box">
+              <div
+                data-aos="fade-left"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+                className="col-md-6 img-box px-3"
+              >
                 <div className="sec-two-box">
                   <img src="cms.png" alt="" />
-                  <h2>CMS Integration</h2>
+                  <h2>Content Management Systems (CMS)</h2>
                 </div>
                 <p>
-                  Effortlessly manage content with seamless integration of CMS
-                  platforms like WordPress, Drupal, or Joomla, enhanced by
-                  expert customization of themes and templates to meet your
-                  specific needs.
+                  We develop websites using popular CMS platforms like
+                  WordPress, Drupal, and Joomla, enabling you to easily manage
+                  and update your content.
                 </p>
               </div>
             </div>
             <div className="row">
-              <div className="col-md-6 img-box">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+                className="col-md-6 img-box px-3"
+              >
                 <div className="sec-two-box">
                   <img src="ecom.png" alt="" />
-                  <h2>E-Commerce Development</h2>
+                  <h2>E-commerce Solutions</h2>
                 </div>
                 <p>
-                  We expertly create and integrate online stores for businesses,
-                  enhancing your e-commerce experience with seamless payment
-                  gateways and advanced shopping cart features.
+                  We build robust e-commerce platforms that provide seamless
+                  shopping experiences. Our solutions include everything from
+                  storefront design to payment gateway integration.
                 </p>
               </div>
-              <div className="col-md-6 img-box">
+              <div
+                data-aos="fade-left"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+                className="col-md-6 img-box px-3"
+              >
                 <div className="sec-two-box">
                   <img src="full_stack.png" alt="" />
                   <h2>Full Stack</h2>
@@ -287,26 +417,36 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="row last-row">
-              <div className="col-md-6 img-box">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+                className="col-md-6 img-box px-3"
+              >
                 <div className="sec-two-box">
                   <img src="web-security.png" alt="" />
-                  <h2>Web Security</h2>
+                  <h2>Responsive & Mobile-First Development</h2>
                 </div>
                 <p>
-                  Implementing robust security measures, including SSL
-                  certificate installation, to safeguard against common web
-                  threats and ensure secure data transmission.
+                  With the majority of users accessing websites on mobile
+                  devices, our mobile-first approach ensures your site looks and
+                  performs perfectly on all screen sizes.
                 </p>
               </div>
-              <div className="col-md-6 img-box">
+              <div
+                data-aos="fade-left"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+                className="col-md-6 img-box px-3"
+              >
                 <div className="sec-two-box">
                   <img src="training.png" alt="" />
-                  <h2>Training and Documentation</h2>
+                  <h2>Website Maintenance & Support</h2>
                 </div>
                 <p>
-                  Empowering you through training on website usage and
-                  maintenance, coupled with comprehensive documentation of
-                  architecture and functionalities.
+                  Our services don’t end with the launch. We offer ongoing
+                  maintenance and support to ensure your website continues to
+                  perform optimally.
                 </p>
               </div>
             </div>
@@ -644,6 +784,17 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
+        <div className="testimonials mt-5 ">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2> Success Stories</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Cards4 />
         <div className="video_testimonials mt-5 pt-5 ">
           <div className="container">
             <h3>Video Testimonials</h3>

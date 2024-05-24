@@ -1,3 +1,43 @@
+.landingPageForm {
+  width: 40%;
+  color: #000;
+  padding-bottom: 35px;
+  border-radius: 8px;
+  padding-right: 35px;
+  padding-left: 35px;
+  background-color: #fff;
+}
+.formBottomText {
+  font-size: 10px;
+}
+
+.bannerContent {
+  margin-top: 6rem;
+}
+
+.formHeading {
+  padding-bottom: 24px;
+  padding-top: 13px;
+
+  font-size: 19px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  font-weight: 500;
+}
+
+.landingPageMain {
+  overflow-x: hidden;
+}
+.captcha {
+  background-color: #fff !important;
+  display: flex;
+  justify-content: center;
+
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
 .section2piy {
   /*display: grid;*/
   grid-template-columns: 1.2fr 1fr;
@@ -8,7 +48,7 @@
 .section2piy h1 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
-  font-size: 45px;
+  font-size: 28px;
   font-weight: 600;
 }
 .innerSection {
@@ -31,10 +71,33 @@
 .hiringForm {
   background-color: #192733 !important;
   /* padding: 20px 35px 35px 35px; */
-  padding:20px;
+  padding: 20px;
   border-radius: 20px;
-  padding-top:0px;
+  padding-top: 0px;
 }
 
+.expertiseGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  margin-top: 4rem;
+  text-align: center;
+}
 
+.expertiseGrid .expertiseGridItems {
+  background-color: #fff;
+}
 
+.expertIcons {
+  color: #e76f51 !important;
+}
+
+.expertiseSecMain h3 {
+  color: #4e515c;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 63px;
+  margin-bottom: 30px;
+  position: relative;
+}

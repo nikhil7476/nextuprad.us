@@ -4447,8 +4447,8 @@ a:hover {
   transition: 0.4s ease;
 }
 .img-box:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 27px;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 27px; */
 }
 .sec-two-box img {
   height: 70px;
