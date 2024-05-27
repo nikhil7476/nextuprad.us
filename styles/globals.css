@@ -4470,6 +4470,8 @@ a:hover {
 .sec-two-box img {
   height: 70px;
   width: 70px;
+  background: #fff;
+  border-radius: 14px;
 }
 .sec-three {
   background-color: #192733;
@@ -4815,7 +4817,7 @@ a:hover {
   overflow: auto;
   position: -webkit-sticky !important;
   position: sticky !important;
-  top: 5%;
+  top: 25%;
 }
 .time-main {
   width: 60%;
@@ -4843,7 +4845,30 @@ pre {
 .bottom {
   justify-self: bottom;
 }
-
+.whychoosenew .sec-five-one {
+  padding-top: 157px;
+  position: relative;
+}
+.sec-four-approach {
+  padding: 100px 0px 100px 0px;
+  font-family: "Montserrat", Sans-serif;
+  background: url(/our-approach-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+  .whychoosenew .sec-five-one::before {
+    content: "";
+    background: #f4fafa00 url(/path.svg);
+    display: block;
+    width: 74%;
+    height: 330px;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
 /* timeline */
 .t-container {
   max-width: 730px;
@@ -7836,3 +7861,52 @@ header.musthead.sticky-top.bg-light {
   display: none !important;
 }
 
+.expertiseSecMainpara{
+  padding: 0 150px;
+}
+.landinbgsection{
+  background: #fff;
+  border: 14px solid #bfecff;
+  border-radius: 30px;
+  position: relative;
+}
+/*.landinbgsection:hover{
+  background: #4e515c;
+}*/
+.landinbgsection:after {
+  content: "";
+  background: #1d3b45;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  transition: all .5s cubic-bezier(.19,1,.22,1);
+  z-index: 9;
+  border-radius: 14px;
+}
+.landinbgsection:hover:after {
+  width: 100%;
+}
+.landinbgsection:hover h2,.landinbgsection:hover p,.landinbgsection:hover img{
+  color: #fff;
+  position: relative;
+  z-index: 9999;
+}
+h2.landingnextheadnew {
+  margin-top: 113px;
+}
+.thirdboxsection{
+  position: relative;
+}
+.thirdboxsection::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 1;
+  width: 425px;
+  height: 373px;
+  background: url(/dot_service_pattern.svg) no-repeat center;
+  background-size: contain;
+  display: block;
+}

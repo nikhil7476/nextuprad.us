@@ -264,12 +264,12 @@ const LandingPage = () => {
 
       <section className={`${styles.expertiseSecMain} container`}>
         <h3 className="text-start mt-5 text-center">Nextupgrad's Expertise</h3>
-        <p className="text-center mt-2 pe-6">
+        <p className="text-center mt-2 expertiseSecMainpara">
           We're an ROI driven team, always ready for challenges, No sales
           presentations, and no gimmicks—just pure expertise. We craft impactful
           solutions to make your business stand out.
         </p>
-        <p className="mt-1 text-center pe-6">
+        <p className="mt-1 text-center expertiseSecMainpara">
           We specialize in creating bespoke websites that cater to your unique
           business needs. Our team of experienced developers and designers work
           together to build visually stunning, highly functional websites that
@@ -325,16 +325,16 @@ const LandingPage = () => {
       </section>
       <div className="testimonials domian mt-5 ">
         <div className="container">
-          <div className="row">
+         
+       
+      <section className="container my-4 "> <div className="row">
             <div className="col-md-12">
               <h2 className="text-center"> Domains we serve</h2>
             </div>
           </div>
-        </div>
-      </div>
-      <section className="container my-4 ">
         <LandingPageSlider />
-      </section>
+      </section> </div>
+      </div>
       <div>
         <div className={`sec-two ${styles.landingPageMain}`}>
           <div className="container">
@@ -345,7 +345,7 @@ const LandingPage = () => {
                 data-aos="fade-right"
                 data-aos-delay="150"
                 data-aos-duration="1500"
-                className="col-md-6 img-box px-3"
+                className="col-md-6 img-box landinbgsection px-3"
               >
                 <div className="sec-two-box">
                   <img src="custom_developement.png" alt="" />
@@ -362,7 +362,7 @@ const LandingPage = () => {
                 data-aos="fade-left"
                 data-aos-delay="150"
                 data-aos-duration="1500"
-                className="col-md-6 img-box px-3"
+                className="col-md-6 img-box landinbgsection px-3"
               >
                 <div className="sec-two-box">
                   <img src="cms.png" alt="" />
@@ -380,7 +380,7 @@ const LandingPage = () => {
                 data-aos="fade-right"
                 data-aos-delay="150"
                 data-aos-duration="1500"
-                className="col-md-6 img-box px-3"
+                className="col-md-6 img-box landinbgsection px-3"
               >
                 <div className="sec-two-box">
                   <img src="ecom.png" alt="" />
@@ -396,7 +396,7 @@ const LandingPage = () => {
                 data-aos="fade-left"
                 data-aos-delay="150"
                 data-aos-duration="1500"
-                className="col-md-6 img-box px-3"
+                className="col-md-6 img-box landinbgsection px-3"
               >
                 <div className="sec-two-box">
                   <img src="full_stack.png" alt="" />
@@ -415,7 +415,7 @@ const LandingPage = () => {
                 data-aos="fade-right"
                 data-aos-delay="150"
                 data-aos-duration="1500"
-                className="col-md-6 img-box px-3"
+                className="col-md-6 img-box landinbgsection px-3"
               >
                 <div className="sec-two-box">
                   <img src="web-security.png" alt="" />
@@ -431,7 +431,7 @@ const LandingPage = () => {
                 data-aos="fade-left"
                 data-aos-delay="150"
                 data-aos-duration="1500"
-                className="col-md-6 img-box px-3"
+                className="col-md-6 img-box landinbgsection px-3"
               >
                 <div className="sec-two-box">
                   <img src="training.png" alt="" />
@@ -449,11 +449,11 @@ const LandingPage = () => {
             </a>
           </div>
         </div>
-        <div className="sec-three">
+        <div className="sec-three thirdboxsection">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <h2>Nextupgrad Technology Platform Ecosystem</h2>
+                <h2 className="landingnextheadnew">Nextupgrad Technology Platform Ecosystem</h2>
                 <p>
                   Unlock Business Growth with Tailored Solutions for Leading
                   Technology Platforms.
@@ -588,7 +588,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="sec-four">
+        <div className="sec-four sec-four-approach">
           <div className="container">
             <div className="row sec-four-one wrapper">
               <div className="col-md-6 time-sidebar">
@@ -723,7 +723,7 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="clearfix" />
-        <div className="sec-five">
+        <div className="sec-five whychoosenew">
           {" "}
           <div className="container">
             <div className="row">

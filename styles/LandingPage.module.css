@@ -111,9 +111,18 @@
 .expertiseSecMain .expertiseGrid div{
   position: relative;
 }
+.landingPageMain{
+  background: #caebff url(/bgcentesection.jpg);
+  margin-top: 90px !important;
+  display: block;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+
 .expertiseSecMain .expertiseGrid div::before {
   content: '';
-  transform: translateY(-100%);
+  transform: translateY(-50%);
   position: absolute;
   left: 0;
   right: 0;
