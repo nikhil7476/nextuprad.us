@@ -148,8 +148,7 @@ const LandingPage = () => {
               </p>
               <Form className="hiringForm" onSubmit={handleSubmit}>
                 <div className="row">
-                  <Form.Group className="col-md-6" controlId="name">
-                    <Form.Label>Name</Form.Label>
+                  <Form.Group className="col-md-6" controlId="name">                    
                     <Form.Control
                       type="text"
                       placeholder="Enter your name"
@@ -163,7 +162,6 @@ const LandingPage = () => {
                   </Form.Group>
 
                   <Form.Group className="col-md-6" controlId="email">
-                    <Form.Label>Email</Form.Label>
                     <Form.Control
                       type="email"
                       placeholder="Enter your email"
@@ -179,7 +177,6 @@ const LandingPage = () => {
 
                 <div className="row mt-4">
                   <Form.Group className="col-6" controlId="phone">
-                    <Form.Label>Phone</Form.Label>
                     <PhoneInput
                       defaultCountry="US"
                       placeholder="Enter your phone number"
@@ -198,7 +195,6 @@ const LandingPage = () => {
                   </Form.Group>
 
                   <Form.Group className="col-6" controlId="subject">
-                    <Form.Label>Subject</Form.Label>
                     <Form.Control
                       type="text"
                       placeholder="Enter subject"
@@ -213,7 +209,6 @@ const LandingPage = () => {
                 </div>
 
                 <Form.Group className="mt-4" controlId="message">
-                  <Form.Label>Message</Form.Label>
                   <Form.Control
                     as="textarea"
                     rows={3}
