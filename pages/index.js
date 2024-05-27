@@ -1459,7 +1459,7 @@ export default function Home() {
         <div className="industries">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 ">
                 <h2>Industries We Serve .</h2>{" "}
               </div>
 
@@ -1619,7 +1619,7 @@ export default function Home() {
         <div className="testimonials">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 text-center">
                 <h2>Testimonials</h2>
               </div>
             </div>
@@ -1908,7 +1908,7 @@ export default function Home() {
       </section> */}
 
         <div className="video_testimonials ">
-          <div className="container">
+          <div className="container text-center">
             <h3>Video Testimonials</h3>
             <div
               className="owl-carousel owl-theme testimonials-container owl-loaded owl-drag"
@@ -1958,7 +1958,7 @@ export default function Home() {
         <div className="testimonials mt-5 pt-5">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12  text-center">
                 <h2>Frequently Asked Questions</h2>
               </div>
             </div>

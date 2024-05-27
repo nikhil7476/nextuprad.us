@@ -50,9 +50,10 @@ const About = () => {
             Welcome to NextUpgrad, Where Businesses Forge their Digital Destiny!
           </h3>
         </div> */}
-        <div className="sec-1">
+        <div className="sec-1"> 
+        <h1>About NextUpgrad USA</h1>
           <hr className="solid" />
-          <h1>About NextUpgrad USA</h1>
+         
           <div className="sec-1-1">
             <div className="sec-1-1-1">
               <img src="ceo.png" alt="Deepak Tandon" />
