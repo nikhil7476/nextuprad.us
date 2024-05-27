@@ -14,7 +14,14 @@
 .bannerContent {
   margin-top: 3rem;
 }
-
+.expertiseSecMain h3::after{
+  margin: 14px auto 0 auto !important;
+  content: "";
+  width: 25%;
+  display: block;
+  height: 3px;
+  background: #e76f51;
+}
 .formHeading {
   padding-bottom: 24px;
   padding-top: 13px;
@@ -101,3 +108,47 @@
   margin-bottom: 30px;
   position: relative;
 }
+.expertiseSecMain .expertiseGrid div{
+  position: relative;
+}
+.expertiseSecMain .expertiseGrid div::before {
+  content: '';
+  transform: translateY(-100%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(/bg-service-card-media.png) center top no-repeat;
+  background-size: cover;
+  transition: all .4s ease-in-out;
+  min-height: 265px;
+  opacity: 0;
+  }
+         
+  .expertiseSecMain .expertiseGrid div:hover::before {
+      content: '';
+      -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: url(/bg-service-card-media.png) center top no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      min-height: 265px;
+      opacity: 1;
+      z-index: -1;
+  }
+  .expertiseSecMain .expertiseGrid div p{
+    padding: 0 15px;
+  }
+  .expertiseSecMain .expertiseGrid div:hover svg,  .expertiseSecMain .expertiseGrid div:hover h4,  .expertiseSecMain .expertiseGrid div:hover p{
+    fill: #fff;
+    color: #fff;
+  }

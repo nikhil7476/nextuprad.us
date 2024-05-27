@@ -263,13 +263,13 @@ const LandingPage = () => {
       </section>
 
       <section className={`${styles.expertiseSecMain} container`}>
-        <h3 className="text-start mt-5">Nextupgrad's Expertise</h3>
-        <p className="text-center mt-5">
+        <h3 className="text-start mt-5 text-center">Nextupgrad's Expertise</h3>
+        <p className="text-center mt-2 pe-6">
           We're an ROI driven team, always ready for challenges, No sales
           presentations, and no gimmicks—just pure expertise. We craft impactful
           solutions to make your business stand out.
         </p>
-        <p className="mt-5 text-center">
+        <p className="mt-1 text-center pe-6">
           We specialize in creating bespoke websites that cater to your unique
           business needs. Our team of experienced developers and designers work
           together to build visually stunning, highly functional websites that
@@ -323,11 +323,11 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <div className="testimonials mt-5 ">
+      <div className="testimonials domian mt-5 ">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2> Domains we serve</h2>
+              <h2 className="text-center"> Domains we serve</h2>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@ const LandingPage = () => {
         <div className={`sec-two ${styles.landingPageMain}`}>
           <div className="container">
             {/* <h1>Our Distinctive website development services</h1> */}
-            <h1>Our Offerings</h1>
+            <h1 className="text-center">Our Offerings</h1>
             <div className="row">
               <div
                 data-aos="fade-right"
@@ -783,7 +783,7 @@ const LandingPage = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h2> Success Stories</h2>
+                <h2 className="text-center"> Success Stories</h2>
               </div>
             </div>
           </div>
@@ -791,7 +791,7 @@ const LandingPage = () => {
         <Cards4 />
         <div className="video_testimonials mt-5 pt-5 ">
           <div className="container">
-            <h3>Video Testimonials</h3>
+            <h3 className="text-center">Video Testimonials</h3>
             <div
               className="owl-carousel owl-theme testimonials-container owl-loaded owl-drag"
               id="testimonials-container"
@@ -841,7 +841,7 @@ const LandingPage = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h2>Frequently Asked Questions</h2>
+                <h2 className="text-center">Frequently Asked Questions</h2>
               </div>
             </div>
           </div>
