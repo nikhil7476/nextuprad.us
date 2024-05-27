@@ -117,12 +117,11 @@ const LandingPage = () => {
               data-aos="fade-up"
               data-aos-delay="150"
               data-aos-duration="1500"
-              className="col-md-6 mt-4"
-            >
-              <Image
+              className="col-md-7 mt-2">
+              <Image className="landinlogo"
                 src="/Nextupgradlogo.png"
-                height={100}
-                width={250}
+                height={103}
+                width={256}
                 alt="logo"
               />
               <h1 className={`text-light mt-5 ${styles.mainHeading}`}>
@@ -142,7 +141,7 @@ const LandingPage = () => {
               </div> */}
               <button className="sec-two-btn mt-5">Get Started</button>
             </div>
-            <div className={`col-md-4 ${styles.landingPageForm}`}>
+            <div className={`col-md-5 ${styles.landingPageForm}`}>
               <p className={styles.formHeading}>
                 Get Free Website Audit Consultation !!
               </p>

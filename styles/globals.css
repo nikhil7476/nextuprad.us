@@ -17,6 +17,10 @@ main {
   display: none;
 }
 
+.landinlogo{
+  margin-top: -54px;
+}
+
 input {
   padding: 0 8px !important;
   vertical-align: middle !important;
