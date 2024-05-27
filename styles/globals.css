@@ -4867,7 +4867,7 @@ pre {
 .sec-sev.landingneesletter {
   padding: 0;
 }
-.landivideo h3::after {
+.landivideo .card-body h3::after {
   background: #e76f5100 !important;
 }
 .landingneesletter .landinnewletter {
