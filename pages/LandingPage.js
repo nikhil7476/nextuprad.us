@@ -717,7 +717,7 @@ const LandingPage = () => {
             </div>
             <div className="clearfix"></div>
             <div className="row sec-four-two">
-              <h2>
+              <h2 className="lookingbox">
                 Are you looking for customized ecommerce business solutions?
               </h2>
               <a href="#">Connect with an expert</a>

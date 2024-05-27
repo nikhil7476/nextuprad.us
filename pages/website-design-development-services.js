@@ -19,8 +19,8 @@ const Webdesign = () => {
       <WebDevSlider />
       <div>
         <div className="sec-two">
-          <div className="container">
-            <h1>Innovative Website Design and Development Services</h1>
+          <div className="container ">
+            <h1 className="text-center">Innovative Website Design and Development Services</h1>
             <div className="row">
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
@@ -371,7 +371,7 @@ const Webdesign = () => {
             </div>
             <div className="clearfix"></div>
             <div className="row sec-four-two">
-              <h2>
+              <h2 className="lookingbox">
                 Are you looking for customized ecommerce business solutions?
               </h2>
               <a href="#">Connect with an expert</a>
@@ -438,7 +438,7 @@ const Webdesign = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h2>Frequently Asked Questions</h2>
+                <h2 className="text-center">Frequently Asked Questions</h2>
               </div>
             </div>
           </div>

@@ -49,8 +49,9 @@ const Software = () => {
         </main>
         <section id="uni">
           <div className="uni1">
-            <span className="line" />
+           
             <h2 className="uniser">Unique Service Array</h2>
+            <span className="line" />
             <p>
               From consultation through development, seamless integration, to
               steadfast maintenance—we’ve got every facet in hand.
@@ -409,7 +410,7 @@ const Software = () => {
         <div className="testimonials mt-5 ">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 text-center">
                 <h2>Testimonials</h2>
               </div>
             </div>

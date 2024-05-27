@@ -1396,7 +1396,7 @@ const Digitalmarketingservices = () => {
       <div className="testimonials mt-5 pt-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-12 text-center">
               <h2>Frequently Asked Questions</h2>
             </div>
           </div>

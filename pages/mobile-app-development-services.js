@@ -314,7 +314,7 @@ const Mobileapp = () => {
         </div>
         <div className="sec-six mobilesix">
           <div className="container">
-            <h2>Mobile app creation process</h2>
+            <h2 className="sixhead">Mobile app creation process</h2>
             <div className="row">
               <div className="col-md-3 colone">
                 <div className="coltwo">
@@ -440,7 +440,7 @@ const Mobileapp = () => {
           </div>
         </div>
         <div className="sec-sev">
-          <div className="container">
+          <div className="container text-center">
             <h2>Frequently Asked Questions</h2>
           </div>
           <section className="container pb-5  ">

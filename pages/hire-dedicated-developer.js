@@ -358,8 +358,8 @@ const Hirededicateddeveloper = () => {
       <section id="exp" className="mx-5">
         <div className="container">
           <div className="exp1">
-            <span className="line1" />
-            <h2 className={`${styles.devex}`}>Our Developer Expertise</h2>
+           
+            <h2 className={`${styles.devex}`}>Our Developer Expertise</h2> <span className="line1" />
           </div>
           <div className={`${styles.exp2}`}>
             <div className="exp211">
@@ -407,8 +407,9 @@ const Hirededicateddeveloper = () => {
       <section id="expt">
         <div className="container">
           <div className="expt1 mx-5">
-            <span className="line1" />
+           
             <h2 className={`${styles.benhire}`}>Benefits of hiring dedicated resource from NextUpgrad</h2>
+            <span className="line1" />
           </div>
           <div className="expt2">
             <div className="exp21">
@@ -471,11 +472,11 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="row">
             <div className="skill1 col-md-8">
-              <span className="line1 " />
+           
               <h3 className={`${styles.getstrt}`}>
                 Get started now! Contact our skilled developers to bring your
                 ideas to life.
-              </h3>
+              </h3>   <span className="line1 " />
             </div>
             <div className="skill2  col-md-4">
               <Link href="/contact-us">
@@ -489,8 +490,9 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="ada row">
             <div className="ada1 col-md-6">
-              <span className="line1" />
+             
               <h3 className={`${styles.adptmd}`}>Adaptable Hiring Model</h3>
+               <span className="line1" />
             </div>
             <div className="ada2  col-md-6">
               <p>
@@ -531,10 +533,10 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="last1 row">
             <div className="last1 col-md-7">
-              <span className="line1" />
+             
               <h3 className={`${styles.comrea}`}>
                 Compelling Reasons to Engage Dedicated Developers at NextUpgrad
-              </h3>
+              </h3> <span className="line1" />
 
               <ul className="list1">
                 <li className="li1">
@@ -611,7 +613,7 @@ const Hirededicateddeveloper = () => {
         <div className="testimonials mt-5 pt-5">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 text-center">
                 <h2>Frequently Asked Questions</h2>
               </div>
             </div>

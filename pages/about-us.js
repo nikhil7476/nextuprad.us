@@ -87,8 +87,9 @@ const About = () => {
           </div>
         </div>
         <div className="sec-2">
-          <hr className="solid" />
           <h2>Our Community</h2>
+          <hr className="solid" />
+         
           <div className="sec-2-1">
             <div className="sec-2-1-1">
               {inView && (
@@ -202,8 +203,8 @@ const About = () => {
           <div className="container">
             <div className="sec-3-1">
               <div className="sec-3-1-1">
-                <hr className="solid" />
-                <h2>Our Integrity</h2>
+              
+                <h2>Our Integrity</h2>  <hr className="solid" />
               </div>
               <div className="sec-3-1-2">
                 <p>
@@ -294,8 +295,8 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <hr className="solid" />
-                <h2>Certifications</h2>
+                
+                <h2>Certifications</h2><hr className="solid" />
               </div>
               <div className="col-md-6">
                 <p>

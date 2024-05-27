@@ -1488,13 +1488,13 @@ span.elementor-screen-only {
   font-family: "Montserrat", Sans-serif;
   font-size: 45px;
   font-weight: 600;
-  margin-bottom: 46px;
+  margin-bottom: 5px;
 }
 .sec-1 hr.solid,
 .sec-2 hr.solid {
   border-top: 5px solid #e76f51;
   width: 15%;
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
   opacity: 1;
 }
 .sec-1-1 {
@@ -1543,7 +1543,7 @@ span.elementor-screen-only {
   font-weight: 600;
   color: #fff;
   line-height: 63px;
-  margin-bottom: 60px;
+  margin-bottom: 5px;
 }
 .sec-2-1,
 .sec-2-2 {
@@ -1749,13 +1749,13 @@ img.pmplogo {
   position: relative;
   text-align: center;
 }
-.sec-5 h2::before {
+.sec-5 h2::after {
   content: "";
   width: 29%;
   display: block;
   height: 3px;
   background: #e76f51;
-  margin: 0 auto 11px auto;
+  margin: 11px auto 1px auto;
 }
 .sec-5 a {
   font-family: "Poppins", Sans-serif;
@@ -2329,7 +2329,7 @@ img.pmplogo {
 }
 ul.list1 {
   padding: 0;
-  margin: 0;
+  margin: 29px 0 0 0;
 }
 .li1 {
   padding: 10px;
@@ -2355,6 +2355,7 @@ ul.list1 {
   font-family: "Montserrat", Sans-serif;
   font-size: 18px;
   font-weight: 400;
+  margin-top: 35px;
 }
 .mobilesix h2 {
   margin-bottom: 13px;
@@ -2363,13 +2364,13 @@ ul.list1 {
   margin: 0;
   padding: 0;
 }
-.sec-two.mobile-second h2:before {
+.sec-two.mobile-second h2:after {
   content: " ";
   width: 25%;
   height: 4px;
   background-color: #e76f51;
   position: absolute;
-  top: -9px;
+  bottom: -18px;
   margin: 0;
   left: 0;
   right: 0;
@@ -2570,7 +2571,7 @@ a.digital-button:hover {
   text-align: center;
   padding: 0 150px;
 }
-.holisticnew h1::before {
+.holisticnew h1::after {
   content: "";
   width: 28%;
   display: block;
@@ -2671,7 +2672,7 @@ a.digital-button:hover {
   font-size: 45px;
   font-weight: 600;
 }
-.Seamless h2::before {
+.Seamless h2::after {
   content: "";
   width: 28%;
   display: block;
@@ -2780,13 +2781,13 @@ a.listing-elementor-button:hover {
   text-align: center;
   padding: 0 150px;
 }
-.glitter-box h1::before {
+.glitter-box h1::after {
   content: "";
   width: 28%;
   display: block;
   height: 4px;
   background: #e76f51;
-  margin: 0 auto 6px auto;
+  margin: 13px auto 0px auto;
 }
 .glitter-box p {
   text-align: center;
@@ -2844,7 +2845,7 @@ a.listing-elementor-button:hover {
   font-size: 45px;
   font-weight: 600;
 }
-.accreditation h2::before {
+.accreditation h2::after {
   content: "";
   width: 28%;
   display: block;
@@ -2894,7 +2895,7 @@ a.listing-elementor-button:hover {
   font-weight: 600;
   line-height: 45px;
 }
-.kickstart h2::before {
+.kickstart h2::after {
   content: "";
   width: 28%;
   display: block;
@@ -3018,14 +3019,14 @@ a.kickstart-button:hover {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.sec-three h2:before {
+/*.sec-three h2:before {
   content: " ";
   width: 18%;
   height: 5px;
   background-color: #e76f51;
   position: absolute;
   left: 45%;
-}
+}*/
 .sec-three p {
   color: #000000;
   font-size: 18px;
@@ -3065,7 +3066,13 @@ a.kickstart-button:hover {
   background-color: #192733;
   padding: 100px 0px 100px 0px;
 }*/
-.sec-four h2:before {
+.lookingbox:after {
+display: none !important;
+}
+.accordion-header{
+  margin-bottom: 0 !important;
+}
+.sec-four h2:after {
   content: " ";
   width: 18%;
   height: 5px;
@@ -3073,8 +3080,8 @@ a.kickstart-button:hover {
   position: absolute;
   left: 0;
   right: 0;
-  margin: 0 auto;
-  top: -11px;
+  /* margin: 0 auto; */
+  bottom: -9px;
 }
 .sec-four h2 {
   font-size: 45px;
@@ -3120,7 +3127,7 @@ a.kickstart-button:hover {
   margin-bottom: 20px;
   position: relative;
 }
-.sec-five h2:before {
+/*.sec-five h2:before {
   content: " ";
   width: 18%;
   height: 5px;
@@ -3130,7 +3137,7 @@ a.kickstart-button:hover {
   right: 0;
   margin: 0 auto;
   top: -11px;
-}
+}*/
 .sec-five p {
   text-align: center;
   color: #fff;
@@ -3183,13 +3190,13 @@ a.kickstart-button:hover {
   font-weight: 600;
   margin-bottom: 20px;
 }
-.sec-six h2:before {
+/*.sec-six h2:before {
   content: " ";
   width: 18%;
   height: 5px;
   background-color: #e76f51;
   position: absolute;
-}
+}*/
 .colone h2 {
   color: #000000;
   font-size: 20px;
@@ -3285,8 +3292,11 @@ a.kickstart-button:hover {
   background-color: #e76f51;
   margin: 14px auto 0 auto;
   display: block;
- 
 }
+.accordion-header:after {
+  display: none !important;
+}
+
 .sec-eight {
   text-align: center;
   background-color: #fbf8f2;
@@ -3299,7 +3309,7 @@ a.kickstart-button:hover {
   position: relative;
   margin: 0 55px 26px 55px;
 }
-.sec-eight h2:before {
+.sec-eight h2:after {
   content: " ";
   width: 18%;
   height: 4px;
@@ -3308,7 +3318,7 @@ a.kickstart-button:hover {
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: -5px;
+  bottom: -10px;
 }
 .sec-eight p {
   color: #000000;
@@ -3438,7 +3448,7 @@ a.kickstart-button:hover {
   font-weight: 600;
   text-align: center;
 }
-.sec-hd:before {
+.sec-hd:after {
   content: " ";
   width: 18%;
   height: 5px;
@@ -3542,7 +3552,7 @@ a.kickstart-button:hover {
 /*-------------Single-blog------------------*/
 .sec {
   font-family: "Montserrat", Sans-serif;
-  padding: 100px 0px 100px 0px;
+  padding: 0px 0px 100px 0px;
 }
 
 .blog-post {
@@ -3876,7 +3886,7 @@ a.elementor-buttoncontact:hover {
   margin-right: 95px;
   font-weight: 600;
 }
-.contactphone h2::before {
+.contactphone h2::after {
   content: "";
   width: 15%;
   display: block;
@@ -3905,7 +3915,7 @@ a.elementor-buttoncontact:hover {
   font-weight: 600;
   margin-bottom: 25px;
 }
-.contactvisit h2::before {
+.contactvisit h2::after {
   content: "";
   width: 15%;
   display: block;
@@ -3953,7 +3963,7 @@ a.elementor-buttoncontact:hover {
   font-weight: 600;
   margin-bottom: 25px;
 }
-.contactform h2::before {
+.contactform h2::after {
   content: "";
   width: 15%;
   display: block;
@@ -4486,16 +4496,17 @@ a:hover {
   font-size: 45px;
   font-weight: 600;
 }
-.sec-three h2:before {
+.sec-three h2:after {
   content: " ";
   width: 25%;
   height: 4px;
   background-color: #e76f51;
-  position: absolute;
-  top: -9px;
+  /* position: absolute; */
+  /* top: -9px; */
   margin: 0;
   left: 0;
   right: 0;
+  display: block;
 }
 .sec-three p {
   color: #fff;
@@ -4600,12 +4611,12 @@ a:hover {
   position: relative;
 }
 
-.sec-five-one h2:before {
+.sec-five-one h2:after {
   content: " ";
   width: 25%;
   height: 5px;
   background-color: #e76f51;
-  position: absolute;
+  display: block;
   top: -23px;
   left: 0;
   margin: 0;
@@ -4662,13 +4673,14 @@ a:hover {
   position: relative;
   font-family: "Montserrat", Sans-serif;
 }
-.sec-six h2:before {
+.sec-six .sixhead:after {
   content: " ";
   width: 18%;
   height: 4px;
   background-color: #e76f51;
   position: absolute;
-  top: -6px;
+  bottom: -11px;
+  left: 0;
 }
 .sec-six-hd:before {
   content: " ";
@@ -4688,7 +4700,6 @@ a:hover {
   font-size: 45px;
   font-weight: 600;
   margin-bottom: 20px;
-  text-align: left;
   position: relative;
 }
 .sec-sev-hd,
@@ -5082,6 +5093,7 @@ pre {
   font-family: "Montserrat", Sans-serif;
   font-size: 18px;
   font-weight: 400;
+  margin-top: 26px;
 }
 
 .line {
@@ -5248,13 +5260,13 @@ pre {
   text-align: left;
   position: relative;
 }
-.work1 h2::before {
+.work1 h2::after {
   content: "";
   width: 20%;
   display: block;
-  height: 4px;
+  height: 3px;
   background: #e76f51;
-  top: 20px;
+  bottom: -8px;
   position: absolute;
 }
 .line2 {
@@ -5332,13 +5344,13 @@ pre {
   text-align: left;
   position: relative;
 }
-.tech1 h2::before {
+.tech1 h2::after {
   content: "";
   width: 20%;
   display: block;
   height: 4px;
   background: #e76f51;
-  top: 20px;
+  bottom: -20px;
   position: absolute;
 }
 .tec {
@@ -5672,7 +5684,7 @@ pre {
 .uniser{
   font-size: 45px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   font-family: "Montserrat", Sans-serif;
 }
 
