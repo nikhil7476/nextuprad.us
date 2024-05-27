@@ -4856,6 +4856,28 @@ pre {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.landinnewletter h2 {
+  font-size: 22px;
+  text-align: left;
+  color: #fff;
+}
+.landinnewletter h2:after{
+  display: none;
+}
+.sec-sev.landingneesletter {
+  padding: 0;
+}
+.landivideo h3::after {
+  background: #e76f5100 !important;
+}
+.landingneesletter .landinnewletter {
+  padding: 50px 41px;
+  background: rgb(0, 116, 187);
+  background: linear-gradient(177deg, rgb(19 39 51) 0%, rgb(50 52 83) 100%);
+}
+.landingneesletter .sec-sev-hd{
+  padding: 50px 0;
+  }
   .whychoosenew .sec-five-one::before {
     content: "";
     background: #f4fafa00 url(/path.svg);

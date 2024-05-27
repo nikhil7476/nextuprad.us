@@ -4,7 +4,6 @@ import Head from "next/head";
 import styles from "../styles/LandingPage.module.css";
 import { Form, Button } from "react-bootstrap";
 import ReactPlayer from "react-player";
-import { useState } from "react";
 import axiosInstance from "@/axios/axios";
 import Image from "next/image";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -16,6 +15,7 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { BsPersonBadge } from "react-icons/bs";
 import Cards4 from "@/components/Cards4";
 import LandingPageSlider from "@/components/LandingPageSlider";
+import { useState } from "react";
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -27,6 +27,7 @@ const LandingPage = () => {
   });
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);
+  const[email,setEmail] = useState();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -64,27 +65,28 @@ const LandingPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      try {
-        const response = await axiosInstance.post("/postFormData", formData);
-        console.log(response.data);
-        if (response.status == 200 || response.status == 201) {
-          toast.success("Email sent");
-          setFormData({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-            form_name: "landingPage",
-          });
-        }
-      } catch (error) {
-        console.error("Error submitting form:", error);
-        // Handle error (e.g., show error message)
+    try {
+      const response = await axios.post("/postFormData", formData);
+      console.log(response.data);
+      if (response.status == 200 || response.status == 201) {
+        toast.success("Email sent");
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+          form_name: "landingPage",
+        });
       }
-    } else {
-      console.log("Form has validation errors");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      // Handle error (e.g., show error message)
     }
+    // if (validateForm()) {
+   
+    // } else {
+    //   console.log("Form has validation errors");
+    // }
   };
 
   return (
@@ -789,7 +791,7 @@ const LandingPage = () => {
           </div>
         </div>
         <Cards4 />
-        <div className="video_testimonials mt-5 pt-5 ">
+        <div className="video_testimonials landivideo mt-5 pt-5 ">
           <div className="container">
             <h3 className="text-center">Video Testimonials</h3>
             <div
@@ -849,11 +851,26 @@ const LandingPage = () => {
         <section className="container pb-5  ">
           <HomeAccordian />
         </section>
-        <div className="sec-sev">
+        <div className="sec-sev landingneesletter">
           <div className="container">
-            <div className="sec-sev-hd">
+            <div className="row">
+            <div className="col-md-4 ftr-subs landinnewletter">
+                <h2>
+                  Subscribe to our newsletter to stay in touch with the latest.
+                </h2>
+                <form onSubmit={handleSubmit}>
+                  <div className="mail-inpt">
+                    <input  type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                 
+                  </div>
+                  <div className="mail-sub">
+                    <input type="submit" value="Submit" />
+                  </div>
+                </form>
+              </div>
+            <div className="sec-sev-hd col-md-8 ">
               <h2>Have additional inquiries?</h2>
-            </div>
+           
             <p>
               Need more information? Chat with our friendly team for assistance.
             </p>
@@ -866,7 +883,8 @@ const LandingPage = () => {
               </a>
               <a href="https://api.whatsapp.com/send/?phone=%2B14087865558&text&type=phone_number&app_absent=0">
                 <i className="bi bi-whatsapp wpicon" />
-              </a>
+              </a> </div>
+            </div>
             </div>
           </div>
         </div>
