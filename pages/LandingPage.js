@@ -349,7 +349,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <div className="testimonials domian mt-5 ">
+      {/* <div className="testimonials domian mt-5 ">
         <div className="container">
           <section className="container my-4 ">
             {" "}
@@ -361,7 +361,26 @@ const LandingPage = () => {
             <LandingPageSlider />
           </section>{" "}
         </div>
-      </div>
+      </div> */}
+      <section className={` ${styles.clutchSection}`}>
+        <p>
+          Partner with an <span>award-winning</span> web design agency
+        </p>
+        <ul>
+          <li>
+            <img src="/clutch1.png" alt="" />
+          </li>
+          <li>
+            <img src="/clutch2.png" alt="" />
+          </li>
+          <li>
+            <img src="/clutch3.png" alt="" />
+          </li>
+          <li>
+            <img src="/clutch4.png" alt="" />
+          </li>
+        </ul>
+      </section>
       <div>
         <div className={`sec-two ${styles.landingPageMain}`}>
           <div className="container">
