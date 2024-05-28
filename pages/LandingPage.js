@@ -65,22 +65,24 @@ const LandingPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post("/postFormData", formData);
-      console.log(response.data);
-      if (response.status == 200 || response.status == 201) {
-        toast.success("Email sent");
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-          form_name: "landingPage",
-        });
+    if (validateForm()) {
+      try {
+        const response = await axiosInstance.post("/postFormData", formData);
+        console.log(response.data);
+        if (response.status == 200 || response.status == 201) {
+          toast.success("Email sent");
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            form_name: "landingPage",
+          });
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        // Handle error (e.g., show error message)
       }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      // Handle error (e.g., show error message)
     }
     // if (validateForm()) {
 
