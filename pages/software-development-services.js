@@ -7,11 +7,11 @@ const Software = () => {
     <>
       <>
         <Head>
-          <title>Nextupgrad</title>
+          <title> Software Development Services - NextUpgrad USA</title>
           <meta name="title" content="Nextupgrad" />
           <meta
             name="description"
-            content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+            content="Are you looking for a solution for complex & engaging software? NextUpgrad Custom Software Development Services transforms ideas into desirable products by keeping every small element aligned."
           />
 
           <meta property="og:type" content="website" />
@@ -19,7 +19,7 @@ const Software = () => {
           <meta property="og:title" content="Nextupgrad" />
           <meta
             property="og:description"
-            content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+            content="Are you looking for a solution for complex & engaging software? NextUpgrad Custom Software Development Services transforms ideas into desirable products by keeping every small element aligned."
           />
           <meta
             property="og:image"
@@ -31,7 +31,7 @@ const Software = () => {
           <meta property="twitter:title" content="Nextupgrad" />
           <meta
             property="twitter:description"
-            content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+            content="Are you looking for a solution for complex & engaging software? NextUpgrad Custom Software Development Services transforms ideas into desirable products by keeping every small element aligned."
           />
           <meta
             property="twitter:image"
@@ -42,14 +42,13 @@ const Software = () => {
           <div className="sect1">
             <h1>
               <span className="sp">SOFTWARE DEVELOPMENT</span>
-               SERVICES
+              SERVICES
             </h1>{" "}
             <div className="overlay" />
           </div>
         </main>
         <section id="uni">
           <div className="uni1">
-           
             <h2 className="uniser">Unique Service Array</h2>
             <span className="line" />
             <p>

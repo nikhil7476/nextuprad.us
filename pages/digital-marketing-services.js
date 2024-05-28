@@ -5,11 +5,12 @@ const Digitalmarketingservices = () => {
   return (
     <>
       <Head>
-        <title>Nextupgrad</title>
+        <title>Digital Marketing Services - NextUpgrad USA</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Conquer online business growth & boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
+          "
         />
 
         <meta property="og:type" content="website" />
@@ -17,7 +18,8 @@ const Digitalmarketingservices = () => {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Conquer online business growth & boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
+          "
         />
         <meta
           property="og:image"
@@ -29,7 +31,8 @@ const Digitalmarketingservices = () => {
         <meta property="twitter:title" content="Nextupgrad" />
         <meta
           property="twitter:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Conquer online business growth & boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
+          "
         />
         <meta
           property="twitter:image"

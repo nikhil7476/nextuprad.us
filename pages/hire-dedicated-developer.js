@@ -80,11 +80,11 @@ const Hirededicateddeveloper = () => {
   return (
     <>
       <Head>
-        <title>Nextupgrad</title>
+        <title>Hire Dedicated Developers - NextUpgrad USA</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Scale your team, fill skill gaps, and manage costs effectively. Hire dedicated developers for web, mobile, and more. Get tailored talent based on tech needs."
         />
 
         <meta property="og:type" content="website" />
@@ -92,7 +92,7 @@ const Hirededicateddeveloper = () => {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Scale your team, fill skill gaps, and manage costs effectively. Hire dedicated developers for web, mobile, and more. Get tailored talent based on tech needs."
         />
         <meta
           property="og:image"
@@ -104,7 +104,7 @@ const Hirededicateddeveloper = () => {
         <meta property="twitter:title" content="Nextupgrad" />
         <meta
           property="twitter:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Scale your team, fill skill gaps, and manage costs effectively. Hire dedicated developers for web, mobile, and more. Get tailored talent based on tech needs."
         />
         <meta
           property="twitter:image"
