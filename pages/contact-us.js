@@ -70,7 +70,7 @@ const Conatactus = () => {
             email: "",
             subject: "",
             message: "",
-            form_name: "contact",
+            form_name: "contact_form",
           });
         }
       } catch (error) {

@@ -104,7 +104,7 @@ const LandingPage = () => {
             email: "",
             subject: "",
             message: "",
-            form_name: "landingPage",
+            form_name: "landing_page_form",
           });
         }
       } catch (error) {

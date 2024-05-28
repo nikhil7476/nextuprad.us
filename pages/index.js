@@ -706,7 +706,7 @@ export default function Home() {
             email: "",
             subject: "",
             message: "",
-            form_name: "home",
+            form_name: "digital_solution",
           });
         }
       } catch (error) {
