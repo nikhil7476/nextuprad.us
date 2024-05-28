@@ -102,10 +102,7 @@ const SingleBlog = () => {
                     {new Date(blog.created_at).toLocaleDateString()}
                   </p>
                   <Image
-                    src={
-                      `https://53c50cd527.nxcli.io/calculator/public/next_resources/` +
-                      blog.banner_image
-                    }
+                    src={process.env.NEXT_PUBLIC_IMAGE_URL + blog.banner_image}
                     fluid
                     className="mb-4 w-100 rounded"
                   />

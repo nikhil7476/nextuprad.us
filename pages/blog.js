@@ -119,7 +119,10 @@ const blog = () => {
                       <div className="blog-img">
                         <Link href={`/blog/${item.slug}`}>
                           <img
-                            src={`https://53c50cd527.nxcli.io/calculator/public/next_resources/${item.banner_image}`}
+                            src={
+                              process.env.NEXT_PUBLIC_IMAGE_URL +
+                              `${item.banner_image}`
+                            }
                             alt="Branding and Digital Marketing Strategies for Small
                           Businesses."
                           />
