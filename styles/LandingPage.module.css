@@ -182,6 +182,7 @@
 }
 .clutchSection p {
   font-size: 40px;
+  font-weight: 600;
 }
 .clutchSection span {
   color: rgb(62, 175, 216);
@@ -190,6 +191,7 @@
 .clutchSection ul {
   gap: 14px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .clutchSection img {
