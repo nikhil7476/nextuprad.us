@@ -34,7 +34,7 @@ export default function Home() {
     email: "",
     subject: "",
     message: "",
-    form_name: "home",
+    form_name: "digital_solution",
   });
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);

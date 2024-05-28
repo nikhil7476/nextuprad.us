@@ -14,7 +14,7 @@ const Hirededicateddeveloper = () => {
     email: "",
     subject: "",
     message: "",
-    form_name: "hiring",
+    form_name: "hire_dedicated_form",
   });
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);

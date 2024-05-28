@@ -24,7 +24,7 @@ const LandingPage = () => {
     phone: "",
     subject: "",
     message: "",
-    form_name: "landingPage",
+    form_name: "landing_page_form",
   });
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);
