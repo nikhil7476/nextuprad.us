@@ -16,6 +16,7 @@ import { BsPersonBadge } from "react-icons/bs";
 import Cards4 from "@/components/Cards4";
 import LandingPageSlider from "@/components/LandingPageSlider";
 import { useState } from "react";
+import axios from "axios";
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -63,11 +64,38 @@ const LandingPage = () => {
     return Object.keys(errors).length === 0;
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   if (validateForm()) {
+  //     try {
+  //       const response = await axiosInstance.post("/postFormData", formData);
+  //       console.log(response.data);
+  //       if (response.status == 200 || response.status == 201) {
+  //         toast.success("Email sent");
+  //         setFormData({
+  //           name: "",
+  //           email: "",
+  //           subject: "",
+  //           message: "",
+  //           form_name: "landingPage",
+  //         });
+  //       }
+  //     } catch (error) {
+  //       console.error("Error submitting form:", error);
+
+  //     }
+  //   }
+
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axiosInstance.post("/postFormData", formData);
+        const response = await axios.post(
+          "https://53c50cd527.nxcli.io/nextupgrad_backend/api/postFormData",
+          formData
+        );
         console.log(response.data);
         if (response.status == 200 || response.status == 201) {
           toast.success("Email sent");
@@ -81,14 +109,8 @@ const LandingPage = () => {
         }
       } catch (error) {
         console.error("Error submitting form:", error);
-        // Handle error (e.g., show error message)
       }
     }
-    // if (validateForm()) {
-
-    // } else {
-    //   console.log("Form has validation errors");
-    // }
   };
 
   return (
