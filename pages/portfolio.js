@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import LandingPageSlider from "@/components/LandingPageSlider";
 const Portfolio = () => {
   return (
     <>
@@ -53,6 +54,9 @@ const Portfolio = () => {
         <div className="work1">
           <h2>Work Showcase</h2>
         </div>
+      </section>
+      <section className="my-5 container">
+        <LandingPageSlider />
       </section>
     </>
   );

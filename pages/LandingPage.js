@@ -27,7 +27,7 @@ const LandingPage = () => {
   });
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);
-  const[email,setEmail] = useState();
+  const [email, setEmail] = useState();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -83,7 +83,7 @@ const LandingPage = () => {
       // Handle error (e.g., show error message)
     }
     // if (validateForm()) {
-   
+
     // } else {
     //   console.log("Form has validation errors");
     // }
@@ -119,8 +119,10 @@ const LandingPage = () => {
               data-aos="fade-up"
               data-aos-delay="150"
               data-aos-duration="1500"
-              className="col-md-7 mt-2">
-              <Image className="landinlogo"
+              className="col-md-7 mt-2"
+            >
+              <Image
+                className="landinlogo"
                 src="/Nextupgradlogo.png"
                 height={103}
                 width={256}
@@ -130,9 +132,7 @@ const LandingPage = () => {
                 Consult with our Expert and Transform Your Vision into Reality
                 with our Website Development Services
               </h1>
-              <p className="my-4 text-light">
-                Crafting Stunning, User-Centric Websites That Drive Results
-              </p>
+              <p className="my-4 text-light">Expert Consult Online</p>
               {/* <div className={`${styles.innerSection} my-4`}>
                 <span>Theme Development</span>
                 <span>API Integration</span>
@@ -149,7 +149,7 @@ const LandingPage = () => {
               </p>
               <Form className="hiringForm" onSubmit={handleSubmit}>
                 <div className="row">
-                  <Form.Group className="col-md-6" controlId="name">                    
+                  <Form.Group className="col-md-6" controlId="name">
                     <Form.Control
                       type="text"
                       placeholder="Enter your name"
@@ -327,15 +327,16 @@ const LandingPage = () => {
       </section>
       <div className="testimonials domian mt-5 ">
         <div className="container">
-         
-       
-      <section className="container my-4 "> <div className="row">
-            <div className="col-md-12">
-              <h2 className="text-center"> Domains we serve</h2>
+          <section className="container my-4 ">
+            {" "}
+            <div className="row">
+              <div className="col-md-12">
+                <h2 className="text-center"> Domains we serve</h2>
+              </div>
             </div>
-          </div>
-        <LandingPageSlider />
-      </section> </div>
+            <LandingPageSlider />
+          </section>{" "}
+        </div>
       </div>
       <div>
         <div className={`sec-two ${styles.landingPageMain}`}>
@@ -455,7 +456,9 @@ const LandingPage = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <h2 className="landingnextheadnew">Nextupgrad Technology Platform Ecosystem</h2>
+                <h2 className="landingnextheadnew">
+                  Nextupgrad Technology Platform Ecosystem
+                </h2>
                 <p>
                   Unlock Business Growth with Tailored Solutions for Leading
                   Technology Platforms.
@@ -854,37 +857,42 @@ const LandingPage = () => {
         <div className="sec-sev landingneesletter">
           <div className="container">
             <div className="row">
-            <div className="col-md-4 ftr-subs landinnewletter">
+              <div className="col-md-4 ftr-subs landinnewletter">
                 <h2>
                   Subscribe to our newsletter to stay in touch with the latest.
                 </h2>
                 <form onSubmit={handleSubmit}>
                   <div className="mail-inpt">
-                    <input  type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-                 
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </div>
                   <div className="mail-sub">
                     <input type="submit" value="Submit" />
                   </div>
                 </form>
               </div>
-            <div className="sec-sev-hd col-md-8 ">
-              <h2>Have additional inquiries?</h2>
-           
-            <p>
-              Need more information? Chat with our friendly team for assistance.
-            </p>
-            <div>
-              <a href="https://join.skype.com/wsiGi9CXzLhD" target="_blank">
-                <i className="bi bi-skype skicon" />
-              </a>
-              <a href="mailto:sales@nextupgrad.us">
-                <i className="bi bi-envelope-fill mlicon" />
-              </a>
-              <a href="https://api.whatsapp.com/send/?phone=%2B14087865558&text&type=phone_number&app_absent=0">
-                <i className="bi bi-whatsapp wpicon" />
-              </a> </div>
-            </div>
+              <div className="sec-sev-hd col-md-8 ">
+                <h2>Have additional inquiries?</h2>
+
+                <p>
+                  Need more information? Chat with our friendly team for
+                  assistance.
+                </p>
+                <div>
+                  <a href="https://join.skype.com/wsiGi9CXzLhD" target="_blank">
+                    <i className="bi bi-skype skicon" />
+                  </a>
+                  <a href="mailto:sales@nextupgrad.us">
+                    <i className="bi bi-envelope-fill mlicon" />
+                  </a>
+                  <a href="https://api.whatsapp.com/send/?phone=%2B14087865558&text&type=phone_number&app_absent=0">
+                    <i className="bi bi-whatsapp wpicon" />
+                  </a>{" "}
+                </div>
+              </div>
             </div>
           </div>
         </div>
