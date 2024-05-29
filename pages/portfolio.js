@@ -81,7 +81,7 @@ const Portfolio = () => {
         <div className="overlay" />
       </section>
       <section id="work">
-        <div className="work1">
+        <div className="work1 text-center">
           <h2>Work Showcase</h2>
         </div>
       </section>

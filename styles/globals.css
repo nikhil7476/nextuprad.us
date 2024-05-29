@@ -3055,7 +3055,7 @@ a.kickstart-button:hover {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
-}
+} 
 .dev-col img {
   width: 80px;
   height: 80px;
@@ -5257,7 +5257,6 @@ pre {
   padding-top: 40px;
   margin-top: 30px;
   line-height: 40px;
-  text-align: left;
   position: relative;
 }
 .work1 h2::after {
@@ -5266,8 +5265,7 @@ pre {
   display: block;
   height: 3px;
   background: #e76f51;
-  bottom: -8px;
-  position: absolute;
+  margin: 10px auto 0px auto;
 }
 .line2 {
   content: " ";
@@ -7943,4 +7941,134 @@ h2.landingnextheadnew {
   background: url(/dot_service_pattern.svg) no-repeat center;
   background-size: contain;
   display: block;
+}
+
+/*galler-section*/
+.react-tabs__tab-list {
+  border-bottom: 0px solid #e76f51 !important;
+  margin: 0 auto 30px auto !important;
+  padding: 0;
+  width: 70%;
+  text-align: center !important;
+}
+.react-tabs__tab {
+  font-family: "Montserrat", Sans-serif;
+  /* text-transform: uppercase; */
+  font-size: 15px;
+  border: 0px solid transparent;
+  font-weight: 600;
+  border: 0px solid transparent;
+}
+.react-tabs__tab--selected {
+  background-color: #2d3e5000 !important;
+  color: #fc6746 !important;
+  border: 0px !important;
+  border-bottom: 2px solid #fc6746 !important;
+}
+
+/*
+.react-tabs__tab-panel .card-body {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  position: absolute;
+  top: 0%;
+  bottom: 40px;
+  left: 40px;
+  right: auto;
+  transition:.6s ease;
+  transform: translate3d(-50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 0;
+}
+.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  transition:.6s ease;
+  transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    transform-origin: 50% 100%;
+    background-image: linear-gradient(transparent, #000);
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+}
+.react-tabs__tab-panel .mb-4.col-md-4 .card-body .card-title.h5 {
+  opacity: 0;
+  position: absolute;
+  bottom: 6px;
+  left: 9px;
+  text-transform: uppercase;
+  letter-spacing: normal ! IMPORTANT;
+}
+.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body .card-title.h5 {
+  opacity: 1;
+  position: absolute;
+  bottom: 6px;
+  left: 9px;
+  text-transform: uppercase;
+  letter-spacing: normal ! IMPORTANT;
+}
+*/
+.react-tabs__tab-panel .mb-4.col-md-4 .card-body {
+  transition:.6s ease;
+  -webkit-transform: perspective(300px) rotateY(0px);
+  transform: perspective(300px) rotateY(0deg);
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    transition: .6s ease;
+    opacity: 1;
+    transform-origin: 50% 100%;
+    background: #fc6746;
+    border-radius: 6px;
+    position: absolute;
+    top: 4%;
+    bottom: 0%;
+    right: 1%;
+    width: 50%;
+    height: 370px;
+    opacity: 0;
+}
+.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body {
+  transition:.6s ease;
+  -webkit-transform: perspective(300px) rotateY(-8px);
+  transform: perspective(300px) rotateY(-8deg);
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    transition: .6s ease;
+    opacity: 1;
+    transform-origin: 50% 100%;
+    background: #fc6746;
+    border-radius: 6px;
+    position: absolute;
+    top: 4%;
+    bottom: 0%;
+    right: 1%;
+    width: 50%;
+    height: 370px;
+    opacity: 1;
+}
+
+.react-tabs__tab-panel .mb-4.col-md-4 .card-img-top{
+  transition:.6s ease;
+  -webkit-transform: perspective(300px) rotateY(0deg);
+  transform: perspective(300px) rotateY(0px);
+}
+
+.react-tabs__tab-panel .mb-4.col-md-4:hover .card-img-top {
+  transition:.6s ease;
+  -webkit-transform: perspective(300px) rotateY(8px);
+  transform: perspective(300px) rotateY(8deg);
 }
