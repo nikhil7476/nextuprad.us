@@ -7,27 +7,111 @@ import { Card, Row, Col } from "react-bootstrap";
 
 const Portfolio = () => {
   const projects = [
-    { name: "Smart Help", type: "Ecommerce" },
-    { name: "Task Manager Pro", type: "Productivity" },
-    { name: "Travel Buddy", type: "Lifestyle" },
-    { name: "FitTrack", type: "Lifestyle" },
-    { name: "EduLearn", type: "Education" },
-    { name: "GreenGrocer", type: "Ecommerce" },
-    { name: "PhotoGallery", type: "Lifestyle" },
-    { name: "NewsFlash", type: "Lifestyle" },
-    { name: "BudgetPlanner", type: "Finance" },
-    { name: "PetCare", type: "Lifestyle" },
-    { name: "HomeCook", type: "Entertainment" },
-    { name: "GardenGurus", type: "Lifestyle" },
-    { name: "MovieFinder", type: "Entertainment" },
-    { name: "MusicStream", type: "Entertainment" },
-    { name: "CodeCollab", type: "Education" },
-    { name: "WeatherWatch", type: "Education" },
-    { name: "CryptoTracker", type: "Finance" },
-    { name: "LanguageMaster", type: "Education" },
-    { name: "RecipeBox", type: "Entertainment" },
-    { name: "ArtGallery", type: "Entertainment" },
-    { name: "DailyQuotes", type: "Lifestyle" },
+    {
+      name: "Smart Help",
+      type: "Ecommerce",
+      image: "https://via.placeholder.com/150?text=Smart+Help",
+    },
+    {
+      name: "Task Manager Pro",
+      type: "Productivity",
+      image: "https://via.placeholder.com/150?text=Task+Manager+Pro",
+    },
+    {
+      name: "Travel Buddy",
+      type: "Lifestyle",
+      image: "https://via.placeholder.com/150?text=Travel+Buddy",
+    },
+    {
+      name: "FitTrack",
+      type: "Lifestyle",
+      image: "https://via.placeholder.com/150?text=FitTrack",
+    },
+    {
+      name: "EduLearn",
+      type: "Education",
+      image: "https://via.placeholder.com/150?text=EduLearn",
+    },
+    {
+      name: "GreenGrocer",
+      type: "Ecommerce",
+      image: "https://via.placeholder.com/150?text=GreenGrocer",
+    },
+    {
+      name: "PhotoGallery",
+      type: "Lifestyle",
+      image: "https://via.placeholder.com/150?text=PhotoGallery",
+    },
+    {
+      name: "NewsFlash",
+      type: "Lifestyle",
+      image: "https://via.placeholder.com/150?text=NewsFlash",
+    },
+    {
+      name: "BudgetPlanner",
+      type: "Finance",
+      image: "https://via.placeholder.com/150?text=BudgetPlanner",
+    },
+    {
+      name: "PetCare",
+      type: "Lifestyle",
+      image: "https://via.placeholder.com/150?text=PetCare",
+    },
+    {
+      name: "HomeCook",
+      type: "Entertainment",
+      image: "https://via.placeholder.com/150?text=HomeCook",
+    },
+    {
+      name: "GardenGurus",
+      type: "Lifestyle",
+      image: "https://via.placeholder.com/150?text=GardenGurus",
+    },
+    {
+      name: "MovieFinder",
+      type: "Entertainment",
+      image: "https://via.placeholder.com/150?text=MovieFinder",
+    },
+    {
+      name: "MusicStream",
+      type: "Entertainment",
+      image: "https://via.placeholder.com/150?text=MusicStream",
+    },
+    {
+      name: "CodeCollab",
+      type: "Education",
+      image: "https://via.placeholder.com/150?text=CodeCollab",
+    },
+    {
+      name: "WeatherWatch",
+      type: "Education",
+      image: "https://via.placeholder.com/150?text=WeatherWatch",
+    },
+    {
+      name: "CryptoTracker",
+      type: "Finance",
+      image: "https://via.placeholder.com/150?text=CryptoTracker",
+    },
+    {
+      name: "LanguageMaster",
+      type: "Education",
+      image: "https://via.placeholder.com/150?text=LanguageMaster",
+    },
+    {
+      name: "RecipeBox",
+      type: "Entertainment",
+      image: "https://via.placeholder.com/150?text=RecipeBox",
+    },
+    {
+      name: "ArtGallery",
+      type: "Entertainment",
+      image: "https://via.placeholder.com/150?text=ArtGallery",
+    },
+    {
+      name: "DailyQuotes",
+      type: "Lifestyle",
+      image: "https://via.placeholder.com/150?text=DailyQuotes",
+    },
   ];
 
   const projectTypes = [...new Set(projects.map((project) => project.type))];
@@ -85,9 +169,6 @@ const Portfolio = () => {
           <h2>Work Showcase</h2>
         </div>
       </section>
-      {/* <section className="my-5 container">
-        <LandingPageSlider />
-      </section> */}
       <section className="container my-5">
         <Tabs>
           <TabList>
@@ -106,7 +187,7 @@ const Portfolio = () => {
                       <Card>
                         <Card.Img
                           variant="top"
-                          src="https://via.placeholder.com/150"
+                          src={filteredProject.image}
                           alt={filteredProject.name}
                         />
                         <Card.Body>
