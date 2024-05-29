@@ -113,6 +113,58 @@ const LandingPage = () => {
     }
   };
 
+  /////newsletter
+  const handleChange2 = (e) => {
+    setEmail(e.target.value);
+    setErrors(""); // Clear previous validation errors when the user types
+  };
+
+  const validateEmail2 = (email) => {
+    const isValid = /\S+@\S+\.\S+/.test(email);
+    return isValid;
+  };
+
+  const handleSubmit2 = async (e) => {
+    e.preventDefault();
+    if (!validateEmail2(email)) {
+      setErrors("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://53c50cd527.nxcli.io/calculator/api/postNewsletter",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
+      const data = await response.json();
+
+      console.log(data);
+      if (data.status == 200 || data.status == 201) {
+        setEmail("");
+        Swal.fire({
+          title: "Subscribed!",
+          text: "thank you for subscribing to nextupgrad!",
+          icon: "success",
+        });
+      }
+      if (data.status == 500) {
+        Swal.fire({
+          title: "Already Subscribed!",
+          text: "this email is already subscribed!",
+          icon: "error",
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle error response here
+    }
+  };
   return (
     <>
       <Head>
@@ -904,7 +956,7 @@ const LandingPage = () => {
                 <h2>
                   Subscribe to our newsletter to stay in touch with the latest.
                 </h2>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit2}>
                   <div className="mail-inpt">
                     <input
                       type="email"
