@@ -189,12 +189,11 @@ const LandingPage = () => {
         <div className="overlayVid"></div>
         <div className="container bannerContentLanding">
           <div
-            className={`row  justify-content-between ${styles.bannerContent}`}
-          >
+            className={`row landinform justify-content-between ${styles.bannerContent}`}
+          > 
+          
             <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              data-aos-duration="1500"
+             
               className="col-md-7 mt-2"
             >
               <Image

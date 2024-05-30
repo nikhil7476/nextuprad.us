@@ -6881,6 +6881,256 @@ header.musthead.sticky-top.bg-light {
 .mainOverflowHide {
   overflow-x: hidden;
 }
+.landingPageIcon {
+  font-size: 22px;
+}
+
+
+.navbar-nav li a:hover:after,
+.accordion-header:before {
+  display: none !important;
+}
+
+.expertiseSecMainpara{
+  padding: 0 150px;
+}
+.landinbgsection{
+  background: #fff;
+  border: 14px solid #bfecff;
+  border-radius: 30px;
+  position: relative;
+}
+/*.landinbgsection:hover{
+  background: #4e515c;
+}*/
+.landinbgsection:after {
+  content: "";
+  background: #1d3b45;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  transition: all .5s cubic-bezier(.19,1,.22,1);
+  z-index: 9;
+  border-radius: 14px;
+}
+.landinbgsection:hover:after {
+  width: 100%;
+}
+.landinbgsection:hover h2,.landinbgsection:hover p,.landinbgsection:hover img{
+  color: #fff;
+  position: relative;
+  z-index: 9999;
+}
+h2.landingnextheadnew {
+  margin-top: 113px;
+}
+.thirdboxsection{
+  position: relative;
+}
+.thirdboxsection::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 1;
+  width: 425px;
+  height: 373px;
+  background: url(/dot_service_pattern.svg) no-repeat center;
+  background-size: contain;
+  display: block;
+}
+
+/*-----------------------galler-section--------------------------*/
+.react-tabs__tab-list {
+  border-bottom: 0px solid #e76f51 !important;
+  margin: 0 auto 30px auto !important;
+  padding: 0;
+  width: 70%;
+  text-align: center !important;
+}
+.react-tabs__tab {
+  font-family: "Montserrat", Sans-serif;
+  /* text-transform: uppercase; */
+  font-size: 15px;
+  border: 0px solid transparent;
+  font-weight: 600;
+  border: 0px solid transparent;
+}
+.react-tabs__tab--selected {
+  background-color: #2d3e5000 !important;
+  color: #fc6746 !important;
+  border: 0px !important;
+  border-bottom: 2px solid #fc6746 !important;
+}
+
+/*
+.react-tabs__tab-panel .card-body {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  position: absolute;
+  top: 0%;
+  bottom: 40px;
+  left: 40px;
+  right: auto;
+  transition:.6s ease;
+  transform: translate3d(-50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 0;
+}
+.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  transition:.6s ease;
+  transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    transform-origin: 50% 100%;
+    background-image: linear-gradient(transparent, #000);
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+}
+.react-tabs__tab-panel .mb-4.col-md-4 .card-body .card-title.h5 {
+  opacity: 0;
+  position: absolute;
+  bottom: 6px;
+  left: 9px;
+  text-transform: uppercase;
+  letter-spacing: normal ! IMPORTANT;
+}
+.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body .card-title.h5 {
+  opacity: 1;
+  position: absolute;
+  bottom: 6px;
+  left: 9px;
+  text-transform: uppercase;
+  letter-spacing: normal ! IMPORTANT;
+}
+*/
+.react-tabs__tab-panel .mb-4.col-md-4 .card-body {
+  transition:.6s ease;
+  -webkit-transform: perspective(300px) rotateY(0px);
+  transform: perspective(300px) rotateY(0deg);
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    transition: .6s ease;
+    opacity: 1;
+    transform-origin: 50% 100%;
+    background: #fc6746;
+    border-radius: 6px;
+    position: absolute;
+    top: 4%;
+    bottom: 0%;
+    right: 1%;
+    width: 50%;
+    height: 370px;
+    opacity: 0;
+}
+.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body {
+  transition:.6s ease;
+  -webkit-transform: perspective(300px) rotateY(-8px);
+  transform: perspective(300px) rotateY(-8deg);
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    transition: .6s ease;
+    opacity: 1;
+    transform-origin: 50% 100%;
+    background: #fc6746;
+    border-radius: 6px;
+    position: absolute;
+    top: 4%;
+    bottom: 0%;
+    right: 1%;
+    width: 50%;
+    height: 370px;
+    opacity: 1;
+}
+
+.react-tabs__tab-panel .mb-4.col-md-4 .card-img-top{
+  transition:.6s ease;
+  -webkit-transform: perspective(300px) rotateY(0deg);
+  transform: perspective(300px) rotateY(0px);
+}
+
+.react-tabs__tab-panel .mb-4.col-md-4:hover .card-img-top {
+  transition:.6s ease;
+  -webkit-transform: perspective(300px) rotateY(8px);
+  transform: perspective(300px) rotateY(8deg);
+}
+
+@media screen and (max-width: 1290px) {
+  .time-sidebar {
+    width: 42% !important;
+}
+.time-main {
+  width: 57% !important;
+  float: left !important;
+  display: block;
+}
+.landinlogo {
+  margin-top: -20px;
+}
+}
+@media screen and (max-width: 1214px) {
+  .LandingPage_clutchSection__pXLSg img {
+    width: 95px!important;
+}
+.landinlogo {
+  margin-top: 0px;
+}
+.softDevTestimonials {
+  gap: 0rem;
+}
+}
+@media screen and (max-width: 1050px) {
+  .bannerContentLanding {
+    width: 96% !important;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    transform: translate(-48%, -40%) ! IMPORTANT;
+  }
+  .softDevTestimonials {
+    display: block;  height: auto !important;
+}
+.softDevTestimonials div div {
+  width: 100% !important;
+  height: auto !important;
+}
+.softDevTestimonials div {
+  width: 31% !important;
+  float: left;
+  margin: 0 7px!important;  height: auto !important;
+}
+.testimonialContainer {
+  width: auto !important;
+}
+.hiringForm .mt-4 {
+  margin-top: 10px !important;
+}
+.landinform .col-md-7{
+  width: 40% ! IMPORTANT;
+}
+.landinform .col-md-5{
+  margin: 0 auto;
+}
+.LandingPage_clutchSection__pXLSg img {
+  width: 90px !important;
+}
+}
 
 @media screen and (max-width: 1024px) {
   /* .container{
@@ -7255,9 +7505,7 @@ header.musthead.sticky-top.bg-light {
     margin: 0 0;
   }
 }
-.landingPageIcon {
-  font-size: 22px;
-}
+
 /*************LANDING PAGE CSS END*/
 
 @media screen and (max-width: 1200px) {
@@ -7886,189 +8134,4 @@ header.musthead.sticky-top.bg-light {
     flex-wrap: wrap;
     color: #fff;
   }
-}
-
-.navbar-nav li a:hover:after,
-.accordion-header:before {
-  display: none !important;
-}
-
-.expertiseSecMainpara{
-  padding: 0 150px;
-}
-.landinbgsection{
-  background: #fff;
-  border: 14px solid #bfecff;
-  border-radius: 30px;
-  position: relative;
-}
-/*.landinbgsection:hover{
-  background: #4e515c;
-}*/
-.landinbgsection:after {
-  content: "";
-  background: #1d3b45;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  transition: all .5s cubic-bezier(.19,1,.22,1);
-  z-index: 9;
-  border-radius: 14px;
-}
-.landinbgsection:hover:after {
-  width: 100%;
-}
-.landinbgsection:hover h2,.landinbgsection:hover p,.landinbgsection:hover img{
-  color: #fff;
-  position: relative;
-  z-index: 9999;
-}
-h2.landingnextheadnew {
-  margin-top: 113px;
-}
-.thirdboxsection{
-  position: relative;
-}
-.thirdboxsection::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  z-index: 1;
-  width: 425px;
-  height: 373px;
-  background: url(/dot_service_pattern.svg) no-repeat center;
-  background-size: contain;
-  display: block;
-}
-
-/*-----------------------galler-section--------------------------*/
-.react-tabs__tab-list {
-  border-bottom: 0px solid #e76f51 !important;
-  margin: 0 auto 30px auto !important;
-  padding: 0;
-  width: 70%;
-  text-align: center !important;
-}
-.react-tabs__tab {
-  font-family: "Montserrat", Sans-serif;
-  /* text-transform: uppercase; */
-  font-size: 15px;
-  border: 0px solid transparent;
-  font-weight: 600;
-  border: 0px solid transparent;
-}
-.react-tabs__tab--selected {
-  background-color: #2d3e5000 !important;
-  color: #fc6746 !important;
-  border: 0px !important;
-  border-bottom: 2px solid #fc6746 !important;
-}
-
-/*
-.react-tabs__tab-panel .card-body {
-  color: #fff;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 2.5rem;
-  position: absolute;
-  top: 0%;
-  bottom: 40px;
-  left: 40px;
-  right: auto;
-  transition:.6s ease;
-  transform: translate3d(-50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  opacity: 0;
-}
-.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body {
-  color: #fff;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 2.5rem;
-  transition:.6s ease;
-  transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    opacity: 1;
-    transform-origin: 50% 100%;
-    background-image: linear-gradient(transparent, #000);
-    border-radius: 6px;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-
-}
-.react-tabs__tab-panel .mb-4.col-md-4 .card-body .card-title.h5 {
-  opacity: 0;
-  position: absolute;
-  bottom: 6px;
-  left: 9px;
-  text-transform: uppercase;
-  letter-spacing: normal ! IMPORTANT;
-}
-.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body .card-title.h5 {
-  opacity: 1;
-  position: absolute;
-  bottom: 6px;
-  left: 9px;
-  text-transform: uppercase;
-  letter-spacing: normal ! IMPORTANT;
-}
-*/
-.react-tabs__tab-panel .mb-4.col-md-4 .card-body {
-  transition:.6s ease;
-  -webkit-transform: perspective(300px) rotateY(0px);
-  transform: perspective(300px) rotateY(0deg);
-    color: #fff;
-    font-size: 1.875rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-    transition: .6s ease;
-    opacity: 1;
-    transform-origin: 50% 100%;
-    background: #fc6746;
-    border-radius: 6px;
-    position: absolute;
-    top: 4%;
-    bottom: 0%;
-    right: 1%;
-    width: 50%;
-    height: 370px;
-    opacity: 0;
-}
-.react-tabs__tab-panel .mb-4.col-md-4:hover .card-body {
-  transition:.6s ease;
-  -webkit-transform: perspective(300px) rotateY(-8px);
-  transform: perspective(300px) rotateY(-8deg);
-    color: #fff;
-    font-size: 1.875rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-    transition: .6s ease;
-    opacity: 1;
-    transform-origin: 50% 100%;
-    background: #fc6746;
-    border-radius: 6px;
-    position: absolute;
-    top: 4%;
-    bottom: 0%;
-    right: 1%;
-    width: 50%;
-    height: 370px;
-    opacity: 1;
-}
-
-.react-tabs__tab-panel .mb-4.col-md-4 .card-img-top{
-  transition:.6s ease;
-  -webkit-transform: perspective(300px) rotateY(0deg);
-  transform: perspective(300px) rotateY(0px);
-}
-
-.react-tabs__tab-panel .mb-4.col-md-4:hover .card-img-top {
-  transition:.6s ease;
-  -webkit-transform: perspective(300px) rotateY(8px);
-  transform: perspective(300px) rotateY(8deg);
 }
