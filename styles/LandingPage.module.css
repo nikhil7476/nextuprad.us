@@ -14,14 +14,14 @@
 .bannerContent {
   margin-top: 3rem;
 }
-.expertiseSecMain h3::after {
+/*.expertiseSecMain h3::after {
   margin: 14px auto 0 auto !important;
   content: "";
   width: 25%;
   display: block;
   height: 3px;
   background: #e76f51;
-}
+}*/
 .formHeading {
   padding-bottom: 24px;
   padding-top: 13px;
@@ -112,8 +112,8 @@
   position: relative;
 }
 .landingPageMain {
-  background: #caebff url(/bgcentesection.jpg);
-  /* margin-top: 90px !important; */
+  background: #fff;
+  /* margin-top: 90px !important;  url(/bgcentesection.jpg)*/
   display: block;
   background-position: center bottom;
   background-repeat: no-repeat;

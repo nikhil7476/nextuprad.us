@@ -6892,8 +6892,8 @@ header.musthead.sticky-top.bg-light {
   padding: 0 150px;
 }
 .landinbgsection{
-  background: #fff;
-  border: 14px solid #bfecff;
+  background: #f9f8f8;
+  border: 14px solid #fff;
   border-radius: 30px;
   position: relative;
 }
