@@ -433,7 +433,7 @@ const LandingPage = () => {
         </ul>
       </section>
       <div>
-        <div className={`sec-two ${styles.landingPageMain}`}>
+        <div className={`sec-two ouroffring ${styles.landingPageMain}`}>
           <div className="container">
             {/* <h1>Our Distinctive website development services</h1> */}
             <h1 className="text-center">Our Offerings</h1>

@@ -7564,9 +7564,9 @@ h2.landingnextheadnew {
   }
   .time-sidebar {
     position: static !important;
-    height: 2vh;
-    min-height: 179px !important;
-  }
+    height: 21vh;
+    min-height: 345px !important;
+}
   .uni21 img {
     margin-top: 60px;
     margin-left: -20px;
@@ -7851,6 +7851,149 @@ h2.landingnextheadnew {
     width: 50%;
   }
 }
+@media screen and (max-width: 918px) {
+  .landinform .col-md-7 {
+    width: 100% ! IMPORTANT;
+}
+.bannerContentLanding {
+  width: 99% !important;
+  position: relative;
+  padding: 0;
+  margin: 0 0 0 0;
+  transform: none !important;
+  top: 0;
+  left: 0;
+}
+.bannerContentLanding .landinform {
+  margin-top: -506px;
+}
+.bannerContentLanding .landinform .col-md-5 {
+  margin: 112px auto 0 auto;
+  background: #fff !important;
+  width: 100%;
+}
+.LandingPage_expertiseGrid__fBFuL{
+  grid-template-columns: auto!important;
+}
+.LandingPage_clutchSection__pXLSg{
+  grid-template-columns: auto!important; 
+}
+.ouroffring .row {
+  display: block;
+}
+.ouroffring .row .col-md-6{
+  width: 100% !important;
+}
+.thirdboxsection {
+  position: relative;
+  padding: 0;
+}
+h2.landingnextheadnew {
+  margin-top: 33px;
+
+}
+.thirdboxsection .row .col-md-6 {
+  width: 100% !important;
+  margin-bottom: 30px;
+}
+.sec-four-approach.row .col-md-6{
+  width: 100% !important;
+}
+.col-md-6.time-sidebar {
+  width: 100% !important;
+  position: static !important;
+  height: auto;
+  min-height: auto !important;
+}
+.flip-card-front {
+  padding-top: 25%;
+}
+.time-sidebar h3, .time-sidebar p {
+  background: #fcf8f200;
+}
+.whychoosenew .sec-five-one {
+  padding-top: 25px;
+  position: relative;
+  width: 100% !important;
+}
+.sec-five {
+  background:#192733!important;
+}
+.sec-five-one {
+  padding: 100px 20px 0px 20px!important;
+  color: #fff;
+}
+.sec-five-two {
+  padding: 6px 20px 0px 20px!important;
+  display: block;
+  justify-content: center;
+  align-items: center; width: 100% !important;
+}
+.sec-five-two .col-md-4 {
+  width: 100%;
+}
+.softDevTestimonials div {
+  width: 90% !important;
+  margin: 0 auto 10px auto !important;  
+   float: none;
+}
+.video_testimonials {
+  display: block;
+  clear: both;
+}
+.video_testimonials .card-body {
+  display: block;
+}
+.video_testimonials .card-body .item1 {
+  width: 100%;
+  height: auto;
+  background-color: rgb(10, 25, 81);
+  border-radius: 30px 30px 0px 0px;
+  padding: 30px 50px 30px 30px;
+}
+.item2 {
+  width: 100%;
+  height: auto;
+}
+.testimonials-container iframe {
+  height: 570px;
+  width: 100%;
+  border-radius: 0px 0px 30px 30px;
+}
+.accordion .row, .accordion .col {
+  display: block;
+  width: 100% ! IMPORTANT;
+}
+}
+
+@media screen and (max-width: 721px) {
+  .flip-card-front {
+    padding-top: 10%;
+}
+.time-main {
+  width: 100% !important;
+  float: left !important;
+  display: block;
+}
+.timeline .timeline-container .timeline-body .timeline-title .badge {
+  white-space: break-spaces;
+  text-align: left;
+}
+.expertiseSecMainpara {
+  padding: 0 12px;
+}
+.thirdboxsection::before {
+  width: auto;
+}
+.sec-four-two h2 {
+  display: block;
+  clear: both;
+  margin-top: 55px;
+}
+}
+
+
+
 @media screen and (max-width: 664px) {
   .newBannerMain p {
     color: #fff;
