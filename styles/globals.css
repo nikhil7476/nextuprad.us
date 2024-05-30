@@ -8121,6 +8121,12 @@ h2.landingnextheadnew {
   .bannerContentLanding .landinform {
     margin-top: -234px;
 }
+.landinlogo {
+  margin-top: 86px;
+}
+video.w-100.bannerVideo {
+  height: 154px;
+}
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
