@@ -9,7 +9,9 @@
   --skeleton-color: #cfbbf3; /* Light blue color */
   --skeleton-highlight-color: #d5d3f3; /* Even lighter blue */
 }
-
+video.w-100-mobilevideo.bannerVideo {
+  display: none;
+}
 main {
   margin-top: -7.3rem;
 }
@@ -8122,7 +8124,7 @@ h2.landingnextheadnew {
     margin-top: -234px;
 }
 .landinlogo {
-  margin-top: 86px;
+  margin-top: 69px;
 }
 video.w-100.bannerVideo {
   height: 154px;
@@ -8168,6 +8170,44 @@ video.w-100.bannerVideo {
 }
 .LandingPage_clutchSection__pXLSg img {
   width:135px !important;
+}
+video.w-100-mobilevideo.bannerVideo {
+  display: block;
+  margin: 0 -14px ! IMPORTANT;
+  width: 109% ! IMPORTANT;
+}
+.overlayVid {
+  background-color: rgb(255 255 255);
+}
+.LandingPage_section2piy__PqBQO h1 {
+  color: #000000 !important;
+}
+.landinform .my-4.text-light {
+  color: #000 !important;
+}
+.landinform  button.sec-two-btn.mt-5 {
+  margin: 0 !IMPORTANT;
+}
+.LandingPage_expertiseSecMain__32b2R h3 {
+  font-size: 38px;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.LandingPage_clutchSection__pXLSg p {
+  font-size: 30px;
+}
+.time-sidebar h3 {
+  background: #fcf8f200;
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+.sec-five-one h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.sec-five-one p {
+  padding-right: 0;
 }
 }
 @media screen and (max-width: 634px) {

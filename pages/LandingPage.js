@@ -152,6 +152,7 @@ const LandingPage = () => {
                 width={256}
                 alt="logo"
               />
+              
               <h1 className={`text-light mt-5 ${styles.mainHeading}`}>
                 Consult with our Expert and Transform Your Vision into Reality
                 with our Website Development Services
