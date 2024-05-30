@@ -8118,6 +8118,9 @@ h2.landingnextheadnew {
   .holistic h3 {
     font-size: 30px;
   }
+  .bannerContentLanding .landinform {
+    margin-top: -234px;
+}
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
