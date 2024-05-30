@@ -8166,6 +8166,9 @@ video.w-100.bannerVideo {
 .hiringForm .mt-4 textarea {
   margin-top: 10px;
 }
+.LandingPage_clutchSection__pXLSg img {
+  width: 77px !important;
+}
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
