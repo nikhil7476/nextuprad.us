@@ -8132,11 +8132,11 @@ video.w-100.bannerVideo {
   background-color: #fff;
 }
 .LandingPage_clutchSection__pXLSg {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-top: 1rem!important;
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+  padding-left: 2rem!important;
+  padding-right: 2rem!important;
 }
 
 .LandingPage_clutchSection__pXLSg ul {
