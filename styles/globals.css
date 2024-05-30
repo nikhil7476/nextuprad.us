@@ -8147,6 +8147,25 @@ video.w-100.bannerVideo {
 .flip-card-front {
   padding-top: 24%;
 }
+.bannerContentLanding .landinform .col-md-5 {
+  margin: 23px auto 18px auto;
+  background: #fff !important;
+  width: 92%;
+  padding: 0 14px;
+}
+.hiringForm .col-6 {
+  width: 100%;
+  margin-block: 6px;
+}
+.hiringForm .col-md-6 {
+  margin-bottom: 10px;
+}
+.hiringForm .mt-4 {
+  margin-top: -5px !important;
+}
+.hiringForm .mt-4 textarea {
+  margin-top: 10px;
+}
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
