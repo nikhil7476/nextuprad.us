@@ -50,7 +50,7 @@ const Software = () => {
         <section id="uni">
           <div className="uni1">
             <h2 className="uniser">Unique Service Array</h2>
-            <span className="line" />
+            {/*<span className="line" />*/}
             <p>
               From consultation through development, seamless integration, to
               steadfast maintenance—we’ve got every facet in hand.

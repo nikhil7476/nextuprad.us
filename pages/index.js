@@ -1462,7 +1462,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-md-12 ">
-                <h2>Industries We Serve .</h2>{" "}
+                <h2>Industries We Serve</h2>{" "}
               </div>
 
               <div

@@ -26,7 +26,7 @@ const Privacy = () => {
             below-mentioned information about you:
           </p>
 
-          <h3>Why you are visiting our website?</h3>
+          <h2>Why you are visiting our website?</h2>
           <p>
             This involves collecting information about your visits, including
             the pages you viewed and the resources you accessed. This
@@ -34,7 +34,7 @@ const Privacy = () => {
             location data.
           </p>
 
-          <h3>Data That You Provide While You Contact Us</h3>
+          <h2>Data That You Provide While You Contact Us</h2>
           <p>
             Your communication with us encompasses sharing essential data and
             fostering a transparent exchange of information that is treated with
@@ -54,11 +54,11 @@ const Privacy = () => {
             if you wish.
           </p>
 
-          <h3>
+          <h2>
             Here are some of the cookies that we utilize for different purposes:
-          </h3>
+          </h2>
 
-          <h4>Technical Cookies</h4>
+          <h3>Technical Cookies</h3>
           <p>
             These cookies manage functions like logging in, filling out forms,
             and modifying privacy settings necessary for optimal website
@@ -66,7 +66,7 @@ const Privacy = () => {
             properly if your browser is set to block these cookies.
           </p>
 
-          <h4>Customization Cookies</h4>
+          <h3>Customization Cookies</h3>
           <p>
             These cookies help us improve website personalization and
             functionality, whether established by us or third-party providers.
@@ -74,7 +74,7 @@ const Privacy = () => {
             work as intended, impacting your customized experience.
           </p>
 
-          <h4>Behavioral Advertising Cookies</h4>
+          <h3>Behavioral Advertising Cookies</h3>
           <p>
             These cookies are used to build a user profile for targeted
             advertising on other websites set by our advertising partners. If
@@ -82,7 +82,7 @@ const Privacy = () => {
             when you browse the internet.
           </p>
 
-          <h4>Performance Cookies</h4>
+          <h3>Performance Cookies</h3>
           <p>
             These cookies allow us to measure and enhance the performance of our
             site by tracking the number of visits and traffic sources. If you
@@ -96,7 +96,7 @@ const Privacy = () => {
             services. Additionally, we may use the information for one or more
             of the below-mentioned purposes:
           </p>
-          <ul>
+          <ol>
             <li>
               To quickly provide you the glance of information that you
               requested from us related to our products or services
@@ -119,7 +119,7 @@ const Privacy = () => {
               use your information to provide details about products and
               services that may interest you
             </li>
-          </ul>
+          </ol>
           <p>You have the option to withdraw your consent at any time.</p>
 
           <h2>Disclosing your data</h2>
