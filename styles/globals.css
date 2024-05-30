@@ -8127,6 +8127,26 @@ h2.landingnextheadnew {
 video.w-100.bannerVideo {
   height: 154px;
 }
+.sec-two {
+  padding: 30px 0px 30px 0px;
+  background-color: #fff;
+}
+.LandingPage_clutchSection__pXLSg {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.LandingPage_clutchSection__pXLSg ul {
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+}
+.flip-card-front {
+  padding-top: 24%;
+}
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
