@@ -8227,7 +8227,9 @@ video.w-100-mobilevideo.bannerVideo {
   margin: 0 !IMPORTANT;
   padding: 0 !important;
 }
-
+.timeline .timeline-container .timeline-body .timeline-title .badge {
+  line-height: 26px;
+}
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
