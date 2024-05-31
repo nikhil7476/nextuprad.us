@@ -210,12 +210,18 @@ const LandingPage = () => {
           >
             <div className="col-md-7 mt-5">
               <Image
-                className="landinlogo"
+                className="landinlogo desktoplogo"
                 src="/Nextupgradlogo.png"
                 height={103}
                 width={256}
                 alt="logo"
-              />
+              /> <Image
+              className="landinlogomobile"
+              src="/Nextupgradlogom.png"
+              height={103}
+              width={256}
+              alt="logo"
+            />
               <video
                 className="w-100-mobilevideo bannerVideo"
                 src="/bannerVid.mp4"
@@ -439,20 +445,20 @@ const LandingPage = () => {
         </p>
         <ul>
           <li>
-            <img src="/clutch1.png" alt="" />
+            <img src="/f1.jpg" alt="" />
           </li>
           <li>
-            <img src="/clutch2.png" alt="" />
+            <img src="/pmp.png" alt="" />
           </li>
           <li>
-            <img src="/clutch3.png" alt="" />
+            <img src="/f2.jpg" alt="" />
           </li>
           <li>
-            <img src="/clutch4.png" alt="" />
+            <img src="/ISO.png" alt="" />
           </li>
         </ul>
       </section>
-      <secion className={` ${styles.certifications}`}>
+      {/*<secion className={` ${styles.certifications}`}>
         <ul>
           <li>
             <img src="/f1.jpg" alt="" />
@@ -473,7 +479,7 @@ const LandingPage = () => {
             <img src="/f8.jpg" alt="" />
           </li>
         </ul>
-      </secion>
+    </secion>*/}
       <div>
         <div className={`sec-two ouroffring ${styles.landingPageMain}`}>
           <div className="container">

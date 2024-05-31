@@ -9,6 +9,9 @@
   --skeleton-color: #cfbbf3; /* Light blue color */
   --skeleton-highlight-color: #d5d3f3; /* Even lighter blue */
 }
+.landinlogomobile {
+  display: none;
+}
 video.w-100-mobilevideo.bannerVideo {
   display: none;
 }
@@ -7994,6 +7997,12 @@ h2.landingnextheadnew {
 
 
 @media screen and (max-width: 664px) {
+  .landinlogomobile {
+    display: block;margin-top: 30px;
+}
+.landinlogo.desktoplogo {
+    display: none;
+}
   .newBannerMain p {
     color: #fff;
     text-align: center;
@@ -8124,7 +8133,7 @@ h2.landingnextheadnew {
     margin-top: -234px;
 }
 .landinlogo {
-  margin-top: 69px;
+  margin-top: 30px;
 }
 video.w-100.bannerVideo {
   height: 154px;
@@ -8209,6 +8218,15 @@ video.w-100-mobilevideo.bannerVideo {
 .sec-five-one p {
   padding-right: 0;
 }
+.LandingPage_certifications__lGRdA {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.LandingPage_certifications__lGRdA ul {
+  margin: 0 !IMPORTANT;
+  padding: 0 !important;
+}
+
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
@@ -8229,6 +8247,9 @@ video.w-100-mobilevideo.bannerVideo {
 }
 
 @media screen and (max-width: 600px) {
+  .sec-four-two {
+    padding-top: 500px !important;
+}
   .achieved ul li {
     width: 42%;
     float: left;
