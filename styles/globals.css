@@ -8230,6 +8230,9 @@ video.w-100-mobilevideo.bannerVideo {
 .timeline .timeline-container .timeline-body .timeline-title .badge {
   line-height: 26px;
 }
+.sec-four-two h2 {
+  margin-top: 128px;
+}
 }
 @media screen and (max-width: 634px) {
   .blog-cat {
