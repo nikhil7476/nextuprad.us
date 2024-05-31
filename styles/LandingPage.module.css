@@ -197,3 +197,22 @@
 .clutchSection img {
   width: 120px;
 }
+
+.certifications {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certifications ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.certifications ul li img {
+  width: 180px;
+}
