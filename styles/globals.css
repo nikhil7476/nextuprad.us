@@ -7339,7 +7339,9 @@ h2.landingnextheadnew {
     width: 100% !important;
     max-width: 100% !important;
   }
-
+  .landinlogo {
+    margin-top: 28px;
+}
   .end-foo {
     width: 100% !important;
     display: flex;
