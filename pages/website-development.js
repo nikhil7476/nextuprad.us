@@ -17,6 +17,8 @@ import Cards4 from "@/components/Cards4";
 import LandingPageSlider from "@/components/LandingPageSlider";
 import { useState } from "react";
 import axios from "axios";
+import TagManagerLanding from "@/components/tagManagerLanding";
+import GoogleTagManager from "@/components/AnalyticsTag";
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -185,6 +187,8 @@ const LandingPage = () => {
   return (
     <>
       <Head>
+        <GoogleTagManager gtmId="GTM-TKZTSGKZ" />
+
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -194,6 +198,7 @@ const LandingPage = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         ></link>
       </Head>
+      <TagManagerLanding gtmId="GTM-TKZTSGKZ" />
       <section id="leadForm" className={`${styles.section2piy} `}>
         <video
           className="w-100 bannerVideo"
@@ -215,13 +220,14 @@ const LandingPage = () => {
                 height={103}
                 width={256}
                 alt="logo"
-              /> <Image
-              className="landinlogomobile"
-              src="/Nextupgradlogom.png"
-              height={103}
-              width={256}
-              alt="logo"
-            />
+              />{" "}
+              <Image
+                className="landinlogomobile"
+                src="/Nextupgradlogom.png"
+                height={103}
+                width={256}
+                alt="logo"
+              />
               <video
                 className="w-100-mobilevideo bannerVideo"
                 src="/bannerVid.mp4"
