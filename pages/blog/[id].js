@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import DOMPurify from 'dompurify';
+import React from 'react';
 import { useRouter } from "next/router";
 import axiosInstance from "@/axios/axios";
 import { Container, Row, Col, Image } from "react-bootstrap";
@@ -25,6 +27,13 @@ const SingleBlog = () => {
       setid(router.query.id);
     }
   }, [isReady]);
+
+  const BlogContent = ( content ) => {
+    console.log("content",content)
+    const sanitizedContent = DOMPurify.sanitize(content);
+    
+    return <div dangerouslySetInnerHTML={{ __html: sanitizedContent }} />;
+  };
 
   async function getBlogs() {
     try {
@@ -139,7 +148,8 @@ const SingleBlog = () => {
                     fluid
                     className="mb-4 w-100 rounded"
                   />
-                  <p>{blog.description}</p>
+                
+                  <div className="p-3">{BlogContent(blog.description)}</div>
                 </div>
               </Col>
             </Row>
