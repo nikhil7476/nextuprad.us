@@ -4868,6 +4868,7 @@ pre {
   background: url(/our-approach-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover !important;
 }
 .landinnewletter h2 {
   font-size: 22px;
@@ -7306,6 +7307,8 @@ h2.landingnextheadnew {
   }
 }
 
+
+
 @media screen and (max-width: 889px) {
   .nav-pills {
     gap: 20px !important;
@@ -7340,7 +7343,7 @@ h2.landingnextheadnew {
     max-width: 100% !important;
   }
   .landinlogo {
-    margin-top: 28px;
+    margin-top: 80px;
 }
   .end-foo {
     width: 100% !important;
@@ -7443,6 +7446,15 @@ h2.landingnextheadnew {
     border-bottom: 1px solid #e7e7e7 !important;
     border-right: 1px solid #e7e7e7 !important;
   }
+
+  .flip-card-front {
+    padding-top: 10% !important;
+}
+
+.flip-card-front img{
+  margin-bottom:30px !important;
+}
+
 }
 
 @media screen and (max-width: 693px) {
@@ -7508,6 +7520,11 @@ h2.landingnextheadnew {
     text-align: right !important;
     margin: 0 0;
   }
+
+  .flip-card-front {
+    padding-top: 15% !important;
+}
+
 }
 
 /*************LANDING PAGE CSS END*/
@@ -7854,6 +7871,15 @@ h2.landingnextheadnew {
   .accreditation .col-md-6 .col-md-6 {
     width: 50%;
   }
+
+  .flip-card-back{
+    padding-top:10% !important;
+  }
+
+  .sec-three-btn{
+      margin-top:35px !important;
+  }
+
 }
 @media screen and (max-width: 918px) {
   .landinform .col-md-7 {

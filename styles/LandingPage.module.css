@@ -216,3 +216,22 @@
 .certifications ul li img {
   width: 180px;
 }
+
+@media screen and (max-width:918px){
+
+  .clutchSection ul{
+    gap:40px !important;
+    }
+    
+    .clutchSection ul li img{
+    width:150px !important;
+    }
+
+}
+
+@media screen and (max-width:594px){
+
+  .clutchSection ul {
+    justify-content: center !important;
+}
+}
