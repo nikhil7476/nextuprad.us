@@ -769,9 +769,7 @@ export default function Home() {
               />
 
               <p>
-                Embark on a Journey of Excellence with NextUpgrad’s Innovative
-                Digital Solutions – Redefining <br /> Business Experiences Like
-                Never Before!
+              Commence Your digital transformation journey with NextUpgrad’s Innovative Digital Solutions
               </p>
               <Link className="Personalize-button2" href="/contact-us">
                 Let's Discuss
