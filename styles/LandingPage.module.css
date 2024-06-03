@@ -1,3 +1,50 @@
+.landingPageForm {
+  width: 40%;
+  color: #000;
+  padding-bottom: 35px;
+  border-radius: 8px;
+  padding-right: 35px;
+  padding-left: 35px;
+  background-color: #fff;
+}
+.formBottomText {
+  font-size: 10px;
+}
+
+.bannerContent {
+  margin-top: 3rem;
+}
+/*.expertiseSecMain h3::after {
+  margin: 14px auto 0 auto !important;
+  content: "";
+  width: 25%;
+  display: block;
+  height: 3px;
+  background: #e76f51;
+}*/
+.formHeading {
+  padding-bottom: 24px;
+  padding-top: 13px;
+
+  font-size: 19px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  font-weight: 500;
+}
+
+.landingPageMain {
+  overflow-x: hidden;
+}
+.captcha {
+  background-color: #fff !important;
+  display: flex;
+  justify-content: center;
+
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
 .section2piy {
   /*display: grid;*/
   grid-template-columns: 1.2fr 1fr;
@@ -8,7 +55,7 @@
 .section2piy h1 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
-  font-size: 45px;
+  font-size: 28px;
   font-weight: 600;
 }
 .innerSection {
@@ -31,10 +78,141 @@
 .hiringForm {
   background-color: #192733 !important;
   /* padding: 20px 35px 35px 35px; */
-  padding:20px;
+  padding: 20px;
   border-radius: 20px;
-  padding-top:0px;
+  padding-top: 0px;
 }
 
+.expertiseGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  margin-top: 4rem;
+  text-align: center;
+}
 
+.expertiseGrid .expertiseGridItems {
+  background-color: #fff;
+}
 
+.expertIcons {
+  color: #e76f51 !important;
+}
+
+.expertiseSecMain h3 {
+  color: #4e515c;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 63px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.expertiseSecMain .expertiseGrid div {
+  position: relative;
+}
+.landingPageMain {
+  background: #fff;
+  /* margin-top: 90px !important;  url(/bgcentesection.jpg)*/
+  display: block;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.expertiseSecMain .expertiseGrid div::before {
+  content: "";
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(/bg-service-card-media.png) center top no-repeat;
+  background-size: cover;
+  transition: all 0.4s ease-in-out;
+  min-height: 265px;
+  opacity: 0;
+}
+
+.expertiseSecMain .expertiseGrid div:hover::before {
+  content: "";
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(/bg-service-card-media.png) center top no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  min-height: 265px;
+  opacity: 1;
+  z-index: -1;
+}
+.expertiseSecMain .expertiseGrid div p {
+  padding: 0 15px;
+}
+.expertiseSecMain .expertiseGrid div:hover svg,
+.expertiseSecMain .expertiseGrid div:hover h4,
+.expertiseSecMain .expertiseGrid div:hover p {
+  fill: #fff;
+  color: #fff;
+}
+
+.clutchSection {
+  margin-top: 6rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  align-items: center;
+  background: rgb(236, 239, 242);
+  background: linear-gradient(
+    177deg,
+    rgba(236, 239, 242, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.clutchSection p {
+  font-size: 40px;
+  font-weight: 600;
+}
+.clutchSection span {
+  color: rgb(62, 175, 216);
+}
+
+.clutchSection ul {
+  gap: 14px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clutchSection img {
+  width: 120px;
+}
+
+.certifications {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certifications ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.certifications ul li img {
+  width: 180px;
+}

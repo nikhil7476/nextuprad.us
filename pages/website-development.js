@@ -113,6 +113,75 @@ const LandingPage = () => {
     }
   };
 
+  /////newsletter
+  const handleChange2 = (e) => {
+    setEmail(e.target.value);
+    setErrors(""); // Clear previous validation errors when the user types
+  };
+
+  const validateEmail2 = (email) => {
+    const isValid = /\S+@\S+\.\S+/.test(email);
+    return isValid;
+  };
+
+  const handleSubmit2 = async (e) => {
+    e.preventDefault();
+    if (!validateEmail2(email)) {
+      setErrors("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "https://53c50cd527.nxcli.io/calculator/api/postNewsletter",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
+      const data = await response.json();
+
+      console.log(data);
+      if (data.status == 200 || data.status == 201) {
+        setEmail("");
+        Swal.fire({
+          title: "Subscribed!",
+          text: "thank you for subscribing to nextupgrad!",
+          icon: "success",
+        });
+      }
+      if (data.status == 500) {
+        Swal.fire({
+          title: "Already Subscribed!",
+          text: "this email is already subscribed!",
+          icon: "error",
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle error response here
+    }
+  };
+
+  function scrollToLeadForm() {
+    const form = document.querySelector("#leadForm");
+
+    if (form) {
+      // Get the position of the form element
+      const rect = form.getBoundingClientRect();
+      const formTop = rect.top + window.scrollY;
+
+      // Scroll to the form position
+      window.scrollTo({
+        top: formTop,
+        behavior: "smooth", // optional: for smooth scrolling
+      });
+    }
+  }
+
   return (
     <>
       <Head>
@@ -125,7 +194,7 @@ const LandingPage = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         ></link>
       </Head>
-      <section className={`${styles.section2piy} `}>
+      <section id="leadForm" className={`${styles.section2piy} `}>
         <video
           className="w-100 bannerVideo"
           src="/bannerVid.mp4"
@@ -137,27 +206,34 @@ const LandingPage = () => {
         <div className="overlayVid"></div>
         <div className="container bannerContentLanding">
           <div
-            className={`row  justify-content-between ${styles.bannerContent}`}
+            className={`row landinform justify-content-between ${styles.bannerContent}`}
           >
-            <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              data-aos-duration="1500"
-              className="col-md-7 mt-2"
-            >
+            <div className="col-md-7 mt-5">
               <Image
-                className="landinlogo"
+                className="landinlogo desktoplogo"
                 src="/Nextupgradlogo.png"
                 height={103}
                 width={256}
                 alt="logo"
+              /> <Image
+              className="landinlogomobile"
+              src="/Nextupgradlogom.png"
+              height={103}
+              width={256}
+              alt="logo"
+            />
+              <video
+                className="w-100-mobilevideo bannerVideo"
+                src="/bannerVid.mp4"
+                autoPlay
+                muted
+                loop
               />
-              
               <h1 className={`text-light mt-5 ${styles.mainHeading}`}>
                 Consult with our Expert and Transform Your Vision into Reality
                 with our Website Development Services
               </h1>
-              <p className="my-4 text-light">Expert Consult Online</p>
+              {/* <p className="my-4 text-light">Expert Consult Online</p> */}
               {/* <div className={`${styles.innerSection} my-4`}>
                 <span>Theme Development</span>
                 <span>API Integration</span>
@@ -166,7 +242,7 @@ const LandingPage = () => {
                 <span>System Design & Architecture</span>
                 <span>Community & Social Engagement</span>
               </div> */}
-              <button className="sec-two-btn mt-5">Get Started</button>
+              {/* <button className="sec-two-btn mt-5">Get Started</button> */}
             </div>
             <div className={`col-md-5 ${styles.landingPageForm}`}>
               <p className={styles.formHeading}>
@@ -365,25 +441,47 @@ const LandingPage = () => {
       </div> */}
       <section className={` ${styles.clutchSection}`}>
         <p>
-          Partner with an <span>award-winning</span> web design agency
+          Partner with the <span>award-winning</span> Web-Designing Agency
         </p>
         <ul>
           <li>
-            <img src="/clutch1.png" alt="" />
+            <img src="/f1.jpg" alt="" />
           </li>
           <li>
-            <img src="/clutch2.png" alt="" />
+            <img src="/pmp.png" alt="" />
           </li>
           <li>
-            <img src="/clutch3.png" alt="" />
+            <img src="/f2.jpg" alt="" />
           </li>
           <li>
-            <img src="/clutch4.png" alt="" />
+            <img src="/ISO.png" alt="" />
           </li>
         </ul>
       </section>
+      {/*<secion className={` ${styles.certifications}`}>
+        <ul>
+          <li>
+            <img src="/f1.jpg" alt="" />
+          </li>
+          <li>
+            <img src="/f2.jpg" alt="" />
+          </li>
+          <li>
+            <img src="/f5.jpg" alt="" />
+          </li>
+          <li>
+            <img src="/f6.jpg" alt="" />
+          </li>
+          <li>
+            <img src="/f7.jpg" alt="" />
+          </li>
+          <li>
+            <img src="/f8.jpg" alt="" />
+          </li>
+        </ul>
+    </secion>*/}
       <div>
-        <div className={`sec-two ${styles.landingPageMain}`}>
+        <div className={`sec-two ouroffring ${styles.landingPageMain}`}>
           <div className="container">
             {/* <h1>Our Distinctive website development services</h1> */}
             <h1 className="text-center">Our Offerings</h1>
@@ -393,6 +491,7 @@ const LandingPage = () => {
                 data-aos-delay="150"
                 data-aos-duration="1500"
                 className="col-md-6 img-box landinbgsection px-3"
+                onClick={scrollToLeadForm}
               >
                 <div className="sec-two-box">
                   <img src="custom_developement.png" alt="" />
@@ -410,6 +509,7 @@ const LandingPage = () => {
                 data-aos-delay="150"
                 data-aos-duration="1500"
                 className="col-md-6 img-box landinbgsection px-3"
+                onClick={scrollToLeadForm}
               >
                 <div className="sec-two-box">
                   <img src="cms.png" alt="" />
@@ -428,6 +528,7 @@ const LandingPage = () => {
                 data-aos-delay="150"
                 data-aos-duration="1500"
                 className="col-md-6 img-box landinbgsection px-3"
+                onClick={scrollToLeadForm}
               >
                 <div className="sec-two-box">
                   <img src="ecom.png" alt="" />
@@ -444,6 +545,7 @@ const LandingPage = () => {
                 data-aos-delay="150"
                 data-aos-duration="1500"
                 className="col-md-6 img-box landinbgsection px-3"
+                onClick={scrollToLeadForm}
               >
                 <div className="sec-two-box">
                   <img src="full_stack.png" alt="" />
@@ -463,6 +565,7 @@ const LandingPage = () => {
                 data-aos-delay="150"
                 data-aos-duration="1500"
                 className="col-md-6 img-box landinbgsection px-3"
+                onClick={scrollToLeadForm}
               >
                 <div className="sec-two-box">
                   <img src="web-security.png" alt="" />
@@ -479,6 +582,7 @@ const LandingPage = () => {
                 data-aos-delay="150"
                 data-aos-duration="1500"
                 className="col-md-6 img-box landinbgsection px-3"
+                onClick={scrollToLeadForm}
               >
                 <div className="sec-two-box">
                   <img src="training.png" alt="" />
@@ -491,8 +595,12 @@ const LandingPage = () => {
                 </p>
               </div>
             </div>
-            <a href="#" className="sec-two-btn">
-              Consult Expert Now!
+            <a
+              href="https://calendly.com/ron-wilsonbdm/service?month=2024-05"
+              target="_blank"
+              className="sec-two-btn"
+            >
+              Expert Consult Online!
             </a>
           </div>
         </div>
@@ -507,9 +615,9 @@ const LandingPage = () => {
                   Unlock Business Growth with Tailored Solutions for Leading
                   Technology Platforms.
                 </p>
-                <a href="#" className="sec-three-btn">
+                <p className="sec-three-btn" onClick={scrollToLeadForm}>
                   Let's Discuss!
-                </a>
+                </p>
               </div>
               <div className="col-md-6">
                 <div className="row">
@@ -767,7 +875,7 @@ const LandingPage = () => {
               <h2 className="lookingbox">
                 Are you looking for customized ecommerce business solutions?
               </h2>
-              <a href="#">Connect with an expert</a>
+              <a onClick={scrollToLeadForm}>Connect with an expert</a>
             </div>
           </div>
         </div>
@@ -840,7 +948,7 @@ const LandingPage = () => {
         <Cards4 />
         <div className="video_testimonials landivideo mt-5 pt-5 ">
           <div className="container">
-            <h3 className="text-center">Video Testimonials</h3>
+            <h3 className="text-center">Video Testimonial</h3>
             <div
               className="owl-carousel owl-theme testimonials-container owl-loaded owl-drag"
               id="testimonials-container"
@@ -854,9 +962,8 @@ const LandingPage = () => {
                     <i className="fa fa-star checked" />
                     <i className="fa fa-star checked" />
                     <i className="fa fa-star checked" />
-                    <h2>
-                      Recommend NextUpgrad for website development and business
-                      marketing
+                    <h2 className="mt-3">
+                      Craft Dynamic Websites and Upgrade Your Business
                     </h2>
                     <p>
                       I’m working with nextupgrad since april and these guys are
@@ -864,8 +971,8 @@ const LandingPage = () => {
                       also worked on weekends just to make sure my website and
                       products were up to the standard.
                     </p>
-                    <p>Patrick </p>
-                    <h3>Client For</h3>
+                    {/* <p> </p> */}
+                    <h3>Patrick, Founder Profile Ace</h3>
                     <span className="ic1">
                       Website Development and Digital Marketing
                     </span>
@@ -905,7 +1012,7 @@ const LandingPage = () => {
                 <h2>
                   Subscribe to our newsletter to stay in touch with the latest.
                 </h2>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit2}>
                   <div className="mail-inpt">
                     <input
                       type="email"
@@ -934,7 +1041,13 @@ const LandingPage = () => {
                   </a>
                   <a href="https://api.whatsapp.com/send/?phone=%2B14087865558&text&type=phone_number&app_absent=0">
                     <i className="bi bi-whatsapp wpicon" />
-                  </a>{" "}
+                  </a>
+                  <a href="mailTo:hello@nextupgrad.us">
+                    <i className="bi bi-envelope-at mlicon"></i>
+                  </a>
+                  <a href="tel:+1(408)786-5558">
+                    <i class="bi bi-telephone-fill skicon"></i>
+                  </a>
                 </div>
               </div>
             </div>

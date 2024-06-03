@@ -34,7 +34,7 @@ export default function Home() {
     email: "",
     subject: "",
     message: "",
-    form_name: "home",
+    form_name: "digital_solution",
   });
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);
@@ -706,7 +706,7 @@ export default function Home() {
             email: "",
             subject: "",
             message: "",
-            form_name: "home",
+            form_name: "digital_solution",
           });
         }
       } catch (error) {
@@ -722,7 +722,7 @@ export default function Home() {
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Propel your business forward with innovative digital transformation services & solutions. Drive efficiency, agility, & growth. Get a free consultation!"
         />
 
         <meta property="og:type" content="website" />
@@ -730,7 +730,8 @@ export default function Home() {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Propel your business forward with innovative digital transformation services & solutions. Drive efficiency, agility, & growth. Get a free consultation!
+          "
         />
         <meta
           property="og:image"
@@ -742,7 +743,8 @@ export default function Home() {
         <meta property="twitter:title" content="Nextupgrad" />
         <meta
           property="twitter:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Propel your business forward with innovative digital transformation services & solutions. Drive efficiency, agility, & growth. Get a free consultation!
+          "
         />
         <meta
           property="twitter:image"
@@ -1457,8 +1459,8 @@ export default function Home() {
         <div className="industries">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
-                <h2>Industries We Serve .</h2>{" "}
+              <div className="col-md-12 ">
+                <h2>Industries We Serve</h2>{" "}
               </div>
 
               <div
@@ -1617,7 +1619,7 @@ export default function Home() {
         <div className="testimonials">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 text-center">
                 <h2>Testimonials</h2>
               </div>
             </div>
@@ -1906,7 +1908,7 @@ export default function Home() {
       </section> */}
 
         <div className="video_testimonials ">
-          <div className="container">
+          <div className="container text-center">
             <h3>Video Testimonials</h3>
             <div
               className="owl-carousel owl-theme testimonials-container owl-loaded owl-drag"
@@ -1956,7 +1958,7 @@ export default function Home() {
         <div className="testimonials mt-5 pt-5">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12  text-center">
                 <h2>Frequently Asked Questions</h2>
               </div>
             </div>

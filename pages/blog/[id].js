@@ -5,6 +5,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import styles from "../../styles/blog.module.css";
+import Head from "next/head";
 const SingleBlog = () => {
   const [blog, setblogs] = useState({});
 
@@ -79,6 +80,38 @@ const SingleBlog = () => {
     // </>
     <>
       <>
+        <Head>
+          <title>Blog - NextUpgrad USA</title>
+          <meta name="title" content="Nextupgrad" />
+          <meta
+            name="description"
+            content="Dive into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth."
+          />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://nextupgrad.us/" />
+          <meta property="og:title" content="Nextupgrad" />
+          <meta
+            property="og:description"
+            content="Dive into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth."
+          />
+          <meta
+            property="og:image"
+            content="https://nextupgrad.us/logo-2orange-1.png"
+          />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://nextupgrad.us/" />
+          <meta property="twitter:title" content="Nextupgrad" />
+          <meta
+            property="twitter:description"
+            content="Dive into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth."
+          />
+          <meta
+            property="twitter:image"
+            content="https://nextupgrad.us/logo-2orange-1.png"
+          />
+        </Head>
         <div className={`blogBanner banner2 ${styles.singlePost}`}>
           <div className="container bannerContainer">
             <div className="newBannerMain">
@@ -102,10 +135,7 @@ const SingleBlog = () => {
                     {new Date(blog.created_at).toLocaleDateString()}
                   </p>
                   <Image
-                    src={
-                      `https://53c50cd527.nxcli.io/calculator/public/next_resources/` +
-                      blog.banner_image
-                    }
+                    src={process.env.NEXT_PUBLIC_IMAGE_URL + blog.banner_image}
                     fluid
                     className="mb-4 w-100 rounded"
                   />

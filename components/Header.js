@@ -60,12 +60,11 @@ const Header = () => {
           Home
         </Link>
 
-        <Link 
-         href="/about-us" 
-         className={activeTab === "About Us" ? "active" : ""} 
-        target="_blank"
-        > 
-         About 
+        <Link
+          href="/about-us"
+          className={activeTab === "About Us" ? "active" : ""}
+        >
+          About
         </Link>
         <span className={activeTab === "Services" ? "active" : ""}>
           <Menu
@@ -73,33 +72,38 @@ const Header = () => {
             menuButton={<MenuButton>Services</MenuButton>}
             transition
           >
-            
             <MenuItem
               onClick={(e) =>
-                window.open("/hire-dedicated-developer", '_blank')
+                window.open("/hire-dedicated-developer", "_blank")
               }
             >
               Hire Dedicated Developer
             </MenuItem>
             <MenuItem
               onClick={(e) =>
-                window.open("/website-design-development-services", '_blank')
+                window.open("/website-design-development-services", "_blank")
               }
             >
               Website Development
             </MenuItem>
             <MenuItem
-              onClick={(e) =>  window.open("/software-development-services", '_blank')}
+              onClick={(e) =>
+                window.open("/software-development-services", "_blank")
+              }
             >
               Software Development
             </MenuItem>
             <MenuItem
-              onClick={(e) =>   window.open("/mobile-app-development-services", '_blank')}
+              onClick={(e) =>
+                window.open("/mobile-app-development-services", "_blank")
+              }
             >
               Mobile App Development
             </MenuItem>
             <MenuItem
-              onClick={(e) =>   window.open("/digital-marketing-services", '_blank')}
+              onClick={(e) =>
+                window.open("/digital-marketing-services", "_blank")
+              }
             >
               Digital Marketing
             </MenuItem>
@@ -113,13 +117,12 @@ const Header = () => {
         <Link
           href="/contact-us"
           className={activeTab === "Contact Us" ? "active" : ""}
-          target="_blank"
         >
           Contact Us
         </Link>
-        <Link href="/portfolio" target="_blank" >Portfolio</Link>
-        <Link href="/blog" target="_blank">Blog</Link>
-        <Link href="/contact-us" target="_blank">
+        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/contact-us">
           <button id="header-btn">Let's Discuss</button>
         </Link>
       </nav>

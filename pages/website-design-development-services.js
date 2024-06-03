@@ -7,20 +7,44 @@ const Webdesign = () => {
   return (
     <>
       <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        <title>Website Design and Development - NextUpgrad USA</title>
+        <meta name="title" content="Nextupgrad" />
+        <meta
+          name="description"
+          content="Ready to convert visitors into customers? Hire market's leading website design and development company to create a static website to complex web applications."
         />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        ></link>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nextupgrad.us/" />
+        <meta property="og:title" content="Nextupgrad" />
+        <meta
+          property="og:description"
+          content="Ready to convert visitors into customers? Hire market's leading website design and development company to create a static website to complex web applications.."
+        />
+        <meta
+          property="og:image"
+          content="https://nextupgrad.us/logo-2orange-1.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://nextupgrad.us/" />
+        <meta property="twitter:title" content="Nextupgrad" />
+        <meta
+          property="twitter:description"
+          content="Scale your team, fill skill gaps, and manage costs effectively. Hire dedicated developers for web, mobile, and more. Get tailored talent based on tech needs."
+        />
+        <meta
+          property="twitter:image"
+          content="https://nextupgrad.us/logo-2orange-1.png"
+        />
       </Head>
       <WebDevSlider />
       <div>
         <div className="sec-two">
-          <div className="container">
-            <h1>Innovative Website Design and Development Services</h1>
+          <div className="container ">
+            <h1 className="text-center">
+              Innovative Website Design and Development Services
+            </h1>
             <div className="row">
               <div className="col-md-6 img-box">
                 <div className="sec-two-box">
@@ -371,7 +395,7 @@ const Webdesign = () => {
             </div>
             <div className="clearfix"></div>
             <div className="row sec-four-two">
-              <h2>
+              <h2 className="lookingbox">
                 Are you looking for customized ecommerce business solutions?
               </h2>
               <a href="#">Connect with an expert</a>
@@ -438,7 +462,7 @@ const Webdesign = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h2>Frequently Asked Questions</h2>
+                <h2 className="text-center">Frequently Asked Questions</h2>
               </div>
             </div>
           </div>

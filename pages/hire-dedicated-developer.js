@@ -14,7 +14,7 @@ const Hirededicateddeveloper = () => {
     email: "",
     subject: "",
     message: "",
-    form_name: "hiring",
+    form_name: "hire_dedicated_form",
   });
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);
@@ -68,7 +68,7 @@ const Hirededicateddeveloper = () => {
             email: "",
             subject: "",
             message: "",
-            form_name: "hiring",
+            form_name: "hire_dedicated_form",
           });
         }
       } catch (error) {
@@ -80,11 +80,11 @@ const Hirededicateddeveloper = () => {
   return (
     <>
       <Head>
-        <title>Nextupgrad</title>
+        <title>Hire Dedicated Developers - NextUpgrad USA</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Scale your team, fill skill gaps, and manage costs effectively. Hire dedicated developers for web, mobile, and more. Get tailored talent based on tech needs."
         />
 
         <meta property="og:type" content="website" />
@@ -92,7 +92,7 @@ const Hirededicateddeveloper = () => {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Scale your team, fill skill gaps, and manage costs effectively. Hire dedicated developers for web, mobile, and more. Get tailored talent based on tech needs."
         />
         <meta
           property="og:image"
@@ -104,7 +104,7 @@ const Hirededicateddeveloper = () => {
         <meta property="twitter:title" content="Nextupgrad" />
         <meta
           property="twitter:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Scale your team, fill skill gaps, and manage costs effectively. Hire dedicated developers for web, mobile, and more. Get tailored talent based on tech needs."
         />
         <meta
           property="twitter:image"
@@ -358,8 +358,8 @@ const Hirededicateddeveloper = () => {
       <section id="exp" className="mx-5">
         <div className="container">
           <div className="exp1">
-            <span className="line1" />
-            <h2 className={`${styles.devex}`}>Our Developer Expertise</h2>
+            <h2 className={`${styles.devex}`}>Our Developer Expertise</h2>{" "}
+            {/*<span className="line1" />*/}
           </div>
           <div className={`${styles.exp2}`}>
             <div className="exp211">
@@ -407,8 +407,10 @@ const Hirededicateddeveloper = () => {
       <section id="expt">
         <div className="container">
           <div className="expt1 mx-5">
-            <span className="line1" />
-            <h2 className={`${styles.benhire}`}>Benefits of hiring dedicated resource from NextUpgrad</h2>
+            <h2 className={`${styles.benhire}`}>
+              Benefits of hiring dedicated resource from NextUpgrad
+            </h2>
+             {/*<span className="line1" />*/}
           </div>
           <div className="expt2">
             <div className="exp21">
@@ -471,11 +473,11 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="row">
             <div className="skill1 col-md-8">
-              <span className="line1 " />
               <h3 className={`${styles.getstrt}`}>
                 Get started now! Contact our skilled developers to bring your
                 ideas to life.
-              </h3>
+              </h3>{" "}
+               {/*<span className="line1" />*/}
             </div>
             <div className="skill2  col-md-4">
               <Link href="/contact-us">
@@ -489,8 +491,8 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="ada row">
             <div className="ada1 col-md-6">
-              <span className="line1" />
               <h3 className={`${styles.adptmd}`}>Adaptable Hiring Model</h3>
+               {/*<span className="line1" />*/}
             </div>
             <div className="ada2  col-md-6">
               <p>
@@ -509,7 +511,7 @@ const Hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="adap2   col-md-4">
-            <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
+              <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
               <img src="img-3-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
@@ -517,7 +519,7 @@ const Hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="adap3   col-md-4">
-            <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
+              <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
               <img src="img-2-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
@@ -531,11 +533,10 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="last1 row">
             <div className="last1 col-md-7">
-              <span className="line1" />
               <h3 className={`${styles.comrea}`}>
                 Compelling Reasons to Engage Dedicated Developers at NextUpgrad
-              </h3>
-
+              </h3>{" "}
+               {/*<span className="line1" />*/}
               <ul className="list1">
                 <li className="li1">
                   <span>Certified Developers :</span>
@@ -611,7 +612,7 @@ const Hirededicateddeveloper = () => {
         <div className="testimonials mt-5 pt-5">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 text-center">
                 <h2>Frequently Asked Questions</h2>
               </div>
             </div>

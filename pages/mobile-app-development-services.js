@@ -5,11 +5,12 @@ const Mobileapp = () => {
   return (
     <>
       <Head>
-        <title>Nextupgrad</title>
+        <title> Mobile App Development Services - NextUpgrad USA</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Put your business at customers' fingertips! Nextupgrad USA builds best-in-class mobile apps for iOS & Android. Free Consultation, expert design & development. 
+          "
         />
 
         <meta property="og:type" content="website" />
@@ -17,7 +18,9 @@ const Mobileapp = () => {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Put your business at customers' fingertips! Nextupgrad USA builds best-in-class mobile apps for iOS & Android. Free Consultation, expert design & development. 
+
+          "
         />
         <meta
           property="og:image"
@@ -29,7 +32,8 @@ const Mobileapp = () => {
         <meta property="twitter:title" content="Nextupgrad" />
         <meta
           property="twitter:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Put your business at customers' fingertips! Nextupgrad USA builds best-in-class mobile apps for iOS & Android. Free Consultation, expert design & development. 
+          "
         />
         <meta
           property="twitter:image"
@@ -314,7 +318,7 @@ const Mobileapp = () => {
         </div>
         <div className="sec-six mobilesix">
           <div className="container">
-            <h2>Mobile app creation process</h2>
+            <h2 className="sixhead">Mobile app creation process</h2>
             <div className="row">
               <div className="col-md-3 colone">
                 <div className="coltwo">
@@ -440,7 +444,7 @@ const Mobileapp = () => {
           </div>
         </div>
         <div className="sec-sev">
-          <div className="container">
+          <div className="container text-center">
             <h2>Frequently Asked Questions</h2>
           </div>
           <section className="container pb-5  ">

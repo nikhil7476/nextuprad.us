@@ -192,7 +192,7 @@ const Footer = () => {
                 <h2>
                   <a href="mailto:hello@nextupgrad.us">hello@nextupgrad.us</a>
                 </h2>
-                <h2 className="con-hd">CALL US</h2>
+                <h2 className="con-hd">CALL AT</h2>
                 <ul className="con-lis">
                   <li>
                     <i className="bi bi-telephone" />
@@ -253,7 +253,7 @@ const Footer = () => {
               </div>
               <div className="col-md-4 pre-policy">
                 <h2>
-                  <a href="#">Privacy Policy</a>
+                  <Link href="/Privacy">Privacy Policy</Link>
                 </h2>
               </div>
             </div>

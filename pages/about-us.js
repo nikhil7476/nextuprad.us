@@ -12,11 +12,12 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Nextupgrad</title>
+        <title>About US - NextUpgrad USA</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Discover Nextupgrad USA - Your Partner in Digital Excellence. We bring innovation to the forefront, offering advanced solutions to your business needs.Nextupgrad delivers innovative solutions across industries. Hire dedicated developers or leverage our expertise for web, mobile, software, & marketing success.
+          "
         />
 
         <meta property="og:type" content="website" />
@@ -24,7 +25,7 @@ const About = () => {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Discover Nextupgrad USA - Your Partner in Digital Excellence. We bring innovation to the forefront, offering advanced solutions to your business needs.Nextupgrad delivers innovative solutions across industries. Hire dedicated developers or leverage our expertise for web, mobile, software, & marketing success."
         />
         <meta
           property="og:image"
@@ -36,7 +37,7 @@ const About = () => {
         <meta property="twitter:title" content="Nextupgrad" />
         <meta
           property="twitter:description"
-          content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"
+          content="Discover Nextupgrad USA - Your Partner in Digital Excellence. We bring innovation to the forefront, offering advanced solutions to your business needs.Nextupgrad delivers innovative solutions across industries. Hire dedicated developers or leverage our expertise for web, mobile, software, & marketing success."
         />
         <meta
           property="twitter:image"
@@ -51,8 +52,9 @@ const About = () => {
           </h3>
         </div> */}
         <div className="sec-1">
-          <hr className="solid" />
           <h1>About NextUpgrad USA</h1>
+          {/*<hr className="solid" />*/}
+
           <div className="sec-1-1">
             <div className="sec-1-1-1">
               <img src="ceo.png" alt="Deepak Tandon" />
@@ -86,8 +88,9 @@ const About = () => {
           </div>
         </div>
         <div className="sec-2">
-          <hr className="solid" />
           <h2>Our Community</h2>
+           {/*<hr className="solid" />*/}
+
           <div className="sec-2-1">
             <div className="sec-2-1-1">
               {inView && (
@@ -201,8 +204,7 @@ const About = () => {
           <div className="container">
             <div className="sec-3-1">
               <div className="sec-3-1-1">
-                <hr className="solid" />
-                <h2>Our Integrity</h2>
+                <h2>Our Integrity</h2>  {/*<hr className="solid" />*/}
               </div>
               <div className="sec-3-1-2">
                 <p>
@@ -293,8 +295,8 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <hr className="solid" />
                 <h2>Certifications</h2>
+                {/*<hr className="solid" />*/}
               </div>
               <div className="col-md-6">
                 <p>
