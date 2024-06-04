@@ -19,7 +19,7 @@ import { useState } from "react";
 import axios from "axios";
 import TagManagerLanding from "@/components/tagManagerLanding";
 import GoogleTagManager from "@/components/AnalyticsTag";
-import GoogleTagManager from "@/components/AnalyticsTag";
+
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
