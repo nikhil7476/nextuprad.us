@@ -7074,6 +7074,10 @@ h2.landingnextheadnew {
   transform: perspective(300px) rotateY(8deg);
 }
 
+.ftr-sec .navbar{
+  margin-top:0px !important;
+  }
+
 @media screen and (max-width: 1290px) {
   .time-sidebar {
     width: 42% !important;
@@ -7454,6 +7458,9 @@ h2.landingnextheadnew {
 .flip-card-front img{
   margin-bottom:30px !important;
 }
+.ada2 p{
+  margin-left:0px !important;
+}
 
 }
 
@@ -7483,6 +7490,10 @@ h2.landingnextheadnew {
   header.musthead.sticky-top {
     position: relative;
     min-height: 70px;
+  }
+
+  #exp{
+    margin-left:0px !important;
   }
 }
 
@@ -7523,6 +7534,67 @@ h2.landingnextheadnew {
 
   .flip-card-front {
     padding-top: 15% !important;
+}
+
+.ftr-socio i{
+  font-size:16px !important;
+}
+
+.grids{
+  grid-template-columns: auto auto !important;
+  width: fit-content !important;
+    margin-right: 65px !important;
+}
+
+.achieved ul li span{
+  font-size:20px !important;
+  line-height:20px !important;
+}
+
+.sect1 h1{
+  font-size:20px !important;
+}
+
+.sp{
+  font-size:20px !important;
+}
+
+.contactdetails{
+  padding: 40px 20px 50px 10px !important;
+}
+
+.contactdetails h3{
+  font-size:15px !important;
+}
+
+.contactdetails p{
+  font-size:8px !important;
+}
+
+a.elementor-buttoncontact{
+  padding:15px !important;
+  font-size: 7px !important;
+}
+
+#con{
+  margin-top:0px !important;
+}
+
+.con1 h1{
+  font-size:50px !important;
+}
+
+.con1 p{
+  font-size:16px !important;
+  line-height:22px !important;
+}
+
+.line{
+  display:none !important;
+}
+
+.react-tabs__tab-list{
+  width:100% !important;
 }
 
 }
@@ -7591,7 +7663,7 @@ h2.landingnextheadnew {
   .uni21 img {
     margin-top: 60px;
     margin-left: -20px;
-    width: 302px;
+    width: 100%;
   }
   .mobile-second .col-md-6 img {
     width: 100%;
@@ -8313,8 +8385,8 @@ video.w-100-mobilevideo.bannerVideo {
     text-align: center;
   }
   .ftr-logos img {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     margin: 7px 22px;
   }
   .col-md-4.copy-right {
@@ -8333,7 +8405,40 @@ video.w-100-mobilevideo.bannerVideo {
   .Personalize h2 {
     font-size: 25px;
     padding: 0 23px;
-    line-height: 52px;
+    line-height: 35px;
+  }
+
+  .Personalize-button{
+    font-size:15px !important;
+    padding:10px 15px !important;
+  }
+
+  .exploreSection{
+    margin-top:0rem !important;
+  }
+
+  #largeHeading{
+    font-size:33px !important;
+  }
+
+  .discover h2{
+    line-height:45px !important;
+  }
+
+  .timeline-container-mobilenew ul{
+    margin:20px !important;
+  }
+
+  .deserve h2{
+    line-height:45px !important;
+  }
+
+  .testimonials h2{
+    line-height:45px !important;
+  }
+
+  .holistic h3{
+    line-height:45px !important;
   }
   .aboutSliderCaption {
     color: #fff;
@@ -8410,6 +8515,95 @@ video.w-100-mobilevideo.bannerVideo {
   .part div img {
     width: 100%;
     margin-bottom: 16px;
+  }
+  
+  .elementor-social-icon{
+    width:55px !important;
+  }
+
+  .sec-2-1-1{
+    border-right:none !important;
+  }
+
+  .sec-2-1-3{
+    border-left:none !important;
+  }
+
+  .sec-2-2-1{
+    border-bottom:2px solid #fff !important;
+  }
+  .sec-2-2-2{
+    border-bottom:2px solid #fff !important;
+    border-right:none !important;
+    border-left: none !important;
+  }
+
+  .sec-3-1{
+    margin-bottom:30px !important;
+  }
+
+  /* .sec-4 ul li img{
+    width:70% !important;
+  }
+
+  .img.adobe{
+    width:50% !important;
+  } */
+
+  .sec-5 h2{
+    line-height:45px !important;
+  }
+  .sec-5 a{
+    font-size:15px !important;
+    padding:10px 15px !important;
+    width:125px !important;
+  }
+
+  .sec1{
+    margin-top:50px !important;
+  }
+
+  #btn{
+    padding:10px 15px !important;
+    font-size:15px !important;
+  }
+
+  .webDesignSlider{
+    margin-top:0px !important;
+  }
+
+  #mouse-parallax-container div img{
+    width:50% !important;
+  }
+  .sec-two h1{
+    line-height:50px !important;
+  }
+
+  #sect{
+    height:480px !important;
+    padding-left:15px !important;
+    justify-content: left !important;
+  }
+
+  .sect1{
+    width:min-content !important;
+  }
+
+  .unid21 img{
+    width:100% !important;
+  }
+
+  .sec-one h1{
+    font-size:35px !important;
+    margin-top:30px !important;
+  }
+
+  .img-first-cls{
+    width:100% !important;
+  }
+
+  .pb-5 img{
+    width:100% !important;
   }
 }
 

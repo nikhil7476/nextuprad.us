@@ -123,4 +123,22 @@
     display: grid;
     grid-template-columns: auto;
   }
+
+  
+
+}
+
+@media screen and (max-width:600px){
+  .bannerimg{
+    width:50% !important;
+  }
+
+  .section2piy{
+    padding:0px !important;
+  }
+ 
+  #exp{
+    margin-left:0px !important;
+  }
+
 }

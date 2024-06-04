@@ -53,7 +53,7 @@ const Mobileapp = () => {
                 <Link href="/contact-us">Connect with a specialist</Link>
               </div>
               <div className="col-md-6">
-                <img
+                <img class="img-first-cls"
                   src="/mobile-banner.webp"
                   alt="Connect with a specialist"
                 />
