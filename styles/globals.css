@@ -7462,6 +7462,10 @@ h2.landingnextheadnew {
   margin-left:0px !important;
 }
 
+.discover{
+  padding-top:0px !important;
+}
+
 }
 
 @media screen and (max-width: 693px) {
@@ -7597,9 +7601,8 @@ a.elementor-buttoncontact{
   width:100% !important;
 }
 
-
-
 }
+
 
 /*************LANDING PAGE CSS END*/
 
