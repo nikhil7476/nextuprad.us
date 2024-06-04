@@ -19,6 +19,7 @@ import { useState } from "react";
 import axios from "axios";
 import TagManagerLanding from "@/components/tagManagerLanding";
 import GoogleTagManager from "@/components/AnalyticsTag";
+import GoogleTagManager from "@/components/AnalyticsTag";
 const LandingPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -198,6 +199,7 @@ const LandingPage = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         ></link>
       </Head>
+      <GoogleTagManager gtmId="G-EZNCL10K8J" />
       <TagManagerLanding gtmId="GTM-TKZTSGKZ" />
       <section id="leadForm" className={`${styles.section2piy} `}>
         <video
