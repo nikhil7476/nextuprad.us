@@ -4227,7 +4227,7 @@ ul {
 
 .dropdown-toggle:after {
   background: url("/plus.png") !important;
-  background-size: 25px !important;
+  background-size: 20px !important;
   background-repeat: no-repeat !important;
   list-style: none !important;
   padding: 10px 0 0 30px !important;
@@ -7563,17 +7563,17 @@ h2.landingnextheadnew {
   padding: 40px 20px 50px 10px !important;
 }
 
-.contactdetails h3{
+/* .contactdetails h3{
   font-size:15px !important;
-}
+} */
 
-.contactdetails p{
+/* .contactdetails p{
   font-size:8px !important;
-}
+} */
 
 a.elementor-buttoncontact{
   padding:15px !important;
-  font-size: 7px !important;
+  font-size: 12px !important;
 }
 
 #con{
@@ -7596,6 +7596,8 @@ a.elementor-buttoncontact{
 .react-tabs__tab-list{
   width:100% !important;
 }
+
+
 
 }
 
@@ -7690,6 +7692,20 @@ a.elementor-buttoncontact{
   }
   .dropdown {
     color: #000 !important;
+    width:100% !important;
+  }
+  .navbar-nav {
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+
+  .dropdown-menu.show{
+    background-color: rgba(0,0,0,0) !important;
+    border:none !important;
+  }
+
+  #basic-navbar-nav a{
+    border:none !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -8605,6 +8621,16 @@ video.w-100-mobilevideo.bannerVideo {
   .pb-5 img{
     width:100% !important;
   }
+
+  .contactdetails .col-md-6{
+    width:70% !important;
+  }
+
+  a.elementor-buttoncontact{
+    margin-bottom:20px !important;
+   margin-right:0px !important; 
+  }
+
 }
 
 @media (max-width: 576px) {
