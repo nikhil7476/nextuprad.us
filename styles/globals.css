@@ -12,7 +12,28 @@
 .landinlogomobile {
   display: none;
 }
-
+.sticky-sidebar h4 {
+  text-align: left;
+  color: #fff;
+  font-family: Montserrat, Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  background: #192733;
+  padding: 7px 5px 7px 12px;
+  text-transform: uppercase;
+}
+.sidebarSingleBlog li {
+  background: #fdfcdc;
+  padding: 10px;
+  margin: 0 !IMPORTANT;
+  border-bottom: 1px dashed #cccccc4f;
+}
+.sidebarSingleBlog li a {
+  color: #000;
+  font-size: 14px;
+  display: block;
+}
 .sidebarSingleBlog {
   padding: 0px !important;
 }
