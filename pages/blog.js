@@ -6,7 +6,7 @@ import { formatDate } from "@/utils/helper";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import styles from ".././styles/blog.module.css";
-
+import { Container, Row, Col, Image } from "react-bootstrap";
 const blog = () => {
   const [blogs, setblogs] = useState([]);
   const [blogsBackup, setblogsBackup] = useState([]);
@@ -117,7 +117,7 @@ const blog = () => {
                   blogs.map((item, index) => (
                     <div key={index} className="blog">
                       <div className="blog-img">
-                        <Link href={`/blog/${item.slug}`}>
+                        <Link href={`/blog/${item.slug}`} target="_blank">
                           <img
                             src={
                               process.env.NEXT_PUBLIC_IMAGE_URL +
@@ -128,14 +128,18 @@ const blog = () => {
                           />
                         </Link>
                         <h2>
-                          <Link href={`/blog/${item.slug}`}>{item.title}</Link>
+                          <Link href={`/blog/${item.slug}`} target="_blank">
+                            {item.title}
+                          </Link>
                           <div>
                             <p>{item.author}</p>
                             <p>{formatDate(item.updated_at)}</p>
                           </div>
                         </h2>
                         <div className="bttn">
-                          <Link href={`/blog/${item.slug}`}>Learn More</Link>
+                          <Link href={`/blog/${item.slug}`} target="_blank">
+                            Learn More
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -176,6 +180,46 @@ const blog = () => {
                     onChange={(e) => setSearchQuery(e.target.value)}
                   />
                 </form>
+                {blogs.length ? (
+                  <Container className="my-5">
+                    <Row className="justify-content-center">
+                      <Col className="d-none d-md-block">
+                        <div className="sticky-sidebar">
+                          <h4>Table of Content</h4>
+                          <ul className="sidebarSingleBlog">
+                            {blogs.length
+                              ? blogs.map((item, index) => (
+                                  <li className="mt-2" key={index}>
+                                    <Link
+                                      href={`/blog/${item.slug}`}
+                                      target="_blank"
+                                    >
+                                      {item.title}
+                                    </Link>
+                                  </li>
+                                ))
+                              : null}
+                          </ul>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Container>
+                ) : (
+                  <SkeletonTheme
+                    color="var(--skeleton-color)"
+                    highlightColor="var(--skeleton-highlight-color)"
+                  >
+                    <Container className="mt-4">
+                      <Row className="justify-content-center">
+                        <Col className="d-none d-md-block">
+                          <div className="sticky-sidebar">
+                            <Skeleton count={5} />
+                          </div>
+                        </Col>
+                      </Row>
+                    </Container>
+                  </SkeletonTheme>
+                )}
               </div>
             </div>
           </div>
