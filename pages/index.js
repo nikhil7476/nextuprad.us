@@ -771,7 +771,8 @@ export default function Home() {
               />
 
               <p>
-              Commence Your digital transformation journey with NextUpgrad’s Innovative Digital Solutions
+                Commence Your digital transformation journey with NextUpgrad’s
+                Innovative Digital Solutions
               </p>
               <Link className="Personalize-button2" href="/contact-us">
                 Let's Discuss

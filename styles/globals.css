@@ -8653,6 +8653,18 @@ h2.landingnextheadnew {
   }
 }
 
+@media (max-width: 585px) {
+  .newBannerMain span {
+    font-size: 1em;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    position: relative;
+    z-index: 12;
+  }
+}
+
 @media (max-width: 576px) {
   .podcastSidebar {
     display: flex;
