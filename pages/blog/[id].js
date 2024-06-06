@@ -321,7 +321,7 @@ const SingleBlog = () => {
         .sticky-sidebar {
           position: -webkit-sticky; /* For Safari */
           position: sticky;
-          top: 20px;
+          top: 140px;
         }
       `}</style>
     </>
