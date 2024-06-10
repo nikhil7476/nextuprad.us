@@ -1,4 +1,5 @@
 import WebDevSlider from "@/components/webDevSlider";
+import { useRouter } from 'next/navigation'
 import HomeAccordian from "@/components/HomeAccordian";
 import Head from "next/head";
 import styles from "../styles/LandingPage.module.css";
@@ -29,6 +30,7 @@ const LandingPage = () => {
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);
   const [email, setEmail] = useState();
+  const router = useRouter()
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -106,6 +108,7 @@ const LandingPage = () => {
             message: "",
             form_name: "landing_page_form",
           });
+          setTimeout(()=>router.push('/thank-you'),750);
         }
       } catch (error) {
         console.error("Error submitting form:", error);
