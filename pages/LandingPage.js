@@ -108,7 +108,7 @@ const LandingPage = () => {
             message: "",
             form_name: "landing_page_form",
           });
-          setTimeout(()=>router.push('/thank-you'),750);
+         
         }
       } catch (error) {
         console.error("Error submitting form:", error);

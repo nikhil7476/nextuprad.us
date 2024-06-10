@@ -1,5 +1,6 @@
 import WebDevSlider from "@/components/webDevSlider";
 import HomeAccordian from "@/components/HomeAccordian";
+import { useRouter } from 'next/navigation'
 import Head from "next/head";
 import styles from "../styles/LandingPage.module.css";
 import { Form, Button } from "react-bootstrap";
@@ -32,6 +33,8 @@ const LandingPage = () => {
   const [errors, setErrors] = useState({});
   const [recaptcha, setRecaptcha] = useState(null);
   const [email, setEmail] = useState();
+
+  const router = useRouter()
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -101,7 +104,7 @@ const LandingPage = () => {
         );
         console.log(response.data);
         if (response.status == 200 || response.status == 201) {
-          toast.success("Email sent");
+          toast.success("Form Submitted.");
           setFormData({
             name: "",
             email: "",
@@ -109,6 +112,7 @@ const LandingPage = () => {
             message: "",
             form_name: "landing_page_form",
           });
+          setTimeout(()=>router.push('/thank-you'),750);
         }
       } catch (error) {
         console.error("Error submitting form:", error);
@@ -1034,7 +1038,7 @@ const LandingPage = () => {
                 </form>
               </div>
               <div className="sec-sev-hd col-md-8 ">
-                <h2>Have additional inquiries?</h2>
+                <h2>Have additional Enquiries?</h2>
 
                 <p>
                   Need more information? Chat with our friendly team for
