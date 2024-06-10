@@ -13,11 +13,6 @@ const ThankYou = () => {
                         Go Home
                     </button>
                 </div>
-                <div className="footer-like">
-                    <p>Email not received?
-                        <a href="#">Click here to send again</a>
-                    </p>
-                </div>
             </div>
         </div>
     );
