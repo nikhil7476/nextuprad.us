@@ -41,14 +41,14 @@ const Footer = () => {
         setEmail("");
         Swal.fire({
           title: "Subscribed!",
-          text: "thank you for subscribing to nextupgrad!",
+          text: "Thank you for subscribing to nextupgrad!",
           icon: "success",
         });
       }
       if (data.status == 500) {
         Swal.fire({
           title: "Already Subscribed!",
-          text: "this email is already subscribed!",
+          text: "This email is already subscribed!",
           icon: "error",
         });
       }
