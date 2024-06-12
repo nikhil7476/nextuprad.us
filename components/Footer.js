@@ -25,7 +25,7 @@ const Footer = () => {
 
     try {
       const response = await fetch(
-        "https://53c50cd527.nxcli.io/calculator/api/postNewsletter",
+        "https://53c50cd527.nxcli.io/nextupgrad_backend/api/postNewsletter",
         {
           method: "POST",
           headers: {
