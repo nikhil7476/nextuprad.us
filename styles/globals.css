@@ -8773,3 +8773,6 @@ flex-direction: column;
 }
   
 }
+.BlogLists > div > ul{
+  list-style-type: disc !important;
+}

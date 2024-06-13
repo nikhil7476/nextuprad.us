@@ -9,6 +9,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import styles from "../../styles/blog.module.css";
 import Head from "next/head";
 import Link from "next/link";
+import { formatDate } from "@/utils/helper";
 const SingleBlog = () => {
   const [blog, setblogs] = useState({});
   const [sidebarBlog, setsidebarBlog] = useState([]);
@@ -249,18 +250,18 @@ const SingleBlog = () => {
                 </div>
               </Col>
               <Col md={9} lg={8}>
-                <div className="bg-white shadow-sm rounded">
+                <div className="bg-white shadow-sm rounded ">
                   <h1 className="display-4 text-center">{blog.title}</h1>
                   <p className="text-muted text-center my-4">
                     {blog.author} |{" "}
-                    {new Date(blog.created_at).toLocaleDateString()}
+                    {formatDate(new Date(blog.created_at).toLocaleDateString())}
                   </p>
                   <Image
                     src={process.env.NEXT_PUBLIC_IMAGE_URL + blog.banner_image}
                     fluid
                     className="mb-4 w-100 rounded"
                   />
-                  <div className="p-3">{BlogContent(blog.description)}</div>
+                  <div className="p-3 BlogLists">{BlogContent(blog.description)}</div>
                 </div>
               </Col>
             </Row>
