@@ -823,7 +823,7 @@ const LandingPagee = () => {
                     <a href="">Terms &amp; Conditions</a>
                   </li>
                   <li>
-                    <a href="">Privacy Policy</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
                   </li>
                 </ul>
               </div>

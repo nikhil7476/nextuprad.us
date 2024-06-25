@@ -746,10 +746,12 @@ export default function Home() {
           content="Propel your business forward with innovative digital transformation services & solutions. Drive efficiency, agility, & growth. Get a free consultation!
           "
         />
+
         <meta
           property="twitter:image"
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
+        <meta name="google-site-verification" content="6CF5PndgghHSqX2raeDV_1_arkxZ8exgG-D0nSD5MSA" /> 
       </Head>
       <main className="mainOverflowHide">
         <div className="banner2">
