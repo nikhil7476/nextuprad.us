@@ -253,7 +253,7 @@ const Footer = () => {
               </div>
               <div className="col-md-4 pre-policy">
                 <h2>
-                  <Link href="/Privacy">Privacy Policy</Link>
+                  <Link href="/privacy-policy">Privacy Policy</Link>
                 </h2>
               </div>
             </div>

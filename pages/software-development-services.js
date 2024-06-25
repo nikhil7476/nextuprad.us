@@ -41,7 +41,7 @@ const Software = () => {
         <main id="sect">
           <div className="sect1">
             <h1>
-              <span className="sp">SOFTWARE DEVELOPMENT</span>
+              <span className="sp">SOFTWARE DEVELOPMENT{" "}</span>
               SERVICES
             </h1>{" "}
             <div className="overlay" />
