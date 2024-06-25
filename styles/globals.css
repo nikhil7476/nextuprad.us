@@ -7104,6 +7104,9 @@ h2.landingnextheadnew {
 .dropdown-item {
   background-color: #fff !important;
 }
+.services-bigimages .tab-image-full-width {
+  width: 100%;
+}
 
 @media screen and (max-width: 1290px) {
   .time-sidebar {
