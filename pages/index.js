@@ -751,7 +751,7 @@ export default function Home() {
           property="twitter:image"
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
-        <meta name="google-site-verification" content="6CF5PndgghHSqX2raeDV_1_arkxZ8exgG-D0nSD5MSA" />
+        <meta name="google-site-verification" content="6CF5PndgghHSqX2raeDV_1_arkxZ8exgG-D0nSD5MSA" /> 
       </Head>
       <main className="mainOverflowHide">
         <div className="banner2">
