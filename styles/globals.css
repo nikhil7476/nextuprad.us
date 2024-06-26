@@ -7107,7 +7107,123 @@ h2.landingnextheadnew {
 .services-bigimages .tab-image-full-width {
   width: 100%;
 }
-
+.serviceheadeing{
+  margin-top: 20px;
+  line-height: 5rem;
+  width: 62%;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.servicesubheadeing {
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  margin-top: 25px;
+}
+.servicesubheadeing span {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#000000, rgb(255 255 255 / 0%));
+  -webkit-background-clip: text;
+  display: block;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0px;
+}
+.services-projects h3 {
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.serviceprojectsimg img {
+    width: 100%;
+}
+.projectliste{
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #5f5d5d;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 15px 0 15px 20px;
+  text-align: left;
+}
+.datascroll {
+  background-color: #192733;
+  align-items: center;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #fff;
+}
+.datascroll marquee {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.projectliste li {
+  background: url(/icon.png);
+  background-size: 18px;
+  background-repeat: no-repeat;
+  list-style: none;
+  padding: 0 0 8px 27px;
+  margin: 0;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  color: #000000;
+  font-weight: 400;
+  background-position: 0 5px;
+}
+.serviceslisted {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+ul.serviceslisted li {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding: 5px;
+}
+ul.serviceslisted li a img {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+}
+ul.serviceslisted li:hover a img {
+  margin-top: -75px;
+}
+ul.serviceslisted li a span {
+  padding: 20px 20px;
+  border-radius: 9px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 3px;
+  z-index: 99;
+  text-align: center;
+  background: #fc6746;
+  color: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 46px;
+}
 @media screen and (max-width: 1290px) {
   .time-sidebar {
     width: 42% !important;
