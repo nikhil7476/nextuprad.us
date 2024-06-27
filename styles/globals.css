@@ -1234,7 +1234,7 @@ span.elementor-screen-only {
 
 .ps-timeline li span {
   position: relative;
-  z-index: 99999 !important;
+  z-index: 99 !important;
 }
 .ps-timeline-sec ol:before {
   content: " ";
@@ -5971,7 +5971,7 @@ pre {
 }
 
 .nav-item {
-  width: 33.33% !important;
+  width: 100% !important;
 }
 
 .ionm a:hover {
@@ -7099,6 +7099,7 @@ h2.landingnextheadnew {
 
 .ftr-sec .navbar {
   margin-top: 0px !important;
+  padding-left: 39%;
 }
 
 .dropdown-item {
@@ -7145,6 +7146,7 @@ h2.landingnextheadnew {
 }
 .serviceprojectsimg img {
     width: 100%;
+    border-radius: 20px;
 }
 .projectliste{
   font-family: "Montserrat", Sans-serif;

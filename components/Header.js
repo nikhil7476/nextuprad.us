@@ -120,7 +120,7 @@ const Header = () => {
         >
           Contact Us
         </Link>
-        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/">Portfolio</Link>
         <Link href="/blog">Blog</Link>
         <Link href="/contact-us">
           <button id="header-btn">Let's Discuss</button>
