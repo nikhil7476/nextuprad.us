@@ -54,11 +54,11 @@ const Services = () => {
     </div>
         <h2 className="servicesubheadeing">You won’t be disappointed with<span>Service</span></h2>
         <ul className="serviceslisted">
-            <li><a href="/hire-dedicated-developer/">  <img src="/services.jpg" alt="" /><span>Hire Dedicated Developer</span></a></li>
-            <li><a href="/website-design-development-services/">  <img src="/services1.jpg" alt="" /><span>Website Development</span></a></li>
-            <li><a href="/software-development-services">  <img src="/services2.jpg" alt="" /><span>Software Development</span></a></li>
-            <li><a href="/mobile-app-development-services">  <img src="/services3.jpg" alt="" /><span>Mobile App Development</span></a></li>
-            <li><a href="/digital-marketing-services">  <img src="/services4.jpg" alt="" /><span>Digital Marketing</span></a></li>
+            <li><a href="/hire-dedicated-developer/">  <img src="/services.jpg" alt="" /><span>Hire Dedicated<br />  Developer<span>Neque porro quisquam est, qui dolorem ipsum quia doloramet, consectetu.</span></span></a></li>
+            <li><a href="/website-design-development-services/">  <img src="/services1.jpg" alt="" /><span>Website<br />  Development<span>Neque porro quisquam est, qui dolorem ipsum quia doloramet, consectetu.</span></span></a></li>
+            <li><a href="/software-development-services">  <img src="/services2.jpg" alt="" /><span>Software<br />  Development<span>Neque porro quisquam est, qui dolorem ipsum quia doloramet, consectetu.</span></span></a></li>
+            <li><a href="/mobile-app-development-services">  <img src="/services3.jpg" alt="" /><span>Mobile<br /> App Development<span>Neque porro quisquam est, qui dolorem ipsum quia doloramet, consectetu.</span></span></a></li>
+            <li><a href="/digital-marketing-services">  <img src="/services4.jpg" alt="" /><span>Digital<br /> Marketing<span>Neque porro quisquam est, qui dolorem ipsum quia doloramet, consectetu.</span></span></a></li>
 
         </ul>
 
