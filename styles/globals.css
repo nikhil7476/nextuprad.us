@@ -7157,21 +7157,39 @@ h2.landingnextheadnew {
   margin: 15px 0 15px 20px;
   text-align: left;
 }
-.datascroll {
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  position: relative;
   background-color: #192733;
-  align-items: center;
-  width: 100%;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  color: #fff;
 }
-.datascroll marquee {
-  color: #fff;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 2.5rem;
-  font-family: "Montserrat", sans-serif;
+
+.scroll-content {
+  display: flex;
+  animation: scroll-left 8s linear infinite;
 }
+
+.scroll-item {
+  display: inline-block;
+  padding: 10px 20px;
+  white-space: nowrap;
+  color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@keyframes scroll-left {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
+
 .projectliste li {
   background: url(/icon.png);
   background-size: 18px;
