@@ -7261,9 +7261,9 @@ ul.serviceslisted li a span span {
 ul.serviceslisted li:hover a span span {
   display: block;
   opacity: 1;
-    transition: all .2s ease-in-out;
-    height: 100% !important;
-    overflow:visible;
+  transition: all .2s ease-in-out;
+  height: 100% !important;
+  overflow:visible;
 }
 
 
