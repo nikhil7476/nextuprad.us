@@ -15,6 +15,10 @@ export default function Document() {
         <GoogleTagManagerNoscript gtmId={"GTM-KVP3JR9B"} />
         <Main />
         <NextScript />
+        
+        {/* <!-- Start of HubSpot Embed Code --> */}
+        <script type="text/javascript" id="hs-script-loader" async defer src="https://js.hs-scripts.com/45714484.js"></script>
+        {/* <!-- End of HubSpot Embed Code --> */}
       </body>
     </Html>
   );
