@@ -106,9 +106,9 @@ const Header2 = () => {
               <Link href="/contact-us" onClick={handleMenuItemClick}>
                 Contact us
               </Link>
-              <Link href="/" onClick={handleMenuItemClick}>
+              {/* <Link href="/" onClick={handleMenuItemClick}>
                 Portfolio
-              </Link>
+              </Link> */}
               <Link href="/blog" onClick={handleMenuItemClick}>
                 Blog
               </Link>
