@@ -291,8 +291,10 @@ const Conatactus = () => {
                 </p>
               </div>
               <div className="col-md-6 contactformmap">
+              
+              
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8958144764765!2d80.99052167421846!3d26.843265863073835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3ec914fc37b%3A0xda24df84e2ce4216!2sNextupgrad%20Web%20Solutions%20%7C%20Web%20%7C%20Mobile%20App%20%7C%20Software%20Development%20Company!5e0!3m2!1sen!2sin!4v1716456824199!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.790405992793!2d-73.99029452546645!3d40.744637235619244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a614ccab0b%3A0xf9f5eeef578aa3c4!2s244%205th%20Ave%20d261%2C%20New%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2sin!4v1719568200443!5m2!1sen!2sin"
                   width={"100%"}
                   height={330}
                   style={{ border: 0 }}
