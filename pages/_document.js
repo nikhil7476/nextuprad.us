@@ -15,7 +15,6 @@ export default function Document() {
         <GoogleTagManagerNoscript gtmId={"GTM-KVP3JR9B"} />
         <Main />
         <NextScript />
-       
       </body>
     </Html>
   );
