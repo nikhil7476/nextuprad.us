@@ -218,6 +218,10 @@ const SingleBlog = () => {
             property="twitter:image"
             content="https://nextupgrad.us/logo-2orange-1.png"
           />
+          <meta
+            property="Blog for NextUpgrad USA"
+            content="Get into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth"
+          />
         </Head>
         <div className={`blogBanner banner2 ${styles.singlePost}`}>
           <div className="container bannerContainer">
@@ -239,12 +243,12 @@ const SingleBlog = () => {
                   <ul className="sidebarSingleBlog">
                     {sidebarBlog.length
                       ? sidebarBlog.map((item, index) => (
-                          <li className="mt-2" key={index}>
-                            <Link href={`/blog/${item.slug}`}>
-                              {item.title}
-                            </Link>
-                          </li>
-                        ))
+                        <li className="mt-2" key={index}>
+                          <Link href={`/blog/${item.slug}`}>
+                            {item.title}
+                          </Link>
+                        </li>
+                      ))
                       : null}
                   </ul>
                 </div>

@@ -3,7 +3,7 @@ const Privacy = () => {
     <>
       <div className="container my-5">
         <div>
-          <h1>Privacy And Policy</h1>
+          <h1>Privacy Policy</h1>
           <p>
             At NextUpgrad USA, we are dedicated to shielding and preserving the
             privacy of our clients and visitors. This statement aims to provide

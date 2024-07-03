@@ -37,13 +37,17 @@ const Webdesign = () => {
           property="twitter:image"
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
+         <meta
+          property="Website Design and Development Services with NextUpgrad USA"
+          content="Ready to convert visitors into customers? Hire the market's leading website design and development company to create a static website for complex web applications"
+        />
       </Head>
       <WebDevSlider />
       <div>
         <div className="sec-two">
           <div className="container ">
             <h1 className="text-center">
-              Innovative Website Design and Development Services
+              Website Design and Development Services
             </h1>
             <div className="row">
               <div className="col-md-6 img-box">

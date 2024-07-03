@@ -141,13 +141,14 @@ const Portfolio = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://nextupgrad.us/" />
         <meta property="twitter:title" content="Nextupgrad" />
-        <meta
-          property="twitter:description"
-          content="Witness successful projects, highlighting our expertise and commitment to delivering impactful solutions. Discover the possibilities with our accomplished portfolio."
-        />
+       
         <meta
           property="twitter:image"
           content="https://nextupgrad.us/logo-2orange-1.png"
+        />
+         <meta
+          property="NextUpgrad USA Portfolio"
+          content="Witness successful projects, highlighting our expertise and commitment to delivering impactful solutions. Discover the possibilities with our accomplished portfolio"
         />
       </Head>
       <section id="con">

@@ -34,6 +34,11 @@ const Digitalmarketingservices = () => {
           content="Conquer online business growth & boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
           "
         />
+          <meta
+          property="Digital Marketing Services with NextUpgrad USA"
+          content="Conquer online business growth & boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world
+          "
+        />
         <meta
           property="twitter:image"
           content="https://nextupgrad.us/logo-2orange-1.png"
@@ -43,8 +48,8 @@ const Digitalmarketingservices = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2>Award-Winning</h2>
-              <h3>Digital Marketing Company</h3>
+              <h2>Award Winning</h2>
+              <h3>Digital Marketing Services</h3>
               <p>
                 Decode all the marketing puzzles to get your business ahead, all
                 under the same roof. As the exclusive “ROI-driven” and
@@ -68,7 +73,7 @@ const Digitalmarketingservices = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>Our Holistic Approach For High-impact Marketing</h1>
+              <h2>Our Holistic Approach For High-impact Marketing</h2>
               <p>
                 We focus on timeless marketing truths, not short-lived trends.
                 Our approach ensures lasting success for your business by
@@ -240,7 +245,7 @@ const Digitalmarketingservices = () => {
             <div className="col-md-6">
               {" "}
               <img src="dg10.webp" alt="Our digital guidelines" />
-              <h1>Our digital guidelines</h1>
+              <h2>Our digital guidelines</h2>
             </div>
             <div className="col-md-6">
               <ul>

@@ -752,6 +752,7 @@ export default function Home() {
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
         <meta name="google-site-verification" content="6CF5PndgghHSqX2raeDV_1_arkxZ8exgG-D0nSD5MSA" /> 
+        <meta name="Website Development Services with NextUpgrad USA and take your business to new heights" content="Take your business forward with website development services and solutions. Drive efficiency, agility, & growth. Get a free consultation" /> 
       </Head>
       <main className="mainOverflowHide">
         <div className="banner2">
@@ -773,8 +774,9 @@ export default function Home() {
               />
 
               <p>
-                Commence Your digital transformation journey with NextUpgrad’s
-                Innovative Digital Solutions
+                {/* Commence Your digital transformation journey with NextUpgrad’s
+                Innovative Digital Solutions */}
+                Digital Transformation Services and Solutions
               </p>
               <Link className="Personalize-button2" href="/contact-us">
                 Let's Discuss
@@ -826,6 +828,7 @@ export default function Home() {
           </div>
         </div> */}
         <div className="achieved">
+       
           <div className="container">
             <div className="row">
               <div className="col-md-4">

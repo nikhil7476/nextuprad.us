@@ -73,6 +73,10 @@ const blog = () => {
           property="twitter:image"
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
+         <meta
+          property="Blog for NextUpgrad USA"
+          content="Get into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth"
+        />
       </Head>
 
       <div className="blogMain">
@@ -81,7 +85,7 @@ const blog = () => {
             <div className="newBannerMain">
               <div data-aos="fade-down">
                 <h1 className="display-3 text-light position-relative z-3">
-                  Blogs
+                  Blog
                 </h1>
               </div>
               <p>Discover Insights, Tips, and Stories – Your Go-To Blog Hub!</p>
