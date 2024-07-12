@@ -718,11 +718,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nextupgrad</title>
+        <title>Website Development Services with NextUpgrad USA and take your business to new heights</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="Propel your business forward with innovative digital transformation services & solutions. Drive efficiency, agility, & growth. Get a free consultation!"
+          content="Take your business forward with website development services and solutions. Drive efficiency, agility, and growth. Get a free consultation."
         />
 
         <meta property="og:type" content="website" />
@@ -730,8 +730,7 @@ export default function Home() {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="Propel your business forward with innovative digital transformation services & solutions. Drive efficiency, agility, & growth. Get a free consultation!
-          "
+          content="Take your business forward with website development services and solutions. Drive efficiency, agility, and growth. Get a free consultation."
         />
         <meta
           property="og:image"
@@ -757,7 +756,7 @@ export default function Home() {
       <main className="mainOverflowHide">
         <div className="banner2">
           <div className="container bannerContainer">
-            <div className="newBannerMain">
+            <div className="newBannerMain hdr">
               <TypeAnimation
                 sequence={[
                   "Designing Websites",
@@ -766,6 +765,10 @@ export default function Home() {
                   2000,
                   "Engineering Software",
                   2000,
+                  "Hire Developers",
+                  2000,
+                  "Digital Marketing",
+                  2000,
                 ]}
                 wrapper="span"
                 cursor={true}
@@ -773,11 +776,11 @@ export default function Home() {
                 preRenderFirstString
               />
 
-              <p>
+              <h1>
                 {/* Commence Your digital transformation journey with NextUpgrad’s
                 Innovative Digital Solutions */}
                 Digital Transformation Services and Solutions
-              </p>
+              </h1>
               <Link className="Personalize-button2" href="/contact-us">
                 Let's Discuss
               </Link>
@@ -1357,7 +1360,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <h2>Why We Deserve to Be Your Digital Partner.</h2>{" "}
+                <h2>Why You Choose Us As Your Digital Partner</h2>{" "}
               </div>
               <div
                 data-aos="fade-down-right"

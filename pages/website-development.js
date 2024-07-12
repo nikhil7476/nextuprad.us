@@ -193,7 +193,13 @@ const LandingPage = () => {
     <>
       <Head>
         <GoogleTagManager gtmId="GTM-TKZTSGKZ" />
-
+        <meta name="googlebot" content="noindex" />
+        <title>NextUpgrad Website Development Services</title>
+        <meta name="title" content="Nextupgrad" />
+        <meta
+          name="description"
+          content="Get solutions from NextUpgrad USA website development experts and take your business to new heights."
+        />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"

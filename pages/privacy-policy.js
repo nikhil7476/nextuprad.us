@@ -1,6 +1,44 @@
+import Head from "next/head";
+
 const Privacy = () => {
   return (
     <>
+      <Head>
+        <title>Privacy Policy of NextUpgrad USA</title>
+        <meta name="title" content="Nextupgrad" />
+        <meta
+          name="description"
+          content="Review our Privacy Policy to understand how NextUpgrad collects, uses data, and protects your personal information. Stay updated with our privacy rights."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nextupgrad.us/" />
+        <meta property="og:title" content="Nextupgrad" />
+        <meta
+          property="og:description"
+          content="Review our Privacy Policy to understand how NextUpgrad collects, uses, and protects your personal information. Stay informed about your privacy rights."
+        />
+        <meta
+          property="og:image"
+          content="https://nextupgrad.us/logo-2orange-1.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://nextupgrad.us/" />
+        <meta property="twitter:title" content="Nextupgrad" />
+        <meta
+          property="twitter:description"
+          content="Dive into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth."
+        />
+        <meta
+          property="twitter:image"
+          content="https://nextupgrad.us/logo-2orange-1.png"
+        />
+         <meta
+          property="Blog for NextUpgrad USA"
+          content="Get into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth"
+        />
+      </Head>
       <div className="container my-5">
         <div>
           <h1>Privacy Policy</h1>

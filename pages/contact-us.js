@@ -149,7 +149,7 @@ const Conatactus = () => {
                     <div className="col-md-6">
                       <h3>Book a call with us</h3>
                       <Link
-                        href="https://calendly.com/ron-wilsonbdm/service"
+                        href="tel:+1 (408) 786-5558"
                         target="_blank"
                         rel="nofollow"
                         className="svgbutton"

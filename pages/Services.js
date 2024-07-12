@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
 // import {ScrollTrigger} from 'gsap/ScrollTrigger';
 // gsap.registerPlugin(ScrollTrigger);
+import Head from "next/head";
 
 const Services = () => {
     const [insetValue, setInsetValue] = useState(100);
@@ -23,7 +24,11 @@ const Services = () => {
     }, []);
     return (<>
 
-
+      <Head>
+        <title>Services with NextUpgrad USA</title>
+        <meta name="title" content="Nextupgrad" />
+        <meta name="googlebot" content="noindex" />
+      </Head>
         <main id="sect">
             <div className="sect1">
                 <h1 className="serviceheadeing">We help <span>great minds</span> to explore their way</h1>

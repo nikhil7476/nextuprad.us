@@ -215,15 +215,19 @@ body {
 }
 
 #header-btn {
+  font-weight: 500;
   background-color: #e76f51;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 30px;
-
-  color: #fff !important;
+  color: #fff;
   border: 1px solid #e76f51;
+}
+#header-btn:hover{
+  color: #e76f51;
+  background-color: #fff !important;
 }
 
 .tabs {
@@ -994,8 +998,8 @@ h3.article__title.caps.f-bold.h4 {
   text-transform: uppercase;
 }
 /*----------------video tesimonial--------------------*/
-.video_testimonials h3 {
-  color: #4e515c;
+.video_testimonials h2 {
+  color: #ffffff;
   font-family: "Montserrat", Sans-serif;
   font-size: 50px;
   font-weight: 600;
@@ -1042,7 +1046,7 @@ h3.article__title.caps.f-bold.h4 {
   border-radius: 30px 0px 0px 30px;
   padding: 30px 50px 30px 30px;
 }
-.testimonials-container h2 {
+.testimonials-container h3 {
   color: #fff;
   font-family: "Montserrat", Sans-serif;
   font-size: 28px;
@@ -1050,7 +1054,7 @@ h3.article__title.caps.f-bold.h4 {
   line-height: 40px;
   text-transform: capitalize;
 }
-.testimonials-container h3 {
+.testimonials-container h4 {
   color: #fff;
   font-family: "Montserrat", Sans-serif;
   font-size: 21px;
@@ -1276,7 +1280,7 @@ span.elementor-screen-only {
   position: absolute;
   width: 400%;
   border: 2px solid #e76f51;
-  left: -803px;
+  left: -820px;
   top: 0px;
 }
 
@@ -1564,7 +1568,7 @@ span.elementor-screen-only {
   background-color: #192733;
   color: white;
 }
-.sec-2 h2 {
+.sec-2 h2, .sec-2 h3 {
   text-align: center;
   font-family: "Montserrat", Sans-serif;
   font-size: 45px;
@@ -1650,6 +1654,7 @@ span.elementor-screen-only {
 .sec-3-2-1,
 .sec-3-2-2 {
   width: 50%;
+  align-content: center;
 }
 .sec-3-1-1 hr.solid {
   border-top: 5px solid #e76f51;
@@ -1682,11 +1687,12 @@ span.elementor-screen-only {
 }
 .custmer-detail .col-md-6 {
   margin-bottom: 30px;
+  align-content: center;
 }
 .invoasionbox {
   width: 300px;
 }
-.custmer-detail h2 {
+.custmer-detail h3 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
   font-size: 25px;
@@ -1737,6 +1743,9 @@ span.elementor-screen-only {
   margin-right: 20px;
   padding: 24px 12px;
   min-height: 226px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .sec-4 ul li img {
   width: 100%;
@@ -1744,7 +1753,7 @@ span.elementor-screen-only {
   display: block;
   margin-bottom: 20px;
 }
-.sec-4 ul li h2 {
+.sec-4 ul li h3 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
   font-weight: 700;
@@ -1752,16 +1761,16 @@ span.elementor-screen-only {
   text-align: center;
 }
 img.hubsport {
-  width: 193px !important;
+  width: 50% !important;
 }
 img.adobe {
-  width: 90px !important;
+  width: 50% !important;
 }
 img.agency {
-  width: 225px !important;
+  width: 100% !important;
 }
 img.pmplogo {
-  width: 90px !important;
+  width: 40% !important;
 }
 .sec-5 {
   background-color: #fbf8f2;
@@ -1802,7 +1811,9 @@ img.pmplogo {
   width: 155px;
   display: block;
 }
-
+.certi{
+  align-content: center;
+}
 /*about us end*/
 
 /*hirededicateddeveloper*/
@@ -2542,14 +2553,16 @@ ul.list1 {
   background-size: cover;
   padding: 180px 0px 100px 0px;
 }
-.digital h2 {
+.digital span {
   color: #ffffff;
   font-family: "Montserrat", Sans-serif;
   font-size: 50px;
   font-weight: 600;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.digital h3 {
+.digital h1 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
   font-size: 50px;
@@ -2599,6 +2612,9 @@ a.digital-button:hover {
   text-align: center;
   padding: 0 150px;
 }
+.holisticnew h2{
+  text-align: center;
+}
 /*.holisticnew h1::after {
   content: "";
   width: 28%;
@@ -2633,7 +2649,7 @@ a.digital-button:hover {
 .innerMarketingItems:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-.innerMarketingItems h2 {
+.innerMarketingItems h3 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
   font-size: 22px;
@@ -2644,7 +2660,7 @@ a.digital-button:hover {
   line-height: 54px;
   margin-bottom: 18px;
 }
-.innerMarketingItems h2 span {
+.innerMarketingItems h3 span {
   margin: 0px 15px 0px 0px;
   padding: 0 10px 0 10px;
   width: 50px;
@@ -2730,7 +2746,7 @@ a.digital-button:hover {
 .listing div img {
   width: 99px;
 }
-.listing div h2 {
+.listing div h3 {
   color: #f4f4f4 !important;
   font-family: "Montserrat", Sans-serif;
   font-size: 22px !important;
@@ -2801,7 +2817,7 @@ a.listing-elementor-button:hover {
   background-color: #fbf8f2;
   padding: 80px 0px 100px 0px;
 }
-.glitter-box h1 {
+.glitter-box h2 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
   font-size: 45px;
@@ -2848,13 +2864,13 @@ a.listing-elementor-button:hover {
   width: 100px;
   margin-bottom: 23px;
 }
-.glitter-box ul li h2 {
+.glitter-box ul li h3 {
   color: #000000;
   font-family: "Montserrat", Sans-serif;
   font-size: 30px;
   font-weight: 700;
 }
-.glitter-box ul li h3 {
+.glitter-box ul li h4 {
   text-align: center;
   color: #000000;
   font-family: "Montserrat", Sans-serif;
@@ -2990,7 +3006,7 @@ a.kickstart-button:hover {
 .sec-two {
   padding: 100px 0px 100px 0px;
 }
-.sec-two h2 {
+.sec-two h3 {
   margin: 23px 0 0 0;
   position: relative;
   color: #4e515c;
@@ -3182,7 +3198,7 @@ a.kickstart-button:hover {
 .sec-five .row {
   margin-bottom: 15px;
 }
-.brand-hd h2 {
+.brand-hd h3 {
   color: #000000;
   font-size: 22px;
   font-weight: 700;
@@ -3238,7 +3254,7 @@ a.kickstart-button:hover {
   justify-content: center;
   vertical-align: middle;
 }
-.coltwo h2 {
+.coltwo h3 {
   color: #9b9b9b !important;
   font-family: "Poppins", Sans-serif !important;
   font-size: 58px !important;
@@ -3246,7 +3262,7 @@ a.kickstart-button:hover {
   margin-bottom: 0px !important;
   line-height: 63px;
 }
-.coltwo h2:before {
+.coltwo h3:before {
   display: none;
 }
 .colone {
@@ -3264,7 +3280,7 @@ a.kickstart-button:hover {
   float: left;
   margin-right: 16px;
 }
-.mobilebox h2 {
+.mobilebox h4 {
   color: #000000 !important;
   font-family: "Montserrat", Sans-serif !important;
   font-size: 20px !important;
@@ -4168,7 +4184,9 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
+.ftr-subs{
+  padding-top: 10px;
+}
 .ftr-subs h2 {
   color: #fff;
   font-family: "Montserrat", Sans-serif;
@@ -4217,6 +4235,9 @@ ul {
   font-size: 16px;
   font-weight: 600;
 }
+.con-info{
+  padding-top: 10px;
+}
 .con-info a {
   color: #ffffff;
   font-size: 18px;
@@ -4231,13 +4252,22 @@ ul {
 .con-lis li {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .con-lis li i {
   font-size: 25px;
   color: #fff;
 }
-
+.con-info h3 i {
+  font-size: 25px;
+  color: #fff;
+}
+.con-info h3{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 /*Fotter-Menu*/
 .navbar-nav {
   width: 70% !important;
@@ -4400,11 +4430,25 @@ scrollbar css
   position: relative;
   z-index: 12;
 }
-.newBannerMain p {
+.hdr h1 {
   color: #fff;
   text-align: center;
   margin-top: 2rem;
+  font-size: 1.3rem !important;
+  position: relative;
+  z-index: 12;
+}
+.blog-hd {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+}
+.newBannerMain p{
+  text-align: center;
+  margin-top: 2rem;
   font-size: 1.3rem;
+  color: #fff;
   position: relative;
   z-index: 12;
 }
@@ -4454,7 +4498,7 @@ a:hover {
   padding: 100px 0px 100px 0px;
   background-color: #fff;
 }
-.sec-two h1 {
+.sec-two h2 {
   color: #4e515c;
   font-family: "Montserrat", Sans-serif;
   font-size: 40px;
@@ -4541,7 +4585,7 @@ a:hover {
   margin-bottom: 0;
   margin-top: 20px;
 }
-.dev-col h2 {
+.dev-col h3 {
   font-size: 20px;
   line-height: normal;
   color: #000;
@@ -4590,7 +4634,7 @@ a:hover {
   padding-top: 400px;
   text-align: center;
 }
-.sec-four-two h2 {
+.sec-four-two h3 {
   color: #000000;
   font-size: 22px;
   font-weight: 500;
@@ -4944,7 +4988,7 @@ pre {
   margin-top: -20px;
   font-family: "Montserrat", Sans-serif;
 }
-.time-sidebar h3 {
+.time-sidebar h2 {
   display: block;
   font-size: 50px;
   margin-block-start: 1em;
@@ -5317,7 +5361,7 @@ pre {
   margin-left: 40px;
 }
 
-.work21 h2 {
+.work21 h3 {
   color: #e76f51;
   font-family: "Montserrat", Sans-serif;
   font-size: 25px;
@@ -5399,7 +5443,7 @@ pre {
   margin-left: 20px;
 }
 
-.tech222 h2 {
+.tech222 h3 {
   margin-left: 70px;
   color: #000000;
   font-family: "Montserrat", Sans-serif;
@@ -5809,7 +5853,7 @@ pre {
 }
 
 .navbar-nav {
-  width: 100%;
+  width: 100% !important;
 }
 
 .nav-pills li a {
@@ -6302,7 +6346,7 @@ pre {
   line-height: 1.75;
 }
 
-.reasearch h6 {
+.reasearch p {
   font-size: 16px;
   color: #fff;
   font-weight: 400;
@@ -6320,7 +6364,7 @@ pre {
   /* padding: 50px 50px 50px 50px; */
 }
 
-.consultation h3 {
+.consultation h2 {
   font-size: 35px;
   font-weight: 500;
   color: #1e4550;
@@ -6382,7 +6426,7 @@ pre {
   background-repeat: no-repeat;
 }
 
-.aft-ban h1 {
+.aft-ban h2 {
   color: #1d3b45;
   font-size: 48px;
 }
@@ -6450,7 +6494,7 @@ pre {
   border-color: #e7e7e7;
 }
 
-.missard h5 {
+.missard h3 {
   font-size: 18px;
   font-weight: 500;
   color: #1e4550;
@@ -6458,7 +6502,7 @@ pre {
   border-bottom: 1px solid #e2e6f0;
 }
 
-.missardl h5 {
+.missardl h3 {
   font-size: 18px;
   font-weight: 500;
   color: #1e4550;
@@ -6466,7 +6510,7 @@ pre {
   border-bottom: 1px solid #e2e6f0;
 }
 
-.missardm h5 {
+.missardm h3 {
   font-size: 18px;
   font-weight: 500;
   color: #1e4550;
@@ -6559,7 +6603,7 @@ pre {
   background-repeat: no-repeat;
 }
 
-.studies h1 {
+.studies h2 {
   color: #000;
   font-size: 48px;
 }
@@ -6941,7 +6985,7 @@ header.musthead.sticky-top.bg-light {
 .landinbgsection:hover:after {
   width: 100%;
 }
-.landinbgsection:hover h2,
+.landinbgsection:hover h3,
 .landinbgsection:hover p,
 .landinbgsection:hover img {
   color: #fff;
@@ -7099,7 +7143,8 @@ h2.landingnextheadnew {
 
 .ftr-sec .navbar {
   margin-top: 0px !important;
-  padding-left: 39%;
+  padding-left: 10%;
+  padding-top: 0px;
 }
 
 .dropdown-item {
@@ -7332,6 +7377,9 @@ ul.serviceslisted li:hover a span span {
   }
   .LandingPage_clutchSection__pXLSg img {
     width: 90px !important;
+  }
+  .carousel-control-prev, .carousel-control-next{
+    display: none !important;
   }
 }
 
@@ -7696,6 +7744,85 @@ ul.serviceslisted li:hover a span span {
   #exp {
     margin-left: 0px !important;
   }
+  .item-card1{
+    width: 100% !important;
+  }
+  .con-info{
+    text-align: center !important;
+  }
+  .con-lis li{
+    flex-direction: column !important;
+  }
+  .ftr-subs{
+    padding: 20px 30px !important;
+  }
+  .ftr-nav-1{
+    width: 60% !important;
+  }
+  .ftr-nav-2{
+    width: 40% !important;
+  }
+  .ftr-sec .navbar{
+    /* padding-left: 5% !important; */
+    padding-top: 20px !important;
+  }
+  .navbar-nav a{
+    font-size: 14px !important;
+  }
+  .banner2{
+    padding: 128px 30px 150px 30px !important;
+  }
+  .newBannerMain span{
+    text-align: center !important;
+    font-size: 2em !important;
+  }
+  .achieved h3{
+    font-size: 34px !important;
+    line-height: 50px !important;
+    padding-left: 20px !important;
+    margin-top: 0px !important;
+  }
+  .con-info h3{
+    flex-direction: column !important;
+  }
+  .banner2 {
+    padding: 128px 30px 90px 30px !important;
+  }
+  .Personalize-button2{
+    padding: 10px 20px !important;
+  }
+  .achieved ul{
+    padding: 0px !important;
+  }
+  .achieved ul li{
+    width: 44% !important;
+    padding: 10px !important;
+  }
+  .grids{
+    grid-template-columns: auto auto !important;
+    width: -webkit-fill-available I !important;
+    margin-right: 0px !important;
+  }
+  .gridsDropdown{
+    flex-direction: column !important;
+  }
+  .dropdown button{
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .digiSolutions {
+    grid-template-columns: 100% !important;
+  }
+  .discover h3{
+    display: flex !important;
+  }
+  .video_testimonials .card-body .item1{
+    padding: 30px !important;
+  }
+  .video_testimonials h2{
+    font-size: 36px !important;
+    line-height: 48px !important;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -7741,11 +7868,11 @@ ul.serviceslisted li:hover a span span {
     font-size: 16px !important;
   }
 
-  .grids {
+  /* .grids {
     grid-template-columns: auto auto !important;
     width: fit-content !important;
     margin-right: 65px !important;
-  }
+  } */
 
   .achieved ul li span {
     font-size: 20px !important;
@@ -8284,7 +8411,7 @@ ul.serviceslisted li:hover a span span {
   .accordion .row,
   .accordion .col {
     display: block;
-    width: 100% !important;
+    width: auto !important;
   }
 }
 

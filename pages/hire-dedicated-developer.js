@@ -473,10 +473,10 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="row">
             <div className="skill1 col-md-8">
-              <h3 className={`${styles.getstrt}`}>
+              <h2 className={`${styles.getstrt}`}>
                 Get started now! Contact our skilled developers to bring your
                 ideas to life.
-              </h3>{" "}
+              </h2>{" "}
                {/*<span className="line1" />*/}
             </div>
             <div className="skill2  col-md-4">
@@ -491,7 +491,7 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="ada row">
             <div className="ada1 col-md-6">
-              <h3 className={`${styles.adptmd}`}>Adaptable Hiring Model</h3>
+              <h2 className={`${styles.adptmd}`}>Adaptable Hiring Model</h2>
                {/*<span className="line1" />*/}
             </div>
             <div className="ada2  col-md-6">
@@ -533,9 +533,9 @@ const Hirededicateddeveloper = () => {
         <div className="container">
           <div className="last1 row">
             <div className="last1 col-md-7">
-              <h3 className={`${styles.comrea}`}>
+              <h2 className={`${styles.comrea}`}>
                 Compelling Reasons to Engage Dedicated Developers at NextUpgrad
-              </h3>{" "}
+              </h2>{" "}
                {/*<span className="line1" />*/}
               <ul className="list1">
                 <li className="li1">
@@ -571,7 +571,7 @@ const Hirededicateddeveloper = () => {
                 <div className="col-md-6">
                   <div className="sl11">
                     <img src="teams.png" alt="Teams" />
-                    <h4 className={`${styles.cnthea}`}>10+</h4>
+                    <h3 className={`${styles.cnthea}`}>10+</h3>
                     <p>Teams</p>
                   </div>
                   <div className="sl12">
@@ -579,19 +579,19 @@ const Hirededicateddeveloper = () => {
                       src="years-of-Experience.png"
                       alt="Years in Industry"
                     />
-                    <h4 className={`${styles.cnthea}`}>15+</h4>
+                    <h3 className={`${styles.cnthea}`}>15+</h3>
                     <p>Years in Industry</p>
                   </div>
                   <div className="sl13">
                     <img src="satisfied-customers.png" alt="Happy Patron" />
-                    <h4 className={`${styles.cnthea}`}>3500+</h4>
+                    <h3 className={`${styles.cnthea}`}>3500+</h3>
                     <p>Happy Patron</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="sl14">
                     <img src="global-partners.png" alt="Company Partnerships" />
-                    <h4 className={`${styles.cnthea}`}>50+</h4>
+                    <h3 className={`${styles.cnthea}`}>50+</h3>
                     <p>Company Partnerships</p>
                   </div>
                   <div className="sl15">
@@ -599,7 +599,7 @@ const Hirededicateddeveloper = () => {
                       src="awards-and-accolades.png"
                       alt="Community Project Contribution"
                     />
-                    <h4 className={`${styles.cnthea}`}>500+</h4>
+                    <h3 className={`${styles.cnthea}`}>500+</h3>
                     <p>Community Project Contribution</p>
                   </div>
                 </div>

@@ -144,6 +144,7 @@ const Podcast = () => {
       <Head>
         <title>Nextupgrad</title>
         <meta name="title" content="Nextupgrad" />
+        <meta name="googlebot" content="noindex" />
         <meta
           name="description"
           content="At NextUpgrad, our mission is to empower businesses and individuals by delivering cutting-edge software, website , and mobile app development solutions, coupled with innovative digital marketing strategies. We are committed to leveraging technology to enhance our clients' online presence, streamline their operations, and drive sustainable growth"

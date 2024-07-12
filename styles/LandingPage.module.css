@@ -99,7 +99,7 @@
   color: #e76f51 !important;
 }
 
-.expertiseSecMain h3 {
+.expertiseSecMain h2 {
   color: #4e515c;
   font-family: "Montserrat", Sans-serif;
   font-size: 50px;
@@ -157,7 +157,7 @@
   padding: 0 15px;
 }
 .expertiseSecMain .expertiseGrid div:hover svg,
-.expertiseSecMain .expertiseGrid div:hover h4,
+.expertiseSecMain .expertiseGrid div:hover h3,
 .expertiseSecMain .expertiseGrid div:hover p {
   fill: #fff;
   color: #fff;

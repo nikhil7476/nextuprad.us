@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
+import React from "react";
 import { useState } from "react";
 import Swal from "sweetalert2";
 const Footer = () => {
@@ -63,7 +64,7 @@ const Footer = () => {
         <div className="ftr-sec">
           <div className="container">
             <div className="row">
-              <div className="col-md-4 ftr-subs">
+              <div className="col-md-3 ftr-subs">
                 <h2>
                   Subscribe to our newsletter to stay in touch with the latest.
                 </h2>
@@ -82,10 +83,37 @@ const Footer = () => {
                   </div>
                 </form>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-3 ftr-nav-1">
                 <nav className="navbar">
                   <ul className="navbar-nav">
-                    <li className="footerSubmenu">
+                    <li className="nav-item active">
+                      <Link className="nav-link" href="/hire-dedicated-developer" target="_blank">
+                        Hire Dedicated Developer
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/website-design-development-services" target="_blank">
+                        Website Development
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/software-development-services" target="_blank">
+                        Software Development
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/mobile-app-development-services" target="_blank">
+                        Mobile App Development
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/digital-marketing-services" target="_blank">
+                        Digital Marketing
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul className="navbar-nav">
+                    {/* <li className="footerSubmenu">
                       <Menu
                         menuButton={<MenuButton> Our Services</MenuButton>}
                         transition
@@ -126,7 +154,139 @@ const Footer = () => {
                           Digital Marketing
                         </MenuItem>
                       </Menu>
+                    </li> */}
+                    {/* <li className="nav-item dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Our Services
+                      </a>
+                      <div
+                        className="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <a className="dropdown-item" href="#">
+                          Digital Marketing
+                        </a>
+                        <div className="dropdown-divider" />
+                        <a className="dropdown-item" href="#">
+                          Mobile App Development
+                        </a>
+                        <div className="dropdown-divider" />
+                        <a className="dropdown-item" href="#">
+                          Software Development
+                        </a>
+                        <div className="dropdown-divider" />
+                        <a className="dropdown-item" href="#">
+                          Website Development
+                        </a>
+                        <div className="dropdown-divider" />
+                        <a className="dropdown-item" href="#">
+                          Hire Dedicated Developer
+                        </a>
+                      </div>
+                    </li> */}
+                    {/* <li className="nav-item active">
+                      <Link className="nav-link" href="/about-us">
+                        About
+                      </Link>
                     </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/contact-us">
+                        Contact Us
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/blog">
+                        Blog
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/portfolio">
+                        Portfolio
+                      </Link>
+                    </li> */}
+                  </ul>
+                </nav>
+              </div>
+              <div className="col-md-2 ftr-nav-2">
+                <nav className="navbar">
+                  {/* <ul className="navbar-nav">
+                    <li className="nav-item active">
+                      <Link className="nav-link" href="/hire-dedicated-developer">
+                        Hire Dedicated Developer
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/website-design-development-services">
+                        Website Development
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/software-development-services">
+                        Software Development
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/mobile-app-development-services">
+                        Mobile App Development
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/digital-marketing-services">
+                        Digital Marketing
+                      </Link>
+                    </li>
+                  </ul> */}
+                  <ul className="navbar-nav">
+                    {/* <li className="footerSubmenu">
+                      <Menu
+                        menuButton={<MenuButton> Our Services</MenuButton>}
+                        transition
+                      >
+                        <MenuItem
+                          onClick={(e) =>
+                            Router.push("/hire-dedicated-developer")
+                          }
+                        >
+                          Hire Dedicated Developer
+                        </MenuItem>
+                        <MenuItem
+                          onClick={(e) =>
+                            Router.push("/website-design-development-services")
+                          }
+                        >
+                          Website Development
+                        </MenuItem>
+                        <MenuItem
+                          onClick={(e) =>
+                            Router.push("/software-development-services")
+                          }
+                        >
+                          Software Development
+                        </MenuItem>
+                        <MenuItem
+                          onClick={(e) =>
+                            Router.push("/mobile-app-development-services")
+                          }
+                        >
+                          Mobile App Development
+                        </MenuItem>
+                        <MenuItem
+                          onClick={(e) =>
+                            Router.push("/digital-marketing-services")
+                          }
+                        >
+                          Digital Marketing
+                        </MenuItem>
+                      </Menu>
+                    </li> */}
                     {/* <li className="nav-item dropdown">
                       <a
                         className="nav-link dropdown-toggle"
@@ -189,9 +349,10 @@ const Footer = () => {
               </div>
               <div className="col-md-4 con-info">
                 <h2 className="con-hd">DROP US A LINE</h2>
-                <h2>
+                <h3>
+                  <i class="bi bi-envelope" />
                   <a href="mailto:hello@nextupgrad.us">hello@nextupgrad.us</a>
-                </h2>
+                </h3>
                 <h2 className="con-hd">CALL AT</h2>
                 <ul className="con-lis">
                   <li>
@@ -199,7 +360,6 @@ const Footer = () => {
                     <a href="tel:+1(408) 400-3232">+1 (408) 400-3232</a>
                     <a href="tel:+1 (408) 786-5558">+1 (408) 786-5558</a>
                   </li>
-
                 </ul>
               </div>
             </div>

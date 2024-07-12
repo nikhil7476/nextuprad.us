@@ -5,63 +5,64 @@ import { useEffect, useState } from "react";
 import { formatDate } from "@/utils/helper";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import styles from ".././styles/blog.module.css";
-import { Container, Row, Col, Image } from "react-bootstrap";
-const blog = () => {
-  const [blogs, setblogs] = useState([]);
-  const [blogsBackup, setblogsBackup] = useState([]);
+import styles from "../styles/blog.module.css";
+import { Container, Row, Col } from "react-bootstrap";
+
+const Blog = () => {
+  const [blogs, setBlogs] = useState([]);
+  const [blogsBackup, setBlogsBackup] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+
   useEffect(() => {
     getBlogs();
   }, []);
 
   useEffect(() => {
-    if (searchQuery == "") {
-      setblogs(blogsBackup);
+    if (searchQuery === "") {
+      setBlogs(blogsBackup);
     } else {
-      const filteredBlogs = blogs.filter((item) =>
+      const filteredBlogs = blogsBackup.filter((item) =>
         item.title.toLowerCase().includes(searchQuery.toLowerCase())
       );
-      setblogs(filteredBlogs);
+      setBlogs(filteredBlogs);
     }
-  }, [searchQuery]);
+  }, [searchQuery, blogsBackup]);
 
-  async function getBlogs() {
+  const getBlogs = async () => {
     try {
       const res = await axiosInstance.get("/getBlog");
-      console.log("==>", res);
-      if (res.status == 200) {
+      if (res.status === 200) {
         setTimeout(() => {
-          setblogs(res.data.data);
-          setblogsBackup(res.data.data);
+          const sortedBlogs = res.data.data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+          setBlogs(sortedBlogs);
+          setBlogsBackup(sortedBlogs);
         }, 1500);
       }
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
-  }
+  };
+
   return (
     <>
       <Head>
-        <title>Blog - NextUpgrad USA</title>
+        <title>Blog for NextUpgrad USA</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="Dive into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth."
+          content="Get into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth."
         />
-
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nextupgrad.us/" />
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="Dive into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth."
+          content="Get into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth."
         />
         <meta
           property="og:image"
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
-
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://nextupgrad.us/" />
         <meta property="twitter:title" content="Nextupgrad" />
@@ -73,18 +74,14 @@ const blog = () => {
           property="twitter:image"
           content="https://nextupgrad.us/logo-2orange-1.png"
         />
-         <meta
-          property="Blog for NextUpgrad USA"
-          content="Get into our blog for expert and valuable insights into Web and Software. It offers knowledge to fuel your curiosity and online business growth"
-        />
       </Head>
 
       <div className="blogMain">
-        <div className="blogBanner banner2 ">
+        <div className="blogBanner banner2">
           <div className="container bannerContainer">
             <div className="newBannerMain">
               <div data-aos="fade-down">
-                <h1 className="display-3 text-light position-relative z-3">
+                <h1 className="display-3 text-light position-relative z-3 blog-hd">
                   Blog
                 </h1>
               </div>
@@ -92,29 +89,24 @@ const blog = () => {
             </div>
           </div>
         </div>
+
         <div className="sec">
           <div className="blog-cat">
             <div className="container">
               <ul>
-                <li>
-                  <Link href="#">Website Developement</Link>
-                </li>
-                <li>
-                  <Link href="#">Software Developement</Link>
-                </li>
-                <li>
-                  <Link href="#">Mobile App Developement</Link>
-                </li>
-                <li>
-                  <Link href="#">Digital Marketing</Link>
-                </li>
+                <li><Link href="#">Website Development</Link></li>
+                <li><Link href="#">Software Development</Link></li>
+                <li><Link href="#">Mobile App Development</Link></li>
+                <li><Link href="#">Digital Marketing</Link></li>
               </ul>
             </div>
           </div>
+
           <div className="container">
             <div className="sec-hd g-5">
-              <h1>BLOG</h1>
+              {/* <h1>BLOG</h1> */}
             </div>
+
             <div className="row">
               <div className="col-md-8">
                 {blogs.length ? (
@@ -123,12 +115,8 @@ const blog = () => {
                       <div className="blog-img">
                         <Link href={`/blog/${item.slug}`} target="_blank">
                           <img
-                            src={
-                              process.env.NEXT_PUBLIC_IMAGE_URL +
-                              `${item.banner_image}`
-                            }
-                            alt="Branding and Digital Marketing Strategies for Small
-                          Businesses."
+                            src={`${process.env.NEXT_PUBLIC_IMAGE_URL}${item.banner_image}`}
+                            alt={item.title}
                           />
                         </Link>
                         <h2>
@@ -157,14 +145,10 @@ const blog = () => {
                       <div className="blog-img">
                         <Skeleton height={200} />
                         <h2>
-                          <Skeleton height={30} width={`80%`} />
+                          <Skeleton height={30} width="80%" />
                           <div>
-                            <p>
-                              <Skeleton width={`50%`} />
-                            </p>
-                            <p>
-                              <Skeleton width={`40%`} />
-                            </p>
+                            <p><Skeleton width="50%" /></p>
+                            <p><Skeleton width="40%" /></p>
                           </div>
                         </h2>
                         <div className="bttn">
@@ -175,6 +159,7 @@ const blog = () => {
                   </SkeletonTheme>
                 )}
               </div>
+
               <div className="col-md-4 blog-search">
                 <h2>Search Articles</h2>
                 <form>
@@ -184,25 +169,21 @@ const blog = () => {
                     onChange={(e) => setSearchQuery(e.target.value)}
                   />
                 </form>
+
                 {blogs.length ? (
                   <Container className="my-5">
                     <Row className="justify-content-center">
                       <Col className="d-none d-md-block">
                         <div className="sticky-sidebar">
-                          <h4>Table of Content</h4>
+                          <h4>Recent Blogs</h4>
                           <ul className="sidebarSingleBlog">
-                            {blogs.length
-                              ? blogs.map((item, index) => (
-                                  <li className="mt-2" key={index}>
-                                    <Link
-                                      href={`/blog/${item.slug}`}
-                                      target="_blank"
-                                    >
-                                      {item.title}
-                                    </Link>
-                                  </li>
-                                ))
-                              : null}
+                            {blogs.map((item, index) => (
+                              <li className="mt-2" key={index}>
+                                <Link href={`/blog/${item.slug}`} target="_blank">
+                                  {item.title}
+                                </Link>
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </Col>
@@ -233,4 +214,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default Blog;

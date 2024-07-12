@@ -122,7 +122,7 @@ const Header = () => {
         </Link>
         {/* <Link href="/">Portfolio</Link> */}
         <Link href="/blog">Blog</Link>
-        <Link href="/contact-us">
+        <Link href="https://calendly.com/ron-wilsonbdm/service" target="_blank">
           <button id="header-btn">Let's Discuss</button>
         </Link>
       </nav>

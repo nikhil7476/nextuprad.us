@@ -121,7 +121,7 @@ const Portfolio = () => {
   return (
     <>
       <Head>
-        <title>Portfolio - NextUpgrad USA</title>
+        <title>NextUpgrad USA Portfolio</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
@@ -154,7 +154,7 @@ const Portfolio = () => {
       <section id="con">
         <div className="con1">
           <span className="line" />
-          <h1>PORTFOLIO</h1>
+          <h1>Portfolio</h1>
           <p>
             We prioritize your satisfaction above all else. Explore a curated
             selection of projects where we went above and beyond to <br />

@@ -239,7 +239,7 @@ const SingleBlog = () => {
             <Row className="justify-content-center">
               <Col md={3} className="d-none d-md-block">
                 <div className="sticky-sidebar">
-                  <h4>Table of Content</h4>
+                  <h4>Recent Blogs</h4>
                   <ul className="sidebarSingleBlog">
                     {sidebarBlog.length
                       ? sidebarBlog.map((item, index) => (
@@ -269,14 +269,14 @@ const SingleBlog = () => {
                 </div>
               </Col>
             </Row>
-            <Row className="justify-content-center my-4">
+            {/* <Row className="justify-content-center my-4">
               <Col md={10} lg={8}>
                 <div className="p-4 bg-light rounded shadow-sm">
-                  <h4>About the Author</h4>
+                  <h4>Author Of The Blog</h4>
                   <p>{blog.author}</p>
                 </div>
               </Col>
-            </Row>
+            </Row> */}
           </Container>
         ) : (
           <SkeletonTheme

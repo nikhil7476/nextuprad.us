@@ -119,6 +119,7 @@ const LandingPage = () => {
   return (
     <>
       <Head>
+      
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -293,7 +294,7 @@ const LandingPage = () => {
       </section>
 
       <section className={`${styles.expertiseSecMain} container`}>
-        <h3 className="text-start mt-5 text-center">Nextupgrad's Expertise</h3>
+        <h2 className="text-start mt-5 text-center">Nextupgrad's Expertise</h2>
         <p className="text-center mt-2 expertiseSecMainpara">
           We're an ROI driven team, always ready for challenges, No sales
           presentations, and no gimmicks—just pure expertise. We craft impactful
@@ -313,7 +314,7 @@ const LandingPage = () => {
             className="expertiseGridItems"
           >
             <IoBuild fontSize={85} className={`${styles.expertIcons} my-3 `} />
-            <h4>Custom-Built Designs</h4>
+            <h3>Custom-Built Designs</h3>
             <p>
               Each website is tailor-made to reflect your brand's unique
               identity, ensuring a distinctive online presence.
@@ -329,7 +330,7 @@ const LandingPage = () => {
               fontSize={85}
               className={`${styles.expertIcons} my-3 `}
             />
-            <h4>Comprehensive Support and Maintenance</h4>
+            <h3>Comprehensive Support and Maintenance</h3>
             <p>
               We offer ongoing support and maintenance services to ensure your
               website stays up-to-date and performs optimally.
@@ -345,7 +346,7 @@ const LandingPage = () => {
               fontSize={85}
               className={`${styles.expertIcons} my-3 `}
             />
-            <h4>Professional Expertise</h4>
+            <h3>Professional Expertise</h3>
             <p>
               Gain from our seasoned knowledge and insights at every stage,
               guaranteeing a flawless web development journey
@@ -389,7 +390,7 @@ const LandingPage = () => {
         <div className={`sec-two ${styles.landingPageMain}`}>
           <div className="container">
             {/* <h1>Our Distinctive website development services</h1> */}
-            <h1 className="text-center">Our Offerings</h1>
+            <h2 className="text-center">Our Offerings</h2>
             <div className="row">
               <div
                 data-aos="fade-right"
@@ -399,7 +400,7 @@ const LandingPage = () => {
               >
                 <div className="sec-two-box">
                   <img src="custom_developement.png" alt="" />
-                  <h2>Custom Website Design</h2>
+                  <h3>Custom Website Design</h3>
                 </div>
                 <p>
                   Our custom web design service ensures your website reflects
@@ -416,7 +417,7 @@ const LandingPage = () => {
               >
                 <div className="sec-two-box">
                   <img src="cms.png" alt="" />
-                  <h2>Content Management Systems (CMS)</h2>
+                  <h3>Content Management Systems (CMS)</h3>
                 </div>
                 <p>
                   We develop websites using popular CMS platforms like
@@ -434,7 +435,7 @@ const LandingPage = () => {
               >
                 <div className="sec-two-box">
                   <img src="ecom.png" alt="" />
-                  <h2>E-commerce Solutions</h2>
+                  <h3>E-commerce Solutions</h3>
                 </div>
                 <p>
                   We build robust e-commerce platforms that provide seamless
@@ -450,7 +451,7 @@ const LandingPage = () => {
               >
                 <div className="sec-two-box">
                   <img src="full_stack.png" alt="" />
-                  <h2>Full Stack</h2>
+                  <h3>Full Stack</h3>
                 </div>
                 <p>
                   Complete web development: HTML, CSS, and JavaScript for
@@ -469,7 +470,7 @@ const LandingPage = () => {
               >
                 <div className="sec-two-box">
                   <img src="web-security.png" alt="" />
-                  <h2>Responsive & Mobile-First Development</h2>
+                  <h3>Responsive & Mobile-First Development</h3>
                 </div>
                 <p>
                   With the majority of users accessing websites on mobile
@@ -485,7 +486,7 @@ const LandingPage = () => {
               >
                 <div className="sec-two-box">
                   <img src="training.png" alt="" />
-                  <h2>Website Maintenance & Support</h2>
+                  <h3>Website Maintenance & Support</h3>
                 </div>
                 <p>
                   Our services don’t end with the launch. We offer ongoing
@@ -644,7 +645,7 @@ const LandingPage = () => {
           <div className="container">
             <div className="row sec-four-one wrapper">
               <div className="col-md-6 time-sidebar">
-                <h3>Our Approach</h3>
+                <h2>Our Approach</h2>
                 <p>
                   Drawing on years of experience collaborating with sellers
                   worldwide, we've crafted a highly effective methodology for
@@ -767,9 +768,9 @@ const LandingPage = () => {
             </div>
             <div className="clearfix"></div>
             <div className="row sec-four-two">
-              <h2 className="lookingbox">
+              <h3 className="lookingbox">
                 Are you looking for customized ecommerce business solutions?
-              </h2>
+              </h3>
               <a href="#">Connect with an expert</a>
             </div>
           </div>
@@ -843,7 +844,7 @@ const LandingPage = () => {
         <Cards4 />
         <div className="video_testimonials landivideo mt-5 pt-5 ">
           <div className="container">
-            <h3 className="text-center">Video Testimonials</h3>
+            <h2 className="text-center">Video Testimonials</h2>
             <div
               className="owl-carousel owl-theme testimonials-container owl-loaded owl-drag"
               id="testimonials-container"
@@ -857,10 +858,10 @@ const LandingPage = () => {
                     <i className="fa fa-star checked" />
                     <i className="fa fa-star checked" />
                     <i className="fa fa-star checked" />
-                    <h2>
+                    <h3>
                       Recommend NextUpgrad for website development and business
                       marketing
-                    </h2>
+                    </h3>
                     <p>
                       I’m working with nextupgrad since april and these guys are
                       amazing team. They have been there from day 1 for me. They
@@ -868,7 +869,7 @@ const LandingPage = () => {
                       products were up to the standard.
                     </p>
                     <p>Patrick </p>
-                    <h3>Client For</h3>
+                    <h4>Client For</h4>
                     <span className="ic1">
                       Website Development and Digital Marketing
                     </span>

@@ -7,11 +7,11 @@ const Webdesign = () => {
   return (
     <>
       <Head>
-        <title>Website Design and Development - NextUpgrad USA</title>
+        <title>Website Design and Development Services with NextUpgrad USA</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="Ready to convert visitors into customers? Hire market's leading website design and development company to create a static website to complex web applications."
+          content="Ready to convert visitors into customers? Hire the leading website design and development company to create a static website for complex web applications."
         />
 
         <meta property="og:type" content="website" />
@@ -19,7 +19,7 @@ const Webdesign = () => {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="Ready to convert visitors into customers? Hire market's leading website design and development company to create a static website to complex web applications.."
+          content="Ready to convert visitors into customers? Hire the leading website design and development company to create a static website for complex web applications."
         />
         <meta
           property="og:image"
@@ -41,13 +41,14 @@ const Webdesign = () => {
           property="Website Design and Development Services with NextUpgrad USA"
           content="Ready to convert visitors into customers? Hire the market's leading website design and development company to create a static website for complex web applications"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></link>
       </Head>
       <WebDevSlider />
       <div>
         <div className="sec-two">
           <div className="container ">
             <h1 className="text-center">
-              Website Design and Development Services
+              Website Design and Development Service
             </h1>
             <div className="row">
               <div className="col-md-6 img-box">
@@ -276,7 +277,7 @@ const Webdesign = () => {
           <div className="container">
             <div className="row sec-four-one wrapper">
               <div className="col-md-6 time-sidebar">
-                <h3>Our Approach</h3>
+                <h2>Our Approach</h2>
                 <p>
                   Drawing on years of experience collaborating with sellers
                   worldwide, we've crafted a highly effective methodology for

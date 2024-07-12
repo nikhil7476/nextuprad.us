@@ -53,7 +53,9 @@ const LandingPagee = () => {
   return (
     <>
       <>
-        <Head></Head>
+        <Head>
+        <meta name="googlebot" content="noindex" />
+        </Head>
         <header className="musthead sticky-top custom-cursor">
           <div className="container pt-2 pb-2">
             <div className="row main-ost">
@@ -127,10 +129,10 @@ const LandingPagee = () => {
                 <span>Market reasearh and analysis </span>
                 <div className="reasearch">
                   <h1>Empowering Your Business Potential</h1>
-                  <h6>
+                  <p>
                     Unlock your business's potential with our tailored
                     <br /> services. Let's achieve success together.
-                  </h6>
+                  </p>
                 </div>
                 <div>
                   <button className="btn-three-more">
@@ -142,7 +144,7 @@ const LandingPagee = () => {
                 </div>
               </div>
               <div className="col-5 consultation">
-                <h3>Book free consultation </h3>
+                <h2>Book free consultation </h2>
                 <p>
                   Fill out the form below, we'll arrange a<br /> consultation at
                   a time most suitatble for you
@@ -208,7 +210,7 @@ const LandingPagee = () => {
           <div className="container">
             <div className="row">
               <div className="col-4 p-flex j-flex">
-                <h1>Big or small? We have a plan</h1>
+                <h2>Big or small? We have a plan</h2>
               </div>
               <div className="col-6 p-flex j-flex">
                 <p>
@@ -231,22 +233,22 @@ const LandingPagee = () => {
             </div>
             <div className="row missird">
               <div className="col-3 missard">
-                <h5>Mission</h5>
+                <h3>Mission</h3>
                 <h4>Empowering businesses</h4>
                 <p>Empowering businesses to reach their full potential.</p>
               </div>
               <div className="col-3 missardl">
-                <h5>Vision</h5>
+                <h3>Vision</h3>
                 <h4>Creating a future of innovation</h4>
                 <p>Fueling innovation to shape tomorrow's landscape.</p>
               </div>
               <div className="col-3 missardm">
-                <h5>Goals</h5>
+                <h3>Goals</h3>
                 <h4>Strategic partnerships</h4>
                 <p>Forging partnerships for mutual growth and success.</p>
               </div>
               <div className="col-3 missard">
-                <h5>Values</h5>
+                <h3>Values</h3>
                 <h4>Integrity, innovation, collaboration</h4>
                 <p>Guided by integrity, and driven by innovation.</p>
               </div>
@@ -409,7 +411,7 @@ const LandingPagee = () => {
           <div className="container">
             <div className="row pol">
               <div className="col-4 j-flex">
-                <h1>Those who made a change</h1>
+                <h2>Those who made a change</h2>
               </div>
               <div className="col-6 j-flex">
                 <p>

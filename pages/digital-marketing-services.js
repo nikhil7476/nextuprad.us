@@ -5,11 +5,11 @@ const Digitalmarketingservices = () => {
   return (
     <>
       <Head>
-        <title>Digital Marketing Services - NextUpgrad USA</title>
+        <title>Digital Marketing Services with NextUpgrad USA</title>
         <meta name="title" content="Nextupgrad" />
         <meta
           name="description"
-          content="Conquer online business growth & boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
+          content="Conquer online business growth and boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
           "
         />
 
@@ -18,8 +18,7 @@ const Digitalmarketingservices = () => {
         <meta property="og:title" content="Nextupgrad" />
         <meta
           property="og:description"
-          content="Conquer online business growth & boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
-          "
+          content="Conquer online business growth and boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world."
         />
         <meta
           property="og:image"
@@ -31,7 +30,7 @@ const Digitalmarketingservices = () => {
         <meta property="twitter:title" content="Nextupgrad" />
         <meta
           property="twitter:description"
-          content="Conquer online business growth & boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
+          content="Conquer online business growth and boost brand reach. Experience the NextUpgrad Digital Marketing Service to find your hidden potential customers in the web world.
           "
         />
           <meta
@@ -48,8 +47,8 @@ const Digitalmarketingservices = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2>Award Winning</h2>
-              <h3>Digital Marketing Services</h3>
+              <span>Award Winning</span>
+              <h1>Digital Marketing Services</h1>
               <p>
                 Decode all the marketing puzzles to get your business ahead, all
                 under the same roof. As the exclusive “ROI-driven” and
@@ -82,9 +81,9 @@ const Digitalmarketingservices = () => {
             </div>
             <div className="fourcolbox">
               <div className="innerMarketingItems">
-                <h2>
+                <h3>
                   <span>S</span>Strategizing
-                </h2>
+                </h3>
                 <p>
                   Collaborate to identify business goals, target audiences, and
                   unique selling points. Develop a customized strategy through
@@ -92,9 +91,9 @@ const Digitalmarketingservices = () => {
                 </p>
               </div>
               <div className="innerMarketingItems">
-                <h2>
+                <h3>
                   <span>E</span>Execution
-                </h2>
+                </h3>
                 <p>
                   Execute the strategic plan across various channels—SEO, social
                   media, email, and PPC. Employ creative content and data-driven
@@ -102,9 +101,9 @@ const Digitalmarketingservices = () => {
                 </p>
               </div>
               <div className="innerMarketingItems">
-                <h2>
+                <h3>
                   <span>S</span>Surveillance
-                </h2>
+                </h3>
                 <p>
                   Regularly track and analyze key performance indicators using
                   analytics tools. Provide clients with transparent reports and
@@ -112,9 +111,9 @@ const Digitalmarketingservices = () => {
                 </p>
               </div>
               <div className="innerMarketingItems">
-                <h2>
+                <h3>
                   <span>O</span>Optimization
-                </h2>
+                </h3>
                 <p>
                   Continuously refine strategies based on performance insights,
                   adapting to market changes for optimal campaign effectiveness.
@@ -163,7 +162,7 @@ const Digitalmarketingservices = () => {
               <div>
                 {" "}
                 <img src="dg2.webp" alt="SEO Solution" />
-                <h2>SEO Solution</h2>
+                <h3>SEO Solution</h3>
                 <p>
                   Make sure you are on top of the digital race with innovative
                   and custom strategies.
@@ -172,7 +171,7 @@ const Digitalmarketingservices = () => {
               <div>
                 {" "}
                 <img src="dg3.webp" alt="PPC Marketing" />
-                <h2>PPC Marketing</h2>
+                <h3>PPC Marketing</h3>
                 <p>
                   Advertise among the target audience and drive immediate,
                   measurable results.
@@ -181,7 +180,7 @@ const Digitalmarketingservices = () => {
               <div>
                 {" "}
                 <img src="dg4.webp" alt="Assessment" />
-                <h2>Assessment</h2>
+                <h3>Assessment</h3>
                 <p>
                   We carve success by identifying trends and steering continual
                   improvement.
@@ -190,7 +189,7 @@ const Digitalmarketingservices = () => {
               <div>
                 {" "}
                 <img src="dg5.webp" alt="AppPromo" />
-                <h2>AppPromo</h2>
+                <h3>AppPromo</h3>
                 <p>
                   We ensure that your app not only gets noticed but also
                   receives the attention it deserves.
@@ -199,7 +198,7 @@ const Digitalmarketingservices = () => {
               <div>
                 {" "}
                 <img src="dg6.webp" alt="Social Marketing" />
-                <h2>Social Marketing</h2>
+                <h3>Social Marketing</h3>
                 <p>
                   Boost brand awareness with compelling content, a target
                   campaign, and a strong social media presence.
@@ -208,7 +207,7 @@ const Digitalmarketingservices = () => {
               <div>
                 {" "}
                 <img src="dg7.webp" alt="Content Craft" />
-                <h2>Content Craft</h2>
+                <h3>Content Craft</h3>
                 <p>
                   Convey your brand story with an effective content strategy
                   that engages your target audience and drives conversion.
@@ -217,7 +216,7 @@ const Digitalmarketingservices = () => {
               <div>
                 {" "}
                 <img src="dg8.webp" alt="VIDEO" />
-                <h2>VIDEO</h2>
+                <h3>Video</h3>
                 <p>
                   We ensure high-quality shareable content that captivates your
                   audience and enhances your brand's reach.
@@ -226,7 +225,7 @@ const Digitalmarketingservices = () => {
               <div>
                 {" "}
                 <img src="dg9.webp" alt="Email Marketng" />
-                <h2>Email Marketng</h2>
+                <h3>Email Marketng</h3>
                 <p>
                   We design and execute personalized campaigns to nurture leads
                   and drive customer retention.
@@ -1311,7 +1310,7 @@ const Digitalmarketingservices = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>Here’s Why We Bloom & Glitter</h1>
+              <h2>Here’s Why We Bloom & Glitter</h2>
               <p>
                 With our designed-for-you services, we are devoted to cater the
                 best experience to you. Stepping into the world of Digital
@@ -1320,23 +1319,23 @@ const Digitalmarketingservices = () => {
               <ul>
                 <li>
                   <img src="dg11.webp" alt="Satisfied Clients" />
-                  <h2>500+</h2>
-                  <h3>Satisfied Clients</h3>
+                  <h3>500+</h3>
+                  <h4>Satisfied Clients</h4>
                 </li>
                 <li>
                   <img src="dg12.webp" alt="Countries" />
-                  <h2>5+</h2>
-                  <h3>Countries</h3>
+                  <h3>5+</h3>
+                  <h4>Countries</h4>
                 </li>
                 <li>
                   <img src="dg13.webp" alt="Professionals" />
-                  <h2>30+</h2>
-                  <h3>Professionals</h3>
+                  <h3>30+</h3>
+                  <h4>Professionals</h4>
                 </li>
                 <li>
                   <img src="dg14.webp" alt="Product" />
-                  <h2>10+</h2>
-                  <h3>Product</h3>
+                  <h3>10+</h3>
+                  <h4>Product</h4>
                 </li>
               </ul>
             </div>

@@ -103,7 +103,7 @@ const Mobileapp = () => {
             <div className="row">
               <div className="col-md-3 dev-col">
                 <img src="/mobile.webp" alt="Native Mobile App Development" />
-                <h2>Native Mobile App Development</h2>
+                <h3>Native Mobile App Development</h3>
                 <p>
                   Tailored mobile apps for iOS and Android, ensuring peak
                   performance &amp; seamless integration, and an unmatched user
@@ -112,7 +112,7 @@ const Mobileapp = () => {
               </div>
               <div className="col-md-3 dev-col">
                 <img src="/hybrid.webp" alt="Hybrid Mobile App Development" />
-                <h2>Hybrid Mobile App Development</h2>
+                <h3>Hybrid Mobile App Development</h3>
                 <p>
                   Build versatile apps for multiple OSs, saving time and money
                   while ensuring a seamless user interface.
@@ -120,7 +120,7 @@ const Mobileapp = () => {
               </div>
               <div className="col-md-3 dev-col">
                 <img src="/web.webp" alt="Progressive Web App Development" />
-                <h2>Progressive Web App Development</h2>
+                <h3>Progressive Web App Development</h3>
                 <p>
                   Offline functionality, fast loading, and responsiveness across
                   devices for enhanced engagement and accessibility.
@@ -131,7 +131,7 @@ const Mobileapp = () => {
                   src="/software.webp"
                   alt="Wearables and Embedded Software"
                 />
-                <h2>Wearables and Embedded Software</h2>
+                <h3>Wearables and Embedded Software</h3>
                 <p>
                   Dive into wearables and embedded systems with our innovative
                   software, boosting user interactions for devices like
@@ -168,7 +168,7 @@ const Mobileapp = () => {
                     <img src="/kotlin.webp" alt="Kotlin" />
                   </div>
                   <div className="col-md-3">
-                    <h2>Kotlin</h2>
+                    <h3>Kotlin</h3>
                   </div>
                 </div>
                 <p>
@@ -185,7 +185,7 @@ const Mobileapp = () => {
                     <img src="/ionic.webp" alt="Ionic" />
                   </div>
                   <div className="col-md-3">
-                    <h2>Ionic</h2>
+                    <h3>Ionic</h3>
                   </div>
                 </div>
                 <p>
@@ -202,7 +202,7 @@ const Mobileapp = () => {
                     <img src="/xamarin.webp" alt="Xamarin" />
                   </div>
                   <div className="col-md-3">
-                    <h2>Xamarin</h2>
+                    <h3>Xamarin</h3>
                   </div>
                 </div>
                 <p>
@@ -220,7 +220,7 @@ const Mobileapp = () => {
                     <img src="/phonegap.webp" alt="Phonegap" />
                   </div>
                   <div className="col-md-3">
-                    <h2>Phonegap</h2>
+                    <h3>Phonegap</h3>
                   </div>
                 </div>
                 <p>
@@ -237,7 +237,7 @@ const Mobileapp = () => {
                     <img src="/flutter.webp" alt="Flutter" />
                   </div>
                   <div className="col-md-3">
-                    <h2>Flutter</h2>
+                    <h3>Flutter</h3>
                   </div>
                 </div>
                 <p>
@@ -253,7 +253,7 @@ const Mobileapp = () => {
                     <img src="/python.webp" alt="Python" />
                   </div>
                   <div className="col-md-3">
-                    <h2>Python</h2>
+                    <h3>Python</h3>
                   </div>
                 </div>
                 <p>
@@ -271,7 +271,7 @@ const Mobileapp = () => {
                     <img src="/java.webp" alt="Java" />
                   </div>
                   <div className="col-md-3">
-                    <h2>Java</h2>
+                    <h3>Java</h3>
                   </div>
                 </div>
                 <p>
@@ -287,7 +287,7 @@ const Mobileapp = () => {
                     <img src="/swift.webp" alt="Swift" />
                   </div>
                   <div className="col-md-3">
-                    <h2>Swift</h2>
+                    <h3>Swift</h3>
                   </div>
                 </div>
                 <p>
@@ -303,7 +303,7 @@ const Mobileapp = () => {
                     <img src="/react.webp" alt="React" />
                   </div>
                   <div className="col-md-3">
-                    <h2>React</h2>
+                    <h3>React</h3>
                   </div>
                 </div>
                 <p>
@@ -323,10 +323,10 @@ const Mobileapp = () => {
               <div className="col-md-3 colone">
                 <div className="coltwo">
                   <img className="pr-one" src="/planner.png" alt="Planner" />
-                  <h2>1</h2>
+                  <h3>1</h3>
                 </div>
                 <div className="mobilebox">
-                  <h2>Planner</h2>
+                  <h4>Planner</h4>
                   <ul>
                     <li>Define project objectives.</li>
                     <li>Outline key requirements.</li>
@@ -341,10 +341,10 @@ const Mobileapp = () => {
                     src="/blueprint.webp"
                     alt="Blueprinting"
                   />
-                  <h2>2</h2>
+                  <h3>2</h3>
                 </div>
                 <div className="mobilebox">
-                  <h2>Blueprinting</h2>
+                  <h4>Blueprinting</h4>
                   <ul>
                     <li>Create basic app structure.</li>
                     <li>Visualize layout and elements.</li>
@@ -355,10 +355,10 @@ const Mobileapp = () => {
               <div className="col-md-3 colone">
                 <div className="coltwo">
                   <img className="pr-three" src="/app.webp" alt="App Design" />
-                  <h2>3</h2>
+                  <h3>3</h3>
                 </div>
                 <div className="mobilebox">
-                  <h2>App Design</h2>
+                  <h4>App Design</h4>
                   <ul>
                     <li>Develop visual style.</li>
                     <li>Design user interface (UI).</li>
@@ -373,10 +373,10 @@ const Mobileapp = () => {
                     src="/imple.webp"
                     alt="Implementation"
                   />
-                  <h2>4</h2>
+                  <h3>4</h3>
                 </div>
                 <div className="mobilebox">
-                  <h2>Implementation</h2>
+                  <h4>Implementation</h4>
                   <ul>
                     <li>Write required code.</li>
                     <li>Develop core functionality.</li>
@@ -393,10 +393,10 @@ const Mobileapp = () => {
                     src="/testing.webp"
                     alt="Quality Analysis &amp; Testing"
                   />
-                  <h2>5</h2>
+                  <h3>5</h3>
                 </div>
                 <div className="mobilebox">
-                  <h2>Quality Analysis &amp; Testing</h2>
+                  <h4>Quality Analysis &amp; Testing</h4>
                   <ul>
                     <li>Conduct thorough testing.</li>
                     <li>Identify and fix bugs.</li>
@@ -411,10 +411,10 @@ const Mobileapp = () => {
                     src="/play.webp"
                     alt="Set in Motion"
                   />
-                  <h2>6</h2>
+                  <h3>6</h3>
                 </div>
                 <div className="mobilebox">
-                  <h2>Set in Motion</h2>
+                  <h4>Set in Motion</h4>
                   <ul>
                     <li>Deploy to app stores.</li>
                     <li>Implement marketing strategy.</li>
@@ -429,10 +429,10 @@ const Mobileapp = () => {
                     src="/support.webp"
                     alt="Post-Service Support"
                   />
-                  <h2>7</h2>
+                  <h3>7</h3>
                 </div>
                 <div className="mobilebox">
-                  <h2>Post-Service Support</h2>
+                  <h4>Post-Service Support</h4>
                   <ul>
                     <li>Monitor app performance.</li>
                     <li>Provide updates and patches.</li>

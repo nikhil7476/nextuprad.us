@@ -104,7 +104,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
-              <h2>60+</h2>
+              <h3>60+</h3>
               <p className="mt-3">
                 Expert Developers in
                 <br />
@@ -123,7 +123,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
-              <h2>60+</h2>
+              <h3>60+</h3>
               <p className="mt-3">
                 Digital Marketers in <br />
                 10 Different Verticals.
@@ -141,7 +141,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
-              <h2>60+</h2>
+              <h3>60+</h3>
               <p className="mt-3">
                 Customer Served in
                 <br />
@@ -164,7 +164,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
-              <h2>10+</h2>
+              <h3>10+</h3>
               <p className="mt-3">Quality Assurance Resources</p>
             </div>
             <div className="sec-2-2-2">
@@ -179,7 +179,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
-              <h2>400+</h2>
+              <h3>400+</h3>
               <p className="mt-3">Client Satisfied</p>
             </div>
             <div className="sec-2-2-3">
@@ -194,7 +194,7 @@ const About = () => {
                   suffix=" +"
                 />
               )}
-              <h2>75+</h2>
+              <h3>75+</h3>
               <p className="mt-3">Technology Certified Resources</p>
             </div>
           </div>
@@ -218,7 +218,7 @@ const About = () => {
             <div className="custmer-detail">
               <div className="row">
                 <div className="col-md-6">
-                  <h2>Customer-Centric Philosophy</h2>
+                  <h3>Customer-Centric Philosophy</h3>
                   <p>
                     {" "}
                     We always place the customer at the core of business
@@ -239,7 +239,7 @@ const About = () => {
                   />
                 </div>
                 <div className="col-md-6">
-                  <h2>Unparalleled Customer Experience</h2>
+                  <h3>Unparalleled Customer Experience</h3>
                   <p>
                     Proactively addressing customer needs, actively listening to
                     concerns, and providing solutions define our commitment to
@@ -247,7 +247,7 @@ const About = () => {
                   </p>
                 </div>
                 <div className="col-md-6">
-                  <h2>Driving Innovation and Adaptability</h2>
+                  <h3>Driving Innovation and Adaptability</h3>
                   <p>
                     Staying at the forefront of technological advancements, we
                     consistently explore new ideas and technologies to handle
@@ -265,7 +265,7 @@ const About = () => {
                   <img src="/agile.png" alt="Executing Agile Development" />
                 </div>
                 <div className="col-md-6">
-                  <h2>Executing Agile Development</h2>
+                  <h3>Executing Agile Development</h3>
                   <p>
                     Embracing agile methodologies enhances collaboration,
                     flexibility, and responsiveness to change in our project
@@ -273,7 +273,7 @@ const About = () => {
                   </p>
                 </div>
                 <div className="col-md-6">
-                  <h2>Unprecedented client Satisfaction</h2>
+                  <h3>Unprecedented client Satisfaction</h3>
                   <p>
                     Our 24×7 real-time communication system ensures prompt
                     responses to customer inquiries through various channels,
@@ -294,7 +294,7 @@ const About = () => {
         <div className="sec-4">
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-6 certi">
                 <h2>Certifications</h2>
                 {/*<hr className="solid" />*/}
               </div>
@@ -309,12 +309,12 @@ const About = () => {
               <ul>
                 <motion.li whileHover={{ scale: 1.1 }}>
                   <img src="/hubspot.png" className="hubspot" alt="hubspot" />
-                  <h2>Certified Marketing Expert</h2>
+                  <h3>Certified Marketing Expert</h3>
                 </motion.li>
 
                 <motion.li whileHover={{ scale: 1.1 }}>
                   <img src="/adobe.png" className="adobe" alt="adobe" />
-                  <h2>Adobe Certified Professional</h2>
+                  <h3>Adobe Certified Professional</h3>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }}>
                   <img
@@ -322,7 +322,7 @@ const About = () => {
                     className="agency"
                     alt="HubSpot Partner"
                   />
-                  <h2>Leading HubSpot Partner</h2>
+                  <h3>Leading HubSpot Partner</h3>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.1 }}>
                   <img
@@ -330,7 +330,7 @@ const About = () => {
                     className="pmplogo"
                     alt="Project Management Professional"
                   />
-                  <h2>Project Management Professional</h2>
+                  <h3>Project Management Professional</h3>
                 </motion.li>
               </ul>
             </div>
