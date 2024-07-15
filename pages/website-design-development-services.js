@@ -279,10 +279,13 @@ const Webdesign = () => {
               <div className="col-md-6 time-sidebar">
                 <h2>Our Approach</h2>
                 <p>
-                  Drawing on years of experience collaborating with sellers
-                  worldwide, we've crafted a highly effective methodology for
-                  comprehending, planning, and executing website enablement
-                  processes.
+                Based on our  extensive experience over the years working with various 
+                clients across the globe, we have developed a highly effective and 
+                sophisticated methodology for understanding, planning and implementing 
+                a comprehensive website activation process. Through this collaboration, 
+                we have gained valuable insights and refined strategies that have enabled 
+                us to ensure a seamless and successful 
+                implementation tailored to the unique needs and goals of each client.
                 </p>
               </div>
               <div className="col-md-6 time-main">

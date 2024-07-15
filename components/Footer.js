@@ -360,6 +360,10 @@ const Footer = () => {
                     <a href="tel:+1(408) 400-3232">+1 (408) 400-3232</a>
                     <a href="tel:+1 (408) 786-5558">+1 (408) 786-5558</a>
                   </li>
+                  <li>
+                    <i className="bi bi-telephone" />
+                    <a href="tel:+18005700144">Toll Free: 18005700144</a>
+                  </li>
                 </ul>
               </div>
             </div>

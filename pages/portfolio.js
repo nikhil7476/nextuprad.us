@@ -170,7 +170,7 @@ const Portfolio = () => {
           <h2>Work Showcase</h2>
         </div>
       </section>
-      <section className="container my-5">
+      {/* <section className="container my-5">
         <Tabs>
           <TabList>
             {tabTitle.map((item, index) => (
@@ -201,6 +201,22 @@ const Portfolio = () => {
             </TabPanel>
           ))}
         </Tabs>
+      </section> */}
+      <section className="container pro-img">
+        <div className="row">
+          <div className="col-md-3 img-cont">
+            <img src="inovo.png"/>
+          </div>
+          <div className="col-md-3 img-cont">
+          <img src="sirpi.png"/>
+          </div>
+          <div className="col-md-3 img-cont">
+            <img src="law.png"/>
+          </div>
+          <div className="col-md-3 img-cont">
+            <img src="realestate.png"/>
+          </div>
+        </div>
       </section>
     </>
   );

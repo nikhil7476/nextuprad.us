@@ -3473,6 +3473,24 @@ a.kickstart-button:hover {
   position: absolute;
   margin-left: -1px;
 }
+.pro-img{
+  margin-bottom: 30px;
+}
+.img-cont {
+  position: relative;
+  /* width: 300px;  */
+  height: 350px; /* Set the fixed height for the container */
+  overflow: hidden; /* Hide the overflow */
+}
+.img-cont img{
+  width: 100%;
+  height: auto; /* Ensure the image maintains its aspect ratio */
+  transition: transform 3s ease;
+  /* margin-bottom: 30px; */
+}
+.img-cont:hover img {
+  transform: translateY(-60%); /* Adjust the value to scroll the image */
+}
 /*_______________portfolio-end-----------------*/
 
 /*------------blog-----------------*/
@@ -4894,7 +4912,7 @@ a:hover {
   width: 40%;
   height: 25vh;
   min-height: 350px !important;
-  overflow: auto;
+  /* overflow: auto; */
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 25%;

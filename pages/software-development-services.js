@@ -78,11 +78,11 @@ const Software = () => {
                   <li>Smooth Implementation and Rollout</li>
                 </ul>
                 <ul className="unilo">
-                  <li>Strategic Goal Alignment</li>
-                  <li>Needs Assessment and Prioritization</li>
-                  <li>Platform Optimization</li>
-                  <li>Efficient Resource Allocation</li>
-                  <li>Smooth Implementation and Rollout</li>
+                  <li>Comprehensive Training and Troubleshooting</li>
+                  <li>Core Business Focus</li>
+                  <li>Expertise Bridging</li>
+                  <li>Risk Management Integration</li>
+                  <li>ROI Maximization Strategies</li>
                 </ul>
               </div>
             </div>
@@ -100,18 +100,15 @@ const Software = () => {
               </p>
               <div className="unili">
                 <ul className="unilm">
-                  <li>Strategic Goal Alignment</li>
-                  <li>Needs Assessment and Prioritization</li>
-                  <li>Platform Optimization</li>
-                  <li>Efficient Resource Allocation</li>
-                  <li>Smooth Implementation and Rollout</li>
+                  <li>Solve Immediate Challenges</li>
+                  <li>Meet Industry Goals</li>
+                  <li>Accelerate Time-to-Market</li>
+                  <li>Enhance Security Measures</li>
                 </ul>
                 <ul className="unilo">
-                  <li>Strategic Goal Alignment</li>
-                  <li>Needs Assessment and Prioritization</li>
-                  <li>Platform Optimization</li>
-                  <li>Efficient Resource Allocation</li>
-                  <li>Smooth Implementation and Rollout</li>
+                  <li>Optimize Productivity</li>
+                  <li>Cost Optimization</li>
+                  <li>Elevate Customer Experience</li>
                 </ul>
               </div>
             </div>
@@ -129,26 +126,22 @@ const Software = () => {
             <div className="unimm22">
               <h3 className="softcon">Designing and Embedding ERP Solutions</h3>
               <p>
-                Prepare for success in your software development project. We
-                specialize in seamless planning, execution, and management. Our
-                expertise extends to project change management, ensuring
-                professional and timely stakeholder communication. Our
-                consultants guide you in
+                Essential in diverse sectors like healthcare, education, 
+                real estate, technology, transportation, and logistics, quality 
+                ERP systems are crucial for business performance. We specialize in 
+                crafting ERP solutions that streamline transactional data, eliminate 
+                duplication, and maintain data integrity through a unified source across all systems.
+                A custom ERP solution enhances day-to-day business activities, including:
               </p>
               <div className="unili">
                 <ul className="unilm">
-                  <li>Strategic Goal Alignment</li>
-                  <li>Needs Assessment and Prioritization</li>
-                  <li>Platform Optimization</li>
-                  <li>Efficient Resource Allocation</li>
-                  <li>Smooth Implementation and Rollout</li>
+                  <li>Financial Management</li>
+                  <li>Regulatory Compliance</li>
+                  <li>Procurement and Sourcing</li>
                 </ul>
                 <ul className="unilo">
-                  <li>Strategic Goal Alignment</li>
-                  <li>Needs Assessment and Prioritization</li>
-                  <li>Platform Optimization</li>
-                  <li>Efficient Resource Allocation</li>
-                  <li>Smooth Implementation and Rollout</li>
+                  <li>Project Planning and Execution</li>
+                  <li>Risk Mitigation</li>
                 </ul>
               </div>
             </div>
@@ -178,19 +171,19 @@ const Software = () => {
             <div className="unimmm22">
               <h3 className="softcon">Cloud App Development</h3>
               <p>
-                Prepare for success in your software development project. We
-                specialize in seamless planning, execution, and management. Our
-                expertise extends to project change management, ensuring
-                professional and timely stakeholder communication. Our
-                consultants guide you in
+                Unlock the potential of modern IT with NextUpgrad’s 
+                cloud app development service, bringing your company’s 
+                operations to the forefront and ensuring a high return on investment.
+                Distinguished from native applications, cloud application development 
+                provides a host of advantages, such as:
               </p>
               <div className="unili">
                 <ul className="unilm">
-                  <li>Strategic Goal Alignment</li>
-                  <li>Needs Assessment and Prioritization</li>
-                  <li>Platform Optimization</li>
-                  <li>Efficient Resource Allocation</li>
-                  <li>Smooth Implementation and Rollout</li>
+                  <li>Reduced time-to-market</li>
+                  <li>Swift deployment possibilities</li>
+                  <li>Streamlined updating and maintenance processes</li>
+                  <li>Remote management and monitoring capabilities</li>
+                  <li>Ongoing enhancements for sustained security</li>
                 </ul>
               </div>
             </div>
@@ -217,8 +210,7 @@ const Software = () => {
               <img src="s2.webp" alt="STEP 2" />
               <h3>STEP 2</h3>
               <p>
-                At the outset, let’s talk about your business requirements and
-                how we can address them.
+                Your project team is established and prepared to commence!
               </p>
               <ul>
                 <li>
@@ -233,8 +225,8 @@ const Software = () => {
               <img src="s3.webp" alt="STEP 3" />
               <h3>STEP 3</h3>
               <p>
-                At the outset, let’s talk about your business requirements and
-                how we can address them.
+                The team is adjusted based on the situation, 
+                either increasing or decreasing as needed.
               </p>
               <ul>
                 <li>Manage expectations and drive improvements—present!</li>

@@ -767,7 +767,7 @@ export default function Home() {
                   2000,
                   "Hire Developers",
                   2000,
-                  "Digital Marketing",
+                  "Executing Marketing Strategies",
                   2000,
                 ]}
                 wrapper="span"

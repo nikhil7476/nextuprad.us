@@ -503,7 +503,7 @@ const Hirededicateddeveloper = () => {
           </div>
           <div className="adap row">
             <div className="adap1  col-md-4">
-              <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
+              <h3 className={`${styles.payuse}`}>Pay-Per-Use</h3>
               <img src="img-4-removebg-preview.png" alt="Pay-per-use" />
               <p>
                 No commitment required. Simply pay for the duration you require
@@ -511,19 +511,20 @@ const Hirededicateddeveloper = () => {
               </p>
             </div>
             <div className="adap2   col-md-4">
-              <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
+              <h3 className={`${styles.payuse}`}>Block of Hours</h3>
               <img src="img-3-removebg-preview.png" alt="Pay-per-use" />
               <p>
-                No commitment required. Simply pay for the duration you require
-                our developer to manage your project.
+                Built on the concept of “the more you buy, the less you pay,” 
+                this package enables you to pay based on a fixed monthly allocation 
+                of working hours.
               </p>
             </div>
             <div className="adap3   col-md-4">
-              <h3 className={`${styles.payuse}`}>Pay-per-use</h3>
+              <h3 className={`${styles.payuse}`}>Monthly Basis</h3>
               <img src="img-2-removebg-preview.png" alt="Pay-per-use" />
               <p>
-                No commitment required. Simply pay for the duration you require
-                our developer to manage your project.
+                Choose a subscription-based payment model when you need ongoing technical 
+                support for your long-term projects from our developers.
               </p>
             </div>
           </div>

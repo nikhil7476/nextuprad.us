@@ -22,7 +22,7 @@ const Cards = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/test-1.png" alt="MICHAEL SMITH" />
+              <img src="/team2.webp" alt="MICHAEL SMITH" />
               <div>
                 <h5>BY MICHAEL SMITH</h5>
                 <h6>GENERAL MANAGER</h6>
@@ -48,7 +48,7 @@ const Cards = () => {
             }}
           >
             <div className="testimonialContainer">
-              <img src="/test-2.png" alt="TOM BAGNALL" />
+              <img src="/team4.webp" alt="TOM BAGNALL" />
               <div>
                 <h5>BY TOM BAGNALL</h5>
                 <h6>MANAGING DIRECTOR</h6>
