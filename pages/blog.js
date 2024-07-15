@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { formatDate } from "@/utils/helper";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import styles from "../styles/blog.module.css";
+import "../styles/blog.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Blog = () => {
